@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com">
+<meta name="copyright" content="智能社 - zhinengshe.com">
+<title>智能社 - www.zhinengshe.com</title>
+<style>
+* { margin:0; padding:0; }
+box{width:800px;margin:200px auto;}
+div { overflow:hidden; position:relative; float:left; margin:2px; width:100px; height:100px; background:#ccc; }
+span { position:absolute; top:0; left:-100px; width:100%; height:100%; background:green; opacity:0.3; }
+
+input { position:absolute; left:300px; top:300px; width:200px; height:30px; font-size:26px; text-align:center; }
+
+</style>
+<script src="move.js"></script>
+<script>
+window.onload=function (){
+	var oBox=document.getElementById('box')
+	var aDiv=document.getElementsByTagName('div')
+	var aSpan=document.getElementsByTagName('span')
+	var w=aDiv[0].offsetWidth/2;
+	var h=aDiv[0].offsetHeight/2;
+	for(var i=0;i<aDiv.length;i++){
+		aDiv[i].onmouseenter=function(ev){
+			var oSpan=this.children[0];
+			var oEvent=ev || event;
+			var n=getN(oEvent,this);
+			switch(n)
+			{
+				case 0:
+					oSpan.style.left=100+'px';
+					oSpan.style.top=0;
+					move(oSpan,{left:0});
+					break;
+				case 1:
+					oSpan.style.left=0;
+					oSpan.style.top=100+'px';
+					move(oSpan,{top:0});
+					break;
+				case 2:
+					oSpan.style.left=-100+'px';
+					oSpan.style.top=0;
+					move(oSpan,{left:0});
+					break;
+				case 3:
+					oSpan.style.left=0;
+					oSpan.style.top=-100+'px';
+					move(oSpan,{top:0});
+					break;
+			}
+			
+		};
+		aDiv[i].onmouseleave=function(ev){
+			var oSpan=this.children[0];
+			var oEvent=ev || event;
+			var n=getN(oEvent,this);
+			switch(n)
+			{
+				case 0:
+					
+					move(oSpan,{left:100});
+					break;
+				case 1:
+					
+					move(oSpan,{top:100});
+					break;
+				case 2:
+					
+					move(oSpan,{left:-100});
+					break;
+				case 3:
+					
+					move(oSpan,{top:-100});
+					break;
+			}
+			
+		};
+	}
+	function getN(oEvent,oDiv){
+		var x=w+oDiv.offsetLeft+oBox.offsetLeft-oEvent.clientX;
+		var y=h+oDiv.offsetTop+oBox.offsetTop-oEvent.clientY;
+		var a=Math.atan2(y,x)*180/Math.PI;
+		var n=Math.round((a+180)/90)%4;
+		return n;
+	}
+
+}
+</script>
+</head>
+
+<body>
+<h1 class="box" id="box">
+	<div>
+		<span></span>
+	</div>
+	<div>
+		<span></span>
+	</div>
+	<div>
+		<span></span>
+	</div>
+	<div>
+		<span></span>
+	</div>
+</h1>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

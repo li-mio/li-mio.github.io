@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,target-densitydpi=device-dpi" />
+    <script>
+        document.getElementsByTagName('html')[0].style.fontSize
+        =document.documentElement.clientWidth/3+'px';
+    </script>
+    <link rel="stylesheet" href="base.css"/>
+    <style>
+        body,ul{font-size:0.15rem;font-family: "Microsoft YaHei";}
+        a{color:#fff;}
+        .page{width:100%;height:100%;overflow:hidden;position:absolute;;top:0;left:0;}
+        header{height:0.45rem;background:#000;box-sizing:border-box;
+        color:#fff;line-height:0.45rem;border:2px solid #353535; text-align:center;}
+        .btn{height:0.25rem;line-height:0.25rem;position:absolute;top:0.1rem;width:0.5rem;border:2px solid yellow;right:10px;}
+        .btn:nth-of-type(1){left:10px;right:auto;display:none;}
+        .wrap{position :absolute;left:0;width:100%;top:0.45rem;bottom:0.55rem;background:red;overflow: auto;}
+        .piclist li{position:absolute;top:0;left:0;width:1rem;height:1rem;border:1px solid #000;
+            transition:0.5s left,0.5s top;box-sizing:border-box;background:url(video/1.jpg) no-repeat;background-size:contain; }
+        footer{width:100%;height:0.55rem;line-height:0.55rem;background:#121212;position:absolute;bottom:0;left:0;}
+        footer a{float:left;width:50%;text-align:center;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;}
+        footer a.active{background:#000;}
+        footer a:nth-of-type(1){border-right:1px solid #222;}
+        footer a:nth-of-type(2){border-left:1px solid #222;}
+        .recycle{width:1.2rem;height:1.2rem;position:absolute;left:calc(50% - 0.6rem);top:100%;background:url(img/recycle.png) no-repeat;background-size:contain;}
+        .recycle:nth-of-type(1){background:url(img/recycle2.png) }
+    </style>
+    <script>
+        var arr=[];
+        for(var i=0;i<=16;i++){
+            arr[i-1]="video/"+i+".jpg";
+        }
+    </script>
+    <title></title>
+</head>
+<body>
+    <article class="page" id="page">
+        <header>
+            <a href="javascript:;" class="btn">删除</a>
+            相机相册
+            <a href="javascript:;" class="btn">选择</a>
+        </header>
+        <section class="wrap">
+            <ul class="piclist" id="list">
+
+            </ul>
+        </section>
+        <footer>
+            <a href="javacript:;" class="active">相机相册</a>
+            <a href="javacript:;">所有相册</a>
+        </footer>
+        <span class="recycle"></span>
+        <span class="recycle"></span>
+    </article>
+</body>
+<script>
+    create(arr);
+    function create(arr){
+        var oPage=document.getElementById('page');
+        var aBtn=oPage.getElementsByClassName('btn');
+        var olist=document.getElementById('list');
+        var ali=olist.children;
+        var sHtml='';
+        var aRmove=[];
+        var boff=true;
+        for(var i=0;i<arr.length;i++){
+            sHtml+="<li style='background-image:url("+arr[i]+");'></li>";
+
+        }
+        olist.innerHTML=sHtml;
+        setTimeout(function(){
+            toPosition();
+        },60);
+        aBtn[1].addEventListener('touchend',fnEnd,false);
+        aBtn[0].addEventListener('touchend',fnRmove,false);
+
+        function toPosition(){
+            for(var i=0;i<ali.length;i++){
+                ali[i].style.left=i%3+'rem';
+                ali[i].style.top=Math.floor(i/3)+'rem';
+            }
+        }
+        function fnEnd(){
+            if(boff) {
+                aBtn[1].innerHTML = '取消';
+                for (var i = 0; i < ali.length; i++) {
+                    ali[i].index = i;
+                    ali[i].addEventListener('touchend', fnSelected, false);
+                }
+            }else{
+                aBtn[1].innerHTML = '选择';
+                aBtn[0].style.display="none";
+                aRmove.length=0;
+                for (var i = 0; i < ali.length; i++) {
+                    ali[i].style.borderColor="#000";
+                    ali[i].removeEventListener('touchend', fnSelected, false);
+                }
+            }
+            boff=!boff;
+        }
+        function fnSelected(){
+            aRmove.push(this.index);
+            this.style.borderColor="yellow";
+            aBtn[0].style.display="block";
+        }
+        function fnRmove(){
+           /* for(var i=0;i<aRmove.length;i++){
+                olist.removeChild(ali[i]);
+            }*/
+            aRmove=aRmove.sort(function(a,b){
+                return a-b;
+            });
+
+            while(aRmove.length){
+
+                olist.removeChild(ali[aRmove.shift()]);
+            }
+            boff=false;
+            toPosition();
+            fnEnd();
+        }
+    }
+</script>
+</html>

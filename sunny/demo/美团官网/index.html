@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<script src="js/base.js"></script>
+<script src="js/move.js"></script>
+<script>
+window.onload=function(){
+	meituan.public.head.jsShow();
+	meituan.public.head.jsClose();
+	meituan.public.head.jsSearch();
+
+	
+	meituan.public.head.jsSelect();
+	meituan.public.back.jsBack();
+	meituan.index.jsSeaScroll();
+	meituan.index.jsYear();
+	meituan.index.jsClock();
+	meituan.index.jsNav();
+}
+</script>
+</head>
+
+
+<body>
+<!--回到顶部-->
+<div class="return" id="return">回到顶部</div>
+<!--跨年-->
+<div id="n-div">
+	<img src="images/kuanian.png" id="img1"/>
+	<a href="javascript:;" id="a1"></a>
+	<div id="n-div1">
+		<img src="images/kuanian2.png" id="img2"/>
+		<a href="javascript:;" id="a2"></a>
+	</div>
+</div>
+<!--tit-->
+<div class="tit_back">
+	<div class="tit clearfix">
+	    <ul class="tit_l clearfix">
+		    <li>
+		    	<a href="javascript:;" class="collect">
+		    		<span></span>
+		    		收藏美团
+		    	</a>
+		    </li>
+		    <li>
+		    	<a href="javascript:;" class="load">登录</a>
+		    </li>
+		    <li>
+		    	<a href="javascript:;" class="regist">注册</a>
+		    </li>
+		    <li class="phone1 " id="h-phone">
+		    	
+		    	<a href="javascript:;" class="j-btn">
+		    		<span></span>	
+		    		手机美团
+		    	</a>
+		    		
+		    	
+		    	<div class="j-count" id="h-phoneList">
+		    		<div class="top clearfix">
+		    			<i>免费下载美团手机版</i>
+		    			<em></em>
+		    		</div>
+		    		<div class="footer clearfix">
+		    			<i>免费下载猫眼电影手机版</i>
+		    			<em></em>
+		    		</div>
+		    	</div>	
+		     </li>
+	    </ul>
+	    <ul class="tit_r" id="list_tit">
+	    	
+		    	<li class="j-tab a1 ">
+		    		<a href="javascript:;" class="j-btn">我的订单</a>
+		    		<ul class="j-count">
+		    			<li>我的订单</li>
+		    			<li>我的订单</li>
+		    			<li>我的订单</li>
+		    			<li>我的订单</li>
+		    		</ul>
+		    	</li>
+	    	
+	    	
+		    	<li class="j-tab a2 ">
+		    		<a href="javascript:;" class="j-btn">
+			    		我的美团
+			    		<span></span>
+			    	</a>
+		    		<ul class="j-count">
+		    			<li>我的美团</li>
+		    			<li>我的美团</li>
+		    			<li>我的美团</li>
+		    			<li>我的美团</li>
+		    		</ul>
+		    	</li>
+	    	
+	    	
+		    	<li class="j-tab a3">
+		    		<a href="javascript:;" class="j-btn">
+			    		最近浏览
+			    		<span></span>
+			    	</a>
+		    		<ul class="j-count">
+		    			<li>最近浏览</li>
+		    			<li>最近浏览</li>
+		    			<li>最近浏览</li>
+		    			<li>最近浏览</li>
+		    		</ul>
+		    	</li>
+	    	
+	    	
+		    	<li class=" j-tab a4">
+		    		<a href="javascript:;" class="j-btn">
+			    		<em></em>
+			    		购物车<i>0</i>件
+			    		<span></span>
+		    		</a>
+		    		<ul class="j-count">
+		    			<li>什么也没有</li>
+		    		</ul>	
+		    	</li>
+		   	
+		   
+		    	<li class="j-tab a4">
+		    		<a href="javascript:;" class="j-btn">
+			    		联系客服
+			    		<span></span>
+		    		</a>
+		    		<ul class="j-count">
+		    			<li>联系客服</li>
+		    		</ul>
+		    	</li>
+		   	
+		   
+		    	<li class="j-tab a5">
+		    		<a href="javascript:;" class="j-btn">
+			    		更多
+			    		<span></span>
+			    	</a>
+		    		<ul class="j-count">
+		    			<li>呵呵呵</li>
+		    			<li>呵呵呵</li>
+		    			<li>呵呵呵</li>
+		    			<li>呵呵呵</li>
+		    		</ul>
+		    	</li>	
+		    
+	    </ul>
+	</div>
+</div>
+<div class="main">
+<div class="tit_pic">
+	<img src="css/images/index-tit.png" id="h-pic"/>
+	<span id="h-close"></span>
+</div>
+<!--search-->
+<div class="search clearfix">
+	<div class="left clearfix">
+		<span>美团</span>
+		<div class="toggle">
+			<p id="content">北京</p>
+			<select id="oSel">
+				<option>切换城市</option>
+				<option>北京</option>
+				<option>上海</option>
+				<option>广州</option>
+			</select>
+		</div>
+	</div>
+	<div class="mid">
+		<select>
+			<option>团购</option>
+			<option>团购</option>
+			<option>团购</option>
+		</select>
+		<input type="text"  class="text" id="txt"/>
+		<span class="holder" id="holder">请输入所要搜索的商品</span>
+		<input type="submit" value="搜索" class="sub"/>
+	</div>
+	<ul class="right clearfix">
+		<li>
+			<span class="span1"></span>
+			<p>随时退</p>
+		</li>
+		<li>
+			<span class="span2"></span>
+			<p>不满意免单</p>
+		</li>
+		<li>
+			<span class="span3"></span>
+			<p>过期退</p>
+		</li>
+	</ul>
+</div>
+<!--nav-->
+<div class="nav_tit clearfix">
+	<a href="javascript:;" class="left">全部分类</a>
+	<ul class="right clearfix" id="nav">
+		<li><a href="javascript:;">首页</a></li>
+		<li><a href="javascript:;">今日新单</a></li>
+		<li><a href="javascript:;">购物</a></li>
+		<li><a href="javascript:;">今日新单</a></li>
+		<li><a href="javascript:;">名店抢购</a></li>
+	</ul>
+</div>
+<!--分类-->
+<div class="nav_main clearfix">
+	<ul class="nav_l">
+		<li class="list clearfix">
+			<p>美食</p>
+			<a href="javascript:;" class="rig"></a>
+			<a href="javascript:;" class="fon">自助餐代金券</a>
+			<div class="hotel-box j-box clearfix">
+				<dl class="left">
+					<dt>么事</dt>
+					<dd>美食没事</dd>
+					<dd>美食没事</dd>
+					<dd>美食没事</dd>
+					<dd>美食没事</dd>
+					<dd>美食没事</dd>
+					
+				</dl>
+			</div>
+		</li>
+		<li class="list clearfix">
+			<p>酒店/客栈</p>
+			<a href="javascript:;" class="rig"></a>
+			<a href="javascript:;" class="fon">经济型酒店</a>
+			<div class="hotel-box j-box clearfix">
+				<dl class="left">
+					<dt>酒店</dt>
+					<dd>经济性酒店</dd>
+					<dd>豪华酒店</dd>
+					<dd>主题酒店</dd>
+					<dd>度假酒店</dd>
+					<dd>公寓型酒店</dd>
+					<dd>客栈</dd>
+					<dd>青年旅舍</dd>
+				</dl>
+				<dl class="right">
+					<dt>推荐酒店</dt>
+					<dd>俗吧</dd>
+					<dd>如今啊</dd>
+					<dd>天堂鸟</dd>
+					<dd>兰亭序</dd>
+					<dd>小二店</dd>
+					<dd>minmie</dd>
+					<dd>古月</dd>
+				</dl>
+			</div>
+		</li>
+		<li class="list clearfix">
+			<p>电影/在线选座</p>
+			<a href="javascript:;" class="rig"></a>
+			<a href="javascript:;" class="fon"></a>
+			<div class="hotel-box j-box clearfix">
+				<dl class="left">
+					<dt>电影</dt>
+					<dd>萧十一郎</dd>
+					<dd>卧虎藏龙</dd>
+					<dd>阿甘</dd>
+					<dd>美食没事</dd>
+					<dd>美食没事</dd>
+					
+				</dl>
+			</div>
+		</li>
+		<li class="list clearfix">
+			<p>KTV在线预订</p>
+			<a href="javascript:;" class="rig"></a>
+			<a href="javascript:;" class="fon"></a>
+			<div class="hotel-box j-box clearfix">
+				<dl class="left">
+					<dt>预定</dt>
+					<dd>携程酒店</dd>
+					<dd>去哪儿酒店</dd>
+					<dd>艺龙酒店</dd>
+					<dd>驴妈妈酒店</dd>
+					<dd>途牛酒店</dd>
+					<dd>途家</dd>
+					<dd>青年旅舍</dd>
+				</dl>
+				<dl class="right">
+					<dt>推荐酒店</dt>
+					<dd>俗吧</dd>
+					<dd>如今啊</dd>
+					<dd>天堂鸟</dd>
+					<dd>兰亭序</dd>
+					<dd>小二店</dd>
+					<dd>minmie</dd>
+					<dd>古月</dd>
+				</dl>
+			</div>
+		</li>
+		<li class="list clearfix">
+			<p>休闲娱乐</p>
+			<a href="javascript:;" class="rig"></a>
+			<a href="javascript:;" class="fon">足疗按摩温泉</a>
+			<div class="hotel-box j-box clearfix">
+				<dl class="left">
+					<dt>休闲娱乐</dt>
+					<dd>篮球</dd>
+					<dd>羽毛球</dd>
+					<dd>桌球</dd>
+					<dd>斯诺克</dd>
+					<dd>足球</dd>
+					
+				</dl>
+			</div>
+		</li>
+		<li class="list clearfix">
+			<p>周边游/旅游</p>
+			<a href="javascript:;" class="rig"></a>
+			<a href="javascript:;" class="fon"></a>
+			<div class="hotel-box j-box clearfix">
+				<dl class="left">
+					<dt>游啊游</dt>
+					<dd>北京</dd>
+					<dd>广州</dd>
+					<dd>上海</dd>
+					<dd>广州</dd>
+					<dd>厦门</dd>
+					
+				</dl>
+			</div>
+		</li>
+		<li class="list clearfix">
+			<p>生活服务</p>
+			<a href="javascript:;" class="rig"></a>
+			<a href="javascript:;" class="fon">婚纱摄影、个性写真</a>
+			
+		</li>
+		<li class="list clearfix">
+			<p>购物</p>
+			<a href="javascript:;" class="rig"></a>
+			<a href="javascript:;" class="fon">男装、女装</a>
+			
+		</li>
+		<li class="list clearfix">
+			<p>丽人</p>
+			<a href="javascript:;" class="rig"></a>
+			<a href="javascript:;" class="fon"></a>
+			
+		</li>
+	</ul>
+	<div class="nav_mid">
+		<ul class="nav_rt" >
+			<li>
+				<span class="span1"></span>
+				<a href="javascript:;">热门团购</a>
+				<a href="javascript:;" style="color:#f87a7a">代金券</a>
+				<a href="javascript:;"style="color:#f87a7a">经济型酒店</a>
+				<a href="javascript:;"style="color:#f87a7a">电影</a>
+				<a href="javascript:;">美发</a>
+				<a href="javascript:;">足疗</a>
+				<a href="javascript:;">蛋糕甜点</a>
+				<a href="javascript:;">儿童摄影</a>
+				<a href="javascript:;">火锅</a>
+			</li>
+			<li>
+				<span class="span2"></span>
+				<a href="javascript:;">全部区域</a>
+				<a href="javascript:;" >朝阳区</a>
+				<a href="javascript:;">海淀区</a>
+				<a href="javascript:;">顺义区</a>
+				<a href="javascript:;">丰台区</a>
+				
+				<a href="javascript:;">西城区</a>
+				<a href="javascript:;">东城区</a>
+				
+				<a href="javascript:;">通州区</a>
+				<a href="javascript:;">石景山区</a>
+				<a href="javascript:;" class="more">更多<span class="span4"></span>
+				</a>
+			</li>
+			<li>
+				<span class="span3"></span>
+				<a href="javascript:;">热门商圈</a>
+				<a href="javascript:;" >望京</a>
+				<a href="javascript:;">昌平镇</a>
+				<a href="javascript:;">亦庄</a>
+				<a href="javascript:;">中关村</a>
+				<a href="javascript:;">远大路</a>
+				<a href="javascript:;">西红门</a>
+				<a href="javascript:;">双井</a>
+				<a href="javascript:;">黄村</a>
+			</li>
+		</ul>
+		<div class="nav_rbm">
+			<ul class="nav_rb clearfix" id="nav_rb">
+
+				
+				<li class="list1">
+					<img src="images/hot_pot.png" />
+					<img src="images/discount.png"class="discount" />
+					<ul class="fon clearfix">
+						<li class="left">
+							<h3>海棠海鲜自助火锅</h3>
+							<p>海棠海鲜午餐自助，提供免费WiFi</p>
+						</li>
+						<li class="price">￥198元</li>
+					</ul>
+				</li>
+				<li class="list1 list2">
+					<img src="images/hot_pot.png" />
+					<img src="images/discount.png"class="discount" />
+					<ul class="fon clearfix">
+						<li class="left">
+							<h3>海棠海鲜自助火锅</h3>
+							<p>海棠海鲜午餐自助，提供免费WiFi</p>
+						</li>
+						<li class="price">￥198元</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<ul class="nav_r2">
+		<li class="list1">
+			<img src="images/play.png" />
+		</li>
+		<li class="list2">
+			<h4>每日上新</h4>
+			<p>吃喝玩乐最低价</p>
+			<img src="images/lower.png" />
+		</li>
+	</ul>
+</div>
+<!--倒计时-->
+
+<div  class="count clearfix">
+	<div class="log">名店抢购</div>
+	<div class="countdown"id="countdown">
+			<span class="a1"></span>
+			<img src="images/image/2.png" />
+			<img src="images/image/0.png" /> :
+			<img src="images/image/1.png" />
+			<img src="images/image/5.png" /> :
+			<img src="images/image/1.png" />
+			<img src="images/image/5.png" /> :
+			<img src="images/image/1.png" />
+			<img src="images/image/5.png" />
+	</div>
+</div>
+<div class="purchase1">
+	<ul class="purchase clearfix" id="purchase">
+		<li class="list">
+			<img src="images/liaoli.png" />
+			<span class="span1"></span>
+			<span class="span2"></span>
+			<h3>【7店通用】松子日本料理</h3>
+			<div class="font clearfix">
+				<p>￥93</p>
+				<i>已售2434324</i>
+			</div>
+			<em></em>
+		</li>
+		<li class="list">
+			<img src="images/liaoli.png" />
+			<span class="span1"></span>
+			<span class="span2"></span>
+			<h3>【7店通用】松子日本料理</h3>
+			<div class="font clearfix">
+				<p>￥93</p>
+				<i>已售2434324</i>
+			</div>
+			<em></em>
+		</li>
+		<li class="list">
+			<img src="images/liaoli.png" />
+			<span class="span1"></span>
+			<span class="span2"></span>
+			<h3>【7店通用】松子日本料理</h3>
+			<div class="font clearfix">
+				<p>￥93</p>
+				<i>已售2434324</i>
+			</div>
+			<em></em>
+		</li>
+		<li class="list">
+			<img src="images/liaoli.png" />
+			<span class="span1"></span>
+			<span class="span2"></span>
+			<h3>【7店通用】松子日本料理</h3>
+			<div class="font clearfix">
+				<p>￥93</p>
+				<i>已售2434324</i>
+			</div>
+			<em></em>
+		</li>
+		<li class="list last">
+			<img src="images/liaoli.png" />
+			<span class="span1"></span>
+			<span class="span2"></span>
+			<h3>【7店通用】松子日本料理</h3>
+			<div class="font clearfix">
+				<p>￥93</p>
+				<i>已售2434324</i>
+			</div>
+			<em></em>
+		</li>
+	</ul>
+</div>
+<!--beautiful food Model-->
+<div class="food_tit clearfix" >
+	<span class="food_log">美食</span>
+	<ul class="food_r clearfix">
+		<li><a href="javascript:;">美食</a></li>
+		<li><a href="javascript:;">代金券</a></li>
+		<li><a href="javascript:;">自助餐</a></li>
+		<li><a href="javascript:;">火锅</a></li>
+		<li><a href="javascript:;">烧烤烤肉</a></li>
+		<li><a href="javascript:;">香锅煮雨</a></li>
+		<li><a href="javascript:;">西餐</a></li>
+		<li class="last"><a href="javascript:;" >全部<em></em></a></li>
+	</ul>
+</div>
+<ul class="food clearfix">
+	<li class="list">
+		<img src="images/barbecue.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/barbecue.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/barbecue.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list last">
+		<img src="images/barbecue.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/tongzhou.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/tongzhou.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/tongzhou.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list last">
+		<img src="images/tongzhou.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/yuyin.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/yuyin.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/yuyin.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list last">
+		<img src="images/yuyin.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/fukou.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/fukou.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/fukou.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list last">
+		<img src="images/fukou.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+</ul>
+<a href="javascript:;" class="delayload">更多美食团购，请点击查看<span></span></a>
+<!--leisure entertainment-->
+<div class="food_tit clearfix" >
+	<span class="food_log leisure">休闲娱乐</span>
+	<ul class="food_r clearfix">
+		<li><a href="javascript:;">休闲娱乐</a></li>
+		<li><a href="javascript:;">运动保健</a></li>
+		<li><a href="javascript:;">足疗保健</a></li>
+		
+		<li class="last"><a href="javascript:;" >全部<em></em></a></li>
+	</ul>
+</div>
+<ul class="food clearfix">
+	<li class="list">
+		<img src="images/ktv.png" />
+		<span class="span1"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/ktv.png" />
+		<span class="span1"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/ktv.png" />
+		<span class="span1"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list last">
+		<img src="images/ktv.png" />
+		<span class="span1"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/space.png" />
+		<span class="span1"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/space.png" />
+		<span class="span1"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/space.png" />
+		<span class="span1"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list last">
+		<img src="images/space.png" />
+		<span class="span1"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/recording.png" />
+		<span class="span1"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/recording.png" />
+		<span class="span1"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/recording.png" />
+		<span class="span1"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list last">
+		<img src="images/recording.png" />
+		<span class="span1"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+</ul>		
+<a href="javascript:;" class="delayload">更多休闲娱乐团购，请点击查看<span></span></a>
+<!--move-->
+<div class="food_tit clearfix" >
+	<span class="food_log move">电影</span>
+	<ul class="food_r clearfix">
+		<li><a href="javascript:;">电影</a></li>
+		<li><a href="javascript:;">电影票团购</a></li>
+		<li><a href="javascript:;">电影院</a></li>
+		<li><a href="javascript:;">在线选座</a></li>
+		<li><a href="javascript:;">最新电影</a></li>
+		<li class="last"><a href="javascript:;" >全部<em></em></a></li>
+	</ul>
+</div>
+<ul class="food clearfix">
+	<li class="list">
+		<img src="images/yundi.png" />
+		<span class="span1"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/yundi.png" />
+		<span class="span1"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/yundi.png" />
+		<span class="span1"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list last">
+		<img src="images/yundi.png" />
+		<span class="span1"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/move1.png" />
+		<span class="span1"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/move1.png" />
+		<span class="span1"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/move1.png" />
+		<span class="span1"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list last">
+		<img src="images/move1.png" />
+		<span class="span1"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<i>24人评价</i>
+		</div>
+	</li>
+</ul>			
+<a href="javascript:;" class="delayload">更多电影团购，请点击查看<span></span></a>
+<!--the hotel-->
+<div class="food_tit clearfix" >
+	<span class="food_log hotel">酒店</span>
+	<ul class="food_r clearfix">
+		<li><a href="javascript:;">酒店</a></li>
+		<li><a href="javascript:;">经济型酒店</a></li>
+		<li><a href="javascript:;">主题酒店</a></li>
+		<li><a href="javascript:;">豪华酒店</a></li>
+		
+		<li class="last"><a href="javascript:;" >全部<em></em></a></li>
+	</ul>
+</div>
+<ul class="food clearfix">
+	<li class="list">
+		<img src="images/folk.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/folk.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/folk.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list last">
+		<img src="images/folk.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/minhotel.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/minhotel.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list">
+		<img src="images/minhotel.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+	<li class="list last">
+		<img src="images/minhotel.png" />
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<h3>【17店通用】木炭烧烤</h3>
+		<p>100元代金券1张，可叠加使用，提供免费</p>
+		<div class="font clearfix">
+			<p>￥85
+				<i class="discount">门店价
+					<em class="price">￥100</em>
+				</i>
+			</p>
+			<i class="sell">已售2434324</i>
+		</div>
+		<div class="privilege clearfix">
+			<em></em>
+			<i>24人评价</i>
+		</div>
+	</li>
+</ul>
+<a href="javascript:;" class="delayload">更多酒店团购，请点击查看<span></span></a>
+<!--底部开始-->
+<div class="bottom clearfix">
+		<dl>
+			<dt>获取更新</dt>
+			<dd>邮件订阅</dd>
+			<dd>phone/androd</dd>
+			<dd>美团qq空间</dd>
+			<dd>美团新浪微博</dd>
+			<dd>RSS订阅</dd>
+		</dl>
+		<dl>
+			<dt>获取更新</dt>
+			<dd>邮件订阅</dd>
+			<dd>phone/androd</dd>
+			<dd>美团qq空间</dd>
+			<dd>美团新浪微博</dd>
+			<dd>RSS订阅</dd>
+		</dl>
+		<dl>
+			<dt>获取更新</dt>
+			<dd>邮件订阅</dd>
+			<dd>phone/androd</dd>
+			<dd>美团qq空间</dd>
+			<dd>美团新浪微博</dd>
+			<dd>RSS订阅</dd>
+		</dl>
+		<dl>
+			<dt>用户帮助</dt>
+			<dd>申请退款</dd>
+			<dd>查看美团券码</dd>
+			<dd>常见问题</dd>
+			<dd>开放SpI</dd>
+			<dd>反诈骗公告</dd>
+		</dl>
+		<div class="service1">
+			<span></span>
+			<p class="p1">客服电话</p>
+			<p class="p2">400-422-23233</p>
+			<p class="p3">退款、退换货、查看美团卷</p>
+			<p class="p4">参考教程、轻松搞定</p>
+		</div>
+	</div>
+</div>	
+<div class="footer">
+		<p>2015美团团购京ICp05505号京公网备323434电子工号服务规则</p>
+		<img src="images/footer.png" />
+</div>
+</div>
+</body>
+</html>

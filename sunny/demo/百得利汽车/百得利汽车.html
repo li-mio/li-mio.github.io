@@ -1,0 +1,876 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="js/jquery-1.7.2.js" />
+	<style>
+		
+		/*tit*/
+    	.tit{width:1440px;height:122px;background:#0b2e4e;}
+		.tit_l{float:left;width:185px;height:46px;background:url(img/tit1.png) no-repeat left center;text-indent:-100em;margin-left:200px;margin-top:30px;}
+		.tit_r{float:right;font-size:16px;color:white;margin-right:200px;}
+		.tit_r li{float:left;padding-right:10px;margin-top:50px;color:white;}
+		.tit_r .login{border-bottom:2px solid white;margin-right:10px;padding-right:0;}
+		.registered{padding-left:10px;border-left:2px solid gray;}
+		.xinlang{background:url(img/xinlang.png) no-repeat left center;width:23px;height:21px;}
+		.weixin{background:url(img/weixin.png) no-repeat left center;width:21px;height:18px;}
+		.tit_r .buycar{float:left;width:180px;margin-top:40px;}
+		.buycar_l{float:left;width:136px;height:34px;padding-left:6px;background:white;border:1px solid gray;}
+		.buycar_l span{float:left;background:url(img/car.png) no-repeat left center;width:36px;height:27px;display:inline-block;margin-right:4px;}
+		.buycar_l p{float:left;font-size:14px;color:#666;margin-top:8px;}
+		.sanjiao{float:left;width:30px;height:36px;background:url(img/sanjiao.png) no-repeat center center #1e80c4;}
+		/*nav*/
+		.nav{width:1040px;height:42px;line-height:42px;padding-left:200px;padding-right:200px;background:#414141;font-size:14px;color:#d6d6d6;margin:0 auto;position:relative;}
+		.nav .nav_l{width:200px;height:42px;background:url(img/down.gif) no-repeat 190px center ;}
+		.nav li{float:left;padding:0 20px;}	
+		.nav li a{color:white;}
+		.nav_l .show {width:220px;background:white;padding:0 10px;position:absolute;top:42px;left:200px;display:none;}
+		.nav_l .show dl{width:180px;border-bottom:1px solid gray;}
+		.nav_l .show dt{font-size:14px;color:#333;margin:14px 0;}
+		.nav_l .show dd{float:left;color:#999;font-size:12px;width:25%;line-height:14px;margin-bottom:14px;}
+		  .nav_l:hover .show{display:block;}
+		
+		 
+		 .jingpin{position:relative;}
+		 .jingpin .show {width:76px;background:white;padding:0 10px;display:none;position:absolute;top:42px;left:0;}
+		.jingpin .show  a{color:#333;}
+		
+		  .jingpin:hover .show{display:block;}
+		 .jingpin:hover{background:#343434;}
+		 .bigcar{width:100%;height:511px;background:url(img/bigcar.png) no-repeat center center;}
+		/*new car*/
+		.new_tit{font-size:18px;color:#333;width:980px;margin:18px auto;padding-right:20px;}
+		
+		
+		.new_m{width:1000px;height:76px;margin:0 auto;}
+		.new_m li{float:left;border:1px solid #e6e6e5;border-right:none;padding:0 37px;height:62px;padding-top:14px;position:relative;}
+		.new_m .active{border:1px solid #039;}
+		.new_m li:hover .xiangxia{display:block;}
+		.new_m .last{border-right:1px solid #e6e6e5;}
+		.new_m .xiangxia{width:13px;height:5px;background:url(img/xiangxia.png) no-repeat left center;position:absolute;bottom:-5px;left:50%;margin-left:-7px;display:none;}
+		
+		.active .show{display:block;}/*这里为什么会出现这种情况*/
+		
+		.Oimg .new_b{width:1000px;height:264px;border:1px solid #e7e7e6;border-top:none;margin:0 auto;box-sizing:border-box;}
+		.Oimg .new_b li{float:left;width:249px;font-size:14px;font-family:Microsoft Yahei;padding-left:18px;box-sizing:border-box;padding-top:18px;}
+		.Oimg .new_b{display:none;}
+		.Oimg .show{display:block}
+		
+		.new_b p{color:#333;margin-top:10px;}
+		.new_b h4{color:#333;margin-top:10px;}
+		.new_b h4 span{color:#999;text-decoration:line-through;}
+		.new_b h5{color:#333;margin-top:6px;}
+		.new_b h5 span{color:#e01e27;text-decoration:line-through;}
+		/*high-quality*/
+		.high_tit{font-size:20px;color:#333;width:1000px;height:40px;line-height:40px;border-bottom:2px solid #1f446a;margin:0 auto;}
+		.high_tit span{float:left;}
+		.high_tit a{float:right;}
+		.high{width:1000px;height:420px;margin:10px auto;}
+		.high_m{float:left;width:240px;height:420px;font-size:12px;border:1px solid #ebebeb;margin-right:10px;}
+		.high_m img:hover{transform:rotate(360deg) scale(2);transition:all 1s linear;}
+		.high .lower{margin-right:0;}
+		.high_m .slk{margin:12px 12px;}
+		.high_m dl{margin:0 12px;}
+		.high_m dl dt{font-size:14px;color:#333;margin:6px 0 6px;padding-bottom:4px;border-bottom:2px solid #ebebeb;}
+		.high_m dl dd{margin-top:10px;color:#999;}
+		.high_m dl .last{margin-top:20px;}
+		.high_m dl .last p{color:#f7b993;float:left;margin-left:-8px;font-size:14px;}
+		.high_m dl .last img{float:right;}
+		
+	    	.bg_2{margin:20px auto;}/*为什么用10px不起作用*/
+		/*recommended*/
+		.recom{width:1000px;margin:0 auto;}
+		.recom_tit{font-size:18px;color:#333;width:1000px;height:40px;line-height:40px;border-bottom:2px solid #264a70;margin-bottom:10px;}
+		.recom_l,.recom_m1,.recom_m2,.recom_r{float:left;}
+		
+		
+		.recom_m1 li{padding:20px 14px  16px;border-bottom:1px solid gray;margin:0 14px;border-top:1px solid gray;}
+		.recom_m1 .last{position:relative;overflow:hidden;width:100px;height:80px;}
+		.recom_m1 .last .pic{width:300px;}
+		.recom_m1 .last .pic img{float:left;width:100px;}
+		.recom_m1 .last  .pic .show{display:block;}
+		
+		.last_b{position:absolute;bottom:20px;left:50%;margin-left:-13px;}
+		.last_b a{float:left;width:6px;height:6px;background:gray;margin-right:4px;}
+		.last_b .active{background:pink;}
+		.recom_m2 {float:left;width:370px;border-top:1px solid gray;border-left:1px solid gray;}
+		.recom_m2 li{float:left;padding:48px 8px 48px;border-right:1px solid gray;border-bottom:1px solid gray; }
+		
+		.recom_r{margin-left:10px;}
+		.recom_rt{width:200px;margin:12px 0;}
+		.recom_rt span{float:left;font-size:14px;color:#333;}
+		.recom_rt i{float:right;font-size:14px;color:#333;}
+		
+		.recom_rm li{width:180px;padding:8px 0;font-size:14px;color:#666;border-bottom:1px dashed gray;overflow:hidden;white-space:nowrap;
+text-overflow:ellipsis;}/*文本省略*/
+		.recom_rb{margin-top:20px;}
+		/*integral*/
+		.integ_m{width:1000px;height:265px;margin:0 auto;border-left:1px solid gray;border-bottom:1px solid gray;}
+		.integ_m li {float:left;display:inline-block;padding:30px 27px 14px;border-top:1px solid gray;border-right:1px solid gray;}
+		.integ_m li p{font-size:14px;color:#333;margin-top:22px;}
+		.integ_m li h4{font-size:14px;color:#999;margin-top:14px;}
+		.integ_m li .exchange{margin-top:14px;}
+		.integ_b{width:1000px;margin:0 auto;}
+		.integ_b img{float:left;}
+		/*company message*/
+		.messa{width:990px;margin:0 auto;padding-left:10px;}
+		.messa_l h1{width:220px;height:40px;line-height:40px;}
+		.messa_l h1 i{float:left;font-size:16px;color:#333;}
+		.messa_l h1 span{float:right;font-size:14px;color:#666;}
+		.messa_lb li a{display:inline-block;width:200px;padding:13px 14px 13px 6px;border-bottom:2px solid #ededed;font-size:12px;color:#909090;}
+		
+		.messa_m1{border-left:1px solid #ededed;border-right:1px solid #ededed;padding:0 10px;margin:0 10px;}
+		.messa_m1 h1{width:230px;height:30px;padding-top:10px;}/*为什么高度改为20px就不可以了了呢*/
+		.messa_m1 h1 i{float:left;font-size:16px;color:#333;}
+		.messa_m1 h1 span{float:right;font-size:14px;color:#666;}
+		.messa_m1m{width:230px;}
+		.messa_m1m li{float:left;width:33.3%;box-sizing:border-box;margin:0 auto;}
+		.messa_m1m li img{margin-bottom:10px;}/*图的高度的问题没有改好*/
+		
+		.messa_m1bt{margin-top:10px;}
+		.messa_m1bt a{font-size:18px;color:#333;}
+		.messa_m1bb{width:230px;}
+		.messa_m1bb li{margin-top:16px;float:left;}
+		.messa_m1bb li a{font-size:14px;color:#666;}
+		.messa_l,.messa_m1,.messa_m2,.messa_r{float:left;}
+		
+		.messa_m2{width:230px;margin:0 10px;}
+		.messa_m2 .t img{float:left;width:50%;box-sizing:border-box;margin-top:8px;padding-right:7px;}
+		.messa_m2 h1{font-size:18px;color:#333;margin:18px 0 6px;}
+		.messa_m2 li{padding:10px 0;border-bottom:2px solid #ecedec;}
+		.messa_m2 li a{font-size:14px;color:#666;}
+		.messa_r{float:left;}
+		/*service industry*/
+		.service{width:1000px;border-top:1px dashed #dbdbdb;margin:0 auto;margin-top:4px;}
+		.service_l{width:224px;float:left;}
+		.service_tit{width:1000px;font-size:18px;color:#333;border-bottom:1px dashed #dbdbdb;padding:10px 0;text-indent:2em;margin:0 auto;}
+		.service_l h1{height:30px;line-height:30px;border-bottom:2px solid #dbdbdb;margin-bottom:10px;}
+		.service_l h1 span{float:left;font-size:14px;color:#666;padding-left:6px;}
+		.service_l h1 i{float:right;font-size:14px;color:#666;padding-right:4px;}
+		.service_l p{padding:10px 0;padding-left:8px;border-bottom:1px dashed #dbdbdb;} 
+		
+		
+		.service_m{width:380px;float:left;border-left:1px solid #dbdbdb;border-right:1px solid #dbdbdb;padding:0 10px;margin:0 10px;}
+		
+		.service_m_b .l{float:left;width:174px;}
+		.service_m_b .r{float:right;width:174px;}
+		
+		.service_r{width:330px;float:left;}
+		.service_r_b img{float:left;}
+		.service_r_b ul{float:left;}
+		.service_r_b ul li{width:190px;padding:16px 0 12px;padding-left:8px;border-bottom:1px dashed #dbdbdb;margin-left:14px;}
+		.service_r_b ul .last{padding:20px 0 18px;}
+		/*center*/
+	    	.center{width:1000px;margin:0 auto;border-top:1px dashed #dbdbdb;margin-top:4px;padding-top:16px;}
+		.center .list{width:210px;float:left;border-right:1px solid gray;padding:0 28px;}
+		.center  .first{padding-left:0;}
+		.center .list h1{font-size:14px;color:#959595;margin:12px 0;margin-left:4px;}
+		.center .list .Oimg{position:relative;}
+		.center .list .opa{position:absolute;bottom:0px;left:0;background:rgba(40,54,61,0.5 );width:210px;height:20px;}
+		.center .list .fon{width:210px;height:20px;margin-left:10px;line-height:20px;position:absolute;bottom:0px;left:0;}
+		.center .list ul{margin-top:18px;font-size:14px;color:#999;}
+		.center .list ul li{margin-bottom:10px;background:url(img/dian.png) no-repeat left center;width:200px;padding-left:10px;}
+		
+		.cneter_rmain{float:left;}
+		.center_rt{width:140px;margin-left:28px;font-size:16px;color:#333;height:30px;}
+		.center_r{width:140px;height:240px;padding-left:6px;border-left:1px dashed #f2f2f2;margin-left:28px;padding-top:10px;}
+		.center_r li{margin-top:16px;font-size:18px;color:#333;position:relative;}
+		.center_r li i{display:inline-block;width:7px;height:8px;background:url(img/dian2.png) no-repeat left center;position:absolute;top:0;left:-10px;}
+		.center_r li p{margin-top:6px;margin-left:18px;}
+		/*footer*/
+		.footer {position:relative;width:100%;height:200px;background:#143b64;margin-top:20px;}
+		.footer .fon{width:446px;position:absolute;top:50%;left:50%;margin-left:-223px;}
+		
+		.footer ul li{float:left;padding:0 8px;border-right:1px solid #ffffff;margin-bottom:24px;font-size:14px;}
+		.footer ul li a{font-size:14px;color:#fff;}
+		.footer p{width:390px;font-size:12px;color:#fff;margin-left:24px;}
+    </style>
+    <script>
+    	window.onload=function(){
+			var obox=document.getElementById('new_m');
+			var obtn=obox.getElementsByTagName('li');	
+			var oBox=document.getElementById('list');
+			var oImg=oBox.getElementsByTagName('ul');
+			for(var i=0;i<obtn.length;i++){
+				obtn[i].index=i;
+				obtn[i].onmouseover=function(){
+					for(var i=0;i<obtn.length;i++){
+						obtn[i].className='';
+						oImg[i].style.display='none';	
+					}	
+						this.className='active';
+						oImg[this.index].style.display='block';
+				}	
+			}	
+			var ocox=document.getElementById('Border');
+			var obox=ocox.getElementsByTagName('a');	
+			var oPic=document.getElementById('pic');
+			var oaic=oPic.getElementsByTagName('img');
+			for(var i=0;i<obox.length;i++){
+				obox[i].index=i;
+				obox[i].onmouseover=function(){
+					for(var i=0;i<obox.length;i++){
+						obox[i].className='';
+						oaic[i].style.display='none';	
+					}	
+						this.className='active';
+						oaic[this.index].style.display='block';
+						//opic.style.marginLeft=-this.index*100+'px';
+						//alert($(oPic));
+//						$(oPic).stop().animate({'margin-left':-this.index*100},1000);
+				}	
+			}	
+		}
+    </script>
+</head>
+ 
+<body>
+	<!--tit-->
+	<div class="tit clearfix">
+    	<a href="#"><h1 class="tit_l">百得利汽车</h1></a>
+        <ul class="tit_r clearfix">
+        	<a href="#"><li class="login">登录</li></a>
+            <a href="#"><li class="registered">注册</li></a>
+            <a href="#"><li >[会员中心]</li></a>
+            <a href="#"><li class="xinlang"></li></a>
+            <a href="#"><li class="weixin"></li></a>
+            <li class="buycar clearfix">
+                 <div class="buycar_l clearfix">
+                     <a href="#"><span></span></a>
+                    <a href="#"><p>去购物车结算</p></a>
+                 </div>
+                 <a href="#"><div class="sanjiao"></div></a>
+             </li>
+       	  </ul> 
+    </div>
+    <!--nav-->
+     <ul class="nav clearfix">
+    	<li class="nav_l">
+            <a href="#" >产品分类</a>
+            <div class="show">
+                <dl class=" a1 clearfix">
+                    <dt>生活精品</dt>
+                    <dd>大众</dd>
+                    <dd>奔驰</dd>
+                    <dd>奥迪</dd>
+                    <dd>宝马</dd>
+                    <dd>现代</dd>
+                    <dd>标志</dd>
+                    <dd>日产</dd>
+                    <dd>兰博基尼</dd>
+                 </dl> 
+                <dl class=" a1 clearfix">
+                    <dt>生活精品</dt>
+                    <dd>大众</dd>
+                    <dd>奔驰</dd>
+                    <dd>奥迪</dd>
+                    <dd>宝马</dd>
+                    <dd>现代</dd>
+                    <dd>标志</dd>
+                    <dd>日产</dd>
+                    <dd>兰博基尼</dd>
+                 </dl> 
+                <dl class=" a1 clearfix">
+                    <dt>生活精品</dt>
+                    <dd>大众</dd>
+                    <dd>奔驰</dd>
+                    <dd>奥迪</dd>
+                    <dd>宝马</dd>
+                    <dd>现代</dd>
+                    <dd>标志</dd>
+                    <dd>日产</dd>
+                    <dd>兰博基尼</dd>
+                 </dl> 
+                <dl class=" a1 clearfix">
+                    <dt>生活精品</dt>
+                    <dd>大众</dd>
+                    <dd>奔驰</dd>
+                    <dd>奥迪</dd>
+                    <dd>宝马</dd>
+                    <dd>现代</dd>
+                    <dd>标志</dd>
+                    <dd>日产</dd>
+                    <dd>兰博基尼</dd>
+                 </dl> 
+                <dl class=" a1 clearfix">
+                    <dt>生活精品</dt>
+                    <dd>大众</dd>
+                    <dd>奔驰</dd>
+                    <dd>奥迪</dd>
+                    <dd>宝马</dd>
+                    <dd>现代</dd>
+                    <dd>标志</dd>
+                    <dd>日产</dd>
+                    <dd>兰博基尼</dd>
+                 </dl> 
+            </div>
+        </li>        
+        <li><a href="#">首页</a></li>
+        <li class="jingpin">
+            <a href="#">精品商城</a>
+            <dl class="show">
+                <dd><a href="#">保时捷</a></dd>
+                <dd><a href="#">奥迪</a></dd>
+                <dd><a href="#">奔驰</a></dd>
+                <dd><a href="#">大众</a></dd>
+            </dl>
+        </li>
+        <li><a href="#">服务套餐</a></li>
+        <li><a href="#">保值服务</a></li>
+        <li><a href="#">二手车</a></li>
+       <li><a href="#">预约服务</a></li>
+        <li><a href="#">特色改装</a></li>
+        <li><a href="#">二手车</a></li>
+        <li><a href="#">车友会</a></li>
+    </ul>
+   <div class="bigcar"></div>
+    <!--new car-->
+      <h1 class="new_tit">新车品牌专区</h1>
+    <ul class="new_m clearfix" id="new_m">
+    	<li class="active">
+        	<a href="#"><img src="img/audi.png" /></a>
+            <div class="xiangxia show"></div>
+        </li>
+        <li>
+            <a href="#"><img src="img/dazhong.png" /></a>
+            <div class="xiangxia "></div>
+        </li>
+        <li><a href="#"><img src="img/benz.png" /></a></li>
+        <li><a href="#"><img src="img/baoshijie.png" /></a></li>
+        <li><a href="#"><img src="img/nassan.png" /></a></li>
+        <li><a href="#"><img src="img/toyota.png" /></a></li>
+        <li class="last"><a href="#"><img src="img/bieke.png" /></a></li>
+    </ul>
+    
+    <div class="Oimg" id="list">
+          <ul class="new_b show clearfix">
+            <li>
+                <img src="img/cc.png" />
+                <p>极致优雅 新cc演绎摩登生活秀</p>
+                <h4>原价：<span>199万元</span></h4>
+                <h5>现价：<span>99万元</span></h5>
+            </li>
+            <li>
+                <img src="img/cc.png" />
+                <p>极致优雅 新cc演绎摩登生活秀</p>
+                <h4>原价：<span>199万元</span></h4>
+                <h5>现价：<span>99万元</span></h5>
+            </li>
+            <li>
+                <img src="img/cc.png" />
+                <p>极致优雅 新cc演绎摩登生活秀</p>
+                <h4>原价：<span>199万元</span></h4>
+                <h5>现价：<span>99万元</span></h5>
+            </li>
+            <li>
+                <img src="img/cc.png" />
+                <p>极致优雅 新cc演绎摩登生活秀</p>
+                <h4>原价：<span>199万元</span></h4>
+                <h5>现价：<span>99万元</span></h5>
+            </li>
+        </ul>
+          <ul class="new_b clearfix">
+            <li>
+                <img src="img/graycc.png" />
+                <p>极致优雅 新cc演绎摩登生活秀</p>
+                <h4>原价：<span>199万元</span></h4>
+                <h5>现价：<span>99万元</span></h5>
+            </li>
+            <li>
+                <img src="img/graycc.png" />
+                <p>极致优雅 新cc演绎摩登生活秀</p>
+                <h4>原价：<span>199万元</span></h4>
+                <h5>现价：<span>99万元</span></h5>
+            </li>
+            <li>
+                <img src="img/graycc.png" />
+                <p>极致优雅 新cc演绎摩登生活秀</p>
+                <h4>原价：<span>199万元</span></h4>
+                <h5>现价：<span>99万元</span></h5>
+            </li>
+            <li>
+                <img src="img/graycc.png" />
+                <p>极致优雅 新cc演绎摩登生活秀</p>
+                <h4>原价：<span>199万元</span></h4>
+                <h5>现价：<span>99万元</span></h5>
+            </li>
+        </ul>
+         <ul class="new_b clearfix">
+            <li>
+                <img src="img/cc.png" />
+                <p>极致优雅 新cc演绎摩登生活秀</p>
+                <h4>原价：<span>199万元</span></h4>
+                <h5>现价：<span>99万元</span></h5>
+            </li>
+            <li>
+                <img src="img/cc.png" />
+                <p>极致优雅 新cc演绎摩登生活秀</p>
+                <h4>原价：<span>199万元</span></h4>
+                <h5>现价：<span>99万元</span></h5>
+            </li>
+            <li>
+                <img src="img/cc.png" />
+                <p>极致优雅 新cc演绎摩登生活秀</p>
+                <h4>原价：<span>199万元</span></h4>
+                <h5>现价：<span>99万元</span></h5>
+            </li>
+            <li>
+                <img src="img/cc.png" />
+                <p>极致优雅 新cc演绎摩登生活秀</p>
+                <h4>原价：<span>199万元</span></h4>
+                <h5>现价：<span>99万元</span></h5>
+            </li>
+        </ul>
+          <ul class="new_b clearfix">
+                <li>
+                    <img src="img/graycc.png" />
+                    <p>极致优雅 新cc演绎摩登生活秀</p>
+                    <h4>原价：<span>199万元</span></h4>
+                    <h5>现价：<span>99万元</span></h5>
+                </li>
+                <li>
+                    <img src="img/graycc.png" />
+                    <p>极致优雅 新cc演绎摩登生活秀</p>
+                    <h4>原价：<span>199万元</span></h4>
+                    <h5>现价：<span>99万元</span></h5>
+                </li>
+                <li>
+                    <img src="img/graycc.png" />
+                    <p>极致优雅 新cc演绎摩登生活秀</p>
+                    <h4>原价：<span>199万元</span></h4>
+                    <h5>现价：<span>99万元</span></h5>
+                </li>
+                <li>
+                    <img src="img/graycc.png" />
+                    <p>极致优雅 新cc演绎摩登生活秀</p>
+                    <h4>原价：<span>199万元</span></h4>
+                    <h5>现价：<span>99万元</span></h5>
+                </li>
+            </ul>
+          <ul class="new_b clearfix">
+                <li>
+                    <img src="img/cc.png" />
+                    <p>极致优雅 新cc演绎摩登生活秀</p>
+                    <h4>原价：<span>199万元</span></h4>
+                    <h5>现价：<span>99万元</span></h5>
+                </li>
+                <li>
+                    <img src="img/cc.png" />
+                    <p>极致优雅 新cc演绎摩登生活秀</p>
+                    <h4>原价：<span>199万元</span></h4>
+                    <h5>现价：<span>99万元</span></h5>
+                </li>
+                <li>
+                    <img src="img/cc.png" />
+                    <p>极致优雅 新cc演绎摩登生活秀</p>
+                    <h4>原价：<span>199万元</span></h4>
+                    <h5>现价：<span>99万元</span></h5>
+                </li>
+                <li>
+                    <img src="img/cc.png" />
+                    <p>极致优雅 新cc演绎摩登生活秀</p>
+                    <h4>原价：<span>199万元</span></h4>
+                    <h5>现价：<span>99万元</span></h5>
+                </li>
+            </ul>
+          <ul class="new_b clearfix">
+                <li>
+                    <img src="img/graycc.png" />
+                    <p>极致优雅 新cc演绎摩登生活秀</p>
+                    <h4>原价：<span>199万元</span></h4>
+                    <h5>现价：<span>99万元</span></h5>
+                </li>
+                <li>
+                    <img src="img/graycc.png" />
+                    <p>极致优雅 新cc演绎摩登生活秀</p>
+                    <h4>原价：<span>199万元</span></h4>
+                    <h5>现价：<span>99万元</span></h5>
+                </li>
+                <li>
+                    <img src="img/graycc.png" />
+                    <p>极致优雅 新cc演绎摩登生活秀</p>
+                    <h4>原价：<span>199万元</span></h4>
+                    <h5>现价：<span>99万元</span></h5>
+                </li>
+                <li>
+                    <img src="img/graycc.png" />
+                    <p>极致优雅 新cc演绎摩登生活秀</p>
+                    <h4>原价：<span>199万元</span></h4>
+                    <h5>现价：<span>99万元</span></h5>
+                </li>
+            </ul>
+          <ul class="new_b clearfix">
+                <li>
+                    <img src="img/graycc.png" />
+                    <p>极致优雅 新cc演绎摩登生活秀</p>
+                    <h4>原价：<span>199万元</span></h4>
+                    <h5>现价：<span>99万元</span></h5>
+                </li>
+                <li>
+                    <img src="img/graycc.png" />
+                    <p>极致优雅 新cc演绎摩登生活秀</p>
+                    <h4>原价：<span>199万元</span></h4>
+                    <h5>现价：<span>99万元</span></h5>
+                </li>
+                <li>
+                    <img src="img/graycc.png" />
+                    <p>极致优雅 新cc演绎摩登生活秀</p>
+                    <h4>原价：<span>199万元</span></h4>
+                    <h5>现价：<span>99万元</span></h5>
+                </li>
+                <li>
+                    <img src="img/graycc.png" />
+                    <p>极致优雅 新cc演绎摩登生活秀</p>
+                    <h4>原价：<span>199万元</span></h4>
+                    <h5>现价：<span>99万元</span></h5>
+                </li>
+            </ul>
+    
+    </div>
+    <!--high-quality-->
+     <h1 class="high_tit"><span>精品商城</span><a href=""#>更多&gt</a></h1>
+    <ul class="high clearfix">
+    	<li class="high_m">
+        	<img src="img/slk.png" class="slk"/>
+            <dl>
+            	<dt>slk 200豪华运动型</dt>
+                <dd>平均油耗率（L/100KM）</dd>
+                <dd>加速时间0-100km（s）</dd>
+                <dd>最高车速（km/h）</dd>
+                <dd>轴距（mm）2430</dd>
+                <dd class="last clearfix">
+                    <p>价格：200-300万</p>
+                    <a href="#"><img src="img/buy.png" /></a>
+                </dd>
+            </dl>
+        </li>
+        <li class="high_m">
+        	<img src="img/slk.png" class="slk"/>
+            <dl>
+            	<dt>slk 200豪华运动型</dt>
+                <dd>平均油耗率（L/100KM）</dd>
+                <dd>加速时间0-100km（s）</dd>
+                <dd>最高车速（km/h）</dd>
+                <dd>轴距（mm）2430</dd>
+                <dd class="last clearfix">
+                    <p>价格：200-300万</p>
+                    <a href="#"><img src="img/buy.png" /></a>
+                </dd>
+            </dl>
+        </li>
+        <li class="high_m">
+        	<img src="img/slk.png" class="slk"/>
+            <dl>
+            	<dt>slk 200豪华运动型</dt>
+                <dd>平均油耗率（L/100KM）</dd>
+                <dd>加速时间0-100km（s）</dd>
+                <dd>最高车速（km/h）</dd>
+                <dd>轴距（mm）2430</dd>
+                <dd class="last clearfix">
+                    <p>价格：200-300万</p>
+                    <a href="#"><img src="img/buy.png" /></a>
+                </dd>
+            </dl>
+        </li>
+         <li class="high_m lower">
+        	<img src="img/slk.png" class="slk"/>
+            <dl>
+            	<dt>slk 200豪华运动型</dt>
+                <dd>平均油耗率（L/100KM）</dd>
+                <dd>加速时间0-100km（s）</dd>
+                <dd>最高车速（km/h）</dd>
+                <dd>轴距（mm）2430</dd>
+                <dd class="last clearfix">
+                    <p>价格：200-300万</p>
+                    <a href="#"><img src="img/buy.png" /></a>
+                </dd>
+            </dl>
+        </li>
+    </ul>
+    <img src="img/bg2.png" class="bg_2" />
+     <!--recommended-->
+      <div class="recom clearfix">
+    	<h1 class="recom_tit">精品推荐</h1>
+        <a href="#"><img src="img/reco_1.png" class="recom_l"/></a>
+        <ul class="recom_m1">
+        	<li><a href="#"><img src="img/reco_2.png" /></a></li>
+            <li><a href="#"><img src="img/reco3.png" /></a></li>
+            <li><a href="#"><img src="img/reco_2.png" /></a></li>
+            <li class="last">
+            	<div class="pic" id="pic">
+                    <a href="#"><img src="img/reco3.png"  / ></a>
+                    <a href="#"><img src="img/reco_2.png" /></a>
+                    <a href="#"><img src="img/reco3.png" /></a>
+                </div>
+                <div class="last_b clearfix" id="Border">
+                	<a href="#" class="active"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </li>    
+                        
+        </ul>
+        <ul class="recom_m2 clearfix">
+        	<a href="#"><li><img src="img/reco4.png" /></li></a>
+            <a href="#"><li><img src="img/reco4.png" /></li></a>
+            <a href="#"><li><img src="img/reco4.png" /></li></a>
+            <a href="#"><li><img src="img/reco4.png" /></li></a>
+        </ul>
+        <div class="recom_r">
+        	<h1 class="recom_rt clearfix">
+            	<span>新闻动态</span>
+                <i>更多&gt</i>
+            </h1>
+            <ul class="recom_rm">
+            	<a href="#"><li>一汽奥迪博士亲临百得利海亲临百得利海</li></a>
+                <a href="#"><li>一汽奥迪博士亲临百得利海淀</li></a>
+                <a href="#"><li>一汽奥迪博士亲临百得利海淀</li></a>
+                <a href="#"><li>一汽奥迪博士亲临百得利海淀</li></a>
+                <a href="#"><li>一汽奥迪博士亲临百得利海淀</li></a>
+                <a href="#"><li>一汽奥迪博士亲临百得利海淀</li></a>
+            </ul>
+            <img src="img/reco5.png" class="recom_rb"/>
+        </div>
+    </div>
+    <!--integral-->
+      <h1 class="high_tit"><span>积分商城</span><a href=""#>更多&gt</a></h1>
+    <ul class="integ_m clearfix">
+    	<li>
+             <img src="img/suteng.png" />
+             <p>大众新款速腾</p>
+             <h4>兑换积分：<span>1980分</span></h4>
+             <img src="img/exchange.png" class="exchange"/>
+         </li>
+        <li>
+             <img src="img/suteng.png" />
+             <p>大众新款速腾</p>
+             <h4>兑换积分：<span>1980分</span></h4>
+             <img src="img/exchange.png" class="exchange"/>
+         </li>
+         <li>
+             <img src="img/suteng.png" />
+             <p>大众新款速腾</p>
+             <h4>兑换积分：<span>1980分</span></h4>
+             <img src="img/exchange.png" class="exchange"/>
+         </li>
+         <li>
+             <img src="img/suteng.png" />
+             <p>大众新款速腾</p>
+             <h4>兑换积分：<span>1980分</span></h4>
+             <img src="img/exchange.png" class="exchange"/>
+         </li>
+    </ul>
+    <div class="integ_b clearfix">
+        <img src="img/suteng1.png" />
+        <img src="img/suteng2.png" />
+        <img src="img/suteng3.png" />
+        <img src="img/suteng4.png" />
+    </div>
+     <!--company message-->
+       <h1 class="high_tit"><span>企业信息</span><a href=""#>更多&gt</a></h1>
+     <div class="messa clearfix">
+         <div class="messa_l">
+            <h1 >
+                <a href="#"><i>企业信息&gt&gt</i></a>
+                <a href="#"><span>More&gt&gt</span></a>
+            </h1>
+            <a href="#"><img src="img/ask.png" /></a>
+            <ul class="messa_lb">
+                <li><a href="#">&gt;&gt;全新保时捷Macan发布会</a></li>
+                <li><a href="#">&gt;&gt;百得利海淀全新奥迪A3巡游完美</a></li>												            <li> <a href="#">&gt;&gt;全新保时捷Macan发布会</a></li>
+                <li><a href="#">&gt;&gt;全新保时捷Macan发布会</a></li>
+                <li><a href="#">&gt;&gt;百得利海淀全新奥迪A3巡游完美</a></li>												            <li><a href="#">&gt;&gt;全新保时捷Macan发布会</a></li>
+            </ul>
+         </div>
+         <div class="messa_m1">
+            <h1 class="clearfix">
+                <a href="#"><i>实用工具&gt&gt</i></a>
+                <a href="#"><span>More&gt&gt</span></a>
+            </h1>
+            <ul class="messa_m1m clearfix">
+                <li>
+                    <a herf="#"><img src="img/pk.png"/></a>
+                    <a href="#" class="fon">车型对比</a>
+                </li>
+                <li>
+                    <a herf="#"><img src="img/contrast.png" /></a>
+                    <a href="#">图形对比</a>
+                 </li>
+                 <li>
+                     <a herf="#"><img src="img/insurance.png" /></a>
+                     <a href="#">购车流程</a>
+                  </li>
+               <li>
+                    <a herf="#"><img src="img/pk.png"/></a>
+                    <a href="#">车型对比</a>
+                </li>
+               <li>
+                    <a herf="#"><img src="img/pk.png"/></a>
+                    <a href="#">车型对比</a>
+                </li>
+                <li>
+                    <a herf="#"><img src="img/pk.png"/></a>
+                    <a href="#">车型对比</a>
+                </li>
+            </ul>
+            <h2 class="messa_m1bt"><a href="#">问答专家团&gt&gt</a></h2>
+            <ul class="messa_m1bb clearfix">
+                <li><a href="#">想做一个底盘装甲，请问有必要吗</a></li>
+                <li><a href="#">仪表盘上出现EPC的字母是什么意思</a></li>
+                <li><a href="#">想做一个底盘装甲，请问有必要吗</a></li>
+                <li><a href="#">想做一个底盘装甲，请问有必要吗</a></li>
+            </ul>
+         </div>
+         <div class="messa_m2">
+         	<div class="t clearfix">
+            	<img src="img/message1.png" />
+                <img src="img/message2.png" />
+                <img src="img/message1.png" />
+                <img src="img/message2.png" />
+            </div>
+            <h1>促销信息&gt&gt</h1>
+            <ul>
+            	<li><a href="#">&gt&gt全新保时捷Macan发布会 </a> </li>
+                <li><a href="#">&gt&gt全新保时捷Macan发布会 </a> </li>
+                <li><a href="#">&gt&gt全新保时捷Macan发布会 </a> </li>	
+                <li><a href="#">&gt&gt全新保时捷Macan发布会 </a> </li>
+            </ul>
+         </div>
+         <img src="img/message3.png"  class="messa_r"/>
+     </div>
+     <img src="img/bg2.png"  class="bg_2"/>
+    <!--service industry-->
+     <h1 class="service_tit"><a href="#">服务行业</a></h1>
+    <div class="service clearfix">
+    	<div class="service_l">
+        	<h1>
+            	<a href="#"><span>服务套餐</span></a>
+                <a href="#"><i>更多&gt&gt</i></a>
+            </h1>
+            <img src="img/service.png" />
+            <a href="#"><p>美容卡</p></a>
+            <a href="#"><p>保养卡</p></a>
+            <a href="#"><p>其他卡类</p></a>
+        </div>
+        <div class="service_l service_m">
+        	<h1>
+            	<a href="#"><span>保险服务</span></a>
+                <a href="#"><i>更多&gt&gt</i></a>
+            </h1>
+            <img src="img/service2.png" />
+            <div class="service_m_b clearfix">
+                <div class="l">
+                    <a href="#"><p>车险</p></a>
+                    <a href="#"><p>家庭财产险</p></a>
+                    <a href="#"><p>其他险</p></a>
+                </div>
+                <div class="r">
+                    <a href="#"><p>车险</p></a>
+                    <a href="#"><p>家庭财产险</p></a>
+                    <a href="#"><p>其他险</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="service_l service_r">
+        	<h1>
+            	<a href="#"><span>预约服务</span></a>
+                <a href="#"><i>更多&gt&gt</i></a>
+            </h1>
+            <div class="service_r_b clearfix">
+            	<img src="img/service3.png" />
+                <ul>
+                	<li><a href="#">预约试驾</a></li>
+                    <li><a href="#">预约试驾</a></li>
+                    <li><a href="#">预约试驾</a></li>
+                    <li><a href="#">预约试驾</a></li>
+                    <li class="last"><a href="#">400-800-266</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+     <!--center-->
+     <h1 class="service_tit"><a href="#">百得利中心</a></h1>
+     <ul class="center clearfix">
+     	<li class="list first">
+        	<h1>二手车</h1>
+            <div class="Oimg">
+                <img src="img/center.png" />
+                <div class="opa"></div>
+                <p class="fon">二手车本地过户流程</p>
+            </div>
+            <ul>
+            	<li>二手车迁入与外迁限制条款</li>
+                <li>个人之见二手车过户手续有哪些</li>
+                <li>二手车不能过户？</li>
+            </ul>
+        </li>
+        <li class="list">
+        	<h1>二手车</h1>
+            <div class="Oimg">
+                <img src="img/center.png" />
+                <div class="opa"></div>
+                <p class="fon">二手车本地过户流程</p>
+            </div>
+            <ul>
+            	<li>二手车迁入与外迁限制条款</li>
+                <li>个人之见二手车过户手续有哪些</li>
+                <li>二手车不能过户？</li>
+            </ul>
+        </li>
+        <li class="list">
+        	<h1>二手车</h1>
+            <div class="Oimg">
+                <img src="img/center.png" />
+                <div class="opa"></div>
+                <p class="fon">二手车本地过户流程</p>
+            </div>
+            <ul>
+            	<li>二手车迁入与外迁限制条款</li>
+                <li>个人之见二手车过户手续有哪些</li>
+                <li>二手车不能过户？</li>
+            </ul>
+        </li>
+         <li class="cneter_rmain">
+        	<h1 class="center_rt">即将上市</h1>
+            <ul class="center_r">
+            	<li>
+                	<img src="img/time.png" />
+                    <p>奥德赛</p>
+                    <i></i>
+                </li>
+                <li>
+                	<img src="img/time3.png" />
+                    <p>传奇</p>
+                    <i></i>
+                </li>
+                <li>
+                	<img src="img/time3.png" />
+                    <p>ATSL</p>
+                    <i></i>
+                </li>
+                <li>
+                	<img src="img/time4.png" />
+                    <p>红旗H7</p>
+                    <i></i>
+                </li>
+            </ul>
+        </li>
+     </ul>
+     <!--footer-->
+     <div class="footer">
+         <div class="fon">
+             <ul class="clearfix">
+                <li><a href="#">集团介绍</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">人才招聘</a></li>
+                <li><a href="#">网站地图</a></li>
+                <li><a href="#">客服中心</a></li>
+                <li><a href="#">友情链接</a></li>
+             </ul>
+             <p>京ICQ23435号版权所有归于2014北京中关村进出口集团有限公司</p>
+         </div>
+      </div>
+</body>
+</html>

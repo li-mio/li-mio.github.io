@@ -1,0 +1,731 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+	<link rel="stylesheet" href="css/base.css"/>
+    <style>
+		body{height:3000px;position:relative;}
+		/*顶部*/
+    	.top{width:1200px;height:30px;background:#f5f5f5;border-bottom:1px solid gray;padding-top:10px;margin:0 auto;}
+		.tit{float:right;}
+		.weixin{float:left;background:url(img/weixin.png) no-repeat left center;font-size:12px;color:666;padding-left:20px;margin-left:20px;border-right:1px dotted gray;height:20px;display:inline-block;padding-right:20px;line-height:20px;}
+		.qier{float:left;background:url(img/qq.png) no-repeat left center;font-size:12px;color:666;padding-left:20px;margin-left:20px;border-right:1px dotted gray;height:20px;display:inline-block;padding-right:20px;line-height:20px;}
+		.top li{float:left;font-size:12px;color:666;text-align:center;padding-left:20px;border-right:1px dotted gray;height:20px;display:inline-block;padding-right:20px;line-height:20px;}
+		.gouwuche{float:left;background:url(img/gouwuche.png) no-repeat left center;font-size:12px;color:666;padding-left:20px;margin-left:20px;border-right:1px dotted gray;height:20px;display:inline-block;padding-right:20px;line-height:20px;}
+		.gouwuche span{float:left;background:url(img/gouwuche2.png) no-repeat left center ;width:20px;height:20px;display:block;}
+		.gouwuche i{float:left;margin:0 4px;}
+		.dingdan{float:left;background:url(img/dingdan.png) no-repeat left center;font-size:12px;color:666;padding-left:20px;margin-left:20px;border-right:1px dotted gray;height:20px;display:inline-block;padding-right:20px;line-height:20px;}
+		.app{float:left;background:url(img/app.png) no-repeat left center;font-size:12px;color:666;padding-left:20px;margin-left:20px;border-right:1px dotted gray;height:20px;display:inline-block;padding-right:20px;line-height:20px;}
+		/*顶部结束*/
+		 /*搜索开始*/
+		 .search{width:1200px;margin-top:18px;position:relative;margin:18px auto 12px;;}
+		 .search h2{float:left;width:120px;height:36px;background:url(img/logo.png) no-repeat left center;text-indent:-100em;margin-left:10px;}
+		 .select{float:left;width:70px;height:30px;text-align:center;line-height:30px;background:url(img/bao.png) no-repeat 54px 14px #f5f5f5;}
+		 
+		  .txt{float:left;width:274px;height:30px;padding-left:26px;outline:none;border:none;}
+		  .search .ico{width:15px;height:15px;background:url(img/1.png) no-repeat 0 -68px;position:absolute;top:8px;left:572px;}
+		  .btn{float:left;width:90px;height:30px;color:white;background:#ff6699;border:none;}
+		 .search_m{float:left;height:30px;border:2px solid #ff6699;margin-left:370px;}
+		 .ico,.logo{float:left;}
+		 /*导航开始*/
+		 .nav{width:1200px;height:40px;background:#ff6599;margin-top:12px;margin:0 auto;}
+		  .nav ul{width:794px;margin:0 auto;}
+		 .nav li a{float:left;font-size:16px;color:white;line-height:40px;padding:0 12px;display:inline-block;}
+		 .cloth{background:url(img/jiantou.png) no-repeat right center;}
+		  .club{background:url(img/jiantou.png) no-repeat right center;}
+		  .nav li  :hover{background:red;}
+		  /*导航结束*/
+		  /*中间开*/
+		  .mid{width:1200px;margin:0 auto;}
+		  .banner{width:1200px;background:url(img/3.jpg) center center;height:420px;position:absolute;top:150px;width:100%;marin:0 auto;}
+		  .main_box{width:1200px;height:576px;margin:0 auto;position:relative;}
+		  .main_box .lt{width:248px;height:576px;background:white;position:absolute;top:0;left:0;}
+		  .main_box .rt{width:200px;height:576px;background:white;position:absolute;top:0;right:0;}
+		  .main_box .rb{width:952px;height:146px;background:white;position:absolute;bottom:0;right:0}
+		  
+		  .lt li{background:url(img/xiangyou.png) no-repeat right center;border-bottom:1px dotted gray;width:200px;margin:6px 24px 0;padding-bottom:6px;}
+		  .lt li h1{background:url(img/zuire.png) no-repeat left center;text-indent:2em;font-size:20px;color:#ff6699;}
+		  .lt li a{font-size:12px;color:#666;line-height:20px;margin-right:12px;}
+		  .lt li .a1,.lt li .a2{color:#ff6699}
+		   .main_box .rb img{display:inline-block;margin-left:8px; }
+		 
+		/*人气单品*/
+		.main_danpin{width:1200px;margin:0 auto;}
+		.titdanpin{font-size:18px;color:#a0a0a0;background:url(img/2.png) no-repeat 0 0;width:1200px;height:28px;border-bottom:1px solid gray;margin-top:16px;margin-bottom:6px;}
+		.titdanpin span{color:#ff8cb3;}
+		.danpin li{width:180px;float:left;margin-right:18px;margin-top:14px;}
+		.danpin .p1{font-size:14px;color:#666;height:30px;margin-top:10px;}
+		.danpin .p2{font-size:16px;color:#ff9599;border-bottom:1px dashed gray;width:180px;margin-top:4px;}
+		.danpin .p2 span{font-size:14px;color:#dfb899;text-decoration:line-through;line-height:24px;}
+		.danpin .p3{font-size:14px;color:#666;margin-top:10px;}
+		/*人气单品结束*/
+		/*每日超值团购开始*/
+		.main_tuangou{width:1200px;margin:0 auto;}
+    	.tuangou{width:1200px;height:30px;border-bottom:1px solid gray;margin-top:20px;background:url(img/2.png) no-repeat 0 -239px;}
+		.tuangou a{float:right;font-size:14px;color:#999;}
+		
+		.tuangou2 span{color:#ff8cb3;}
+		.tuangou2 li{width:180px;float:left;margin-right:18px;margin-top:14px;}
+		.tuangou2 .p1{font-size:14px;color:#666;height:30px;margin-top:10px;}
+		.tuangou2 .p2{font-size:16px;color:#ff9599;border-bottom:1px dashed gray;width:180px;margin-top:4px;}
+		.tuangou2 .p2 span{font-size:14px;color:#dfb899;text-decoration:line-through;line-height:24px;}
+		.tuangou2 .p3{font-size:14px;color:#666;margin-top:10px;}
+	
+		/*每日超值团购结束*/
+		/*人气单品结束*/
+		.meilijia img{width:1200px;margin:30px auto;}
+		
+		/*倒说第三部分开始*/
+		.lc_main{border-bottom:1px solid gray;}
+		.lc_l{float:left;width:939px;border-right:1px solid gray;}
+		.lc_main{width:1200px;margin:0 auto;}
+    	.lc_tit{width:1175px;background:url(img/lc_2.png) no-repeat left center;padding-left:35px;border-bottom:1px solid gray;}
+		.lc_tit i{font-size:20px;color:#ff8cb3;padding-left:10px;}
+		.lc_tit span{font-size:18px;color:#999;border-left:1px dashed #ccc;}
+		.lc_tit span strong{color:#666;}
+		.lc_tit i,.lc_tit span,{float:left;}
+		.lc_tit a{float:right;color:#999;font-size:18px;}
+		.clearfix:after{display:block;content:"";clear:both;}
+		/*标题结束*/
+		.lc_mid{width:940px;margin-top:10px;}
+		.lc_list{width:180px;height:250px;background:url(img/lc_4.png) repeat;position:relative;float:left;margin-right:5px;margin-bottom:5px;}
+		.lc_list div{width:180px;height:30px;text-align:center;line-height:30px;color:white;font-size:14px;background:url(img/lc_5.png) repeat;position:absolute;top:220px;left:0px;}
+		.lc_list img{padding-top:50px;padding-left:12px;}
+		/*中间结束*/
+		.lc_bott_l{float:left;margin-left:8px;width:300px;margin-top:30px;}
+		.lc_bott_l h1{float:left;font-size:18px;color:#ff6699;padding-top:12px;}
+		.lc_bott_l ul{float:left;width:236px;height:30px;border-right:1px dotted gray;}
+		.lc_bott_l li{float:left;font-size:12px;color:#666;margin-left:10px;margin-bottom:10px;}
+		/*左边底部结束*/
+		/*右边开始*/
+		.lc_r{float:left;width:260px;}
+		.lc_r h1{width:260px;height:38px;margin-left:10px;}
+		.lc_r h1 span{float:left;font-size:18px;color:#666;font-weight:bold;}
+		.lc_r h1 a{float:right;font-size:12px;color:#999;}
+		
+		.lc_r .list{width:240px;height:50px;border-bottom:1px dotted gray;margin-top:12px;margin-left:10px;}
+		.lc_r img{float:left;}
+		
+		.lc_r .list_2{float:left;width:190px;margin-left:10px;}
+		.lc_r .list_2 a{display:block;font-size:14px;color:#666;margin-right:12px;}
+		.lc_r .list_2 span{font-size:12px;color:#999;}
+		/*倒数第三部分结束*/
+		/*倒说第二开始*/
+		.remenzazhi{width:1200px;margin:0 auto;}
+		.zazhi{margin:20px auto 14px;}
+		.zazhi ul{float:right;}
+		.zazhi i{width:118px;height:24px;float:left;background:url(img/2.png) no-repeat 0 -202px;}
+		.zazhi li{float:left;font-size:16px;color:#999;border-right:1px dotted gray;height:18px;display:inline-block;padding:0 16px;}
+		.zazhi .last{border-right:none;}
+		
+		
+		.rebox{float:left;width:228px;height:284px;border:1px solid gray;margin-right:10px;margin-bottom:10px;}
+		.rebox img{padding:10px 10px;}
+		.rebox p{padding-left:10px;padding-top:10px;}
+		.rebox span{width:64px ;height:22px;background:#ff6699;float:right;text-align:center;}
+		.rebox i{float:left;}
+		.ispan{margin:0 10px;}
+		/*倒说第二结束*/
+		/*over*/
+		.main_bott{background:#f5f5f5;}
+		.main_bott2{width:1200px ;margin:0 auto;}
+		.bott{padding-top:24px;border-bottom:1px solid gray;}
+		.kefu{float:left;background:url(img/dianhua.png) no-repeat left top ;width:250px;height:88px;}
+		.kefu div{margin-left:54px;}
+		.kefu p{font-size:18px;color:#666;}
+		.kefu .p3{font-size:16px;color:#999;}
+		.bott .help{width:122px;height:180px;float:left;}
+		.bott .help dt{font-size:18px;font-weight:bold;line-height:32px;}
+		.bott .help dd{font-size:16px;color:#666;line-height:24px;}
+		.bott h1{font-size:18px;font-weight:bold;line-height:32px;}
+		.bott .kehuduan{float:right;}
+		.bott .fuwuhao{float:left;}
+		.bott img{margin-bottom:14px;}
+		
+		.lianjie {border-bottom:1px solid gray;}
+		.lianjie li{float:left;font-size:14px;color:#ccc;padding:0 10px;margin-top:10px;margin-bottom:10px;}
+		.plast p{font-size:14px;color:#666;line-height:24px;}
+		.plast{padding:20px 0;}
+		.clearfix:after{display:block;content:"";clear:both;}
+    </style>
+</head>
+
+<body>
+	<div class="banner"></div>
+	<!--顶部开始-->
+	<div class="top clearfix" >
+        <ul  class="tit clearfix">
+            <li class="weixin">微信</li>
+            <li class="qier">qq</li>
+            <li>登录</li>
+             <li>注册</li>
+              <li class="gouwuche"><i>我的购物车</i><span></span></li>
+              <li class="dingdan">我的订单</li>
+              <li class="app">下载APP</li>
+             <li>客户服务</li>
+        </ul>
+    </div>
+    <!--顶部结束-->
+    <!--搜索开始-->
+    <h1>
+    	<div class="search clearfix">
+        	<h2 class="logo">美丽说</h2>
+            <div class="search_m clearfix">
+                <div class="select">宝贝</div>
+                <i class="ico"></i>
+                <input type="text" class="txt" placeholder="搜索热门商品"/>
+                <input type="submit" class="btn" value="搜索"/>
+            </div>
+        </div>
+    </h1>
+    
+    <!--搜索结束-->
+     <!--导航开始-->
+     <div class="nav">
+     	<ul>
+        	<li><a href="#">首页</a></li>
+           <li ><a href="#" class="cloth">首页ffrffrff</a></li>
+         <li><a href="#">首页</a></li>
+          <li><a href="#">首页</a></li>
+          <li><a href="#">首页</a></li>
+           <li><a href="#">首页</a></li>
+         <li><a href="#">首页</a></li>
+          <li><a href="#">首页</a></li>
+          <li><a href="#">首页</a></li>
+           <li><a href="#">首页</a></li>
+         <li ><a href="#" class="club">爱美丽clubhelloword</a></li>
+          <li><a href="#">首页</a></li>
+          
+        </ul>
+     </div>
+         <!--导航结束-->
+       <!--中间背景开始-->
+    <div class="mid">
+    	
+        <div class="main_box">
+            <div class="lt">
+            	<ul>
+                	<li>
+                    	<h1>最热</h1>
+                        <p>
+                        	<a href=""#>冬季新品</a>
+                            <a href=""# class="a1">毛衣</a>
+                            <a href=""#>活力运动鞋</a>
+                        </p>
+                         <p>
+                        	<a href=""# class="a2">冬季新品</a>
+                            <a href=""#>毛衣</a>
+                            <a href=""#>活力运动鞋</a>
+                        </p>
+                         <p>
+                        	<a href=""#>冬季新品</a>
+                            <a href=""#>毛衣</a>
+                            <a href="#" class="a2">活力运动鞋</a>
+                        </p>
+                    </li>
+                    <li>
+                    	<h1>最热</h1>
+                        <p>
+                        	<a href=""#>冬季新品</a>
+                            <a href=""# class="a1">毛衣</a>
+                            <a href=""#>活力运动鞋</a>
+                        </p>
+                         <p>
+                        	<a href=""# class="a2">冬季新品</a>
+                            <a href=""#>毛衣</a>
+                            <a href=""#>活力运动鞋</a>
+                        </p>
+                         <p>
+                        	<a href=""#>冬季新品</a>
+                            <a href=""#>毛衣</a>
+                            <a href="#" class="a2">活力运动鞋</a>
+                        </p>
+                    </li>
+                    <li>
+                    	<h1>最热</h1>
+                        <p>
+                        	<a href=""#>冬季新品</a>
+                            <a href=""# class="a1">毛衣</a>
+                            <a href=""#>活力运动鞋</a>
+                        </p>
+                         <p>
+                        	<a href=""# class="a2">冬季新品</a>
+                            <a href=""#>毛衣</a>
+                            <a href=""#>活力运动鞋</a>
+                        </p>
+                         <p>
+                        	<a href=""#>冬季新品</a>
+                            <a href=""#>毛衣</a>
+                            <a href="#" class="a2">活力运动鞋</a>
+                        </p>
+                    </li>
+                    <li>
+                    	<h1>最热</h1>
+                        <p>
+                        	<a href=""#>冬季新品</a>
+                            <a href=""# class="a1">毛衣</a>
+                            <a href=""#>活力运动鞋</a>
+                        </p>
+                         <p>
+                        	<a href=""# class="a2">冬季新品</a>
+                            <a href=""#>毛衣</a>
+                            <a href=""#>活力运动鞋</a>
+                        </p>
+                         <p>
+                        	<a href=""#>冬季新品</a>
+                            <a href=""#>毛衣</a>
+                            <a href="#" class="a2">活力运动鞋</a>
+                        </p>
+                    </li>
+                    <li>
+                    	<h1>最热</h1>
+                        <p>
+                        	<a href=""#>冬季新品</a>
+                            <a href=""# class="a1">毛衣</a>
+                            <a href=""#>活力运动鞋</a>
+                        </p>
+                         <p>
+                        	<a href=""# class="a2">冬季新品</a>
+                            <a href=""#>毛衣</a>
+                            <a href=""#>活力运动鞋</a>
+                        </p>
+                         <p>
+                        	<a href=""#>冬季新品</a>
+                            <a href=""#>毛衣</a>
+                            <a href="#" class="a2">活力运动鞋</a>
+                        </p>
+                    </li>
+                </ul>
+                
+            </div>
+              <div class="rt">
+              	<img src="img/meizi1.jpg" />
+               <img src="img/meizi1.jpg" />
+                <img src="img/meizi1.jpg" />
+              </div>
+            <div class="rb">
+            	<img src="img/xiezi.png"/>
+                <img src="img/xiezi.png"/>
+                <img src="img/xiezi.png"/>
+                <img src="img/xiezi.png"/>
+                <img src="img/xiezi.png"/>
+            </div>
+        </div>
+    </div>
+    
+     <!--人气单品开始-->
+     <div class="main_danpin">
+         <h1 class="titdanpin"></h1>
+         <ul class="danpin clearfix">
+            <li>
+                <a href="#"><img src="img/renqidanpin.png"/></a>
+                <p class="p1">美丽无上限，不到50元</p>
+                <p class="p2">¥49<span>¥149</span></p>
+                <p class="p3">1885人已购买</p>
+            </li>
+             <li>
+                <a href="#"><img src="img/renqidanpin.png"/></a>
+                <p class="p1">美丽无上限，不到50元</p>
+                <p class="p2">¥49<span>¥149</span></p>
+                <p class="p3">1885人已购买</p>
+            </li>
+             <li>
+                <a href="#"><img src="img/renqidanpin.png"/></a>
+                <p class="p1">美丽无上限，不到50元</p>
+                <p class="p2">¥49<span>¥149</span></p>
+                <p class="p3">1885人已购买</p>
+            </li>
+             <li>
+                <a href="#"><img src="img/renqidanpin.png"/></a>
+                <p class="p1">美丽无上限，不到50元,打底短裤超时尚</p>
+                <p class="p2">¥49<span>¥149</span></p>
+                <p class="p3">1885人已购买</p>
+            </li>
+             <li>
+                <a href="#"><img src="img/renqidanpin.png"/></a>
+                <p class="p1">美丽无上限，不到50元</p>
+                <p class="p2">¥49<span>¥149</span></p>
+                <p class="p3">1885人已购买</p>
+            </li>
+             <li>
+                <a href="#"><img src="img/renqidanpin.png"/></a>
+                <p class="p1">美丽无上限，不到50元</p>
+                <p class="p2">¥49<span>¥149</span></p>
+                <p class="p3">1885人已购买</p>
+            </li>
+             <li>
+                <a href="#"><img src="img/renqidanpin.png"/></a>
+                <p class="p1">美丽无上限，不到50元</p>
+                <p class="p2">¥49<span>¥149</span></p>
+                <p class="p3">1885人已购买</p>
+            </li>
+             <li>
+                <a href="#"><img src="img/renqidanpin.png"/></a>
+                <p class="p1">美丽无上限，不到50元</p>
+                <p class="p2">¥49<span>¥149</span></p>
+                <p class="p3">1885人已购买</p>
+            </li>
+             <li>
+                <a href="#"><img src="img/renqidanpin.png"/></a>
+                <p class="p1">美丽无上限，不到50元</p>
+                <p class="p2">¥49<span>¥149</span></p>
+                <p class="p3">1885人已购买</p>
+            </li>
+             <li>
+                <a href="#"><img src="img/renqidanpin.png"/></a>
+                <p class="p1">美丽无上限，不到50元,打底短裤超时尚</p>
+                <p class="p2">¥49<span>¥149</span></p>
+                <p class="p3">1885人已购买</p>
+            </li>
+             <li>
+                <a href="#"><img src="img/renqidanpin.png"/></a>
+                <p class="p1">美丽无上限，不到50元</p>
+                <p class="p2">¥49<span>¥149</span></p>
+                <p class="p3">1885人已购买</p>
+            </li>
+             <li>
+                <a href="#"><img src="img/renqidanpin.png"/></a>
+                <p class="p1">美丽无上限，不到50元</p>
+                <p class="p2">¥49<span>¥149</span></p>
+                <p class="p3">1885人已购买</p>
+            </li>
+         </ul>
+     </div>
+      <!--人气单结束-->
+       <!--超值团购开始-->
+        <div class="main_tuangou">
+     		<h1 class="tuangou">
+                 <a href="#">查看所有团购&gt&gt</a>
+            </h1> 
+            <ul class="tuangou2 clearfix">
+            	 <li>
+                    <a href="#"><img src="img/meizi2.png"/></a>
+                    <p class="p1">美丽无上限，不到50元</p>
+                    <p class="p2">¥49<span>¥149</span></p>
+                    <p class="p3">1885人已购买</p>
+                </li>
+                <li>
+                    <a href="#"><img src="img/meizi2.png"/></a>
+                    <p class="p1">美丽无上限，不到50元</p>
+                    <p class="p2">¥49<span>¥149</span></p>
+                    <p class="p3">1885人已购买</p>
+                </li>
+                <li>
+                    <a href="#"><img src="img/meizi2.png"/></a>
+                    <p class="p1">美丽无上限，不到50元</p>
+                    <p class="p2">¥49<span>¥149</span></p>
+                    <p class="p3">1885人已购买</p>
+                </li>
+                <li>
+                    <a href="#"><img src="img/meizi2.png"/></a>
+                    <p class="p1">美丽无上限，不到50元</p>
+                    <p class="p2">¥49<span>¥149</span></p>
+                    <p class="p3">1885人已购买</p>
+                </li>
+                <li>
+                    <a href="#"><img src="img/meizi2.png"/></a>
+                    <p class="p1">美丽无上限，不到50元</p>
+                    <p class="p2">¥49<span>¥149</span></p>
+                    <p class="p3">1885人已购买</p>
+                </li>
+                <li>
+                    <a href="#"><img src="img/meizi2.png"/></a>
+                    <p class="p1">美丽无上限，不到50元</p>
+                    <p class="p2">¥49<span>¥149</span></p>
+                    <p class="p3">1885人已购买</p>
+                </li>
+            </ul>   
+         </div>       
+            
+             <!--超值团结束-->
+         <div class="meilijia">
+			<img src="img/meilijia.png"/> 
+        </div>   
+        <!--倒数第三开始-->  
+        <div class="lc_main clearfix">
+    		<!--标题-->
+            <h1 class="lc_tit clearfix">
+                <i>包包</i>
+                <span>今日上新<strong>1485件</strong></span>
+                <a href="#">查看所有包包&gt&gt</a>
+            </h1>
+            <!--中间左边-->
+       <div class="main_mid clearfix">
+           <div class="lc_l clearfix">
+                <ul class="lc_mid">
+                    <li class="lc_list">
+                        <img src="img/meizi3.png" />
+                        <div>爱不释手&时尚包包</div>
+                    </li>
+                    <li class="lc_list">
+                        <img src="img/meizi3.png" />
+                        <div>爱不释手&时尚包包</div>
+                    </li>
+                     <li class="lc_list">
+                        <img src="img/meizi3.png" />
+                        <div>爱不释手&时尚包包</div>
+                    </li>
+                    <li class="lc_list">
+                        <img src="img/meizi3.png" />
+                        <div>爱不释手&时尚包包</div>
+                    </li>
+                    <li class="lc_list">
+                        <img src="img/meizi3.png" />
+                        <div>爱不释手&时尚包包</div>
+                    </li>
+                    <li class="lc_list">
+                        <img src="img/meizi3.png" />
+                        <div>爱不释手&时尚包包</div>
+                    </li>
+                    <li class="lc_list">
+                        <img src="img/meizi3.png" />
+                        <div>爱不释手&时尚包包</div>
+                    </li>
+                    <li class="lc_list">
+                        <img src="img/meizi3.png" />
+                        <div>爱不释手&时尚包包</div>
+                    </li>
+                      <li class="lc_list">
+                        <img src="img/meizi3.png" />
+                        <div>爱不释手&时尚包包</div>
+                    </li>
+                    <li class="lc_list">
+                        <img src="img/meizi3.png" />
+                        <div>爱不释手&时尚包包</div>
+                    </li>
+                </ul>
+                <!--中间左边底部-->
+                <div class="lc_bott clearfix">
+                    <div class="lc_bott_l clearfix">
+                        <h1>潮流</h1>
+                        <ul class="clearfix">
+                            <li>复古包</li>
+                            <li>复古包</li>
+                            <li>夏季新包</li>
+                            <li>复古包</li>
+                            <li>长款古包</li>
+                            <li>复古包</li>
+                            <li>长款古包</li>
+                        </ul>
+                    </div>
+                    <div class="lc_bott_l clearfix">
+                        <h1>潮流</h1>
+                        <ul class="clearfix">
+                            <li>复古包</li>
+                            <li>复古包</li>
+                            <li>夏季新包</li>
+                            <li>复古包</li>
+                            <li>长款古包</li>
+                            <li>复古包</li>
+                            <li>长款古包</li>
+                        </ul>
+                    </div>
+                    <div class="lc_bott_l clearfix">
+                        <h1>潮流</h1>
+                        <ul class="clearfix">
+                            <li>复古包</li>
+                            <li>复古包</li>
+                            <li>夏季新包</li>
+                            <li>复古包</li>
+                            <li>长款古包</li>
+                            <li>复古包</li>
+                            <li>长款古包</li>
+                        </ul>
+                    </div>
+                </div>
+               </div>
+               <!--中间右边-->
+               <div class="lc_r clearfix">
+                    <h1 class="clearfix">
+                        <span>最热包包好店</span>
+                        <a href="#">更多好店&gt&gt</a>
+                    </h1>
+                    <ul>
+                        <li class="list clearfix">
+                            <img src="img/lc_6.png"/>
+                            <div class="list_2">
+                                <a href="#">金金韩国美包馆</a>
+                                <span>798件总商品/总销量17123</span>
+                            </div>
+                        </li>
+                        <li class="list clearfix">
+                            <img src="img/lc_6.png"/>
+                            <div class="list_2">
+                                <a href="#">金金韩国美包馆</a>
+                                <span>798件总商品/总销量17123</span>
+                            </div>
+                        </li>
+                        <li class="list clearfix">
+                            <img src="img/lc_6.png"/>
+                            <div class="list_2">
+                                <a href="#">金金韩国美包馆</a>
+                                <span>798件总商品/总销量17123</span>
+                            </div>
+                        </li>
+                        <li class="list clearfix">
+                            <img src="img/lc_6.png"/>
+                            <div class="list_2">
+                                <a href="#">金金韩国美包馆</a>
+                                <span>798件总商品/总销量17123</span>
+                            </div>
+                        </li>
+                        <li class="list clearfix">
+                            <img src="img/lc_6.png"/>
+                            <div class="list_2">
+                                <a href="#">金金韩国美包馆</a>
+                                <span>798件总商品/总销量17123</span>
+                            </div>
+                        </li>
+                        <li class="list clearfix">
+                            <img src="img/lc_6.png"/>
+                            <div class="list_2">
+                                <a href="#">金金韩国美包馆</a>
+                                <span>798件总商品/总销量17123</span>
+                            </div>
+                        </li>
+                        <li class="list clearfix">
+                            <img src="img/lc_6.png"/>
+                            <div class="list_2">
+                                <a href="#">金金韩国美包馆</a>
+                                <span>798件总商品/总销量17123</span>
+                            </div>
+                        </li>
+                        <li class="list clearfix">
+                            <img src="img/lc_6.png"/>
+                            <div class="list_2">
+                                <a href="#">金金韩国美包馆</a>
+                                <span>798件总商品/总销量17123</span>
+                            </div>
+                        </li>
+                        <li class="list clearfix">
+                            <img src="img/lc_6.png"/>
+                            <div class="list_2">
+                                <a href="#">金金韩国美包馆</a>
+                                <span>798件总商品/总销量17123</span>
+                            </div>
+                        </li>
+                        
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                </div>
+           </div>
+            <!--倒数第三结束-->
+            <!--倒数第二开始-->
+            <div class="remenzazhi">
+            	<h1 class="zazhi clearfix">
+                	<i></i>
+                	<ul class="list clearfix">
+                    	<li>欧美</li>
+                        <li>甜美</li>
+                        <li>复古</li>
+                        <li>个性</li>
+                        <li>E系</li>
+                        <li>其他</li>
+                        <li class="last"><a href="#">更多杂志&gt</a></li>
+                    </ul>
+                </h1>
+                <div class="main_re clearfix">
+                	<div class="rebox">
+                    	<p>小女人有恋物癖</p>
+                    	<img src="img/remen.png"/>
+                        <div class="ispan clearfix">
+                        	<i>889个分享</i><span>去看看</span>
+                        </div>
+                    </div>
+                    <div class="rebox">
+                    	<p>小女人有恋物癖</p>
+                    	<img src="img/remen.png"/>
+                        <div class="ispan clearfix">
+                        	<i>889个分享</i><span>去看看</span>
+                        </div>
+                    </div>
+                    <div class="rebox">
+                    	<p>小女人有恋物癖</p>
+                    	<img src="img/remen.png"/>
+                        <div class="ispan clearfix">
+                        	<i>889个分享</i><span>去看看</span>
+                        </div>
+                    </div>
+                    <div class="rebox">
+                    	<p>小女人有恋物癖</p>
+                    	<img src="img/remen.png"/>
+                        <div class="ispan clearfix">
+                        	<i>889个分享</i><span>去看看</span>
+                        </div>
+                    </div>
+                    <div class="rebox">
+                    	<p>小女人有恋物癖</p>
+                    	<img src="img/remen.png"/>
+                        <div class="ispan clearfix">
+                        	<i>889个分享</i><span>去看看</span>
+                        </div>
+                    </div>
+                </div>   
+    </div>     
+                 <!--倒数第二结束-->
+                  <!--over-->
+                  <div class="main_bott">
+                   <div class="main_bott2">
+                        <div class="bott clearfix">
+                            <div class="kefu">
+                                
+                                <div class="kefu_r">
+                                    <p class="p1">400-800-655</p>
+                                    <p class="p2">美丽说客服热线</p>
+                                    <p class="p3">周一至周日：2244345</p>
+                                </div>
+                            </div>
+                             <dl class="help">
+                                <dt>用户帮助</dt>
+                                <dd>新手指南</dd>
+                                 <dd>网站地图</dd>
+                                  <dd>意见反馈</dd>
+                            </dl>
+                             <dl class="help">
+                                <dt>关于我们</dt>
+                                <dd>关于美丽说</dd>
+                                 <dd>联系我们</dd>
+                                  <dd>加入我们</dd>
+                                  <dd>加入我们</dd>
+                                  <dd>加入我们</dd>
+                            </dl>
+                            <dl class="help">
+                                <dt>关注我们</dt>
+                                <dd>新浪微博</dd>
+                                 <dd>qq空间</dd>
+                                  <dd>腾讯微博</dd>
+                               </dl>  
+                         
+                            <div class="fuwuhao">
+                                <h1>美丽说微信服务号</h1>
+                                <img src="img/meilishuoweixin.png" />
+                            </div>
+                             <div class="kehuduan">
+                                <h1>美丽说客户端下载</h1>
+                                <img src="img/kehuduan.png" />
+                            </div>
+                         </div>
+                      <ul class="lianjie clearfix">
+                            <li>友情链接：</li>
+                            <li>腾讯女性</li>
+                            <li>列表网</li>
+                             <li>太平洋女性网</li>
+                              <li>腾讯女性</li>
+                            <li>列表网</li>
+                             <li>英雄联盟</li>
+                              <li>神庙逃亡</li>
+                            <li>天天酷跑</li>
+                             <li>太酷我音乐</li>
+                      </ul>
+                      <div  class="plast">
+                      <p>客服邮箱客服邮箱客服邮箱客服邮箱客服邮箱客服邮箱客服邮箱客服邮箱客服邮箱客服邮箱客服邮箱客服邮箱客服邮箱客服邮箱客客服邮箱客服邮箱客服邮箱客服邮箱客</p>
+                       <p>客服邮箱客服邮箱客服邮箱客服邮箱客服邮箱客服邮箱客服邮箱客服邮箱客服邮箱客服邮箱客服邮箱客服邮箱客服邮箱客服客服邮箱客服邮箱客服邮箱客服邮箱客服邮箱客服邮箱客箱客服邮箱</p>
+                       </div>
+                     </div>
+           </div>
+        </div>
+</body>
+</html>

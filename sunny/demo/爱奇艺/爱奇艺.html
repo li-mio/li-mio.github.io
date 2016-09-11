@@ -1,0 +1,959 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+	<link rel="stylesheet" href="css/base.css" />
+    <style>
+		
+		/*tit*/
+    	.tit{position:absolute;top:10px;right:4px;}
+		.tit .txt{float:left;width:220px;height:28px;border:1px solid #85878b;padding-left:10px;}
+		.tit .search {float:left;margin-right:20px;width:34px;height:28px;position:relative;}
+		.tit .search input{width:34px;height:28px;border:1px solid #237c03;background:#5ca002;}
+		.tit .search i{width:21px;height:18px;background:url(img/tit_sousuo.png) no-repeat left center;position:absolute;top:5px;left:8px;}
+		.tit .file {float:left;margin-right:20px;position:relative;}
+		.tit .file input{width:80px;height:28px;border:1px solid #237c03;background:#5ca002;}
+		.tit .file i{width:9px;height:10px;background:url(img/yuandian.png) no-repeat left center;position:absolute;top:5px;right:4px;}
+		.tit .tit_r{float:left;margin-top:10px;}
+		.tit .tit_r li{float:left;padding-right:12px;}
+		.tit .tit_r li a{font-size:12px;color:blue;}
+		.box{width:210px;height:311px;background:url(img/a_tit1.png) no-repeat;opacity:0.9;filter:alpha(opacity:90);padding:30px 18px;position:absolute;top:50px;right:10px;}
+		.box li{width:180px;height:30px;margin-left:14px;text-align:center;line-height:30px;}
+		.box .active{background:#699f00;}
+		.box li a{font-size:14px;color:#ccc;}
+		
+		.pic li{display:none;width:100%;height:410px;}
+		.pic .show{display:block;}
+		 .list1{background:url(img/bg.jpg);}
+		 .list2{background:url(img/bg1.jpg);}
+		 .list3{background:url(img/bg2.jpg);}
+		 .list4{background:url(img/bg3.jpg);} 
+		 .list5{background:url(img/bg4.jpg);}
+		 .list6{background:url(img/bg5.jpg);}
+		 .list7{background:url(img/bg6.jpg);}
+		 .list8{background:url(img/bg7.jpg);}
+		 .list9{background:url(img/bg8.jpg);}
+		 .list10{background:url(img/bg9.jpg);}
+		/*tit2*/
+	    .tit_bmain{width:100%;height:104px;background:#010101;margin:0 auto;padding-top:6px;}
+		.tit_b{width:978px;height:84px;border-radius:2%;border:1px solid #688a00;margin:0 auto;padding-top:6px;}
+		.tit_b .uhead{padding-left:14px;display:inline-block;}
+		.tit_b .uhead .lf{float:left;background:url(img/tit_2.png) no-repeat left center;text-indent:-100em;width:114px;height:62px;margin-left:10px;}
+		.tit_b .uhead .rg{float:left;margin-left:10px;}
+		.tit_b .uhead p a {font-size:14px;line-height:26px;color:white;}
+		.tit_b .uhead .bg{float:right;background:url(img/tit_3.png) no-repeat right center;width:2px ;height:74px;margin-left:10px;}
+		
+		.tit_b .u2{display:inline-block;}
+		.u2 .lf{float:left;margin-left:10px;}
+		.tit_b .u2 .rg{float:left;margin-left:10px;}
+		.tit_b .u2 .rg .p3{background:url(img/tit_circle.png) no-repeat right top ;}/*这里怎么用定位做*/
+		.tit_b .u2 .lf .p3{background:url(img/tit_circle.png) no-repeat right top ;}
+		.tit_b .u2 p a {font-size:14px;line-height:26px;color:white;}
+		.tit_b .u2 .bg{float:right;background:url(img/tit_3.png) no-repeat right center;width:2px ;height:74px;margin-left:10px;}
+	   /*focus*/
+	   .focus_l{width:400px;}
+	   .focus_l_tit{width:382px;line-height:36px;height:42px;border-bottom:1px solid gray;}
+	   .focus_l_tit .tit_l{float:left;}
+	   .focus_l_tit .tit_l span{font-size:24px;color:#699f00;margin-right:6px;}
+	   .focus_l_tit .tit_l i{font-size:12px;color:#80ae77;}
+	    .focus_l_tit .tit_r{float:right;display:inline-block;margin-top:10px;font-size:12px;color:#333;background:url(img/tit_mid.png) repeat-x;height:25px;line-height:25px;position:relative;padding:0 8px; }
+	    .focus_l_tit .tit_r .l{background:url(img/tit_l.png) no-repeat;width:8px;height:25px;position:absolute;top:0;left:0;}
+	    .focus_l_tit .tit_r .r{background:url(img/tit_r.png) no-repeat ;width:8px;height:25px;position:absolute;top:0;right:0;}
+		.focus_l_tit .tit_r span{display:inline-block;width:14px;height:16px;background:url(img/focus_1.png) no-repeat left center;}
+		
+		.focus_l_m h1{font-size:20px;color:#333;line-height:36px;margin-top:18px;}
+		.focus_l_m ul li {font-size:16px;color:#333;line-height:32px;padding-left:16px;background:url(img/focus_5.png) no-repeat left center;}/*不是不对a设置就不起作用吗*/
+		.focus_l_bl{width:182px;height:136px;background:#f2f2f2;margin-right:16px;float:left;}
+		.focus_l_bl p{font-size:12px;color:#999;margin-left:2px;margin-top:4px;}
+		
+		.focus_mt{position:relative;margin-bottom:14px;}
+		.focus_mt .opa{width:380px;height:40px;background:#606361;opacity:0.5;filter:alpah(opacity:50);position:absolute;bottom:0;left:0;}
+		.focus_mt .fon{width:380px;height:40px;background:url(img/focus_2.png) no-repeat 6px center ;text-align:center;line-height:40px;color:white;font-size:12px;position:absolute;bottom:0;left:0px;}
+		.focus_mb ul{width:380px;}
+		.focus_mb  li a{font-size:16px;color:#333;line-height:32px;padding-left:16px;background:url(img/focus_5.png) no-repeat left center;}
+		
+		.focus_rt {width:180px;height:136px;background:#CCC;margin-bottom:14px;position:relative;}
+		.focus_rt .hanliu{margin-bottom:8px;}
+		.focus_rt p{float:left;font-size:12px;color:#333;magin-left:4px;} 
+		.focus_rt .yinlu{float:right;margin-right:4px;}
+		.focus_rt .meiju{position:absolute;bottom:42px;right:0;}
+		.focus_l,.focus_m,.focus_r{float:left;}
+		.focus_m{margin-left:14px;}/*margin-right为什么不起作用*/
+		.focus_r{float:right;margin-right:10px;}
+		.focus{width:1006px;margin:20px auto;}
+		/*variety*/
+		.va_tit_l{background:url(img/zongyi.png) no-repeat left center;width:700px;height:32px;border-bottom:2px solid #8ac024;padding-left:80px;padding-top:14px;}
+		.va_tit_l i{width:46px;height:18px;float:left;font-size:14px;color:#afae00;}/*li不是不受空格影响吗*/
+		.va_tit_l ul{display:inline-block;}
+		.va_tit_l ul li {float:left;font-size:14px;color:#333;}
+		.va_tit_l ul li a{padding-left:6px;padding-right:14px;}
+		.va_tit_l .ee{float:right;width:102px;height:28px;background:url(img/zongyi1.png) no-repeat right center;}/*这里为什么要用margin负值*/
+		.va_main_l{margin-top:20px;}
+		.va_l{float:left;width:378px;height:324px;background:#f2f2f2;position:relative;margin-right:20px;}
+		.va_l p{font-size:14px;color:#333;margin-left:4px;margin-top:10px;}
+		.va_l h2{font-size:12px;color:#999;margin-top:4px;margin-left:4px;}
+		.va_l .dubo{position:absolute;top:0;right:0;}
+		.va_l .opa{width:52px;height:24px;background:#0d0b1d;position:absolute;bottom:54px;right:0;opacity:0.5;filter:alpah(opacity:50);}
+		.va_l .fon{width:52px;height:24px;text-align:center;line-height:24px;color:white;position:absolute;bottom:54px;right:0;}
+		.va_l2{width:180px;height:156px;margin-bottom:12px;margin-right:10px;float:left;}
+		.va_m{float:left;width:380px;}
+		
+		.va{width:1006px;margin:0 auto;}
+		.va_al{float:left;}
+		.va_r{float:left;margin-left:20px;}
+		.va_rt{background:url(img/zongyi2.png) no-repeat left center;padding-left:138px;width:42px;height:32px;line-height:40px;border-bottom:2px solid #699f00;padding-top:14px;}
+		.va_rt a{font-size:14px;color:#699f00;}
+		.va_rm{width:180px;height:250px;background:#f2f2f2;margin-top:20px;}
+		.va_rm p{font-size:14px;color:#333;margin-top:10px;margin-left:6px;margin-bottom:10px;}
+		.va_rb{width:166px;border-top:1px dotted red;background:#f2f2f2;margin:0 auto;}
+		.va_rb li{background:url(img/focus_5.png) no-repeat left center;padding-left:14px;font-size:14px;color:#333;line-height:34px;}
+		/*talk show*/
+		.ts_tit{width:1006px;margin:0 auto;border-bottom:1px solid #e1e1e1;margin-bottom:14px;}
+		.ts_main{width:1006px;margin:0 auto;}/*为什么用margin-top没起作用*/
+		/*entertainment*/
+		.ent_tit{background:url(img/happy.png) no-repeat left center;width:1006px;margin:0 auto;border-bottom:2px solid #8ac024;height:43px;line-height:43px;}
+		.ent_tit .more{float:left;font-size:14px;color:#8ac024;padding-left:82px;margin-right:26px;}
+		.ent_tit ul{margin-left:26px;}/*为什么这里用margin-left又不能用*/
+		.ent_tit li{float:left;background:url(img/dotted.png) no-repeat right center;padding-left:8px;padding-right:22px;}
+		.ent_tit img{float:right;width:177px;height:43px;}
+		.ent_r{float:left;width:580px;}
+		.ent_r1{margin-right:10px;}
+		.ent_l{float:left;}
+		.ent{width:1006px;margin:0 auto;margin-top:20px;}
+		/*movie*/
+		.movie_main{width:1006px;margin:0 auto;}
+		.movie_t{width:1006px;margin:0 auto;}
+		.mov_tit_l{background:url(img/movie.png) no-repeat left center;width:778px;float:left;}
+		.mov_tit_r{background:url(img/movie_list.png) no-repeat left center;width:148px;float:left;padding-left:30px;margin-left:18px;}/*这里的padding值有一个毛病*/
+		.movie_list1{float:left;width:180px;height:266px;background:#f2f2f2;margin-top:24px;margin-right:18px;position:relative;}
+		.movie_list1 p{font-size:12px;margin-top:10px;margin-left:4px;}
+		.movie_list1 .vip{position:absolute;top:4px;left:4px;}
+		.movie_list1 .dubo{position:absolute;top:0;right:0;}
+		.movie_list1 .fon{position:absolute;bottom:38px;left:8px;}
+		.movie_list1 .opa{width:180px;height:24px;background:#0a0507;opacity:0.5;filter:alpah(opacity:50);position:absolute;left:0;bottom:34px;}
+		.movie_list1 .list{background:white;}
+		.movie_list1 .list li{width:180px;background:url(img/bofang.png) no-repeat right center;margin-bottom:16px;}
+		.movie_list1 .list i{margin-left:6px;}
+		.movie_list1 .list span{display:inline-block;width:20px;height:20px;text-align:center;line-height:20px;background:#70aa00;color:white;}
+		/*sport*/
+		.spt_l{background:url(img/sports.png) no-repeat left center;width:300px;height:40px;border-bottom:2px solid #8ac024;padding-left:84px;line-height:40px;}
+		.spt_l .more{font-size:14px;color:#8ac024;border-right:none;}
+		.spt_l .ball {font-size:14px;color:#666;background:url(img/dotted.png) no-repeat right center; padding-left:8px;padding-right:22px;}
+		.spt_lb{width:400px;margin-top:18px;}
+		.spt_lba{float:left;width:178px;height:140px;background:#f2f2f2;margin-right:18px;margin-bottom:18px;}
+		.spt_lba p{font-size:12px;color:#999;margin-top:10px;margin-left:4px;}
+		.spt_mt{background:url(img/music.png) no-repeat left center;}
+		.spt_mt .ball{font-size:12px;}
+		.spt_ma{width:180px;height:284px;background:#f2f2f2;}
+		.spt_ma p{font-size:12px;color:#999;margin-top:10px;margin-left:4px;}
+		
+		.spt_ma{float:left;margin-top:20px;margin-right:18px;}
+		.spt_mb{float:left;margin-top:18px;}
+		.spt_mba{float:none;}
+		
+		.spt_rt{width:96px;background:url(img/fashion1.png) no-repeat left center;border-bottom:2px solid #8ac024;padding-left:84px;line-height:40px;}
+		.spt_rb{width:180px;height:284px;background:#f2f2f2;margin-top:18px;}
+		.spt_rb p{font-size:12px;color:#999;margin-top:10px;margin-left:4px;}
+		 
+		 .spt_r,.spt_l1,.spt_m1{float:left;}
+		 .spt{width:1006px;margin:20px auto;}
+		 /*original*/
+		 .ori_tit{background:url(img/yuanchuang.png) no-repeat left center;width:700px;height:40px;padding-left:80px;border-bottom:2px solid red;line-height:40px;}
+		 .ori_tit a{float:left;font-size:12px;color:pink;margin-right:10px;}
+		 .ori_tit li{float:left;font-size:12px;color:#333;background:url(img/dotted.png) no-repeat right center;padding-left:8px;padding-right:22px;}
+		 .ori_lt{width:380px;height:324px;background:pink;position:relative;margin-right:20px;margin-top:16px;}
+		 .ori_lt .opa{width:40px;height:20px;background:red;position:absolute; bottom:56px;right:0;}
+		 .ori_lt .fon{height:20px;font-size:14px;text-align:center;line-height:20px;position:absolute; bottom:60px;right:4px;}
+		  .ori_lt p{color:#333;font-size:14px;margin-left:4px;margin-top:10px;}
+		   .ori_lt h2{color:#999;font-size:14px;margin-left:4px;margin-top:4px;}
+		   
+		   
+		   .ori_m{width:400px;}
+		   .ori_mt{float:left;width:180px;height:154px;margin-right:16px;background:pink;position:relative;margin-top:16px;}
+		    .ori_mt .opa{width:40px;height:20px;background:red;position:absolute; bottom:56px;right:0;}
+		 .ori_mt .fon{height:20px;font-size:14px;text-align:center;line-height:20px;position:absolute; bottom:60px;right:4px;}
+		   .ori_mt p{color:#333;font-size:14px;margin-left:4px;margin-top:10px;}
+		   .ori_mt h2{color:#999;font-size:14px;margin-left:4px;margin-top:4px;background:url(img/mao.png) no-repeat left center;padding-left:20px;}
+		   
+		   .ori_rt{width:40px;background:url(img/daren.png) no-repeat left center;wiheight:40px;padding-left:140px;border-bottom:2px solid red;line-height:40px;}
+		   .ori_r{width:180px;height:324px;background:pink;margin-top:16px;}
+		   .ori_r li{margin-left:8px;height:70px;padding-top:10px;}/*margin de wenti haishi 老问题*/
+		   .ori_r img{float:left;}
+		   .ori_r .ori_rr{float:left;margin-left:8px;}
+		   .ori_rr p{font-size:14px;color:red;margin-bottom:18px;}
+		    .ori_rr input{width:60px;height:24px;lien-height:24px;background:url(img/jia.png) no-repeat 4px center;}
+			.ori_l,.ori_m{float:left;}
+			.ori_left,.ori_right{float:left;}
+			.ori{width:1006px;margin:0px auto;}
+		/*the tail*/
+		.tail{width:1006px;margin:44px auto;}/*这里为什么没有起作用*/
+		.tail_l{float:left;width:400px;height:184px;padding-left:20px;padding-right:70px;border:1px solid #e7e7e7;background:#f7f7f7;}
+		.tail_l ul{width:400px;}
+		.tail_l h1{font-size:24px;color:#333;margin-top:18px;margin-bottom:18px;}
+		.tail_l h1 a{font-size:12px;margin-left:16px;padding-top:6px;}
+		
+		.tail_l ul li{float:left;margin-right:26px;font-size:12px;color:#666;margin-bottom:14px;font-family:MI;}
+		/*the bottom*/
+		.bott{width:1006px;margin:0 auto;}
+		.bott_t{width:560px;margin:0 auto;margin-bottom:14px;}
+		.bott_t li{float:left;border-right:1px solid gray;padding:0 10px;line-height:100%;}
+		.bottt_t li a{font-size:12px;color:#333;}
+		.bott p{font-size:12px;color:#999;line-height:27px;text-align:center;}
+		.bott .reserved{}
+	
+		.bott .internet{background:url(img/internet.png) no-repeat 60px center;}
+		.bott .jingying{background:url(img/jingying.png) no-repeat 60px center;}
+    </style>
+    <script>
+    	window.onload=function(){
+		var oPic=document.getElementById('pic');
+		var aPic_li=oPic.getElementsByTagName('li');
+		var oBtn=document.getElementById('btn');
+		var aBtn_li=oBtn.getElementsByTagName('li');
+		for(var i=0; i<aBtn_li.length;i++){
+			aBtn_li[i].index=i;
+			aBtn_li[i].onmouseover=function(){
+				for(var i=0;i<aBtn_li.length;i++){
+					aBtn_li[i].className='';
+					aPic_li[i].style.display='none';
+				}
+				aPic_li[this.index].style.display='block';
+				this.className='active';	
+			};
+		}
+	};
+    </script>
+</head>
+ 
+<body>
+	 <!--tit-->
+	<div class="tit clearfix">
+    	<input  type="text" placeholder="快乐大本营" class="txt"/>
+        <div class="search">
+            <input type="submit" value=""/>
+            <i></i>
+        </div>
+        <div class="file">
+            <input type="submit" value="上传视频"/>
+            <i></i>
+        </div>
+        <ul class="tit_r">
+        	<li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">开通vip</a></li>
+            <li><a href="#">消息</a></li>
+            <li><a href="#">播放记录</a></li>
+        </ul>
+    </div>
+	<ul class="box" id="btn">
+    	<li><a href="javascript:;">团圆饭，舌尖上的百味亲情</a></li>
+        <li><a href="javascript:;">团圆饭，舌尖上的百味亲情</a></li>
+        <li><a href="javascript:;">团圆饭，舌尖上的百味亲情</a></li>
+        <li><a href="javascript:;">团圆饭，舌尖上的百味亲情</a></li>
+        <li><a href="javascript:;">团圆饭，舌尖上的百味亲情</a></li>
+        <li><a href="javascript:;">团圆饭，舌尖上的百味亲情</a></li>
+        <li><a href="javascript:;">团圆饭，舌尖上的百味亲情</a></li>
+        <li><a href="javascript:;">团圆饭，舌尖上的百味亲情</a></li>
+        <li><a href="javascript:;">团圆饭，舌尖上的百味亲情</a></li>
+        <li><a href="javascript:;">团圆饭，舌尖上的百味亲情</a></li>
+    </ul>
+    <ol class="pic" id="pic">
+    	<li class="list1 show"></li>
+        <li class="list2 "></li>
+        <li class="list3 "></li>
+        <li class="list4 "></li>
+        <li class="list5 "></li>
+        <li class="list6 "></li>
+        <li class="list7 "></li>
+        <li class="list8 "></li>
+        <li class="list9 "></li>
+        <li class="list10 "></li>
+    </ol>
+     <!--tit2--> 
+     <div class="tit_bmain">
+         <div class="tit_b clearfix">
+            <ul class="uhead clearfix">
+                <li class="lf">爱奇艺悦享品质</li>
+                <li class="rg">
+                    <p><a href="#">娱乐</a></p>
+                    <p><a href="#">体育</a></p>
+                    <p><a href="#">资讯</a></p>
+                </li>
+                <li class="bg"></li>
+            </ul>
+             <ul class="u2 clearfix">
+               <li class="lf">
+                    <p><a href="#">娱乐</a></p>
+                    <p><a href="#">体育</a></p>
+                    <p><a href="#">资讯</a></p>
+                </li>
+                <li class="rg">
+                    <p><a href="#">娱乐</a></p>
+                    <p><a href="#">体育</a></p>
+                    <p class="p3"><a href="#">资讯</a></p>
+                </li>
+                <li class="bg"></li>
+            </ul>
+              <ul class="u2 clearfix">
+               <li class="lf">
+                    <p><a href="#">娱乐</a></p>
+                    <p><a href="#">体育</a></p>
+                    <p><a href="#">资讯</a></p>
+                </li>
+                <li class="rg clearfix">
+                    <p><a href="#">娱乐</a></p>
+                    <p><a href="#">体育</a></p>
+                    <p ><a href="#">资讯</a></p>
+                </li>
+                <li class="bg"></li>
+            </ul>
+              <ul class="u2 clearfix">
+               <li class="lf">
+                    <p><a href="#">娱乐</a></p>
+                    <p><a href="#">体育</a></p>
+                    <p><a href="#">资讯</a></p>
+                </li>
+                <li class="rg">
+                    <p><a href="#">娱乐</a></p>
+                    <p><a href="#">体育</a></p>
+                    <p ><a href="#">资讯</a></p>
+                </li>
+                <li class="bg"></li>
+            </ul>
+              <ul class="u2 clearfix">
+               <li class="lf">
+                    <p><a href="#">娱乐</a></p>
+                    <p><a href="#">体育</a></p>
+                    <p><a href="#">资讯</a></p>
+                </li>
+                <li class="rg">
+                    <p><a href="#">娱乐</a></p>
+                    <p><a href="#">体育</a></p>
+                    <p ><a href="#">资讯</a></p>
+                </li>
+                <li class="bg"></li>
+            </ul>
+            <ul class="u2 clearfix">
+               <li class="lf">
+                    <p><a href="#">风云榜</a></p>
+                    <p><a href="#">影视大全</a></p>
+                    <p><a href="#">爱奇艺搜索</a></p>
+                </li>
+                <li class="rg">
+                    <p><a href="#">特色频道</a></p>
+                    <p><a href="#">爱奇艺出品</a></p>
+                  
+                </li>
+                <li class="bg"></li>
+            </ul>
+             <ul class="u2 clearfix">
+               <li class="lf">
+                    <p><a href="#">游戏中心</a></p>
+                    <p class="p3"><a href="#">应用商店</a></p>
+                    <p class="p3"><a href="#">爱奇艺商城</a></p>
+                </li>
+                <li class="rg">
+                    <p><a href="#">VIP会员</a></p>
+                    <p><a href="#">个人中心</a></p>
+                     <p><a href="#">开放品台</a></p>
+                  
+                </li>
+                <li class="bg"></li>
+            </ul>
+         </div>  
+      </div>  
+     <!--focus-->
+     <div class="focus clearfix">
+         <div class="focus_l"> 
+             <h1 class="focus_l_tit">
+                <div class="tit_l">
+                    <span>今日焦点</span><i>更多&gt</i>
+                </div>
+                <div class="tit_r">
+                	<a href=""#>
+                        <i class="l"></i>
+                        <span></span>独播
+                        <i class="r"></i>
+                    </a>
+                </div>   
+             </h1>
+            <div class="focus_l_m">
+                <h1><a href="#">2015年放假安排出炉</a> <a href="#">本周迎春运抢票高峰</a></h1>
+                <ul>
+                    <li><a href="#">全国严查高速占道行驶</a> <a href="#">高考取消6项鼓励类加分</a></li>
+                    <li><a href="#">全国严查高速占道行驶</a> <a href="#">高考取消6项鼓励类加分</a></li>
+                    <li><a href="#">全国严查高速占道行驶</a> <a href="#">高考取消6项鼓励类加分</a></li>
+                    <li><a href="#">全国严查高速占道行驶</a> <a href="#">高考取消6项鼓励类加分</a></li>
+                    <li><a href="#">全国严查高速占道行驶</a> <a href="#">高考取消6项鼓励类加分</a></li>
+                    <li><a href="#">全国严查高速占道行驶</a> <a href="#">高考取消6项鼓励类加分</a></li>
+                </ul>
+                <div class="focus_l_b clearfix">
+                    <div class="focus_l_bl">
+                        <img src="img/focus_car.png"/>
+                        <p>法拉利给你不一样的感觉</p>
+                    </div>
+                     <div class="focus_l_bl">
+                        <img src="img/focus_car.png"/>
+                        <p>法拉利给你不一样的感觉</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="focus_m"> 
+            <div class="focus_mt">
+                <img src="img/focus_m.png"/>
+                <div class="opa"></div>
+                <p class="fon">成家班舢板侧翻 成龙跳海救人未果1人溺毙</p>
+            </div>
+            <ul class="focus_mb">
+                <li><a href="#">黄金唱片30秒宣传片揭豪华整容 今日一位32万元</a></li>
+                <li><a href="#">黄金唱片30秒宣传片揭豪华整容 今日一位32万元</a></li>
+                <li><a href="#">黄金唱片30秒宣传片揭豪华整容 今日一位32万元</a></li>
+                <li><a href="#">黄金唱片30秒宣传片揭豪华整容 今日一位32万元</a></li>
+                <li><a href="#">黄金唱片30秒宣传片揭豪华整容 今日一位32万元</a></li>
+            </ul>
+        </div>
+        <div class="focus_r">
+            <div class="focus_rt">
+                <img src="img/focus_3.png" class="hanliu"/>
+                <p>最in韩国打赏</p><img src="img/focus_4.png" class="yinlu"/>
+            </div>
+            <div class="focus_rt">
+                <img src="img/focus_6.png" class="hanliu"/>
+                <p>奚梦瑶教你两周两周练出马甲线</p>
+            </div>
+             <div class="focus_rt">
+                <img src="img/focus_7.png" class="hanliu"/>
+                <p>美剧最强回归</p><img src="img/focus_8.png" class="meiju"/>
+            </div>
+        </div>
+    </div>
+     <!--variety-->
+     <div class="va clearfix">
+         <div class="va_al clearfix">
+             <h1 class="va_tit_l clearfix">
+                <span></span>
+                <i>更多&gt</i>
+                <ul class="clearfix">
+                   <li><a href="#">爱奇艺出品</a>/</li>
+                   <li><a href="#">韩国综艺</a>/</li>
+                   <li><a href="#">晓松奇谈</a> /</li>
+                   <li><a href="#">奇葩说</a> /</li>
+                   <li><a href="#">巅峰拍档</a> /</li>
+                </ul>
+                <em class="ee"></em>
+             </h1>
+           <div class="va_main_l clearfix">
+                 <div class="va_l">
+                    <img src="img/date.png"/>
+                    <p>我们约会吧</p>
+                    <h2>夜店小鲜肉引疯抢，乖乖女遭触电难招架</h2>
+                    <img src="img/dubo.png" class="dubo"/>
+                    <div>
+                        <div class="opa"></div>
+                        <p class="fon">12-22</p>
+                    </div>
+                 </div>
+                 <div class="va_m clearfix">
+                     <div class="va_l va_l2">
+                        <img src="img/song.png"/>
+                        <p>Kpop Star4</p>
+                        <h2>丽珍丫原创歌曲纪念狗狗</h2>
+                        <img src="img/dubo.png" class="dubo"/>
+                        <div>
+                            <div class="opa"></div>
+                            <p class="fon">12-14</p>
+                        </div>
+                     </div>
+                      <div class="va_l va_l2">
+                        <img src="img/song.png"/>
+                        <p>Kpop Star4</p>
+                        <h2>丽珍丫原创歌曲纪念狗狗</h2>
+                        <img src="img/dubo.png" class="dubo"/>
+                        <div>
+                            <div class="opa"></div>
+                            <p class="fon">12-14</p>
+                        </div>
+                     </div>
+                      <div class="va_l va_l2">
+                        <img src="img/song.png"/>
+                        <p>Kpop Star4</p>
+                        <h2>丽珍丫原创歌曲纪念狗狗</h2>
+                        <img src="img/dubo.png" class="dubo"/>
+                        <div>
+                            <div class="opa"></div>
+                            <p class="fon">12-14</p>
+                        </div>
+                     </div>
+                      <div class="va_l va_l2">
+                        <img src="img/song.png"/>
+                        <p>Kpop Star4</p>
+                        <h2>丽珍丫原创歌曲纪念狗狗</h2>
+                        <img src="img/dubo.png" class="dubo"/>
+                        <div>
+                            <div class="opa"></div>
+                            <p class="fon">12-14</p>
+                        </div>
+                     </div>
+                </div>
+          </div>
+        </div>
+        <div class="va_r ">
+          <h1 class="va_rt">
+            <span><a href="#">更多&gt</a></span>
+          </h1>
+          <div class="va_rm">
+            <img src="img/runman.png"/>
+            <p>跑男兄弟舞蹈大乱斗</p>
+          
+          <ul class="va_rb">
+            <li>山村婆婆的星生活</li>
+            <li>山村婆婆的星生活</li>
+            <li>山村婆婆的星生活</li>
+          </ul>
+          </div>
+          <img src="img/discount.png"/>
+        </div>
+    </div>
+     <!--talk show-->
+     <h1 class="va_tit_l ts_tit ">
+          <span></span>
+          <i>更多&gt</i>
+          <img src="img/qipa.png"/>
+     </h1>
+    <div class="ts_main clearfix">
+     	 <div class="va_l va_l2">
+        <img src="img/fashion.png"/>
+        <p>时尚江湖</p>
+        <h2>刘心有内衣玩野性</h2>
+        <img src="img/dubo.png" class="dubo"/>
+        <div>
+            <div class="opa"></div>
+            <p class="fon">12-14</p>
+        </div>
+     </div> 
+     <div class="va_l va_l2">
+        <img src="img/fashion.png"/>
+        <p>时尚江湖</p>
+        <h2>刘心有内衣玩野性</h2>
+        <img src="img/dubo.png" class="dubo"/>
+        <div>
+            <div class="opa"></div>
+            <p class="fon">12-14</p>
+        </div>
+     </div>
+     <div class="va_l va_l2">
+        <img src="img/fashion.png"/>
+        <p>时尚江湖</p>
+        <h2>刘心有内衣玩野性</h2>
+        <img src="img/dubo.png" class="dubo"/>
+        <div>
+            <div class="opa"></div>
+            <p class="fon">12-14</p>
+        </div>
+     </div>
+     <div class="va_l va_l2">
+        <img src="img/fashion.png"/>
+        <p>时尚江湖</p>
+        <h2>刘心有内衣玩野性</h2>
+        <img src="img/dubo.png" class="dubo"/>
+        <div>
+            <div class="opa"></div>
+            <p class="fon">12-14</p>
+        </div>
+     </div>
+     <div class="va_l va_l2">
+        <img src="img/fashion.png"/>
+        <p>时尚江湖</p>
+        <h2>刘心有内衣玩野性</h2>
+        <img src="img/dubo.png" class="dubo"/>
+        <div>
+            <div class="opa"></div>
+            <p class="fon">12-14</p>
+        </div>
+     </div>               
+    </div> 
+    <!--entertainment-->  
+     <h1 class="ent_tit">
+    	<a href="#" class="more">更多&gt</a>
+    	<ul class="clearfix">
+        	<li><a href="#">爱奇艺早班机</a></li>
+            <li><a href="#">超能星探</a></li>
+            <li><a href="#">帕帕帮</a></li>
+            <li><a href="#">泡菜帮</a></li>
+            <li><a href="#">娱乐猛回头</a></li>
+            <li><a href="#">爱奇艺音乐榜</a></li>
+            <img src="img/report.png"/>
+        </ul>
+    </h1> 
+     		<div class="ent clearfix">
+    			<div class="va_l ent_l">
+                    <img src="img/star.png"/>
+                    <p>鹿晗调停失败 揭韩娱明星频退团内幕</p>
+                    <h2>昨天鹿晗与老东家SM公司解约事件终于迎来首次调停</h2>
+                    <img src="img/zizhi.png" class="dubo"/>
+                    <div>
+                        <div class="opa"></div>
+                        <p class="fon">11:59  </p>
+                    </div>
+                 </div> 
+                 <div class="ent_r">
+                     <div class="va_l va_l2 ent_r1">
+                            <img src="img/head.png"/>
+                            <p>《何以笙箫默曝糖默笙宣传片感恩》</p>
+                             <div>
+                                <div class="opa"></div>
+                                <p class="fon">02:14 </p>
+                            </div>
+                     </div>   
+                     <div class="va_l va_l2 ent_r1">
+                            <img src="img/head.png"/>
+                            <p>《何以笙箫默曝糖默笙宣传片感恩》</p>
+                             <div>
+                                <div class="opa"></div>
+                                <p class="fon">02:14 </p>
+                            </div>
+                     </div>   
+                     <div class="va_l va_l2 ent_r1">
+                            <img src="img/head.png"/>
+                            <p>《何以笙箫默曝糖默笙宣传片感恩》</p>
+                             <div>
+                                <div class="opa"></div>
+                                <p class="fon">02:14 </p>
+                            </div>
+                     </div>   
+                     <div class="va_l va_l2 ent_r1">
+                            <img src="img/head.png"/>
+                            <p>《何以笙箫默曝糖默笙宣传片感恩》</p>
+                             <div>
+                                <div class="opa"></div>
+                                <p class="fon">02:14 </p>
+                            </div>
+                     </div>   
+                     <div class="va_l va_l2 ent_r1">
+                            <img src="img/head.png"/>
+                            <p>《何以笙箫默曝糖默笙宣传片感恩》</p>
+                             <div>
+                                <div class="opa"></div>
+                                <p class="fon">02:14 </p>
+                            </div>
+                     </div>   
+                     <div class="va_l va_l2 ent_r1">
+                            <img src="img/head.png"/>
+                            <p>《何以笙箫默曝糖默笙宣传片感恩》</p>
+                             <div>
+                                <div class="opa"></div>
+                                <p class="fon">02:14 </p>
+                            </div>
+                     </div>   
+                 </div> 
+              </div> 
+    <!--movie--> 
+      <div class="movie_t clearfix">
+         <h1 class="ent_tit mov_tit_l">
+            <a href="#" class="more">更多&gt</a>
+            <ul class="clearfix">
+                <li><a href="#">爱奇艺爱电影</a></li>
+                <li><a href="#">网络大电影new</a></li>
+                <li><a href="#">好莱坞院线</a></li>
+                <li><a href="#">VIP会员</a></li>
+                <li><a href="#">金鸡百花电影节短篇大赛</a></li>
+                
+            </ul>
+         <h1 class="ent_tit mov_tit_r">
+            <a href="#" class="more">更多&gt</a> 
+         </h1>
+     </div>
+     <ul class="movie_main clearfix">
+         <li class="movie_list1">
+            <img src="img/princess.png"/>
+            <p>韩公主</p>
+         </li>
+         <li class="movie_list1">
+            <img src="img/princess.png"/>
+            <p>韩公主</p>
+         </li>
+         <li class="movie_list1">
+            <img src="img/princess.png"/>
+            <p>韩公主</p>
+         </li>
+         <li class="movie_list1">
+            <img src="img/princess.png"/>
+            <p>韩公主</p>
+         </li>
+         <li class="movie_list1">
+            <ul class="list">
+            	<li>
+                	<span>1</span>
+                    <i>痞子英雄2：黎明升起</i>                 </li>            
+                <li>
+                	<span>2</span>
+                    <i>痞子英雄2：黎明升起</i>                 </li>   
+                 <li>
+                	<span>3</span>
+                    <i>痞子英雄2：黎明升起</i>                 </li>            
+                <li>
+                	<span>4</span>
+                    <i>痞子英雄2：黎明升起</i>                 </li>   
+                 <li>
+                	<span>5</span>
+                    <i>痞子英雄2：黎明升起</i>                 </li>            
+                <li>
+                	<span>6</span>
+                    <i>痞子英雄2：黎明升起</i>                 </li>
+                 <li>
+                	<span>7</span>
+                    <i>痞子英雄2：黎明升起</i>                 </li>            
+                <li>
+                	<span>8</span>
+                    <i>痞子英雄2：黎明升起</i>                 </li>        
+            </ul>
+         </li>
+         <li class="movie_list1">
+            <img src="img/princess.png"/>
+            <img src="img/VIP.png" class="vip"/>
+            <img src="img/dubo.png" class="dubo"/>
+            <div class="opa"></div>
+            <img src="img/1080p.png" class="fon"/>
+            <p>韩公主</p>
+         </li>
+         <li class="movie_list1">
+            <img src="img/princess.png"/>
+            <p>韩公主</p>
+         </li>
+         <li class="movie_list1">
+            <img src="img/princess.png"/>
+            <p>韩公主</p>
+         </li>
+         <li class="movie_list1">
+            <img src="img/princess.png"/>
+            <p>韩公主</p>
+         </li>
+         <li class="movie_list1">
+            <img src="img/princess.png"/>
+            <p>韩公主</p>
+         </li>
+    </ul>   
+     <!--sport-->
+     <div class="spt clearfix">
+         <div class="spt_l1"> 
+             <h1 class="spt_l">
+                <a href="#" class="more">更多&gt</a>
+                <a href="#" class="ball">足球</a>
+                <a href="#" class="ball">篮球</a>
+                <a href="#" class="ball">网球</a>
+             </h1>
+             <div class="spt_lb clearfix">
+                 <div class="spt_lba">
+                    <img src="img/29.png"/>
+                    <p>张稀哲：有信心超越香川</p>
+                 </div>
+                 <div class="spt_lba">
+                    <img src="img/29.png"/>
+                    <p>张稀哲：有信心超越香川</p>
+                 </div>
+                 <div class="spt_lba">
+                    <img src="img/29.png"/>
+                    <p>张稀哲：有信心超越香川</p>
+                 </div>
+                 <div class="spt_lba">
+                    <img src="img/29.png"/>
+                    <p>张稀哲：有信心超越香川</p>
+                 </div>
+             </div>
+         </div>
+         
+         <div class="spt_m1">
+              <h1 class="spt_l spt_mt">
+                <a href="#" class="more">更多&gt</a>
+                <a href="#">爱奇艺音乐榜</a>
+              </h1> 
+             <div class="spt_m clearfix">
+                <div class="spt_ma">
+                    <img src="img/fanye.png"/>
+                    <p>张靓颖-无字碑</p>
+                </div>
+                <div class="spt_mb ">
+                    <div class="spt_lba spt_mba">
+                        <img src="img/29.png"/>
+                        <p>张稀哲：有信心超越香川</p>
+                     </div>
+                     <div class="spt_lba spt_mba">
+                        <img src="img/29.png"/>
+                        <p>张稀哲：有信心超越香川</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="spt_r">
+             <h1 class=" spt_rt">
+                <a href="#" class="more">更多&gt</a>
+                <a href="#">独家</a>
+              </h1> 
+             <div class="spt_rb">
+                    <img src="img/fanye.png"/>
+                    <p>张靓颖-无字碑</p>
+             </div>
+         </div>
+     </div>
+      <!--original-->
+     <div class="ori ">
+      <div class="ori_left ">
+          <h1 class="ori_tit">
+                <a href="#">更多&gt</a>
+                <ul>
+                    <li><a href="#">创意剧场 </a></li>
+                    <li><a href="#">逗逼恶搞 </a></li>
+                    <li><a href="#">品牌广告 </a></li>
+                    <li><a href="#">爱侃 </a></li>
+                    <li><a href="#">创意剧场 </a></li>
+                    <li><a href="#">一分钟创意比赛 </a></li>
+                </ul>
+          </h1>
+          <div class="ori_lmain clearfix">
+              <div class="ori_l clearfix">
+                  <div class="ori_lt">
+                        <img src="img/aikan.png"/>
+                        <div class="opa"></div>
+                        <div class="fon">11:23</div>
+                        <p>【爱侃】57期：拿命拼！酗酒的5种死法</p>
+                        <h2>年末了，热嗨皮了，聚在一起吃饭喝酒是好事，但如....</h2>
+                  </div>
+               </div>
+              <div class="ori_m clearfix">
+                  <div class="ori_mt">
+                        <img src="img/miao.png"/>
+                         <div class="opa"></div>
+                        <div class="fon">hello</div>
+                        <p>超萌猫片！最遥远的距离</p>
+                        <h2>我是喵星人抢不到</h2>
+                  </div>
+                  <div class="ori_mt">
+                        <img src="img/miao.png"/>
+                         <div class="opa"></div>
+                        <div class="fon">hello</div>
+                        <p>超萌猫片！最遥远的距离</p>
+                        <h2>我是喵星人抢不到</h2>
+                  </div>
+                  <div class="ori_mt">
+                        <img src="img/miao.png"/>
+                         <div class="opa"></div>
+                        <div class="fon">hello</div>
+                        <p>超萌猫片！最遥远的距离</p>
+                        <h2>我是喵星人抢不到</h2>
+                  </div>
+                  <div class="ori_mt">
+                        <img src="img/miao.png"/>
+                         <div class="opa"></div>
+                        <div class="fon">hello</div>
+                        <p>超萌猫片！最遥远的距离</p>
+                        <h2>我是喵星人抢不到</h2>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="ori_right">
+          <h1 class="ori_rt">
+                <a href="#">更多&gt</a>
+          </h1>
+          <ul class="ori_r">
+                <li>
+                    <img src="img/zhenggu.png"/>
+                    <div class="ori_rr">
+                        <p>街头整蛊大师</p>
+                        <input type="submit" value="订阅"/>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/zhenggu.png"/>
+                    <div class="ori_rr">
+                        <p>街头整蛊大师</p>
+                        <input type="submit" value="订阅"/>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/zhenggu.png"/>
+                    <div class="ori_rr">
+                        <p>街头整蛊大师</p>
+                        <input type="submit" value="订阅"/>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/zhenggu.png"/>
+                    <div class="ori_rr">
+                        <p>街头整蛊大师</p>
+                        <input type="submit" value="订阅"/>
+                    </div>
+                </li>
+          </ul>
+       </div>
+     </div>
+     <!--the tail--> 
+     <div class="tail clearfix">
+       <div class="tail_l">
+        	<h1 class="clearfix">
+                <span>合作伙伴</span>
+                <a href="#">更多</a></h1>
+            <ul>
+            	<li><a href="#">华英公司</a></li>
+                <li><a href="#">万达电影网</a></li>
+                <li><a href="#">华谊兄弟</a></li>
+                <li><a href="#">星美</a></li>
+                <li><a href="#">光线影业</a></li>
+                <li><a href="#">华英公司</a></li>
+                <li><a href="#">万达电影网</a></li>
+                <li><a href="#">华谊兄弟</a></li>
+                <li><a href="#">星美</a></li>
+                <li><a href="#">光线影业</a></li>
+                <li><a href="#">华英公司</a></li>
+                <li><a href="#">万达电影网</a></li>
+                <li><a href="#">华谊兄弟</a></li>
+                <li><a href="#">星美</a></li>
+                <li><a href="#">光线影业</a></li>
+                <li><a href="#">爱奇艺天猫店</a></li>
+              
+            </ul>
+        </div> 		
+        <div class="tail_l">
+        	<h1 class="clearfix">
+                <span>爱奇艺动态</span>
+                <a href="#">更多</a></h1>
+            <ul>
+            	<li><a href="#">爱奇艺获小米、百度战略投资</a></li>
+                <li><a href="#">爱奇艺与杜比战略合作神话</a></li>
+                <li><a href="#">7月视频市场，爱奇艺稳居管局</a></li>
+                <li><a href="#">爱奇艺与华测影视成立合资公司</a></li>
+                <li><a href="#">光线影业</a></li>
+                <li><a href="#">华英公司</a></li>
+                <li><a href="#">万达电影网</a></li>
+                <li><a href="#">华谊兄弟</a></li>
+                <li><a href="#">星美</a></li>
+                <li><a href="#">光线影业</a></li>
+                <li><a href="#">爱奇艺天猫店</a></li>
+              
+            </ul>
+        </div> 		
+    </div> 
+    <!--the bottom--> 
+    <div class="bott">
+    	<ul class="bott_t clearfix">
+        	<li><a href="#">应用商店 </a></li>
+            <li><a href="#">  </a></li>
+            <li><a href="#">应用商店 </a></li>
+            <li><a href="#">应用商店 </a></li>            <li><a href="#">应用商店 </a></li>
+            <li><a href="#">应用商店 </a></li>
+            <li><a href="#">帮助与反馈 </a></li>
+            <li><a href="#">About Us</a></li>				 		</ul>
+        <p >
+        	<i>不良信息举报电话：400-600-4345</i>
+            <span>举报邮箱：jubao345@124.com</span>
+        </p>
+        <p class="internet">中国互诚信联盟中国互联网诚信联盟中国互联网诚信联盟中国互联网诚信联盟中国互联网诚信联盟中国互网诚信联盟中国互联网诚信联盟中国互联网诚信联盟</p>
+        <p class="jingying"> 经营性网案信息经营性网站备案信息经营性网站备案信息经营性网站备案信息经营性网站备案信息经营性网站备案信息经营性网站备案信息经营性网站备案信息</p>
+        <p class="reserved">Copyright2014爱奇艺AllRightsReserved</p>
+    </div>        
+                      
+</body>
+</html>	
+        	
