@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+
+
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+<link rel="stylesheet" type="text/css" href="css/small.css" media="screen and (max-width:768px)"/>
+<script>
+    window.onload=function(){
+        var oBtn=document.querySelector('input');
+        var oDiv=document.getElementById('div1');
+        var bFlay=true;
+        oBtn.onclick=function(){
+            if(bFlay){
+            oDiv.style.display='block';
+                bFlay=false;
+            }else{
+                oDiv.style.display='none';
+                bFlay=true;
+            }
+        };
+
+    };
+</script>
+</head>
+<body>
+    <header>
+        <div class="nav clr">
+            <div class="left fl">Gulp中文网</div>
+             <input class="menu-btn" value="菜单"/>
+            <div id="div1" class="right fr">
+               
+                 <ul class="navbar">
+                    <li>
+                        <a href="javascript:;">首页</a>
+                    </li>
+                   
+                    <li>
+                        <a href="javascript:;">中文文档</a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;">入门指南</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">API</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">插件开发</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">常见问题</a>
+                    </li>
+                     <li>
+                        <a href="javascript:;">使用技巧</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="con2">
+            <img src="img/1.1.png" alt="">
+        </div>
+        <p class="con3">用自动化构建工具增强你的工作流程</p>
+        <p class="con4">
+             <a href="javascript:;">开始使用</a>
+        </p>
+       
+    </section>
+    <div class="con5 clr">
+        <div class="col fl">
+            <h2>易于使用</h2>
+            <p>通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。</p>
+        </div>
+        <div class="col fl">
+            <h2>构建快速</h2>
+            <p>利用 Node.js 流的威力，你可以快速构建项目并减少频繁的 IO 操作。</p>
+        </div>
+    </div>
+    <div class="con6 clr">
+         <div class="col fl">
+            <h2>插件高质</h2>
+            <p>Gulp 严格的插件指南确保插件如你期望的那样简洁高质得工作。</p>
+        </div>
+        <div class="col fl">
+           <h2>易于学习</h2>
+            <p>通过最少的 API，掌握 Gulp 毫不费力，构建工作尽在掌握：如同一系列流管道。</p>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy;Gulp中文网2015</p>  
+            <p><a href="javascript:;">京ICP备11008151号</a> | 京公网安备11010802014853</p>   
+        </div>     
+    </footer> 
+   
+</body>
+</html>

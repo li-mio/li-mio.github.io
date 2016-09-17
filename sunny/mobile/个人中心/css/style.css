@@ -1,0 +1,48 @@
+
+
+html{font-size:20px;}
+
+.wrap{width:18.75rem;}
+header{width:18.75rem;height:2.1rem;text-align:center;line-height:2.1rem;}
+header a{font-size:1rem;position:absolute;left:0;top:0;margin:0 0.2rem;color:#666;}
+header span{font-size:1.5rem;}
+.banner{width:18.75rem;height:6.5rem;background:#ececf4;padding-top:1rem;}
+.banner div{width:18.75rem;height:5.5rem;}
+.banner img{width:100%;}
+
+.nav{width:18.75rem;height:1.75rem;}
+.nav div{width:6.25rem;height:1.75rem;text-align:center;line-height:1.75rem;font-size:0.7rem;box-sizing:border-box;}
+ .nav div{border-right:1px solid #ccc;}
+ .nav img{width:0.8rem;height:1rem;margin:0.2rem 0.2rem;}
+
+ .blank{width:18.75rem;}
+ .blank div{width:18.75rem;height:0.75rem;background:#ececf4;}
+
+.con1{width:18.75rem;height:3.25rem;}
+.con1 div{width:18rem;height:1.625rem;font-size:0.6rem;line-height:1.625rem;margin-left:0.75rem;position:relative;color:#666;font-family:"微软雅黑";border-bottom:1px solid #ccc;}
+.con1 .bot{border-bottom:none;}
+.con1 span{position:absolute;top:0;right:0;margin-right:0.8rem;font-size:0.7rem;}
+
+ .blank2{width:18.75rem;}
+ .blank2 div{width:18.75rem;height:1rem;background:#ececf4;}
+
+ .con2{width:18.75rem;height:3.25rem;position:relative;}
+ .con2 div{width:18rem;height:1.625rem;font-size:0.6rem;line-height:1.625rem;color:#666;font-family:"微软雅黑";margin-left:0.75rem;}
+ .con2 img{width:2rem;height:1rem;position:absolute;top:0.25rem;right:0.75rem;}
+
+ .blank3{width:18.75rem;}
+ .blank3 div{width:18.75rem;height:0.9rem;background:#ececf4;}
+
+.con3{width:18.75rem;}
+.con3 div{width:18rem;height:1.625rem;font-size:0.6rem;line-height:1.625rem;margin-left:0.75rem;position:relative;color:#666;font-family:"微软雅黑";border-bottom:1px solid #ccc;}
+.con3 .bot{border-bottom:none;}
+.con3 span{position:absolute;top:0;right:0;margin-right:0.8rem;font-size:0.7rem;}
+
+.blank4{width:18.75rem;}
+.blank4 div{width:18.75rem;height:5.5rem;background:#ececf4;box-shadow:-1rem 0 10px #ccc;}
+
+.footer{width:18.75rem;height:2.425rem;}
+.footer ul{width:18.75rem;}
+.footer ul li{width:4.6875rem;height:2.425rem;text-align:center;}
+.footer ul li p{font-size:0.6rem;}
+.footer ul li img{margin:10px;}
