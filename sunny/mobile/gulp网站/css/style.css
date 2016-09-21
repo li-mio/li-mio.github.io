@@ -1,19 +1,20 @@
-header{width:100%;background:#cf4646;}
+header{position:fixed;top:0;width:100%;background:#cf4646;}
 header .nav{width:100%;position:relative;overflow:hidden;}
-.nav .left{float:left;margin-left:10%;height:3.5rem;font-size:2rem;color:#fff;line-height:3.5rem;}
+.nav .left{float:left;margin-left:10%;height:4.5rem;font-size:2rem;color:#fff;line-height:4.5rem;}
 .nav .menu-btn{position:absolute;top:0;right:5%;width:3.5rem;height:3.3rem;text-align:center;line-height:3.3rem;display:none;border:1px solid #fff;color:#fff;font-size:1.4rem;background:#cf4646;cursor:pointer;}
+
 .nav .right{float:right;margin-right:4%;}
 
-
-.nav li{float:left;padding:0 0.8rem;height:3.5rem;}
-.nav li a{display:inline-block;height:3.5rem;font-size:1.4rem;color:#fff;text-align:center;line-height:3.5rem;}
-@media screen and (min-width:768px){
+.nav li{float:left;padding:0 0.7rem;height:4.5rem;}
+.nav li a{display:inline-block;height:4.5rem;font-size:1.4rem;color:#fff;text-align:center;line-height:4.5rem;}
+@media screen and (min-width:768px) and (min-width:300px){
     .nav .right{display:block !important;};
 }
-.banner{width:100%;height:400px;background:#cf4646;padding-top:2.5rem;}
-.banner .con2{width:100%;height:8rem;margin:3rem auto;}
+.banner{width:100%;height:30rem;background:#cf4646;padding-top:5rem;}
+.banner .box{margin-top:3rem;}
+.banner .con2{width:100%;height:10rem;padding-top:3rem;}
 .banner .con2 img{margin-left:45%;}
-.banner .con3{width:100%;height:80px;text-align:center;line-height:4rem;font-size:1.8rem;color:#fff;}
+.banner .con3{width:100%;height:5rem;text-align:center;font-size:1.8rem;color:#fff;padding-top:2rem;}
 .banner .con4{width:100%;height:4rem;text-align:center;line-height:4rem;}
 .con4 a{font-size:2rem;color:#efbfbf;border:2px solid #ccc;padding:0.5rem;}
 .con4:hover a{box-shadow:inset 0 0 5px #fff;color:#fff;}
@@ -22,14 +23,14 @@ header .nav{width:100%;position:relative;overflow:hidden;}
 .con5{width:100%;margin-top:40px;}
 .con5 ul{width:80%;margin-left:10%;margin-right:10%;}
 .con5 ul li{width:50%;margin:2rem 0;}
-.con5 ul h2{width:90%;font-size:2.3rem;font-family:"微软雅黑";margin-bottom:0.7rem;}
-.con5 ul p{width:90%;font-size:1.3rem;font-family:"微软雅黑";color:#666;}
+.con5 ul h2{width:80%;font-size:2.3rem;font-family:"微软雅黑";margin-bottom:0.7rem;}
+.con5 ul p{width:80%;font-size:1.3rem;font-family:"微软雅黑";color:#666;}
 
-@media screen and (min-width:800px){
+@media screen and (min-width:700px){
     .con5 ul li{width:50%;};
 }
 
-@media screen and (max-width:782px){
+@media screen and (max-width:701px){
     .con5 ul li{width:100%;};
 }
 

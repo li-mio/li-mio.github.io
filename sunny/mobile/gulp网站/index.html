@@ -18,13 +18,15 @@
     window.onload=function(){
         var oBtn=document.querySelector('input');
         var oDiv=document.getElementById('div1');
+       
         var bFlay=true;
         oBtn.onclick=function(){
             if(bFlay){
             oDiv.style.display='block';
-                bFlay=false;
+            bFlay=false;
             }else{
                 oDiv.style.display='none';
+               
                 bFlay=true;
             }
         };
@@ -33,7 +35,7 @@
 </script>
 </head>
 <body>
-    <header>
+    <header class="clr">
         <div class="nav clr">
             <div class="left fl">Gulp中文网</div>
              <input class="menu-btn" value="菜单"/>
@@ -67,14 +69,16 @@
             </div>
         </div>
     </header>
-    <section class="banner">
-        <div class="con2">
-            <img src="img/1.1.png" alt="">
+    <section class="banner" id="banner">
+        <div classl="box">
+            <div class="con2">
+                <img src="img/1.1.png" alt="">
+            </div>
+            <p class="con3">用自动化构建工具增强你的工作流程</p>
+            <p class="con4">
+                <a href="javascript:;">开始使用</a>
+            </p>
         </div>
-        <p class="con3">用自动化构建工具增强你的工作流程</p>
-        <p class="con4">
-             <a href="javascript:;">开始使用</a>
-        </p>
        
     </section>
     <div class="con5 clr">

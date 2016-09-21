@@ -9,10 +9,10 @@ header .img2{width:5.25rem;height:1.25rem;margin-left:9rem;margin-top:0.5rem;}
 .banner img{width:100%;}
 
 .nav{width:16rem;}
-.nav div{width:14.25rem;height:1.5rem;background:url(../img/4.png) no-repeat 0.5rem center #fbb347;text-align:center;line-height:1.5rem;color:#Fff;font-size:0.7rem;background-size:1.5rem 1.2rem;margin-top:0.7rem;margin-left:0.8rem;}
+.nav div{width:14.15rem;height:1.5rem;background:url(../img/4.png) no-repeat 0.5rem center #fbb347;text-align:center;line-height:1.5rem;color:#Fff;font-size:0.7rem;background-size:1.5rem 1.2rem;margin-top:0.7rem;margin-left:0.8rem;}
 
 .search{width:14.25rem;height:2rem;border:1px solid #fbb347;margin:0.7rem auto;background:url(../img/5.png) no-repeat right  #fe9600;}
-.search input{width:11.5rem;height:2rem;border:none;font-size:0.7rem;padding-left:0.2rem;cursor:pointer;}
+.search input{width:10.5rem;height:2rem;border:none;font-size:0.7rem;padding-left:0.2rem;cursor:pointer;}
 
 .con1{width:16rem;}
 .con1 ul{overflow:hidden;width:10.125rem;margin:0 auto;}
