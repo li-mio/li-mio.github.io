@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com" />
+<meta name="copyright" content="智能社 - zhinengshe.com" />
+<meta name="description" content="智能社是一家专注于web前端开发技术的公司，目前主要提供JavaScript培训和HTML5培训两项服务，同时还推出了大量javascript基础知识教程，智能课堂为你带来全新的学习方法和快乐的学习体验。" />
+<title>智能社— http://www.zhinengshe.com</title>
+<style>
+*{margin:0; padding:0; list-style:none;}
+body{background:#000;}
+ul{ width:133px; height:200px; margin:200px auto; position:relative; -webkit-transform-style:preserve-3d; -webkit-transform:perspective(800px) rotateY(0deg) rotateX(0deg);}
+ul li{ position:absolute; top:0; left:0; width:100%; height:100%; border-radius:10px; overflow:hidden; box-shadow:0 0 20px #fff; -webkit-transform:rotateY(0deg) translateZ(0);}
+</style>
+<script>
+window.onload=function(){
+	var oUl = document.querySelector('ul');
+	var aLi = oUl.children;
+	
+	for(var i=0;i<aLi.length;i++){
+		aLi[i].style.WebkitTransition = '1s all ease '+(11-i)*100+'ms';
+		
+		
+		aLi[i].style.WebkitTransform = 'rotateY('+360/11*i+'deg) translateZ(350px)';
+	}
+	
+	var ry = 0;
+	var rx = 0;
+	oUl.onmousedown=function(ev){
+		var disX = ev.pageX-oUl.offsetLeft;
+		var disY = ev.pageY-oUl.offsetTop;
+		document.onmousemove=function(ev){
+			ry = ev.pageX-disX;
+			rx = ev.pageY-disY;
+			oUl.style.WebkitTransform = 'perspective(800px) rotateY('+ry/10+'deg) rotateX('+-rx/10+'deg)';
+		};
+		document.onmouseup=function(){
+			document.onmousemove=null;
+			document.onmouseup=null;
+		};
+		return false;
+	};
+	
+	
+};
+</script>
+</head>
+
+<body>
+	<ul>
+		<li><img src="img/1.jpg" /></li>
+		<li><img src="img/2.jpg" /></li>
+		<li><img src="img/3.jpg" /></li>
+		<li><img src="img/4.jpg" /></li>
+		<li><img src="img/5.jpg" /></li>
+		<li><img src="img/6.jpg" /></li>
+		<li><img src="img/7.jpg" /></li>
+		<li><img src="img/8.jpg" /></li>
+		<li><img src="img/9.jpg" /></li>
+		<li><img src="img/10.jpg" /></li>
+		<li><img src="img/11.jpg" /></li>
+	</ul>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
