@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+    *{padding:0;margin:0;}
+    ul li{list-style:none;}
+    #div1{width:765px;height:200px;margin:50px auto;position:relative;overflow:hidden;}
+    #ul1 {height:200px;position:absolute;left:0;top:0;}
+    #ul1 li{width:133px;height:200px;padding:10px;float:left;}
+</style>
+<script>
+    window.onload=function(){
+        var oDiv=document.getElementById('div1');
+        var oUl=document.getElementById('ul1');
+        var aLi=oUl.children;
+        oUl.innerHTML+=oUl.innerHTML;
+        oUl.style.width=aLi[0].offsetWidth*aLi.length+'px';
+        var W=oUl.offsetWidth/2;
+        var l=0;
+        setInterval(function(){
+            l-=12;
+            if(l<-W){
+                l=0;
+            }
+            oUl.style.left=l+'px';
+        },30);
+    };
+</script>
+</head>
+<body>
+    <div id="div1">
+        <ul id="ul1">
+            <li><img src="img/0.jpg" alt="" /></li>
+            <li><img src="img/1.jpg" alt="" /></li>
+            <li><img src="img/2.jpg" alt="" /></li>
+            <li><img src="img/3.jpg" alt="" /></li>
+            <li><img src="img/4.jpg" alt="" /></li>
+        </ul>
+    </div>
+</body>
+</html>

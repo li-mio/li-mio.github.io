@@ -12,7 +12,7 @@ window.onload=function(){
 	var oSecond=document.getElementById('second');
 	var total=77;
 	var n=0;
-	for(var i=0;i<total;i++){
+	/*for(var i=0;i<total;i++){
 		var oImg=new Image();
 		oImg.src='http://www.zhinengshe.com/works/3525/img/'+i+'.jpg';
 		oImg.onload=function(){
@@ -31,7 +31,7 @@ window.onload=function(){
 
 			}
 		};
-	}
+	}*/
 	//简历下载
 	var oResume=document.getElementById('resume');
 	var oRi=oResume.children[0];
