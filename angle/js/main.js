@@ -29,6 +29,10 @@ window.onload=function(){
                 if(iNow==4){
                     iNow = 3;
                 }
+                for(var i=0;i<aA.length;i++){
+                    aA[i].className='';
+                }
+                aA[iNow].className='active';
                 move(oMain, {top: -iNow*aModule[0].offsetHeight}, {complete: function(){
                     bFlag = true;
                 }});
@@ -42,6 +46,10 @@ window.onload=function(){
                 if(iNow < 0){
                     iNow = 0;
                 }
+                for(var i=0;i<aA.length;i++){
+                    aA[i].className='';
+                }
+                aA[iNow].className='active';
                 move(oMain, {top: -iNow*aModule[0].offsetHeight}, {complete: function(){
                     bFlag = true;
                 }});
