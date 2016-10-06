@@ -11,8 +11,10 @@ window.onload=function(){
         for(var i=0;i<aModule.length;i++){
             aModule[i].style.height=document.documentElement.clientHeight+'px';
             oMain.style.height=aModule[0].offsetHeight*3+'px';
+           
 
         }
+         
         oMain.style.top=-document.documentElement.clinetHeight*iNow+'px';
     }
     getSize();
