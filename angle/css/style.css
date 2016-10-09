@@ -37,18 +37,18 @@ body { font-size: 16px;font-family: 'Microsoft Yahei', 'Helvetica Neue', Helveti
 .ban_div2{width:1100px;height:600px;float:left;position:relative;}
 
 .cell{position:absolute;left:40px;bottom:80px;}
-.pad{position:absolute;left:150px;bottom:80px;z-index:2;}
-.mac{position:absolute;right:150px;bottom:80px;z-index:2;}
-.pc{position:absolute;left:50%;top:50%;margin-left:-275px;margin-top:-230px;z-index:1;}
+.pad{position:absolute;left:150px;bottom:80px;/z-index:2;}
+.mac{position:absolute;right:150px;bottom:80px;/z-index:2;}
+.pc{position:absolute;left:50%;top:50%;margin-left:-275px;margin-top:-230px;/z-index:1;}
 /*works*/
 
 
 
   
 /*works*/
-.works{position: relative;width:100%;position:relative;background:#c2ef0e;margin:0 auto;}
+.works{position: relative;width:100%;position:relative;background:#c2ef0e;margin:0 auto;overflow-y:hidden; }
 
-.works ul{opacity:0;width:900px;height:600px;position:absolute;top:90px;left:263px;}
+.works ul{opacity:0;width:900px;height:600px;position:absolute;top:90px;left:263px;overflow-y:hidden; }
 .works ul li{width:150px;height:150px;position:relative;border-radius:50%;margin:40px 30px;margin-bottom:0px;float:left;}
 .works ul li a{position:relative;}
 .works img{width:150px;height:150px;position:relative;z-index:2;}
