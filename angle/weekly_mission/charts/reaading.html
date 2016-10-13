@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Readding跟读成绩</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <script type="text/javascript" src="http://cdn.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
+    <script>
+        //查询登录设备
+        window.onload=function(){
+            function browserRedirect() {
+                var sUserAgent = navigator.userAgent.toLowerCase();
+                var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+                var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+                var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+                var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+                var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+                var bIsAndroid = sUserAgent.match(/android/i) == "android";
+                var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+                var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+                if (bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+                    $("#container").css("height","400px");
+
+                }
+            }
+            browserRedirect();
+        }
+
+    </script>
+    <script type="text/javascript">
+        var url = "../data.json";
+        var self = this;
+        //请求数据回调
+        function GetData(url,success){
+            $.ajax({
+                url: url,
+                success: success
+            });
+        }
+        $(function () {
+            var colors = [];
+            GetData(url,function(data){
+                self.data = data.content[0].classIn.mission[0].studentData; //数据赋值
+                console.log(self.data);
+                userName= new Array(); //列表姓名
+                avScore = new Array();//平均分数 avScore
+                creditAll = new Array();//距离满分
+                creditSelf = new Array();//当前分数 Reading
+                for( i=0;i<self.data.length;i++){
+                    userName.push( self.data[i].stdName);
+                    avScore.push(self.data[i].Reading.avScore);
+                    creditSelf.push(self.data[i].Reading.creditSelf);
+                    creditAll.push(self.data[i].Reading.creditAll-self.data[i].Reading.creditSelf);//满分减去当前分数
+                };
+                $('#container').highcharts({
+                    chart: {
+                        type: 'column',
+                        borderRadius: 20
+                    },
+                    title: {
+                        margin: 60,
+                        text: '<a href="#"style="display:block;width:100px;height:40px;line-height:20px;text-align:center;border-radius:20px;padding:6px 15px;background:#6dc7ea;color:#fff;text-decoration:none; font-size: 14px">' +
+                        'Reading<br>' +
+                        '跟读成绩</a>',
+                        align: 'left',
+                        x: 10,
+                        y: 20,
+                        useHTML: true,
+                    },
+
+                    xAxis: {
+                        categories: userName,
+                        tickWidth:2,
+                        labels: {
+                            rotation: -45,
+                            align: 'right',
+                            style: {
+                                fontSize: '8px',
+                                fontFamily: 'Verdana, sans-serif'
+                            }
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        max:100,
+                        gridLineColor: '#a7daf5',
+                        title: {
+                            text: ''
+                        },
+                        labels: {
+                            formatter:function(){
+                                if(this.value ===0){
+                                    return this.value;
+                                }
+                                if(this.value <=100) {
+                                    return this.value+"分";
+                                }else if(this.value >100 && this.value <=200) {
+                                    return this.value+"分";
+                                }else {
+                                    return this.value+"分";
+                                }
+                            }
+                        }
+                    },
+
+                    tooltip: {
+                        pointFormat: '<span style="color:chartreuse">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}分)<br/>',
+                        shared: true,
+
+                    },
+                    exporting: { enabled: false },//隐藏导出图片
+                    credits: { enabled: false },//隐藏highcharts的站点标志
+
+                    colors:["#e1f4fb",'#4ddbef'],
+
+                    legend: {
+                        enable:true,
+                        align: 'right',
+                        verticalAlign: 'top',
+                        y:6,
+                        layout: 'vertical' ,
+                        floating:true,
+                        itemStyle:{
+                            color:'#000',
+                            fontSize:14
+                        }
+                    },
+                    plotOptions: {
+                        column: {
+                            stacking: 'percent'
+                        }
+                    },
+                    series: [{
+                        name: '距离满分',
+                        data: creditAll
+                    }, {
+                        name: '跟读分数',
+                        data: creditSelf
+                    },
+                        { name: '平均值',
+                            //color:"red",
+                            data: avScore,
+                            marker: {
+
+                                states: {
+                                    hover: {
+                                        enabled: false
+                                    }
+                                },
+                                enabled: false
+                            },
+                            dashStyle: 'shortdot',
+                            type:'line',
+                            color: '#a7daf5',
+                            lineColor:'#a7daf5'}]
+                });
+            });
+
+
+        });
+    </script>
+</head>
+<body>
+<script src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+<script src="http://cdn.hcharts.cn/highcharts/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 300px; height: 700px; margin: 0px auto"></div>
+
+</body>
+</html>

@@ -1,0 +1,5025 @@
+{
+  "name":"lucky li",
+  "title":"主教",
+  "zj_img":"images/teacher.png",
+  "content": [
+    {"className":"FL_KS_010101",
+      "classIn":{
+        "mission":[
+
+          {
+            "missName": "Year to Date",
+            "studentsNum":"5",
+            "studentData":[
+              {
+                "stdName": "liy1",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+
+                },
+                "Reading":{
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true",
+                  "Quiz":{
+                    "correctRate":"60%",
+                    "avCorrectRate":"60%"
+                  }
+
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy2",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy3",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy4",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy5",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy6",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true",
+                  "Quiz":{
+                    "correctRate":"60%",
+                    "avCorrectRate":"60%"
+                  }
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy7",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy8",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy9",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy10",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy11",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true",
+                  "Quiz":{
+                    "correctRate":"60%",
+                    "avCorrectRate":"60%"
+                  }
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy12",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy13",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy14",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              }
+            ]
+          },
+          {
+            "missName": "Mission 1",
+            "studentsNum":"5",
+            "studentData":[
+              {
+                "stdName": "liy1",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true",
+                  "taskDetail":[
+                    {"complete":true,"score":1},
+                    {"complete":true,"score":1},
+                    {"complete":true,"score":1},
+                    {"complete":true,"score":1},
+                    {"complete":true,"score":1},
+                    {"complete":true,"score":1},
+                    {"complete":true,"score":1},
+                    {"complete":true,"score":1}
+                  ]
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true",
+                  "taskDetail":[
+                    {
+                      "img":"images/book01.png",
+                      "complete1":true,
+                      "complete2":true,
+                      "complete3":true,
+                      "score1":70,
+                      "score2":90
+                    },
+                    {
+                      "img":"images/book02.png",
+                      "complete1":true,
+                      "complete2":true,
+                      "complete3":true,
+                      "score1":70,
+                      "score2":90
+                    },
+                    {
+                      "img":"images/book01.png",
+                      "complete1":true,
+                      "complete2":true,
+                      "complete3":true,
+                      "score1":70,
+                      "score2":90
+                    }
+                  ]
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy2",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy3",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy4",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy5",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "classOut": {
+        "mission": [
+          {
+            "missName": "Year to Date",
+            "studentsNum": "5",
+            "name":"lucky li",
+            "title":"主教",
+            "zj_img":"images/teacher.png",
+            "oPas": {
+              "creditAll": 1000,
+              "creditRankSelf": 20,
+              "creditRankAll": 100,
+              "correctRateRankSelf": 10,
+              "correctRateRankAll": 100,
+              "firstRight":"50%",
+              "credit":50
+            },
+            "Reading": {
+              "creditAll": 100,
+              "creditRankSelf": 20,
+              "creditRankAll": 100,
+              "correctRateRankSelf": 10,
+              "correctRateRankAll": 100,
+              "genduRankSelf": 20,
+              "genduRankAll": 100,
+              "firstRight":"50%",
+              "credit":50,
+              "genduCredit":70
+            },
+            "live": {
+              "creditAll": 100,
+              "creditRankSelf": 20,
+              "creditRankAll": 100,
+              "correctRateRankSelf": 10,
+              "correctRateRankAll": 100,
+              "genduRankSelf": 20,
+              "genduRankAll": 100,
+              "firstRight":"50%",
+              "genduCredit":70
+            },
+            "studentData": [
+              {
+                "stdName": "liy1",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy2",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy3",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy4",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy5",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy6",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy7",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy8",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy9",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy10",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy11",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy12",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy13",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy14",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              }
+            ]
+          },
+          {
+            "missName": "Mission 1",
+            "studentsNum": "5",
+            "name":"lucky li",
+            "title":"主教",
+            "zj_img":"images/teacher.png",
+            "oPas": {
+              "creditAll": 1000,
+              "creditRankSelf": 20,
+              "creditRankAll": 100,
+              "correctRateRankSelf": 10,
+              "correctRateRankAll": 100,
+              "firstRight":"50%",
+              "credit":50
+            },
+            "Reading": {
+              "creditAll": 100,
+              "creditRankSelf": 20,
+              "creditRankAll": 100,
+              "correctRateRankSelf": 10,
+              "correctRateRankAll": 100,
+              "genduRankSelf": 20,
+              "genduRankAll": 100,
+              "firstRight":"50%",
+              "credit":50,
+              "genduCredit":70
+            },
+            "live": {
+              "creditAll": 100,
+              "creditRankSelf": 20,
+              "creditRankAll": 100,
+              "correctRateRankSelf": 10,
+              "correctRateRankAll": 100,
+              "genduRankSelf": 20,
+              "genduRankAll": 100,
+              "firstRight":"50%",
+              "genduCredit":70
+            },
+            "studentData": [
+              {
+                "stdName": "liy1",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy2",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy3",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy4",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy5",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy6",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy7",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy8",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy9",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy10",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy11",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy12",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy13",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy14",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {"className":"FL_KS_010102",
+      "classIn":{
+        "mission":[
+
+          {
+            "missName": "Year to Date",
+            "studentsNum":"5",
+            "studentData":[
+              {
+                "stdName": "liy1",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true",
+                  "Quiz":{
+                    "correctRate":"60%",
+                    "avCorrectRate":"60%"
+                  }
+                },
+
+                "live":{
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy2",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy3",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy4",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy5",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy6",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true",
+                  "Quiz":{
+                    "correctRate":"60%",
+                    "avCorrectRate":"60%"
+                  }
+                },
+
+                "live":{
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy7",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy8",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy9",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy10",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy11",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true",
+                  "Quiz":{
+                    "correctRate":"60%",
+                    "avCorrectRate":"60%"
+                  }
+                },
+
+                "live":{
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy12",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy13",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy14",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              }
+            ]
+          },
+          {
+            "missName": "Mission 1",
+            "studentsNum":"5",
+            "studentData":[
+              {
+                "stdName": "liy1",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy2",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy3",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy4",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy5",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "classOut": {
+        "mission": [
+          {
+            "missName": "Year to Date",
+            "studentsNum": "5",
+            "name":"lucky li",
+            "title":"主教",
+            "zj_img":"images/teacher.png",
+            "oPas": {
+              "creditAll": 1000,
+              "creditRankSelf": 20,
+              "creditRankAll": 100,
+              "correctRateRankSelf": 10,
+              "correctRateRankAll": 100,
+              "firstRight":"50%",
+              "credit":50
+            },
+            "Reading": {
+              "creditAll": 100,
+              "creditRankSelf": 20,
+              "creditRankAll": 100,
+              "correctRateRankSelf": 10,
+              "correctRateRankAll": 100,
+              "genduRankSelf": 20,
+              "genduRankAll": 100,
+              "firstRight":"50%",
+              "credit":50,
+              "genduCredit":70
+            },
+            "live": {
+              "creditAll": 100,
+              "creditRankSelf": 20,
+              "creditRankAll": 100,
+              "correctRateRankSelf": 10,
+              "correctRateRankAll": 100,
+              "genduRankSelf": 20,
+              "genduRankAll": 100,
+              "firstRight":"50%",
+              "genduCredit":70
+            },
+            "studentData": [
+              {
+                "stdName": "liy1",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy2",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy3",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy4",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy5",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy6",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy7",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy8",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy9",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy10",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy11",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy12",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy13",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy14",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              }
+            ]
+          },
+          {
+            "missName": "Mission 1",
+            "studentsNum": "5",
+            "name":"lucky li",
+            "title":"主教",
+            "zj_img":"images/teacher.png",
+            "oPas": {
+              "creditAll": 1000,
+              "creditRankSelf": 20,
+              "creditRankAll": 100,
+              "correctRateRankSelf": 10,
+              "correctRateRankAll": 100,
+              "firstRight":"50%",
+              "credit":50
+            },
+            "Reading": {
+              "creditAll": 100,
+              "creditRankSelf": 20,
+              "creditRankAll": 100,
+              "correctRateRankSelf": 10,
+              "correctRateRankAll": 100,
+              "genduRankSelf": 20,
+              "genduRankAll": 100,
+              "firstRight":"50%",
+              "credit":50,
+              "genduCredit":70
+            },
+            "live": {
+              "creditAll": 100,
+              "creditRankSelf": 20,
+              "creditRankAll": 100,
+              "correctRateRankSelf": 10,
+              "correctRateRankAll": 100,
+              "genduRankSelf": 20,
+              "genduRankAll": 100,
+              "firstRight":"50%",
+              "genduCredit":70
+            },
+            "studentData": [
+              {
+                "stdName": "liy1",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy2",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy3",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy4",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy5",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy6",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy7",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy8",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy9",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy10",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy11",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy12",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy13",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy14",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {"className":"FL_KS_010103",
+      "classIn":{
+        "mission":[
+
+          {
+            "missName": "Year to Date",
+            "studentsNum":"5",
+            "studentData":[
+              {
+                "stdName": "liy1",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true",
+                  "Quiz":{
+                    "correctRate":"60%",
+                    "avCorrectRate":"60%"
+                  }
+                },
+
+                "live":{
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy2",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy3",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy4",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy5",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy6",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true",
+                  "Quiz":{
+                    "correctRate":"60%",
+                    "avCorrectRate":"60%"
+                  }
+                },
+
+                "live":{
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy7",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy8",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy9",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy10",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy11",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true",
+                  "Quiz":{
+                    "correctRate":"60%",
+                    "avCorrectRate":"60%"
+                  }
+                },
+
+                "live":{
+                  "creditRankSelf": 20,
+                  "creditRankAll": 100,
+                  "correctRateRankSelf": 10,
+                  "firstRight":"50%",
+                  "credit":50,
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy12",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy13",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy14",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              }
+            ]
+          },
+          {
+            "missName": "Mission 1",
+            "studentsNum":"5",
+            "studentData":[
+              {
+                "stdName": "liy1",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy2",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy3",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy4",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              },
+              {
+                "stdName": "liy5",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate":"30%",
+                  "avCorrectRate": "50%",
+                  "complete":"true"
+                },
+                "Reading":{
+                  "creditAll":100,
+                  "creditSelf":30,
+                  "score":30,
+                  "avScore":100,
+                  "ranking":1,
+                  "complete":"true"
+                },
+                "Quiz":{
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%"
+                },
+                "live":{
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate":"60%",
+                  "avCorrectRate":"60%",
+                  "avCredit":60,
+                  "ranking":2,
+                  "complete":"true"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "classOut": {
+        "mission": [
+          {
+            "missName": "Year to Date",
+            "studentsNum": "5",
+            "name":"lucky li",
+            "title":"主教",
+            "zj_img":"images/teacher.png",
+            "oPas": {
+              "creditAll": 1000,
+              "creditRankSelf": 20,
+              "creditRankAll": 100,
+              "correctRateRankSelf": 10,
+              "correctRateRankAll": 100,
+              "firstRight":"50%",
+              "credit":50
+            },
+            "Reading": {
+              "creditAll": 100,
+              "creditRankSelf": 20,
+              "creditRankAll": 100,
+              "correctRateRankSelf": 10,
+              "correctRateRankAll": 100,
+              "genduRankSelf": 20,
+              "genduRankAll": 100,
+              "firstRight":"50%",
+              "credit":50,
+              "genduCredit":70
+            },
+            "live": {
+              "creditAll": 100,
+              "creditRankSelf": 20,
+              "creditRankAll": 100,
+              "correctRateRankSelf": 10,
+              "correctRateRankAll": 100,
+              "genduRankSelf": 20,
+              "genduRankAll": 100,
+              "firstRight":"50%",
+              "genduCredit":70
+            },
+            "studentData": [
+              {
+                "stdName": "liy1",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy2",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy3",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy4",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy5",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy6",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy7",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy8",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy9",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy10",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy11",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy12",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy13",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy14",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              }
+            ]
+          },
+          {
+            "missName": "Mission 1",
+            "studentsNum": "5",
+            "name":"lucky li",
+            "title":"主教",
+            "zj_img":"images/teacher.png",
+            "oPas": {
+              "creditAll": 1000,
+              "creditRankSelf": 20,
+              "creditRankAll": 100,
+              "correctRateRankSelf": 10,
+              "correctRateRankAll": 100,
+              "firstRight":"50%",
+              "credit":50
+            },
+            "Reading": {
+              "creditAll": 100,
+              "creditRankSelf": 20,
+              "creditRankAll": 100,
+              "correctRateRankSelf": 10,
+              "correctRateRankAll": 100,
+              "genduRankSelf": 20,
+              "genduRankAll": 100,
+              "firstRight":"50%",
+              "credit":50,
+              "genduCredit":70
+            },
+            "live": {
+              "creditAll": 100,
+              "creditRankSelf": 20,
+              "creditRankAll": 100,
+              "correctRateRankSelf": 10,
+              "correctRateRankAll": 100,
+              "genduRankSelf": 20,
+              "genduRankAll": 100,
+              "firstRight":"50%",
+              "genduCredit":70
+            },
+            "studentData": [
+              {
+                "stdName": "liy1",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy2",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy3",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy4",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy5",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy6",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy7",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy8",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy9",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy10",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy11",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy12",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy13",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              },
+              {
+                "stdName": "liy14",
+                "stdPic": "images/lili.jpg",
+                "oPas": {
+                  "creditAll": 100,
+                  "creditSelf": 20,
+                  "correctRate": "30%",
+                  "avCorrectRate": "50%",
+                  "complete": "true"
+                },
+                "Reading": {
+                  "creditAll": 100,
+                  "creditSelf": 30,
+                  "score": 30,
+                  "avScore": 100,
+                  "ranking": 1,
+                  "complete": "true"
+                },
+                "Quiz": {
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%"
+                },
+                "live": {
+                  "creditAll": 100,
+                  "creditSelf": 40,
+                  "correctRate": "60%",
+                  "avCorrectRate": "60%",
+                  "avCredit": 60,
+                  "ranking": 2,
+                  "complete": "true"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
