@@ -26,6 +26,10 @@ window.onload = function(){
                 if(iNow > 3){
                     iNow = 3;
                 }
+                 for(var i=1;i<aLi.length;i++){
+                    aLi[i].className='';
+                }
+                aLi[iNow+1].className='active';
                 move(oBg, {top: -iNow*aModule[0].offsetHeight}, {complete: function(){
                     bFlag = true;
                 }});
@@ -37,6 +41,11 @@ window.onload = function(){
                 if(iNow < 0){
                     iNow = 0;
                 }
+
+                for(var i=1;i<aLi.length;i++){
+                    aLi[i].className='';
+                }
+                aLi[iNow+1].className='active';
                 move(oBg, {top: -iNow*aModule[0].offsetHeight}, {complete: function(){
                     bFlag = true;
                 }});
@@ -64,14 +73,23 @@ window.onload = function(){
     for(var i = 1; i < aLi.length; i++){
         aLi[i].index = i;
         aLi[i].onmouseenter = function(){
+            for(var i=1;i<aLi.length;i++){
+                aLi[i].className='';
+            }
             var oB = this.children[0];
+            this.className='active';
             move(oB,{width:nav_arr[this.index-1]},{duration:200,easing:'linear'});
         };
         aLi[i].onmouseleave = function(){
             var oB = this.children[0];
+            this.className='';
             move(oB,{width:0},{duration:600,easing:'linear'});
         };
         aLi[i].onclick = function(){
+            for(var i=1;i<aLi.length;i++){
+                aLi[i].className='';
+            }
+            this.className='active';
             var k = this.index;
             move(oBg, {top: -(this.index-1)*aModule[0].offsetHeight}, {complete: function(){
                 iNow = k-1;
@@ -80,11 +98,74 @@ window.onload = function(){
     }
     
 
+
 };
+    //clock
+     var oBox=document.querySelector('#box');
+    var oH=document.querySelector('#box .hours');
+    var oM=document.querySelector('#box .min');
+    var oS=document.querySelector('#box .sec');
 
+    function clock(){
+        var oDate=new Date();
+        var h=oDate.getHours();
+        var m=oDate.getMinutes();
+        var s=oDate.getSeconds();
+        var ms=oDate.getMilliseconds();
 
+        oH.style.transform='rotate('+(h%12*30+m/60*30)+'deg)';
+        oM.style.transform='rotate('+(m*6+s/60*6)+'deg)';
+        oS.style.transform='rotate('+(s*6+ms/1000*6)+'deg)';
+    }
+    clock();
+    setInterval(clock, 30); 
+   
+  // ABOUT
+   
+   
+  
+    var oAbout = document.getElementById('about');
+    var aBlock = oAbout.children;
+    for(var i = 3; i < aBlock.length; i++){
+        ball(aBlock[i]);
+    }
 
-
+ //works
+    var woBtn=document.getElementById('btn1');
+    var woDiv=document.getElementById('works');
+    var waDiv=woDiv.getElementsByTagName('ul');
+    var waBtn=woBtn.children;
+    for(var i=0;i<waBtn.length;i++){
+        (function(index){
+            waBtn[i].onmouseover=function(){
+                for(var i=0;i<waBtn.length;i++){
+                    waBtn[i].className='';
+                    move(waDiv[i],{opacity:0});
+                }
+                    waBtn[index].className='active';
+                    move(waDiv[index],{opacity:1});
+            };
+        })(i);
+    }
+    var aImg=woDiv.getElementsByTagName('img');
+    var aSpan=woDiv.getElementsByTagName('span');
+    
+    for(var i=0;i<aImg.length;i++){
+        (function(index){
+            aImg[i].onmouseover=function(){
+                for(var i=0;i<aImg.length;i++){
+                    move(aImg[i],{opacity:1});
+                    move(aSpan[i],{opacity:0});
+                }
+                    move(aImg[index],{opacity:0});
+                    move(aSpan[index],{opacity:0.8});
+            };
+            aImg[i].onmouseout=function(){
+                move(aImg[index],{opacity:1});
+                move(aSpan[index],{opacity:0});
+            };
+        })(i);
+    }
 
 
 

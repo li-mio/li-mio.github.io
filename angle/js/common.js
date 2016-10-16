@@ -1,4 +1,3 @@
-// by: 有姿态的北漂
 
 
 function getStyle(obj,name){
@@ -125,21 +124,7 @@ function domReady(fn){
     }
 }
 
-// function collTest(obj1,obj2){
-//  var l1 = obj1.offsetLeft;
-//  var r1 = obj1.offsetWidth + l1;
-//  var t1 = obj1.offsetTop;
-//  var b1 = obj1.offsetHeight + t1;
-//  var l2 = obj2.offsetLeft;
-//  var r2 = obj2.offsetWidth + l2;
-//  var t2 = obj2.offsetTop;
-//  var b2 = obj2.offsetHeight + t2;
-//  if(l2>r1 || l1>r2 || t2>b1 || t1>b2){
-//      return false;
-//  }else{
-//      return true;
-//  }
-// }
+
 
 function collTest(obj1,obj2){
     var l1 = getPos(obj1).left;

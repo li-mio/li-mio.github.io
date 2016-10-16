@@ -9,12 +9,8 @@
 <link href="" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/base.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
-<script src="js/common.js"></script>
-<script src="js/index.js"></script>
-
 </head>
 <body>
-
     <!-- 主页 -->
     <div class="bg" id="bg">
         <!-- HOME -->
@@ -23,7 +19,7 @@
           
             <ul class="nav" id="nav">
                 <li class="icon">≡</li>
-                <li>HOME<b style="width: 0px;"></b></li>
+                <li class="active">HOME<b style="width: 0px;"></b></li>
                 <li>ABOUT<b style="width: 0px;"></b></li>
                 <li>WORKS<b style="width: 0px;"></b></li>
                 <li>CONTACT<b style="width: 0px;"></b></li>
@@ -39,7 +35,8 @@
                     <p>——罗曼.罗兰.</p>
                 </div>
                
-            </div>  
+            </div>
+           
         </div>
 
         <!-- ABOUT -->
@@ -47,16 +44,27 @@
             <div class="bj1 "></div>
             <div class="bj2 "></div>
 
-            <div id="box">
-                <div class="hours"></div>
-                <div class="min"></div>
-                <div class="sec"></div>
-                <div class="cap"></div>
+           
+            <div class="box2">
+                <img src="images/5.png" />
+                <div class="font">
+                    <p>李欢欢</p>
+                    <p>河南师范大学</p>
+                    <p class="sex">女 | 22岁 | 1994-05</p>
+                    <p>1,精通html、css、javascript,能写出符合W3C标准、兼容主流浏览器的代码</p>
+                    <p>2,熟练掌握jQuery、Ajax、Jsonp等前端技术,熟悉正则、面向对象、常用设计模式等</p>
+                    <p>3,熟悉html5和css3特性,熟悉响应式设计及其实现方式</p>
+                    <p>4,对PHP、Nodejs、算法、数据结构有一定的了解</p>
+                </div>
+                <a href="demo/lcResume.doc" class="more">更多 +</a>
             </div>
+            <div class="block-1"></div>
+            <div class="block-2"></div>
+           
         </div>
 
         <!-- WORKS -->
-        <div class="works" id="works">
+         <div class="works" id="works">
                     <ul class="active clearfix">
                         <li>
                             <a target="_blank" href="demo/京东/index.html">
@@ -84,7 +92,7 @@
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="demo/爱淘宝/index.html">
+                            <a target="_blank" href="demo/淘宝网/淘宝网.html">
                                 <img src="images/works/6.png" />
                                 <span>淘宝首页</span>
                             </a>
@@ -118,13 +126,13 @@
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="demo/图片随机切换/zhaopian.html">
+                            <a target="_blank" href="demo/zhaopian.html">
                                 <img src="images/works/1-2.png" />
                                 <span>图片随机切换</span>
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="demo/布局转换/yema.html">
+                            <a target="_blank" href="demo/yema.html">
                                 <img src="images/works/1-3.png" />
                                 <span>布局转换</span>
                             </a>
@@ -255,64 +263,8 @@
             </div>
     </div> 
 </body>
-<script>
-   
-    var oBox=document.querySelector('#box');
-    var oH=document.querySelector('#box .hours');
-    var oM=document.querySelector('#box .min');
-    var oS=document.querySelector('#box .sec');
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
 
-    function clock(){
-        var oDate=new Date();
-        var h=oDate.getHours();
-        var m=oDate.getMinutes();
-        var s=oDate.getSeconds();
-        var ms=oDate.getMilliseconds();
 
-        oH.style.transform='rotate('+(h%12*30+m/60*30)+'deg)';
-        oM.style.transform='rotate('+(m*6+s/60*6)+'deg)';
-        oS.style.transform='rotate('+(s*6+ms/1000*6)+'deg)';
-    }
-    clock();
-    setInterval(clock, 30);
-
-    //works
-    var woBtn=document.getElementById('btn1');
-    var woDiv=document.getElementById('works');
-    var waDiv=woDiv.getElementsByTagName('ul');
-    var waBtn=woBtn.children;
-    for(var i=0;i<waBtn.length;i++){
-        (function(index){
-            waBtn[i].onmouseover=function(){
-                for(var i=0;i<waBtn.length;i++){
-                    waBtn[i].className='';
-                    move(waDiv[i],{opacity:0});
-                }
-                    waBtn[index].className='active';
-                    move(waDiv[index],{opacity:1});
-            };
-        })(i);
-    }
-    var aImg=woDiv.getElementsByTagName('img');
-    var aSpan=woDiv.getElementsByTagName('span');
-    
-    for(var i=0;i<aImg.length;i++){
-        (function(index){
-            aImg[i].onmouseover=function(){
-                for(var i=0;i<aImg.length;i++){
-                    move(aImg[i],{opacity:1});
-                    move(aSpan[i],{opacity:0});
-                }
-                    move(aImg[index],{opacity:0});
-                    move(aSpan[index],{opacity:0.8});
-            };
-            aImg[i].onmouseout=function(){
-                move(aImg[index],{opacity:1});
-                move(aSpan[index],{opacity:0});
-            };
-        })(i);
-    }
-    
-
-</script>
 </html>
