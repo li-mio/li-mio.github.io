@@ -99,31 +99,9 @@ window.onload = function(){
     
 
 
-};
-    //clock
-     var oBox=document.querySelector('#box');
-    var oH=document.querySelector('#box .hours');
-    var oM=document.querySelector('#box .min');
-    var oS=document.querySelector('#box .sec');
 
-    function clock(){
-        var oDate=new Date();
-        var h=oDate.getHours();
-        var m=oDate.getMinutes();
-        var s=oDate.getSeconds();
-        var ms=oDate.getMilliseconds();
 
-        oH.style.transform='rotate('+(h%12*30+m/60*30)+'deg)';
-        oM.style.transform='rotate('+(m*6+s/60*6)+'deg)';
-        oS.style.transform='rotate('+(s*6+ms/1000*6)+'deg)';
-    }
-    clock();
-    setInterval(clock, 30); 
-   
   // ABOUT
-   
-   
-  
     var oAbout = document.getElementById('about');
     var aBlock = oAbout.children;
     for(var i = 3; i < aBlock.length; i++){
@@ -168,7 +146,7 @@ window.onload = function(){
     }
 
 
-
+};
 
 
 

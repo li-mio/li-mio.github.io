@@ -23,18 +23,19 @@ body{overflow: hidden;}
 .about .bj1{ background:url(img/pap3.png) no-repeat; }
 .about .bj2{ background:url(img/pap1.png) no-repeat;}
 
-.about .block-1{position: absolute; left:50%; top: 300px; width: 120px; height: 120px; border-radius:50%;background: rgba(9,250,163,0.4); border: 1px solid #679; cursor: pointer;}
-.about .block-2{position: absolute; left:80%; top: 450px; width: 120px; height: 120px;border-radius:50%; background: rgba(190,34,90,0.5); border: 1px solid #e2d; cursor: pointer;}
+.about .block-1{position: absolute; right:100px; top: 100px; width: 120px; height: 120px; border-radius:50%;background: rgba(18,210,233,0.2); border: 1px solid #6799; cursor: pointer;}
+.about .block-2{position: absolute; left:80%; top: 450px; width: 120px; height: 120px;border-radius:50%; background: rgba(190,34,90,0.2); border: 1px solid #f699; cursor: pointer;}
 
-.box2{width:440px;position:relative;margin:0px 60%;}
+.box2{width:440px;height:440px;border-radius:50%;background:rgba(129,135,129,0.1);position:absolute;left:670px;top:80px;}
 
-.box2 .font{width:340px;height:100%;color:#fff;font-size:14px;position:absolute;top:20px;left:50%;margin-left:-170px;}
-.box2 .sex{margin-bottom:60px;}
+.box2 .font{width:340px;height:100%;color:#fff;font-size:14px;line-height:30px;position:absolute;top:30px;left:50%;margin-left:-170px;}
+.box2 .sex{margin-bottom:40px;}
 .box2 .more{font-size:16px;color:#fff;position:absolute;top:370px;left:50%;margin-left:-20px;}
 .box2 .font p{width:100%;text-align:center;}
+.box2 .con2{width:100%;text-align:center;}
 /*WORKS*/
 .works{position: relative; width: 100%; background: url(img/fd_ref.jpg); background-size: cover;}
-.works ul{opacity:0;width:900px;height:600px;position:absolute;top:0;left:263px;overflow-y:hidden; }
+.works ul{opacity:0;width:900px;height:600px;position:absolute;top:0;left:263px;overflow-y:hidden;line-height:36px; }
 .works ul li{width:150px;height:150px;position:relative;border-radius:50%;margin:40px 30px;margin-bottom:0px;float:left;}
 .works ul li a{position:relative;}
 .works img{width:150px;height:150px;position:relative;z-index:2;}
