@@ -1,11 +1,8 @@
 
-
 /*HOME*/
 body{overflow: hidden;}
 .bg{position: absolute; left: 0; top: 0; width: 100%;}
 .home{position: relative; margin: 0 auto; width: 100%; overflow: hidden; background: url(img/bg_home.jpg);}
-
-
 .home .nav{position: fixed; left: 65px; top: 190px; width: 100px; height: 366px; z-index: 999; overflow: hidden;}
 .home .nav li{position: relative; font-size: 16px; font-weight:bold;color: #d7274d;cursor: pointer; margin: 30px 0; padding-bottom: 10px;z-index:1000;}
 .home .nav b{position: absolute; left: 0; bottom: 0; height:4px; background:#d7274d;}
@@ -33,6 +30,7 @@ body{overflow: hidden;}
 .box2 .more{font-size:16px;color:#fff;position:absolute;top:370px;left:50%;margin-left:-20px;}
 .box2 .font p{width:100%;text-align:center;}
 .box2 .con2{width:100%;text-align:center;}
+
 /*WORKS*/
 .works{position: relative; width: 100%; background: url(img/fd_ref.jpg); background-size: cover;}
 .works ul{opacity:0;width:900px;height:600px;position:absolute;top:0;left:263px;overflow-y:hidden;line-height:36px; }
@@ -45,20 +43,13 @@ body{overflow: hidden;}
 .works .btn1 a{width:80px;height:30px;font-weight:bold;font-size:16px;border-radius:10px;text-align:center;line-height:30px;display:inline-block;background:#fff;margin:10px;}
 .works .btn1 a.active{background:#d691e0;color:#fff;}
 
-
-
-/*CONTACT*/
- 
+/*CONTACT*/ 
  .contact{ width:100%; margin:0 auto;position: relative; background: url(img/bg4.jpg); background-size: cover;padding:80px;}
- 
  .info{ width:400px; margin:0 auto;}
  .info h5{ font-size:22px; line-height:40px; background:url(img/t_orange.png) no-repeat  -250px bottom;}
  .inrCon{ margin-top:40px;}
  p{ height:34px;}
-
-
  p img{width: 120px; height: 120px;}
-
  .resume{ padding:12px 0 0 120px; height:68px;}
  .resume a{ display:block; width: 178px; height:44px; line-height:44px; text-align:center; color:#f69; font-weight:bold;}
 
