@@ -96,10 +96,6 @@ window.onload = function(){
             }});
         };
     }
-    
-
-
-
 
   // ABOUT
     var oAbout = document.getElementById('about');
