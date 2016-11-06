@@ -1,0 +1,125 @@
+
+/*HOME*/
+body{overflow: hidden;}
+.bg{position: absolute; left: 0; top: 0; width: 100%;}
+.home{position: relative; margin: 0 auto; width: 100%; overflow: hidden; background: url(img/bg_home.jpg);}
+.home .nav{position: fixed; left: 65px; top: 190px; width: 120px; height: 388px; z-index: 999; overflow: hidden;}
+.home .nav li{position: relative; font-size: 24px; font-weight:bold;color: #d7274d;cursor: pointer; margin: 30px 0; padding-bottom: 10px;z-index:1000;}
+.home .nav b{position: absolute; left: 0; bottom: 0; height:4px; background:#d7274d;}
+.home .nav .icon{font-size: 50px;}
+.home .nav .active{color:#f69;}
+
+.home .txt1{ width:400px; position:absolute; left:65%; top:0px; overflow:hidden; z-index:20}
+.home .txt1 img{ width:569px; height:333px}
+.home .txt1 .txtCon{ width:316px;padding-left:15px;margin-left: 32px;border-left: solid 1px #fff; margin-top:32px; position:relative; left:0; top:0;}
+.home .txt1 .txtCon p{ color:#fff; font-weight:bold; line-height:30px; text-indent:2em;}
+.home .txt1 .txtCon .p2{font-size:28px;}
+/*ABOUT*/
+.about{position: relative; width: 100%; background: #262f37 url(img/lampe.png); background-size: cover;}
+.about .bj1,.about .bj2{ width:100%; height:100%; position:absolute; left:0; top:0;}
+.about .bj1{ background:url(img/pap3.png) no-repeat; }
+.about .bj2{ background:url(img/pap1.png) no-repeat;}
+
+.about .block-1{position: absolute; right:100px; top: 100px; width: 120px; height: 120px; border-radius:50%;background: rgba(18,210,233,0.2); border: 1px solid #6799; cursor: pointer;}
+.about .block-2{position: absolute; left:80%; top: 450px; width: 120px; height: 120px;border-radius:50%; background: rgba(190,34,90,0.2); border: 1px solid #f699; cursor: pointer;}
+
+.box2{width:440px;height:440px;border-radius:50%;background:rgba(129,135,129,0.1);position:absolute;left:670px;top:80px;}
+
+.box2 .font{width:340px;height:100%;color:#fff;font-size:14px;line-height:30px;position:absolute;top:30px;left:50%;margin-left:-170px;}
+.box2 .sex{margin-bottom:40px;}
+.box2 .more{font-size:16px;color:#fff;position:absolute;top:370px;left:50%;margin-left:-20px;}
+.box2 .font p{width:100%;text-align:center;}
+.box2 .con2{width:100%;text-align:center;}
+
+/*WORKS*/
+.works{position: relative; width: 100%; background: url(img/fd_ref.jpg); background-size: cover;}
+.subjects{
+    font-size:100px;
+    text-align:center;
+    width:100%;
+    /*background:green;*/
+    position:relative;
+    background:url(../img/bgpage3.jpg) no-repeat;
+    background-size:100%;
+}
+.subjects ul{
+    width:900px;
+    height:600px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-400px;
+    margin-top:-260px;
+    overflow:hidden;
+
+}
+.subjects ul li{
+    cursor:pointer;
+    float:left;
+    font-size:30px;
+    width:250px;
+    height:250px;
+    margin:10px;
+    font-weight:bold;
+    text-align:center;
+    line-height:280px;
+    position:relative;
+    overflow:hidden;
+}
+.subjects ul li:nth-child(1){
+    border-radius:10px 50px 25px 50px;
+    background:aqua;;
+}
+.subjects ul li:nth-child(2){
+    border-radius:50px 50px 50px 50px;
+    background:#fdd283;
+}
+ .subjects ul li:nth-child(3){
+    border-radius:50px 10px 50px 25px;
+    background:#4499ee;
+}
+.subjects ul li:nth-child(4){
+    border-radius:50px 25px 25px 10px;
+    background:pink;
+}
+.subjects ul li:nth-child(5){
+    border-radius:50px 50px 50px 50px;
+    background: #fcfc8A;
+}
+.subjects ul li:nth-child(6){
+    border-radius:25px 50px 10px 50px;
+    background: #1291A9;
+}
+.subjects ul li span{
+    position:absolute;
+    font-size:30px;
+    width:250px;
+    height:250px;
+    opacity:.3;
+    left:-280px;
+    top:0;
+    background:#fff;
+    border-radius:30px;
+}
+/*CONTACT*/ 
+ .contact{ width:100%; margin:0 auto;position: relative; background: url(img/bg4.jpg); background-size: cover;padding:80px;}
+ .info{ width:400px; margin:0 auto;}
+ .info h5{ font-size:22px; line-height:40px; background:url(img/t_orange.png) no-repeat  -250px bottom;}
+ .inrCon{ margin-top:40px;}
+ p{ height:34px;}
+ p img{width: 120px; height: 120px;}
+ .resume{ padding:12px 0 0 120px; height:68px;}
+ .resume a{ display:block; width: 178px; height:44px; line-height:44px; text-align:center; color:#f69; font-weight:bold;}
+
+
+
+
+
+
+
+
+
+
+
+
+
