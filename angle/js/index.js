@@ -69,7 +69,7 @@ window.onload = function(){
         }
     };
     // 导航下面横线运动效果
-    var nav_arr = [50, 56, 60, 78];
+    var nav_arr = [60, 70, 80, 90];
     for(var i = 1; i < aLi.length; i++){
         aLi[i].index = i;
         aLi[i].onmouseenter = function(){
@@ -96,14 +96,31 @@ window.onload = function(){
             }});
         };
     }
+//文字闪烁
+  var oTxt=document.getElementById('txtCon');
+  var oP1=oTxt.children[2];
+  function flash(){
+    setTimeout(function(){
+        move(oP1,{opacity:0},{duration:1000,complete:function(){
+            move(oP1,{opacity:1},{duration:1000,complete:function(){
+                flash();
+            }})
 
+        }})
+    },1000);
+  }
+  flash();
   // ABOUT
     var oAbout = document.getElementById('about');
     var aBlock = oAbout.children;
     for(var i = 3; i < aBlock.length; i++){
         ball(aBlock[i]);
     }
-
+     setInterval(function(){
+        //oShine.style.color='rgb(255,0,0)';
+        aBlock[3].style.background='rgb('+rnd(0,256)+','+rnd(0,256)+','+rnd(0,256)+')';
+        //console.log(rnd(0,256));
+    },300);
  //works
     var woBtn=document.getElementById('btn1');
     var woDiv=document.getElementById('works');

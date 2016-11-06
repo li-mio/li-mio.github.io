@@ -3,25 +3,25 @@
 body{overflow: hidden;}
 .bg{position: absolute; left: 0; top: 0; width: 100%;}
 .home{position: relative; margin: 0 auto; width: 100%; overflow: hidden; background: url(img/bg_home.jpg);}
-.home .nav{position: fixed; left: 65px; top: 190px; width: 100px; height: 366px; z-index: 999; overflow: hidden;}
-.home .nav li{position: relative; font-size: 16px; font-weight:bold;color: #d7274d;cursor: pointer; margin: 30px 0; padding-bottom: 10px;z-index:1000;}
-.home .nav b{position: absolute; left: 0; bottom: 0; height:4px; background:#d7274d;}
+.home .nav{position: fixed; left: 65px; top: 190px; width: 100px; height: 380px; z-index: 999; overflow: hidden;}
+.home .nav li{position: relative; font-size: 20px; font-weight:bold;color:#d7274d;;cursor: pointer; margin: 30px 0; padding-bottom: 10px;z-index:1000;}
+.home .nav b{position: absolute; left: 0; bottom: 0; height:4px; background: #d7274d;}
 .home .nav .icon{font-size: 50px;}
-.home .nav .active{color:#f69;}
+.home .nav .active{color:#CC66FF;}
 
 .home .txt1{ width:400px; position:absolute; left:65%; top:0px; overflow:hidden; z-index:20}
 .home .txt1 img{ width:569px; height:333px}
 .home .txt1 .txtCon{ width:316px;padding-left:15px;margin-left: 32px;border-left: solid 1px #fff; margin-top:32px; position:relative; left:0; top:0;}
 .home .txt1 .txtCon p{ color:#fff; font-weight:bold; line-height:30px; text-indent:2em;}
-
+.home .txt1 .txtCon .p2{font-size:28px;}
 /*ABOUT*/
 .about{position: relative; width: 100%; background: #262f37 url(img/lampe.png); background-size: cover;}
 .about .bj1,.about .bj2{ width:100%; height:100%; position:absolute; left:0; top:0;}
 .about .bj1{ background:url(img/pap3.png) no-repeat; }
 .about .bj2{ background:url(img/pap1.png) no-repeat;}
 
-.about .block-1{position: absolute; right:100px; top: 100px; width: 120px; height: 120px; border-radius:50%;background: rgba(18,210,233,0.2); border: 1px solid #6799; cursor: pointer;}
-.about .block-2{position: absolute; left:80%; top: 450px; width: 120px; height: 120px;border-radius:50%; background: rgba(190,34,90,0.2); border: 1px solid #f699; cursor: pointer;}
+.about .block-1{position: absolute; right:100px; top: 100px; width: 150px; height: 150px; border-radius:50%;background: rgba(18,210,233,0.2); border: 1px solid #6799; cursor: pointer;text-align:center;line-height:150px;color:#fff;}
+.about .block-2{position: absolute; left:80%; top: 450px; width: 150px; height: 150px;border-radius:50%; background: rgba(190,34,90,0.2); border: 1px solid #f699; cursor: pointer;}
 
 .box2{width:440px;height:440px;border-radius:50%;background:rgba(129,135,129,0.1);position:absolute;left:670px;top:80px;}
 
