@@ -1,5 +1,31 @@
+window.onload=function(){
+    var oDiv=document.getElementById('line');   
+    var oSpan1=document.getElementById('loginnum');
+    var oFirst=document.getElementById('loadDiv');
+    var oBg=document.getElementById('bg');
+    var total=77;
+    var n=0;
+    for(var i=0;i<total;i++){
+        var oImg=new Image();
+        oImg.src='http://www.zhinengshe.com/works/3525/img/'+i+'.jpg';
+        oImg.onload=function(){
+            n++;
+            var scale=Math.floor(n/total*100);
+            oDiv.style.width=scale+'%';
+            oSpan1.innerHTML=scale+'%'; 
+            if(scale==100){
+                scale='加载完毕';
+                oSpan1.innerHTML=scale;
+                setTimeout(function(){
+                    move(oFirst,{opacity:0});
+                    
+                },400);
+                move(oBg,{opacity:1});
+            }
+        }
+    }
 
-window.onload = function(){
+
     // 动态创建页面高度
     var oBg = document.getElementById('bg');
     var aModule = oBg.children;
@@ -97,26 +123,26 @@ window.onload = function(){
         };
     }
 //文字闪烁
-  var oTxt=document.getElementById('txtCon');
-  var oP1=oTxt.children[2];
-  function flash(){
-    setTimeout(function(){
-        move(oP1,{opacity:0},{duration:1000,complete:function(){
-            move(oP1,{opacity:1},{duration:1000,complete:function(){
-                flash();
+    var oTxt=document.getElementById('txtCon');
+    var oP1=oTxt.children[2];
+    function flash(){
+        setTimeout(function(){
+            move(oP1,{opacity:0},{duration:1000,complete:function(){
+                move(oP1,{opacity:1},{duration:1000,complete:function(){
+                    flash();
             }})
 
         }})
-    },1000);
-  }
-  flash();
+      },1000);
+    }
+    flash();
   // ABOUT
     var oAbout = document.getElementById('about');
     var aBlock = oAbout.children;
     for(var i = 3; i < aBlock.length; i++){
         ball(aBlock[i]);
     }
-     setInterval(function(){
+    setInterval(function(){
         //oShine.style.color='rgb(255,0,0)';
         aBlock[3].style.background='rgb('+rnd(0,256)+','+rnd(0,256)+','+rnd(0,256)+')';
         //console.log(rnd(0,256));
@@ -157,9 +183,21 @@ window.onload = function(){
             };
         })(i);
     }
-
-
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
