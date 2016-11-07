@@ -122,8 +122,15 @@ window.onload=function(){
             }});
         };
     }
+    //两道线运动
+    var oTxt= document.getElementById('txtCon');
+    var oL1 = oTxt.children[0];
+    var oL2 = oTxt.children[1];
+   
+    move(oL1, {top: 40});
+    move(oL2,{left: -50});
 //文字闪烁
-    var oTxt=document.getElementById('txtCon');
+   
     var oP1=oTxt.children[2];
     function flash(){
         setTimeout(function(){
