@@ -1,7 +1,7 @@
 
 /*HOME*/
 body{overflow: hidden;}
-.loadDiv{ width: 100%; height:100%;background: url(../images/bg-welcome.jpg) ; position: fixed;left: 0; top: 0; }
+.loadDiv{ width: 100%; height:100%;background: url(../images/bg-welcome.jpg) ; background-size: cover; position: fixed;left: 0; top: 0; }
 .load{ width: 200px; height: 100px; position: absolute; left: 50%; margin-left: -100px; top: 50%;margin-top:-50px; text-align: center;}
 .load span{  color: #fff; font-size: 30px; }
 .load_line{ width: 200px; height: 20px; border-radius: 10px; background: #fff; 
