@@ -1,5 +1,30 @@
+window.onload=function(){
+    var oDiv=document.getElementById('line');   
+    var oSpan1=document.getElementById('loginnum');
+    var oFirst=document.getElementById('loadDiv');
+    var oBg=document.getElementById('bg');
+    var total=77;
+    var n=0;
+    for(var i=0;i<total;i++){
+        var oImg=new Image();
+        oImg.src='http://www.zhinengshe.com/works/3525/img/'+i+'.jpg';
+        oImg.onload=function(){
+            n++;
+            var scale=Math.floor(n/total*100);
+            oDiv.style.width=scale+'%';
+            oSpan1.innerHTML=scale+'%'; 
+            if(scale==100){
+                scale='加载完毕';
+                oSpan1.innerHTML=scale;
+                setTimeout(function(){
+                    move(oFirst,{opacity:0});
+                    
+                },400);
+                move(oBg,{opacity:1});
+            }
+        }
+    }
 
-window.onload = function(){
     // 动态创建页面高度
     var oBg = document.getElementById('bg');
     var aModule = oBg.children;
@@ -17,7 +42,9 @@ window.onload = function(){
     window.onresize = function(){
         getSize();
     };
-
+     // 导航
+    var oNav = document.getElementById('nav');
+    var aLi = oNav.getElementsByTagName('li');
     function wheel(bDown){
         if(bDown){
             if(bFlag){
@@ -57,9 +84,7 @@ window.onload = function(){
     addWheel(oBg, wheel);
 
 
-    // 导航
-    var oNav = document.getElementById('nav');
-    var aLi = oNav.getElementsByTagName('li');
+   
     // 导航栏鼠标移入动态效果
     aLi[0].onclick = function(){    //按钮
         if(parseFloat(oNav.style.height) < 110){
@@ -69,7 +94,7 @@ window.onload = function(){
         }
     };
     // 导航下面横线运动效果
-    var nav_arr = [50, 56, 60, 78];
+    var nav_arr = [70, 80, 90, 110];
     for(var i = 1; i < aLi.length; i++){
         aLi[i].index = i;
         aLi[i].onmouseenter = function(){
@@ -96,51 +121,60 @@ window.onload = function(){
             }});
         };
     }
+    //两道线运动
+    var oTxt= document.getElementById('txtCon');
+    var oL1 = oTxt.children[0];
+    var oL2 = oTxt.children[1];
+   
+    move(oL1, {top: 40});
+    move(oL2,{left: -50});
   //文字闪烁
-  var oTxt=document.getElementById('txtCon');
-  var oP1=oTxt.children[2];
-  function flash(){
-    setTimeout(function(){
-        move(oP1,{opacity:0},{duration:1000,complete:function(){
-            move(oP1,{opacity:1},{duration:1000,complete:function(){
-                flash();
-            }})
+    var oP1=oTxt.children[2];
+    function flash(){
+        setTimeout(function(){
+            move(oP1,{opacity:0},{duration:1000,complete:function(){
+                move(oP1,{opacity:1},{duration:1000,complete:function(){
+                    flash();
+                }})
 
-        }})
-    },1000);
-  }
-  flash();
-  // ABOUT
+            }})
+        },1000);
+    }
+    flash();
+// ABOUT
     var oAbout = document.getElementById('about');
     var aBlock = oAbout.children;
-    for(var i = 3; i < aBlock.length; i++){
+    for(var i = 2; i < aBlock.length; i++){
         ball(aBlock[i]);
     }
-
- //works
-  
- //第三页列表穿墙效果
-    var aLi=document.querySelectorAll('.subjects ul li');
-    for(var i=0;i<aLi.length;i++){
-        through(aLi[i]);
+   
+    setInterval(function(){
+        //oShine.style.color='rgb(255,0,0)';
+        aBlock[3].style.background='rgb('+rnd(0,256)+','+rnd(0,256)+','+rnd(0,256)+')';
+        //console.log(rnd(0,256));
+    },300);
+ //works穿墙效果
+    var aLin=document.querySelectorAll('.subjects ul li');
+    for(var i=0;i<aLin.length;i++){
+        through(aLin[i]);
     }
      //链接跳转
-    aLi[0].onclick=function(){
+    aLin[0].onclick=function(){
         window.open('href/html/index.html','_blank');
     };
-    aLi[1].onclick=function(){
+    aLin[1].onclick=function(){
         window.open('href/js/index.html','_blank');
     };
-    aLi[2].onclick=function(){
+    aLin[2].onclick=function(){
         window.open('href/h5/index.html','_blank');
     };
-    aLi[3].onclick=function(){
+    aLin[3].onclick=function(){
         window.open('href/mobile/index.html','_blank');
     };
-    aLi[4].onclick=function(){
+    aLin[4].onclick=function(){
         window.open('href/ajax/webQQ/login.html','_blank');
     };
-    aLi[5].onclick=function(){
+    aLin[5].onclick=function(){
         window.open('href/more/fishgame/index.html','_blank');
     };
 };
