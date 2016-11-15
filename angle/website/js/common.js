@@ -8,7 +8,7 @@ function move(obj,json,options){
     // 默认值
     var options = options || {};
     options.duration = options.duration || 500;
-    options.easing = options.easing || 'ease-out';
+    options.easing = options.easing || 'linear';
     // 初始值
     var start = {};
     var dis = {};

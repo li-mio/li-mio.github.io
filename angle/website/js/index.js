@@ -141,18 +141,150 @@ window.onload=function(){
         },1000);
     }
     flash();
+
+     //3D盒子，首页
+    var oBox = document.querySelector('.home .inside .box');
+    var x = 0;
+    var y = 0;
+    var iSpeedX = 0;
+    var iSpeedY = 0;
+    var lastX = 0;
+    var lastY = 0;
+    var timer1=null;
+    function cube(){
+        clearInterval(timer1);
+        timer1=setInterval(function(){
+            x+=1;
+            y+=1;
+            oBox.style.msTransform = 'perspective(800px) rotateX('+x+'deg) rotateY('+y+'deg)';
+            oBox.style.WebkitTransform = 'perspective(800px) rotateX('+x+'deg) rotateY('+y+'deg)';
+            oBox.style.OTransform = 'perspective(800px) rotateX('+x+'deg) rotateY('+y+'deg)';
+            oBox.style.MozTransform = 'perspective(800px) rotateX('+x+'deg) rotateY('+y+'deg)';
+        },16);
+    }
+    cube();
+    oBox.onmouseover=function(){
+        clearInterval(timer1);
+    };
+    oBox.onmouseout=function(){
+        cube();
+    };
+    oBox.onmousedown = function(ev){
+        return;
+        clearInterval(timer1);
+        clearInterval(oBox.timer);
+        var disX = ev.pageX - y;
+        var disY = ev.pageY - x;
+        document.onmousemove = function(ev){
+            x = ev.pageY-disY;
+            y = ev.pageX-disX;
+            oBox.style.msTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
+            oBox.style.WebkitTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
+            oBox.style.OTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
+            oBox.style.MozTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
+            iSpeedX = ev.pageX-lastX;
+            iSpeedY = ev.pageY-lastY;
+            lastX = ev.pageX;
+            lastY = ev.pageY;
+        };
+        document.onmouseup = function(){
+            document.onmousemove = null;
+            document.onmouseup = null;
+            oBox.timer = setInterval(function(){
+                iSpeedX*=0.95;
+                iSpeedY*=0.95;
+                x+=iSpeedY;
+                y+=iSpeedX;
+                oBox.style.msTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
+                oBox.style.WebkitTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
+                oBox.style.OTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
+                oBox.style.MozTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
+                if(Math.abs(iSpeedX)<1)iSpeedX=0;
+                if(Math.abs(iSpeedY)<1)iSpeedY=0;
+                if(iSpeedX==0&&iSpeedY==0){
+                    clearInterval(oBox.timer);
+                    clearInterval(timer1);
+                }
+
+            },30);
+            cube();
+        };
+        return false;
+    };
 // ABOUT
     var oAbout = document.getElementById('about');
-    var aBlock = oAbout.children;
-    for(var i = 2; i < aBlock.length; i++){
-        ball(aBlock[i]);
-    }
+    var aB1 = document.getElementById('block-1');
+    var aB2 = document.getElementById('block-2');
+    var aB3 = document.getElementById('block-3')
+    var aList = document.getElementById('list');
+    ball(aB1);
+    ball(aB2);
+    ball(aB3)
+    //for(var i = 2; i < aBlock.length; i++){
+     //   ball(aBlock[i]);
+    //}
    
     setInterval(function(){
         //oShine.style.color='rgb(255,0,0)';
-        aBlock[3].style.background='rgb('+rnd(0,256)+','+rnd(0,256)+','+rnd(0,256)+')';
+        aB1.style.background='rgb('+rnd(0,256)+','+rnd(0,256)+','+rnd(0,256)+')';
         //console.log(rnd(0,256));
-    },300);
+    },1000);
+    //无限运动效果
+    var aPos=[
+        {left:500, top:200},
+        {left:500, top:500},
+        {left:200, top:500},
+        {left:200, top:200}
+    ];
+    var n=0;
+    next();
+    function next(){
+        move(aB3, aPos[n%aPos.length], {duration:2000,
+            complete:function (){
+                n++;
+                next();
+            }   
+        });
+    }
+    //随机切换效果
+    var oUl=document.getElementById('list');
+    var aL=oUl.children;
+    // 创建span 与效果无关
+    for (var i=0; i<aL.length; i++)
+    {
+        var oSpan=document.createElement('span');
+        oSpan.innerHTML=i;
+        aL[i].appendChild(oSpan);
+    }
+    // 布局转换
+    var aPos=[];
+    for (var i=0; i<aL.length; i++)
+    {
+        aPos.push({
+            left:aL[i].offsetLeft,
+            top:aL[i].offsetTop
+        });
+    }
+    for (var i=0; i<aL.length; i++)
+    {
+        aL[i].style.position='absolute';
+        aL[i].style.left=aPos[i].left+'px';
+        aL[i].style.top=aPos[i].top+'px';
+        aL[i].style.margin=0;
+        aL[i].index=i;
+    }
+    // 随机换
+    document.onclick=function (){
+        aPos.sort(function (){
+            return Math.random()-0.5;
+        });
+        
+        
+        for (var i=0; i<aLi.length; i++)
+        {
+            move(aLi[i], aPos[i]);
+        }
+    };
  //works穿墙效果
     var aLin=document.querySelectorAll('.subjects ul li');
     for(var i=0;i<aLin.length;i++){
