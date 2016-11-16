@@ -253,7 +253,7 @@ window.onload=function(){
     for (var i=0; i<aLi1.length; i++)
     {
         var oSpan=document.createElement('span');
-        oSpan.innerHTML=i;
+        //oSpan.innerHTML=i;
         aLi1[i].appendChild(oSpan);
     }
     // 布局转换
