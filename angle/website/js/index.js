@@ -88,7 +88,7 @@ window.onload=function(){
     // 导航栏鼠标移入动态效果
     aLi[0].onclick = function(){    //按钮
         if(parseFloat(oNav.style.height) < 110){
-            move(oNav,{height:366},{duration:200,easing:'linear'});
+            move(oNav,{height:400},{duration:200,easing:'linear'});
         }else{
             move(oNav,{height:100},{duration:200,easing:'linear'});
         }
@@ -219,7 +219,7 @@ window.onload=function(){
     var aList = document.getElementById('list');
     ball(aB1);
     ball(aB2);
-    ball(aB3)
+
     //for(var i = 2; i < aBlock.length; i++){
      //   ball(aBlock[i]);
     //}
@@ -239,7 +239,7 @@ window.onload=function(){
     var n=0;
     next();
     function next(){
-        move(aB3, aPos[n%aPos.length], {duration:2000,
+        move(aB3, aPos[n%aPos.length], {duration:1000,
             complete:function (){
                 n++;
                 next();
@@ -248,43 +248,44 @@ window.onload=function(){
     }
     //随机切换效果
     var oUl=document.getElementById('list');
-    var aL=oUl.children;
+    var aLi1=oUl.children;
     // 创建span 与效果无关
-    for (var i=0; i<aL.length; i++)
+    for (var i=0; i<aLi1.length; i++)
     {
         var oSpan=document.createElement('span');
         oSpan.innerHTML=i;
-        aL[i].appendChild(oSpan);
+        aLi1[i].appendChild(oSpan);
     }
     // 布局转换
     var aPos=[];
-    for (var i=0; i<aL.length; i++)
+    for (var i=0; i<aLi1.length; i++)
     {
         aPos.push({
-            left:aL[i].offsetLeft,
-            top:aL[i].offsetTop
+            left:aLi1[i].offsetLeft,
+            top:aLi1[i].offsetTop
         });
     }
-    for (var i=0; i<aL.length; i++)
+    for (var i=0; i<aLi1.length; i++)
     {
-        aL[i].style.position='absolute';
-        aL[i].style.left=aPos[i].left+'px';
-        aL[i].style.top=aPos[i].top+'px';
-        aL[i].style.margin=0;
-        aL[i].index=i;
+        aLi1[i].style.position='absolute';
+        aLi1[i].style.left=aPos[i].left+'px';
+        aLi1[i].style.top=aPos[i].top+'px';
+        aLi1[i].style.margin=0;
+        aLi1[i].index=i;
     }
     // 随机换
-    document.onclick=function (){
+    oUl.onclick=function (){
         aPos.sort(function (){
             return Math.random()-0.5;
         });
         
         
-        for (var i=0; i<aLi.length; i++)
+        for (var i=0; i<aLi1.length; i++)
         {
-            move(aLi[i], aPos[i]);
+            move(aLi1[i], aPos[i]);
         }
     };
+ 
  //works穿墙效果
     var aLin=document.querySelectorAll('.subjects ul li');
     for(var i=0;i<aLin.length;i++){
