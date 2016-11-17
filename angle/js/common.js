@@ -8,7 +8,7 @@ function move(obj,json,options){
     // 默认值
     var options = options || {};
     options.duration = options.duration || 500;
-    options.easing = options.easing || 'ease-out';
+    options.easing = options.easing || 'linear'
     // 初始值
     var start = {};
     var dis = {};
@@ -283,4 +283,87 @@ function addWheel(obj, fn){
     }else{
         addEvent(obj, 'mousewheel', wheel);
     }
+}
+/*through*/
+function through(obj){
+    function a2d(n){
+        return n*180/Math.PI;
+    }
+    function d2a(n){
+        return n*Math.PI/180;
+    }
+    function getPos(obj){
+        var l=0;
+        var t=0;
+        while(obj){
+            l+=obj.offsetLeft;
+            t+=obj.offsetTop;
+
+            obj=obj.offsetParent;
+        }
+        return {left: l, top: t};
+    }
+    function hoverDir(obj,ev){
+        var x = getPos(obj).left+obj.offsetWidth/2 -ev.clientX;
+        var y = getPos(obj).top+obj.offsetHeight/2 -ev.clientY;
+        //console.log(obj.offsetLeft);
+        // console.log(getPos(obj).left);
+        return Math.round((a2d(Math.atan2(y,x))+180)/90)%4;
+    }
+    //进来
+    obj.onmouseover = function(ev){
+        var oS =obj.children[0];
+        var oEvent = ev||event;
+        var oFrom = oEvent.fromElement||oEvent.relatedTarget;
+        if(obj.contains(oFrom)){
+            return;
+        }
+        //滑过方向
+        var dir = hoverDir(obj,oEvent);
+        switch(dir){
+            //右边0
+            case 0:
+                oS.style.left = '280';
+                oS.style.top = '0px';
+                break;
+            //下边1
+            case 1:
+                oS.style.left = '0px';
+                oS.style.top = '280px';
+                break;
+            //左边2
+            case 2:
+                oS.style.left = '-280px';
+                oS.style.top = '0px';
+                break;
+            //上边3
+            case 3:
+                oS.style.left = '0';
+                oS.style.top = '-280px';
+                break;
+        }
+        move(oS,{left:0,top:0});
+    };
+    //出去
+    obj.onmouseout = function(ev){
+        var oS =obj.children[0];
+        var oEvent = ev||event;
+        var oTo = oEvent.toElement||oEvent.relatedTarget;
+        if(obj.contains(oTo)){return;}
+        var dir = hoverDir(obj,oEvent);
+        switch(dir){
+            case 0:
+                move(oS,{left:280,top:0});
+                break;
+            case 1:
+                move(oS,{left:0,top:280});
+                break;
+            case 2:
+                move(oS,{left:-280,top:0});
+                break;
+            case 3:
+                move(oS,{left:0,top:-280});
+                break;
+        }
+    };
 }
