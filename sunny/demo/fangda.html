@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com">
+<meta name="copyright" content="智能社 - zhinengshe.com">
+<title>智能社 - www.zhinengshe.com</title>
+<style>
+* { margin:0; padding:0; }
+#div1 { position:relative; width:900px; height:600px; border:1px solid red; margin:20px auto; }
+ul { position:absolute; top:50%; margin-top:-150px; height:300px; left:0; }
+li { position:relative; float:left; width:400px; height:300px; list-style:none; }
+ { position:absolute; width:100%; height:100%; line-height:300px; background:rgba(255, 255, 255, 0.5); text-align:center; font-size:100px; color:yellow; }
+img { display:block; width:100%; }
+
+#line { position:absolute; top:0; left:50%; width:0; height:100%; border-left:1px solid red; }
+</style>
+<script>
+window.onload=function (){
+	var oDiv=document.getElementById('div1');
+	var oUl=document.getElementById('ul1');
+	var aImg=document.getElementsByTagName('img')
+	oUl.style.width=oUl.children[0].offsetWidth*oUl.children.length+'px';
+	var ali=oUl.children;
+	var nCenter=oDiv.offsetWidth/2;
+	var wli=oUl.children[0].offsetWidth;
+	var Maxleft=nCenter-(1-0.5)*wli;
+	var Minleft=nCenter-(ali.length-0.5)*wli;
+	oUl.onmousedown=function(ev){
+		var oEvent=ev || event;
+		var disX=oEvent.clientX-oUl.offsetLeft;
+		
+		document.onmousemove=function(ev){
+			var oEvent=ev || event;
+			var left=oEvent.clientX-disX;
+			
+			if(left>Maxleft){
+				left=Maxleft;
+			}
+			else if(left<Minleft){
+				left=Minleft;
+			}
+			oUl.style.left=left+'px';
+			enlarge();
+		};
+		document.onmouseup=function(){
+			document.onmousemove=null;
+			document.onmouseup=null;
+		};
+		return false;
+
+	};
+	function enlarge(){
+		for(var i=0;i<ali.length;i++){
+			var a=Math.abs(nCenter-wli/2-ali[i].offsetLeft-oUl.offsetLeft);
+			var scale=1-a/500;
+
+			(scale<0.5)&&(scale=0.5);
+			aImg[i].style.width=800*scale+'px';
+			aImg[i].style.height=600*scale+'px';
+			aImg[i].style.marginLeft=(400-aImg[i].offsetWidth)/2+'px';
+			aImg[i].style.marginTop=(400-aImg[i].offsetHeight)/2+'px';
+			ali[i].style.zIndex=scale*100;
+			
+		}
+	}
+		
+	
+};
+</script>
+</head>
+
+<body>
+	<div id="div1">
+		<ul id="ul1">
+			<li><span></span><img src="images/02/1.jpg" /></li>
+			<li><span></span><img src="images/02/2.jpg" /></li>
+			<li><span></span><img src="images/02/3.jpg" /></li>
+			<li><span></span><img src="images/02/4.jpg" /></li>
+			<li><span></span><img src="images/02/5.jpg" /></li>
+			<li><span></span><img src="images/02/6.jpg" /></li>
+		</ul>
+		<div id="line"></div>
+	</div>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

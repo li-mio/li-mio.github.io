@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com">
+<meta name="copyright" content="智能社 - zhinengshe.com">
+<title>智能社 - www.zhinengshe.com</title>
+<style>
+* { margin:0; padding:0; list-style:none; }
+ul { width:510px; height:510px; margin:50px auto; border:1px solid red; }
+li { position:relative; width:150px; height:150px; float:left; margin:10px; }
+.active { border:5px dashed red; width:140px; height:140px; }
+img { display:block; width:100%; }
+span { position:absolute; top:0; left:0; width:100%; height:100%; font-size:50px; text-align:center; line-height:150px; background:rgba(255, 255, 255, 0.6); color:red; font-weight:bold; }
+</style>
+<script src="move.js"></script>
+<script>
+window.onload=function (){
+	var ali=document.getElementsByTagName('li');
+	//创建span
+	for(var i=0;i<ali.length;i++){
+		var oSpan=document.createElement('span');
+		oSpan.innerHTML=i;
+		ali[i].appendChild(oSpan);
+	}
+	//布局转换
+	var aPos=[];
+	for(var i=0;i<ali.length;i++){
+		aPos.push({
+			left:ali[i].offsetLeft,
+			top:ali[i].offsetTop
+		});
+	}
+	for(var i=0;i<ali.length;i++){
+		ali[i].style.position='absolute';
+		ali[i].style.left=aPos[i].left+'px';
+		ali[i].style.top=aPos[i].top+'px';
+		ali[i].style.margin=0;
+	}
+	//随机转换
+	document.onclick=function(){
+		aPos.sort(function(){
+			return Math.random()-0.5;
+		});
+	
+		for(var i=0;i<ali.length;i++){
+			move(ali[i],aPos[i]);
+		}
+	};
+};
+</script>
+</head>
+
+<body>
+	<ul>
+		<li>
+			<img src="cat/1.jpg" />
+		</li>
+		<li>
+			<img src="cat/2.jpg" />
+		</li>
+		<li>
+			<img src="cat/3.jpg" />
+		</li>
+		
+		<li>
+			<img src="cat/4.jpg" />
+		</li>
+		<li>
+			<img src="cat/5.jpg" />
+		</li>
+		<li>
+			<img src="cat/6.jpg" />
+		</li>
+		
+		<li>
+			<img src="cat/7.jpg" />
+		</li>
+		<li>
+			<img src="cat/8.jpg" />
+		</li>
+		<li>
+			<img src="cat/9.jpg" />
+		</li>
+	</ul>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

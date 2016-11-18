@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/base.css" rel="stylesheet" />
+<link href="css/list.css" rel="stylesheet" />
+<script src="js/base.js"></script>
+<script src="js/move.js"></script>
+</head>
+<script>
+window.onload=function(){
+	meituan.public.head.jsShow();
+    meituan.public.head.jsClose();
+    meituan.public.head.jsSearch();
+    meituan.public.head.jsSelect();
+};
+</script>
+<body>
+<!--头部-->
+<!--回到顶部-->
+<div class="return" id="return">回到顶部</div>
+<!--跨年-->
+
+<!--tit-->
+<div class="tit_back">
+	<div class="tit clearfix">
+	    <ul class="tit_l clearfix">
+		    <li>
+		    	<a href="javascript:;" class="collect">
+		    		<span></span>
+		    		收藏美团
+		    	</a>
+		    </li>
+		    <li>
+		    	<a href="javascript:;" class="load">登录</a>
+		    </li>
+		    <li>
+		    	<a href="javascript:;" class="regist">注册</a>
+		    </li>
+		    <li class="phone1 " id="h-phone">
+		    	<a href="javascript:;" class="phone" >
+		    		<span></span>
+		    		手机美团
+		    	</a>
+		    	<div class="tit_l_list" id="h-phoneList">
+		    		<div class="top clearfix">
+		    			<i></i>
+		    			<em></em>
+		    		</div>
+		    		<div class="footer clearfix">
+		    			<i></i>
+		    			<em></em>
+		    		</div>
+		    	</div>	
+		     </li>
+	    </ul>
+	    <ul class="tit_r" id="list_tit">
+	    	<li class="j-tab">
+	    		<a href="javascript:;">我的订单
+				</a>
+				<ul class="j-count">
+					<li>申请退款</li>
+					<li>申请退换货</li>
+					<li>换绑手机号券</li>
+					<li>常见问题</li>
+					<li>查看美团</li>
+				</ul>
+	    	</li>
+	    	<li class="j-tab">
+		    	<a href="javascript:;">
+		    		我的美团
+					<span></span>
+				</a>
+				<ul class="j-count">
+					<li>美团啦</li>
+					<li>美团啦</li>
+					<li>美团啦</li>
+					<li>美团啦</li>
+					<li>美团啦</li>
+					<li>美团啦</li>
+					<li>美团啦</li>
+					<li>美团啦</li>
+					<li>美团啦</li>
+					<li>美团啦</li>
+				</ul>
+	    	</li>
+	    	<li class="j-tab s-browser">
+		    	<a href="javascript:;">
+		    		最近浏览
+					<span></span>
+				</a>
+				<ul class="j-count j-browser">
+					<li>浏览什么呢</li>
+					<li>浏览什么呢</li>
+					
+					
+				</ul>
+	    	</li>
+	    	<li class="j-tab s-browser">
+		    	<a href="javascript:;">
+					<em></em>
+		    		购物车<i>0</i>件
+					<span></span>
+				</a>
+				<ul class="j-count j-browser">
+					<li>什么都没有</li>
+					<li>牛仔很忙</li>
+					
+					
+				</ul>
+	    	</li>
+	    	<li class="j-tab">
+		    	<a href="javascript:;">
+		    		联系客服
+					<span></span>
+				</a>
+				<ul class="j-count">
+					<li>小妹好</li>
+				</ul>	
+					
+				
+	    	</li>
+	    	<li class="j-tab">
+		    	<a href="javascript:;">
+		    		我是商家
+		    		<span></span>
+		    	</a>
+		    	<ul class="j-count">
+					<li>呵呵</li>
+					<li>呵呵</li>
+					<li>呵呵</li>
+					<li>呵呵</li>
+					<li>呵呵</li>
+					
+				</ul>
+	    	</li>
+	    	<li class="j-tab">
+		    	<a href="java</a>script:;">
+		    		更多
+		    		<span></span>
+		    	</a>
+		    	<ul class="j-count">
+					<li>呵呵</li>
+					<li>呵呵</li>
+					<li>呵呵</li>
+					<li>呵呵</li>
+					<li>呵呵</li>
+					
+				</ul>
+	    	</li>
+	    </ul>
+	</div>
+</div>
+<div class="main">
+<div class="tit_pic">
+	<img src="css/images/index-tit.png" id="h-pic"/>
+	<span id="h-close"></span>
+</div>
+<!--search-->
+<div class="search clearfix">
+	<div class="left clearfix">
+		<span>美团</span>
+		<div class="toggle">
+			<p id="content">北京</p>
+			<select id="oSel">
+				<option>切换城市</option>
+				<option>北京</option>
+				<option>上海</option>
+				<option>广州</option>
+			</select>
+		</div>
+	</div>
+	<div class="mid">
+		<select>
+			<option>团购</option>
+			<option>团购</option>
+			<option>团购</option>
+		</select>
+		<input type="text"  class="text" id="txt"/>
+		<span class="holder" id="holder">请输入所要搜索的商品</span>
+		<input type="submit" value="搜索" class="sub"/>
+	</div>
+	<ul class="right clearfix">
+		<li>
+			<span class="span1"></span>
+			<p>随时退</p>
+		</li>
+		<li>
+			<span class="span2"></span>
+			<p>不满意免单</p>
+		</li>
+		<li>
+			<span class="span3"></span>
+			<p>过期退</p>
+		</li>
+	</ul>
+</div>
+<!--nav-->
+<div class="nav_tit clearfix">
+	<a href="javascript:;" class="left">全部分类</a>
+	<ul class="right clearfix" id="nav">
+		<li><a href="javascript:;">首页</a></li>
+		<li><a href="javascript:;">今日新单</a></li>
+		<li><a href="javascript:;">购物</a></li>
+		<li><a href="javascript:;">今日新单</a></li>
+		<li><a href="javascript:;">名店抢购</a></li>
+	</ul>
+</div>
+<!--头部结束-->
+
+<div class="main">
+    <div class="tit">
+    	<ul class="total">
+    		<li class="first">全部</li>
+    	</ul>
+    	<ul class="classify clearfix">
+    		<li class="first">分类：</li>
+    		<li class="all">全部</li>
+    		<li><a href="javascript:;">美食</a></li>
+    		<li><a href="javascript:;">休闲娱乐</a></li>
+    		<li><a href="javascript:;">生活服务</a></li>
+    		<li><a href="javascript:;">购物</a></li>
+    		<li><a href="javascript:;">抽奖</a></li>
+    		<li><a href="javascript:;">酒店</a></li>
+    		<li><a href="javascript:;">丽人</a></li>
+    		<li><a href="javascript:;">旅游</a></li>
+    		<li><a href="javascript:;">电影</a></li>
+    		<li><a href="javascript:;">周边游</a></li>
+    		<li><a href="javascript:;">今日新单</a></li>
+    	</ul>
+    </div>
+    <div class="volume clearfix">
+    	<a href="javascript:;" class="active">默认</a>
+    	<a href="javascript:;">销量<span></span></a>
+    	<a href="javascript:;">价格<span></span></a>
+    	<a href="javascript:;">好评<span></span></a>
+    	<a href="javascript:;" class="last">发布时间<span></span></a>
+    </div>
+    <div class="clearfix">
+    <ul class="food clearfix" id="food">
+		<li class="list">
+			<img src="images/juyuan.png" />
+			<span class="span1"></span>
+			<span class="span2"></span>
+			<h3>【北京】海淀剧院</h3>
+			<p>100元代金券1张，可叠加使用，提供免费</p>
+			<div class="font clearfix">
+				<p>￥85
+					<i class="discount">门店价
+						<em class="price">￥100</em>
+					</i>
+				</p>
+				<i class="sell">已售2434324</i>
+			</div>
+			<div class="privilege clearfix">
+				<em></em>
+				<i>24人评价</i>
+			</div>
+		</li>
+		<li class="list  ">
+			<img src="images/juyuan.png" />
+			<span class="span1"></span>
+			<span class="span2"></span>
+			<h3>【北京】海淀剧院</h3>
+			<p>100元代金券1张，可叠加使用，提供免费</p>
+			<div class="font clearfix">
+				<p>￥85
+					<i class="discount">门店价
+						<em class="price">￥100</em>
+					</i>
+				</p>
+				<i class="sell">已售2434324</i>
+			</div>
+			<div class="privilege clearfix">
+				<em></em>
+				<i>24人评价</i>
+			</div>
+		</li>
+		<li class="list">
+			<img src="images/juyuan.png" />
+			<span class="span1"></span>
+			<span class="span2"></span>
+			<h3>【北京】海淀剧院</h3>
+			<p>100元代金券1张，可叠加使用，提供免费</p>
+			<div class="font clearfix">
+				<p>￥85
+					<i class="discount">门店价
+						<em class="price">￥100</em>
+					</i>
+				</p>
+				<i class="sell">已售2434324</i>
+			</div>
+			<div class="privilege clearfix">
+				<em></em>
+				<i>24人评价</i>
+			</div>
+		</li>
+		<li class="list  ">
+			<img src="images/juyuan.png" />
+			<span class="span1"></span>
+			<span class="span2"></span>
+			<h3>【北京】海淀剧院</h3>
+			<p>100元代金券1张，可叠加使用，提供免费</p>
+			<div class="font clearfix">
+				<p>￥85
+					<i class="discount">门店价
+						<em class="price">￥100</em>
+					</i>
+				</p>
+				<i class="sell">已售2434324</i>
+			</div>
+			<div class="privilege clearfix">
+				<em></em>
+				<i>24人评价</i>
+			</div>
+		</li>
+		<li class="list">
+			<img src="images/juyuan.png" />
+			<span class="span1"></span>
+			<span class="span2"></span>
+			<h3>【北京】海淀剧院</h3>
+			<p>100元代金券1张，可叠加使用，提供免费</p>
+			<div class="font clearfix">
+				<p>￥85
+					<i class="discount">门店价
+						<em class="price">￥100</em>
+					</i>
+				</p>
+				<i class="sell">已售2434324</i>
+			</div>
+			<div class="privilege clearfix">
+				<em></em>
+				<i>24人评价</i>
+			</div>
+		</li>
+		<li class="list  ">
+			<img src="images/juyuan.png" />
+			<span class="span1"></span>
+			<span class="span2"></span>
+			<h3>【北京】海淀剧院</h3>
+			<p>100元代金券1张，可叠加使用，提供免费</p>
+			<div class="font clearfix">
+				<p>￥85
+					<i class="discount">门店价
+						<em class="price">￥100</em>
+					</i>
+				</p>
+				<i class="sell">已售2434324</i>
+			</div>
+			<div class="privilege clearfix">
+				<em></em>
+				<i>24人评价</i>
+			</div>
+		</li>
+		<li class="list">
+			<img src="images/hanlixuan.png" />
+			<span class="span1"></span>
+			<span class="span2"></span>
+			<h3>【北京】海淀剧院</h3>
+			<p>100元代金券1张，可叠加使用，提供免费</p>
+			<div class="font clearfix">
+				<p>￥85
+					<i class="discount">门店价
+						<em class="price">￥100</em>
+					</i>
+				</p>
+				<i class="sell">已售2434324</i>
+			</div>
+			<div class="privilege clearfix">
+				<em></em>
+				<i>24人评价</i>
+			</div>
+		</li>
+		<li class="list">
+			<img src="images/hanlixuan.png" />
+			<span class="span1"></span>
+			<span class="span2"></span>
+			<h3>【北京】海淀剧院</h3>
+			<p>100元代金券1张，可叠加使用，提供免费</p>
+			<div class="font clearfix">
+				<p>￥85
+					<i class="discount">门店价
+						<em class="price">￥100</em>
+					</i>
+				</p>
+				<i class="sell">已售2434324</i>
+			</div>
+			<div class="privilege clearfix">
+				<em></em>
+				<i>24人评价</i>
+			</div>
+		</li>
+		<li class="list">
+			<img src="images/hanlixuan.png" />
+			<span class="span1"></span>
+			<span class="span2"></span>
+			<h3>【北京】海淀剧院</h3>
+			<p>100元代金券1张，可叠加使用，提供免费</p>
+			<div class="font clearfix">
+				<p>￥85
+					<i class="discount">门店价
+						<em class="price">￥100</em>
+					</i>
+				</p>
+				<i class="sell">已售2434324</i>
+			</div>
+			<div class="privilege clearfix">
+				<em></em>
+				<i>24人评价</i>
+			</div>
+		</li>
+		<li class="list">
+			<img src="images/hanlixuan.png" />
+			<span class="span1"></span>
+			<span class="span2"></span>
+			<h3>【北京】海淀剧院</h3>
+			<p>100元代金券1张，可叠加使用，提供免费</p>
+			<div class="font clearfix">
+				<p>￥85
+					<i class="discount">门店价
+						<em class="price">￥100</em>
+					</i>
+				</p>
+				<i class="sell">已售2434324</i>
+			</div>
+			<div class="privilege clearfix">
+				<em></em>
+				<i>24人评价</i>
+			</div>
+		</li>
+		<li class="list">
+			<img src="images/hanlixuan.png" />
+			<span class="span1"></span>
+			<span class="span2"></span>
+			<h3>【北京】海淀剧院</h3>
+			<p>100元代金券1张，可叠加使用，提供免费</p>
+			<div class="font clearfix">
+				<p>￥85
+					<i class="discount">门店价
+						<em class="price">￥100</em>
+					</i>
+				</p>
+				<i class="sell">已售2434324</i>
+			</div>
+			<div class="privilege clearfix">
+				<em></em>
+				<i>24人评价</i>
+			</div>
+		</li>
+		<li class="list">
+			<img src="images/hanlixuan.png" />
+			<span class="span1"></span>
+			<span class="span2"></span>
+			<h3>【北京】海淀剧院</h3>
+			<p>100元代金券1张，可叠加使用，提供免费</p>
+			<div class="font clearfix">
+				<p>￥85
+					<i class="discount">门店价
+						<em class="price">￥100</em>
+					</i>
+				</p>
+				<i class="sell">已售2434324</i>
+			</div>
+			<div class="privilege clearfix">
+				<em></em>
+				<i>24人评价</i>
+			</div>
+		</li>
+	</ul>
+	<ul class="content_r">
+		<li class="first">
+			<div class="phone clearfix">
+				<span></span>
+				<em></em>
+			</div>
+			<div class="phone clearfix">
+				<span></span>
+				<em></em>
+			</div>
+		</li>
+		<li>
+			<h2>热门专题</h2>
+			<img src="images/Tuesday.png" />
+		</li>
+		<li>
+			<h2>猜你喜欢</h2>
+			<img src="images/xidan.png" />
+			<p>【西单】馅饼馅饼馅饼馅饼</p>
+			<em>￥4.9</em>已售<span>23234</span>
+		</li>
+		<li>
+			<img src="images/choujiang.png" />
+		</li>
+		<li>
+			<img src="images/zhaopin.png" />
+		</li>
+	</ul>
+	</div>
+	<div class="onload">
+		加载中
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<ul class="page clearfix">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li class="last">下一页</li>
+	</ul>
+	<div class="bottom clearfix">
+		<dl>
+			<dt>获取更新</dt>
+			<dd>邮件订阅</dd>
+			<dd>phone/androd</dd>
+			<dd>美团qq空间</dd>
+			<dd>美团新浪微博</dd>
+			<dd>RSS订阅</dd>
+		</dl>
+		<dl>
+			<dt>获取更新</dt>
+			<dd>邮件订阅</dd>
+			<dd>phone/androd</dd>
+			<dd>美团qq空间</dd>
+			<dd>美团新浪微博</dd>
+			<dd>RSS订阅</dd>
+		</dl>
+		<dl>
+			<dt>获取更新</dt>
+			<dd>邮件订阅</dd>
+			<dd>phone/androd</dd>
+			<dd>美团qq空间</dd>
+			<dd>美团新浪微博</dd>
+			<dd>RSS订阅</dd>
+		</dl>
+		<dl>
+			<dt>用户帮助</dt>
+			<dd>申请退款</dd>
+			<dd>查看美团券码</dd>
+			<dd>常见问题</dd>
+			<dd>开放SpI</dd>
+			<dd>反诈骗公告</dd>
+		</dl>
+		<div class="service1">
+			<span></span>
+			<p class="p1">客服电话</p>
+			<p class="p2">400-422-23233</p>
+			<p class="p3">退款、退换货、查看美团卷</p>
+			<p class="p4">参考教程、轻松搞定</p>
+		</div>
+	</div>
+</div>	
+<div class="footer">
+		<p>2015美团团购京ICp05505号京公网备323434电子工号服务规则</p>
+		<img src="images/footer.png" />
+</div>
+</body>
+</html>

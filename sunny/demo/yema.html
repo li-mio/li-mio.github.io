@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com">
+<meta name="copyright" content="智能社 - zhinengshe.com">
+<title>智能社 - www.zhinengshe.com</title>
+<style>
+* { margin:0; padding:0; }
+ul { overflow:hidden; width:510px; height:510px; margin:50px auto; border:1px solid red; }
+li { float:left; width:150px; height:150px; line-height:150px; font-size:50px; font-weight:bold; text-align:center; margin:10px; background:#ccc; list-style:none; }
+</style>
+<script src="move.js"></script>
+<script>
+window.onload=function (){
+	var oUl=document.getElementById('ul1');
+	//测试
+	var ali=oUl.children;
+
+	for(var i=0;i<ali.length;i++){
+		ali[i].innerHTML=i;
+	}
+	//布局转换
+	var aPos=[];
+	for(var i=0;i<ali.length;i++){
+		aPos.push({
+			left:ali[i].offsetLeft,
+			top:ali[i].offsetTop
+		});
+	}
+	for(var i=0;i<ali.length;i++){
+		ali[i].style.position='absolute';
+		ali[i].style.left=aPos[i].left+'px';
+		ali[i].style.top=aPos[i].top+'px';
+		ali[i].style.margin=0;
+	}
+	//加事件
+	var bFlag=false;
+	document.onclick=function(ev){
+		if(bFlag){
+			return;
+		}
+		bFlag=true;
+		var oEvent=ev || event;
+		var n=0;
+		var timer=setInterval(function(){
+			(function(index){
+				move(ali[n],{width:0,height:0,opacity:0,left:oEvent.clientX,top:oEvent.clientY},{
+					complete:function(){
+						if(index==ali.length-1){
+							end();
+						}
+					}
+				});
+			})(n);
+
+			n++;
+			if(n==ali.length){
+				clearInterval(timer);
+			}
+		},100);
+		function end(){
+			var r=rnd(0,256);
+			var g=rnd(0,256);
+			var b=rnd(0,256);
+			for(var i=0;i<ali.length;i++){
+				ali[i].style.background='rgb('+r+','+g+','+b+')';
+			}
+			var n=ali.length-1;
+			var timer=setInterval(function(){
+				(function(index){
+					move(ali[n],{width:150,height:150,opacity:1,left:aPos[n].left,top:aPos[n].top},{
+						complete:function(){
+							if(index==0){
+								bFlag=false;
+							}
+						}
+					});
+				})(n);
+
+				n--;
+				if(n==-1){
+					clearInterval(timer);
+				}
+			},100);
+			}
+	};
+	function rnd(n,m){
+		return Math.floor(Math.random()*(m-n)+n);
+	}
+	
+};
+</script>
+</head>
+
+<body>
+	<ul class="list" id="ul1">
+		<li></li>
+		<li></li>
+		<li></li>
+		
+		<li></li>
+		<li></li>
+		<li></li>
+		
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

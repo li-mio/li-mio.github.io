@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/detail.css" rel="stylesheet">
+<script src="js/base.js"></script>
+<script src="js/move.js"></script>
+<script>
+window.onload=function(){
+    meituan.public.head.jsShow();
+    meituan.public.head.jsClose();
+    meituan.public.head.jsSearch();
+    meituan.public.head.jsSelect();
+    
+   
+    meituan.detail.jsJiajian();
+    meituan.detail.jsTab();
+    meituan.detail.jsXiding();
+};
+</script>
+</head>
+
+
+<body>
+
+
+    <!---->
+    <!--tit-->
+    <div class="tit_back">
+        <div class="tit clearfix">
+            <ul class="tit_l clearfix">
+                <li>
+                    <a href="javascript:;" class="collect">
+                        <span></span>
+                        收藏美团
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="load">登录</a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="regist">注册</a>
+                </li>
+                <li class="phone1 " id="h-phone">
+                    <a href="javascript:;" class="phone" >
+                        <span></span>
+                        手机美团
+                    </a>
+                    <div class="tit_l_list" id="h-phoneList">
+                        <div class="top clearfix">
+                            <i></i>
+                            <em></em>
+                        </div>
+                        <div class="footer clearfix">
+                            <i></i>
+                            <em></em>
+                        </div>
+                    </div>  
+                 </li>
+            </ul>
+            <ul class="tit_r" id="list_tit">
+                <li class="j-tab">
+                    <a href="javascript:;">我的订单
+                    </a>
+                    <ul class="j-count">
+                        <li>申请退款</li>
+                        <li>申请退换货</li>
+                        <li>换绑手机号券</li>
+                        <li>常见问题</li>
+                        <li>查看美团</li>
+                    </ul>
+                </li>
+                <li class="j-tab">
+                    <a href="javascript:;">
+                        我的美团
+                        <span></span>
+                    </a>
+                    <ul class="j-count">
+                        <li>美团啦</li>
+                        <li>美团啦</li>
+                        <li>美团啦</li>
+                        <li>美团啦</li>
+                        <li>美团啦</li>
+                        <li>美团啦</li>
+                        <li>美团啦</li>
+                        <li>美团啦</li>
+                        <li>美团啦</li>
+                        <li>美团啦</li>
+                    </ul>
+                </li>
+                <li class="j-tab s-browser">
+                    <a href="javascript:;">
+                        最近浏览
+                        <span></span>
+                    </a>
+                    <ul class="j-count j-browser">
+                        <li>浏览什么呢</li>
+                        <li>浏览什么呢</li>
+                        
+                        
+                    </ul>
+                </li>
+                <li class="j-tab s-browser">
+                    <a href="javascript:;">
+                        <em></em>
+                        购物车<i>0</i>件
+                        <span></span>
+                    </a>
+                    <ul class="j-count j-browser">
+                        <li>什么都没有</li>
+                        <li>牛仔很忙</li>
+                        
+                        
+                    </ul>
+                </li>
+                <li class="j-tab">
+                    <a href="javascript:;">
+                        联系客服
+                        <span></span>
+                    </a>
+                    <ul class="j-count">
+                        <li>小妹好</li>
+                    </ul>   
+                        
+                    
+                </li>
+                <li class="j-tab">
+                    <a href="javascript:;">
+                        我是商家
+                        <span></span>
+                    </a>
+                    <ul class="j-count">
+                        <li>呵呵</li>
+                        <li>呵呵</li>
+                        <li>呵呵</li>
+                        <li>呵呵</li>
+                        <li>呵呵</li>
+                        
+                    </ul>
+                </li>
+                <li class="j-tab">
+                    <a href="java</a>script:;">
+                        更多
+                        <span></span>
+                    </a>
+                    <ul class="j-count">
+                        <li>呵呵</li>
+                        <li>呵呵</li>
+                        <li>呵呵</li>
+                        <li>呵呵</li>
+                        <li>呵呵</li>
+                        
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+    <div class="tit_pic">
+        <img src="css/images/index-tit.png" id="h-pic"/>
+        <span id="h-close"></span>
+    </div>
+    <!--search-->
+    <div class="search clearfix">
+        <div class="left clearfix">
+            <span>美团</span>
+            <div class="toggle">
+                <p id="content">北京</p>
+                <select id="oSel">
+                    <option>切换城市</option>
+                    <option>北京</option>
+                    <option>上海</option>
+                    <option>广州</option>
+                </select>
+            </div>
+        </div>
+        <div class="mid">
+            <select>
+                <option>团购</option>
+                <option>团购</option>
+                <option>团购</option>
+            </select>
+            <input type="text"  class="text" id="txt"/>
+            <span class="holder" id="holder">请输入所要搜索的商品</span>
+            <input type="submit" value="搜索" class="sub"/>
+        </div>
+        <ul class="right clearfix">
+            <li>
+                <span class="span1"></span>
+                <p>随时退</p>
+            </li>
+            <li>
+                <span class="span2"></span>
+                <p>不满意免单</p>
+            </li>
+            <li>
+                <span class="span3"></span>
+                <p>过期退</p>
+            </li>
+        </ul>
+    </div>
+<div class="main">
+    <!--手机定位-->
+    <div class="fixed"> 
+        <span>
+            <a href="javascript:;"></a>
+        </span>
+    </div>
+    <!---->
+    <ul class="detail_tit clearfix">
+    	<li>
+    		<a href="javascript:;">北京团购</a>
+			<span></span>
+    	</li>
+    	<li>
+    		<a href="javascript:;">休闲娱乐团购</a>
+			<span></span>
+    	</li>
+    	<li>
+    		<a href="javascript:;">运动健身</a>
+			<span></span>
+    	</li>
+    	<li>
+    		<a href="javascript:;">海淀区</a>
+			<span></span>
+    	</li>
+    	<li>
+    		<a href="javascript:;">中关村</a>
+			<span></span>
+    	</li>
+    	<li>
+    		<a href="javascript:;">夜时尚</a>
+			<span></span>
+    	</li>
+    </ul>
+    <div class="de_tit clearfix">
+	    <div class="de-font">
+	    	<h2>【中关村】夜时尚</h2>
+	    	<p>仅售23元！价值234元的台球3小时，提供免费wifi</p>
+            <div  class="de-box" id="de-box">
+    	    	<img src="images/2.jpg" class="active"/>
+                <img src="images/3.jpg" />
+                <img src="images/4.jpg" />
+                <img src="images/5.jpg" />
+                <a href="javascript:;" id="prev1"></a>
+                <a href="javascript:;" id="next1"></a>
+    	    	<img src="images/taiqiu2.png" class="taiqiu2"/>
+            </div>
+	    </div>
+	    <ul class="de_tr">
+	    	<li class="list1">
+	    		<span >团购价</span>
+	    		<em>￥45</em>
+	    		<span>门店价<i >￥124</i></span>
+	    	</li>
+	    	<li class="list2">
+	    		<ul class="clearfix">
+		    		<li>
+		    			<i>已售<span>233</span></i>
+		    		</li>
+		    		<li>
+		    			<i><span>5.1</span>分</i>
+		    		</li>
+		    		<li>
+		    			<i><span>12324</span>评价</i>
+		    		</li>
+	    		</ul>
+	    	</li>
+	    	<li class="list3">
+	    		<em>有效期</em>
+	   			<em>截止到2016.01.12<span>周末、法定节假日通用</span></em> 		
+	    	</li>
+	    	<li class="list4">
+	    		<em>数量</em>
+	    		<input type="button" value="－" id="prev" />
+	    		<input   type="text"  value="1" class="txt" id="txt1"/>
+	    		<input type="button" value="＋" id="next"/>
+	    		<span id="span1">最少1件起售</span>
+	    	</li>
+	    	<li class="list5">
+	    		<input type="submit" value="立即抢购"/>
+	    		<a href=javascript:; class="buycar"><span></span></a>
+	    		<a href="javascript:;" class="a1">收藏(50)</a>
+	    		<a href="javascript:;" class="a2">分享到(50)</a>
+	    	</li>
+	    	<li class="list6">
+	    		<ul class="clearfix">
+	    			<li class="l1">服务承诺</li>  
+	    			<li class="l2"><span></span>随时退</li>  
+	    			<li class="l3"><span></span>过期退</li>
+	    			<li class="l4"><span></span>极速退款</li>
+	    			<li class="l5"><span></span>真实评价</li>
+	    			              
+	    		</ul>
+	    	</li>
+	    </ul>
+	</div>
+    <div class="clearfix">
+        <div class="conter_l">
+            <div class="confirm clearfix">
+            	<p class="p1">
+            		<span></span>
+            		<em>重要通知</em>
+            	</p>
+            	<p class="p2">亲爱的用户你好，本次团头有效期延长至2016年01月12，感谢你的购买，祝您消费愉快~</p>
+            </div>
+            <table class="another">
+            	<tr class="tr1">
+            		<th class="th1">该商家的其他团购</th>
+            		<td>团购价</td>
+            		<td>门店价</td>
+            		<td>已售</td>
+            	</tr>
+            	<tr class="tr2">
+            		<th>【中关村】台球畅打1小时免费提供wifi，免费配有球杆与求</th>
+            		<td class="td1">￥20</td>
+            		<td class="td2">￥34</td>
+            		<td class="td2">2343</td>
+            	</tr>
+            </table>
+            <ul class="pos_tit clearfix" id="pos_tit">
+            	<li class="active"><a href="#pos">商家位置</a></li>
+            	<li><a href="#ins">购买须知</a></li>
+            	<li><a href="#detail">本单详情</a></li>
+            	<li><a href="#int">商家介绍</a></li>
+            	<li class="last"><a href="#pingjia">消费评价</a></li>
+            </ul>
+            <div id="pdiv1"></div>
+            <div id="pos">
+                <h2>商家位置</h2>
+                <ul class="pos_pic clearfix">
+                	<li class="left"></li>
+                	<li class="right">
+                		<p class="p1">夜时尚中关村店</p>
+                		<p class="p2"><span>评价</span><em>2131人评价</em></p>
+                		<p>地址：海淀区苏州街23号威压大厦B1楼（苏州街地铁站北侧）</p>
+                		<a href="javascript:;">查看地图 公交/驾车去这里</a>
+                		<p>地铁：距苏州街站约234米</p>
+                		<p>电话：010-5242342</p>
+                	</li>
+                </ul>
+            </div>
+            <div id="ins">
+                <h2>购买须知</h2>
+                <table class="instruc">
+                	<tr class="tr1">
+                		<th>有效期</th>
+                		<td>2014.12.24至2016.1.19（周末、法定假日通用）</td>
+                	</tr>
+                	<tr class="tr1">
+                		<th>使用时间</th>
+                		<td>美团券24小时可用</td>
+                	</tr>
+                	<tr class="tr1">
+                		<th>预约方式</th>
+                		<td>消费高峰时可能需要等待</td>
+                	</tr>
+                	<tr>
+                		<th rowspan="5">其他</th>
+                		<td>仅限一次体验完毕</td>
+                	</tr>
+                	<tr>
+                		<td>店内不提供乌龟服务</td>
+                	</tr>
+                	
+                	<tr>
+                		<td>配有免费运动器材</td>
+                	</tr>
+                	<tr>
+                		<td>提供免费wifi</td>
+                	</tr>
+                	<tr class="tr1">
+                		<td>团购用户不可享受店内其他优惠</td>
+                	</tr>	
+                </table>
+            </div>
+            <div id="detail">
+                <h2>本单详情</h2>
+                <table class="detail">
+                	<tr class="tr1">
+                		<th class="fist" colspan="4">享受生活</th>
+            		</tr>
+                	<tr class="tr1">
+                		<th>套餐内容</th>
+                		<td>单价</td>
+                		<td>数量、规格</td>
+                		<td>小计</td>
+                	</tr>
+                	<tr>
+                		<th>台球</th>
+                		<td>￥42</td>
+                		<td>3小时</td>
+                		<td>￥125</td>
+                	</tr>
+                	<tr class="last">
+                		<td colspan="4">价值￥126 美团券<span>￥46</span></td>
+                		
+                	</tr>
+                </table>
+            </div>
+
+            <h2>美团推荐</h2>
+            <div id="int">
+                <h2 >商家介绍</h2>
+                <div class="introduce">
+            		<h3 class="fashion">夜时尚</h3>
+            		<p>夜时尚是以桌上运动为主，集娱乐休闲，竞技会友与一体的台球联盟连锁经营机构是中国，台球连锁品牌，它颠覆了人们对球房的传统的看法，在业内创造了多项台球俱乐部的经营记录。</p>
+            	</div>
+            </div>
+            <div id="pingjia">
+                <h2>消费评价</h2>
+                <ul class="pingjia clearfix">
+                	<li>
+                		<p>4.1分</p>
+                		<i></i>
+                		<p>共214人评价</p>
+                	</li>
+                	<li>
+                		<p>设施<i></i>4.5分</p>
+                		<p>服务<i></i>4.5分</p>
+                		<p>环境<i></i>4.5分</p>
+                	</li>
+                	<li class="last">
+                		<p>5分<em></em>199人</p>
+                		<p>4分<em></em>109人</p>
+                		<p>3分<em></em>99人</p>
+                		<p>2分<em></em>19人</p>
+                		<p>1分<em></em>11人</p>
+
+                	</li>
+                </ul>
+            </div>
+            <div class="footer">
+            	<a href="javascript:;" class="a1">全部</a>
+            	<a href="javascript:;">晒图评价</a>
+            	<a href="javascript:;">只看低分</a>
+            	<a href="javascript:;" class="last">
+        			<select>
+        				<option>默认排序</option>
+        				<option>默认排序</option>
+        				<option>默认排序</option>
+        			</select>
+            	</a>
+            </div>
+          </div>  
+   
+        <ul class="content_r">
+            <li class="first">
+                <div class="phone clearfix">
+                    <span></span>
+                    <em></em>
+                </div>
+                <div class="phone clearfix">
+                    <span></span>
+                    <em></em>
+                </div>
+            </li>
+            <li>
+                <h2>热门专题</h2>
+                <img src="images/Tuesday.png" />
+            </li>
+            <li>
+                <h2>猜你喜欢</h2>
+                <img src="images/xidan.png" />
+                <p>【西单】馅饼馅饼馅饼馅饼</p>
+                <em>￥4.9</em>已售<span>23234</span>
+            </li>
+            <li>
+                <img src="images/choujiang.png" />
+            </li>
+            <li id="pimg1">
+                <img src="images/zhaopin.png" />
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

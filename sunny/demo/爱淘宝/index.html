@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+<link rel="stylesheet" href="css/base.css" />
+	<style>
+		body{background:#bfbfbf;}
+		.main{background:#f5f5f5;margin:0 auto;}
+		/*tit*/
+    	.tit{width:100%;height:48px;background:url(img/tit.png) no-repeat center center;text-indent:-100em;opacity:0.5;}
+		
+		.search{position:relative;width:560px;margin:0 auto;}
+		.search input{width:530px;height:32px;border:none;background:white;padding-left:30px;border:1px solid gray;}
+		.search i{width:15px;height:12px;position:absolute;top:10px;left:10px;background:url(img/search.png) no-repeat left center;}
+		
+		
+		.bg{position:relative;width:100%;background-size:100%;}
+		.bg img{display:none;width:100%;height:182px;margin-top:10px;}
+		.bg .pic1{width:100%;margin-top:10px;display:block;}
+		.bg .m{height:8px;position:absolute;bottom:6px;left:50%;background:url(img/m.png) repeat-x;display:inline-block;padding:0 4px;padding-top:2px;}
+		.bg .l{width:4px;height:10px;position:absolute;top:0;left:0;background:url(img/l.png) no-repeat left center;}
+		.bg .r{width:4px;height:9px;position:absolute;top:0;right:0;background:url(img/r.png) no-repeat right center;}
+		.m .fon li{float:left;width:6px;height:6px;border-radius:50%;margin:0 10px;background:white;}
+		.m .fon .active{background:#dd3832}
+		.nav{min-width:580px;margin-bottom:16px;}
+		.nav .list{width:25%;text-align:center;float:left;box-sizing:border-box;}
+		.nav i{width:47px;height:49px;margin:16px auto 8px;background:url(img/taobao.png);background-size:100%;display:block;}
+		/*temai*/
+	    	.temai_l{width:25%;height:182px;border-right:1px solid gray;border-bottom:1px solid gray;}
+		.temai_l .p1{font-size:18px;color:#F60;margin-left:8px;}
+		.temai_l .p2{font-size:14px;color:#666;margin-left:8px;margin-top:8px;}
+		.temai_l .p2 span{font-size:14px;color:#333;}
+		.temai_l img{margin-left:35px;margin-top:10px;}
+		
+		.temai_r{width:75%;float:left;}
+		.temai_r1{height:90px;border-bottom:1px solid gray;}
+		.temai_r1 .fon{float:left;margin-top:30px;}
+		.temai_r1 img{float:left;margin-left:20px;margin-top:10px;}
+		.temai_r1 .p1{font-size:16px;color:#333;margin-left:8px;}
+		.temai_r1 .p2{font-size:16px;color:#333;margin-left:8px;margin-top:8px;}
+		
+		.temai_l{float:left;box-sizing:border-box;}
+		.temai{border:1px solid gray;width:100%;background:white;height:180px;}
+		/*hot market*/
+		.hot{width:100%;height:152px;border:1px solid gray;background:white;margin-top:10px;}
+		.hot h1{font-size:12px;color:#333;margin-left:10px;margin-top:8px;}
+		.hot_m li{width:25%;box-sizing:border-box;text-align:center;float:left;font-size:12px;}
+		.hot_m i{background:url(img/girlcloth.png);background-size:100%;width:19px;height:26px;display:block;margin:10px auto 8px;}
+		/*cabbage price*/
+		.cabbage{background:white;height:164px;width:100%;padding:10px 0px;margin-top:10px;border:1px solid gray;}
+		.cabbage_l{width:50%;float:left;height:164px;border-right:1px solid gray;box-sizing:border-box;}
+		.cabbage_l .p1{font-size:18px;color:#F99;margin-left:16px;margin-top:10px;}
+		.cabbage_l .p2{font-size:14px;color:#333;margin-left:16px;margin-top:8px;}
+		.cabbage_l img{margin-left:16px;margin-top:8px;}
+		
+		.cabbage_r{width:50%;float:left;height:164px;box-sizing:border-box;padding-left:10px;}
+		.cabbage_r1{border-bottom:1px solid gray;height:82px;}
+		.cabbage_r1 .fon{float:left;font-size:18px;margin-left:10px;}
+		.cabbage_r1 .p1{color:#F00;margin-top:10px;}
+		.cabbage_r1 .p2{color:#333;margin-top:4px;}
+		.cabbage_r1 img{float:left;margin-left:10px;margin-top:20px;}
+		.cabbage_r .r2{border-bottom:none;}
+		/*fashion women dress*/
+		.fashion_main{width:100%；height：250px;background:white;padding-top:10px;}
+		.fashion_t{width:100%;height:20px;border-left:2px solid pink;line-height:20px;background:white;font-size:18px;color:#333;margin:10px 0;box-sizing:border-box;padding-left:10px;}
+		.fashion_t span{font-size:14px;color:#666;margin-left:10px;}
+		.fashion{background:white;height:100px;width:100%;padding:8px 0;border:1px solid gray;}
+		.fashion_l{float:left;height:100px;width:60%;border-right:1px solid gray;box-sizing:border-box;}
+		.fashion_l img{float:left;margin-left:30px;margin-top:10px;}
+		.fashion_l .fon{float:right;margin-top:6px;margin-right:10px;}/*兼容问题，两个相同的float，和margin*/
+		.fashion_l .p1{font-size:18px;color:#333;}
+		.fashion_l .p2{font-size:18px;color:#666;}
+		
+		.fashion_r{float:left;width:40%;height:100px;box-sizing:border-box;padding-left:10px;}
+		.fashion_r1{border-bottom:1px solid gray;height:50px;}
+		.fashion_r1 .p1{float:right;font-size:18px;margin-right:10px;color:#F00;margin-top:10px;}
+		
+		.fashion_r1 img{float:left;margin-left:10px;margin-top:4px;}
+		.fashion_r .r2{border-bottom:none;}
+		
+		.fashion_b  {width:100%;height:80px;padding:10px 0;border-bottom:1px solid gray;background:white;}
+		.fashion_b li{float:left;font-size:14px;width:25%;height:16px;border-right:1px solid gray;text-align:center;box-sizing:border-box;margin-bottom:16px;}
+		.fashion_b .four{border-right:none;}
+		/*bott*/
+		.bott{width:100%;height:30px;box-sizing:border-box;margin-top:14px;background:#bfbfbf;line-height:30px;}
+		.bott .l{float:left;margin-left:10px;}
+		.bott .m{float:left;margin-left:30px;}
+		.bott .r{float:right;margin-right:10px;}
+		.footer{font-size:14px;width:100%;margin:14px 0;text-align:center;}
+    </style>
+    <script>
+    	window.onload=function(){
+			var obox=document.getElementById('opa');
+			var obtn=obox.getElementsByTagName('li');
+			var oBox=document.getElementById('bg');
+			var oimg=oBox.getElementsByTagName('img');
+			for(var i=0;i<obtn.length;i++){
+				obtn[i].index=i;
+				obtn[i].onmouseover=function(){
+					for(var i=0;i<obtn.length;i++){
+						obtn[i].className='';
+						oimg[i].className='';
+					}	
+						this.className='active';
+						oimg[this.index].className='pic1';
+				};	
+			};	
+		};
+    </script>
+</head>
+
+<body>
+	<div class="main">
+    	<h1 class="tit">爱淘宝</h1>
+        <div class="search">
+            <input type="text" placeholder="搜索"/>
+            <i></i>
+        </div>
+        <div class="bg" id="bg">
+              <img src="img/pic1.png" class="pic1"/>
+              <img src="img/bg1.jpg" />
+              <img src="img/bg2.jpg" />
+              <img src="img/bg3.jpg" />
+              <div class="m">
+                  <i class="l"></i>
+                  <ul class="fon clearfix" id="opa">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <em class="r"></em>
+              </div>
+        </div>
+        <ul class="nav clearfix">
+        	<li class="list">
+            	<a href="#"><i></i></a>
+                <a href="#">我的淘宝</a>
+            </li>
+            <li class="list">
+            	<a href="#"><i></i></a>
+                <a href="#">我的淘宝</a>
+            </li>
+            <li class="list">
+            	<a href="#"><i></i></a>
+                <a href="#">我的淘宝</a>
+            </li>
+            <li class="list">
+            	<a href="#"><i></i></a>
+                <a href="#">我的淘宝</a>
+            </li>
+            <li class="list">
+            	<a href="#"><i></i></a>
+                <a href="#">我的淘宝</a>
+            </li>
+            <li class="list">
+            	<a href="#"><i></i></a>
+                <a href="#">我的淘宝</a>
+            </li>
+            <li class="list">
+            	<a href="#"><i></i></a>
+                <a href="#">我的淘宝</a>
+            </li>
+            <li class="list">
+            	<a href="#"><i></i></a>
+                <a href="#">我的淘宝</a>
+            </li>
+        </ul>   
+        <!--temai-->
+        <div class="temai cleafix">
+            <div class="temai_l">
+                <a href="#"><p class="p1">品牌特卖</p></a>
+                <a href="#"><p class="p2">秋春款1折起 <span>主会唱&gt</span></p></a>
+                <img src="img/cloth.png" />
+            </div> 
+            <div class="temai_r">
+                <div class="temai_r1">
+                <img src="img/cloth1.png" />
+                <div class="fon">
+                    <a href="#"><p class="p1">超级卷</p></a>
+                    <a href="#"><p class="p2">领卷还能再减价 </span></p></a>
+                </div>
+                
+            </div> 
+                 <div class="temai_r1">
+                <img src="img/cloth1.png" />
+                <div class="fon">
+                    <a href="#"><p class="p1">超级卷</p></a>
+                    <a href="#"><p class="p2">领卷还能再减价 </span></p></a>
+                </div>
+            </div>     
+            </div>
+      	</div>
+        <!--hot market-->
+        <div class="hot">
+        	<h1>热门市场</h1>
+            <ul class="hot_m">
+            	<li>
+                	<a href="#"><i></i></a>
+                    <a href="#">衣服</a>
+                </li>
+                <li>
+                	<a href="#"><i></i></a>
+                    <a href="#">衣服</a>
+                </li>
+                <li>
+                	<a href="#"><i></i></a>
+                    <a href="#">衣服</a>
+                </li>
+                <li>
+                	<a href="#"><i></i></a>
+                    <a href="#">衣服</a>
+                </li>
+                <li>
+                	<a href="#"><i></i></a>
+                    <a href="#">衣服</a>
+                </li>
+                <li>
+                	<a href="#"><i></i></a>
+                    <a href="#">衣服</a>
+                </li>
+                <li>
+                	<a href="#"><i></i></a>
+                    <a href="#">衣服</a>
+                </li>
+                <li>
+                	<a href="#"><i></i></a>
+                    <a href="#">衣服</a>
+                </li>
+            </ul>
+        </div>
+        <!--cabbage price-->
+          <div class="cabbage cleafix">
+            <div class="cabbage_l">
+                <a href="#"><p class="p1">白菜价</p></a>
+                <a href="#"><p class="p2">每日低价9块9包邮</span></p></a>
+                <img src="img/package.png" />
+            </div> 
+            <div class="cabbage_r">
+                <div class="cabbage_r1 clearfix">
+                    <img src="img/shoes.png" />
+                    <div class="fon">
+                        <a href="#"><p class="p1">达人推荐</p></a>
+                        <a href="#"><p class="p2">血拼清单价 </span></p></a>
+                    </div>
+            	</div>    
+            
+                <div class="cabbage_r1 r2 clearfix">
+                    <img src="img/shoes.png" />
+                    <div class="fon">
+                        <a href="#"><p class="p1">达人推荐</p></a>
+                        <a href="#"><p class="p2">血拼清单价 </span></p></a>
+                    </div>
+            	</div>     
+            </div>
+      	</div>
+       
+        <!--fashion women dress-->
+         <div class="fashion_main">
+            <h1 class="fashion_t">潮流女装<span>2015女装潮流趋势</span></h1>
+            <div class="fashion clearfix">
+                <div class="fashion_l cleafix">
+                    <img src="img/dress.png" />
+                    <div class="fon">
+                        <p class="p1">春款外套</p>
+                        <p class="p2">2015热门单品 </p>
+                    </div>
+                </div>
+                <div class="fashion_r">
+                     <div class="fashion_r1  clearfix">
+                            <img src="img/coat.png" />
+                            <a href="#"><p class="p1">棒球服</p></a>
+                     </div>             
+                      <div class="fashion_r1 r2  clearfix">
+                            <img src="img/coat.png" />
+                            <a href="#"><p class="p1">棒球服</p></a>
+                     </div>            
+                 </div>
+             </div>            
+            <ul class="fashion_b">
+                <li>婚纱</li>
+                <li>婚纱</li>
+                <li>婚纱</li>
+                <li class="four">婚纱</li>
+                <li>婚纱</li>
+                <li>婚纱</li>
+                <li>婚纱</li>
+                <li class="four">婚纱</li>
+                <li>婚纱</li>
+                <li>婚纱</li>
+                <li>婚纱</li>
+                <li class="four">婚纱</li>
+            </ul>   
+       </div> 
+         <!--bott-->
+         <p class="bott">
+       		<a href="#" class="l">登录</a>
+            <a href="#" class="m">注册</a>
+            <a href="#" class="r">回到顶部</a>
+        </p>
+        <p class="footer">&copy2015浙32523543</p>
+    </div>
+</body>
+</html>

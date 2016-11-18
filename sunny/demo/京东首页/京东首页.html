@@ -1,0 +1,890 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css" />
+	<style>
+		body{height:3000px;width:1210px;margin:0 auto;}
+		/*tit*/
+    	.tit{width:100%;height:24px;border-bottom:1px solid #eee;background:#f7f7f7;padding-top:6px ;margin-bottom:10px;}
+		.tit p{float:left;font-size:12px;color:#666;margin-left:70px; }
+		.tit p span{display:inline-block;background:url(img/lc_shoucang.gif) no-repeat left center;padding-left:15px;margin-right:16px;}
+		.tit p i{display:inline-block;background:url(img/lc_guanzhu.gif) no-repeat left center;padding-left:15px;margin-right:16px;}
+		.tit p em{display:inline-block;background:url(img/lc_beijing.gif) no-repeat left center;padding-left:15px;font-weight:bold;}
+		.tit_r{float:right;}/*为什么没有给高度加上去*/
+		.tit_r li{float:left;border-right:1px solid gray;font-size:12px;color:#666;padding:0 10px;line-height:100%;}
+		.tit_r .vip,.tit_r .bjd {width:24px;height:12px;background:#e4393c;color:white;text-align:center;line-height:12px;margin-right:4px;}
+		
+		
+		.tit_r .shouji {margin-right:6px;}
+		
+		.tit_r .shouji i{padding-left:36px;background:url(img/lc_shouji.png) no-repeat 16px center ;}
+		.tit_r li span{display:inline-block;background:url(img/lc_jiantou.png) no-repeat right center;width:8px;height:8px;margin-left:10px;}
+		.tit_r .last{border-right:none;}
+		.tit_r a:hover{background:pink;}
+		.clearfix:after{display:block;content:"";clear:both;}
+		/*search*/
+		.search{width:1210px;margin:0 auto;margin-bottom:10px;position:relative;}
+		.search .pic1,.search .search_m{float:left;}
+		.search_m{margin-top:8px;margin-right:10px;}
+		.search .pic1{margin-top:8px;margin-right:34px;}
+		.ipt{border:3px solid #e4393c;margin-bottom:10px;}
+		 .search_m .text{float:left;width:400px;height:30px;border:none;padding-left:16px;}
+		 .search_m .ipt i{float:left;width:20px;height:30px;position:absolute;top:0;left:307px;}
+		  .search_m .submit{float:left;width:80px;height:34px;background:#e4393c;border:none;}
+		  .search_m p a{font-size:12px;color:#999;margin-right:10px;}
+		   .search_m p .se{color:#e4393c;}
+		   
+		   .search_r1{float:left;width:74px;height:30px;background:url(img/lc_tubiao.png) no-repeat 8px center #f7f7f7;font-size:12px;color:#666;padding-left:32px;line-height:30px;margin-right:10px;margin-top:12px;}
+		   .search_r1 span{display:inline-block;width:12px;height:5px;background:url(img/lc_sanjiao.png) no-repeat left center;margin-right:6px;margin-left:6px;}
+		    .search_r2{float:left;width:94px;height:30px;background:url(img/lc_gouwuche.png) no-repeat 8px center #f7f7f7;font-size:12px;color:#666;padding-left:32px;line-height:30px;margin-right:10px;margin-top:12px;}
+			.search_r2 span{display:inline-block;width:5px;height:11px;background:url(img/lc_yousanjiao.png) no-repeat left center;margin-right:6px;margin-left:6px;}
+		/*nav*/
+		.nav{width:1210px;margin:0 auto;background:#e4393c;position:relative;}
+		.nav h1{float:left;width:190px;height:40px;color:white;font-size:12px;line-height:40px;padding-left:20px;}
+		.nav ul{float}
+		.nav li{float:left;height:40px;color:white;font-size:12px;line-height:40px;padding:0 26px;display:inline-block;}
+		.nav .fuzhuang{position:relative;}
+		.nav .fuzhuang .women{width:38px;height:20px;background:#ffae00;font-size:12px;color:white;text-align:center;line-height:20px;display:block;position:absolute;top:-5px;left:64px;}
+		.nav img{position:absolute;top:10px;right:40px;}
+		.nav li:hover{background:#a40000;}
+		.nav h1:hover{background:#a40000;}
+		/*classification*/
+		.main{width:1210px;margin:0 auto;}
+		.fenlei_l{float:left;border:2px solid #e4393c;width:206px;background:#fafafa;}
+		.fenlei_l li{width:186px;height:28px;line-height:30px;border-bottom:1px solid #fff;padding-left:14px;font-size:14px;color:#333;background:url(img/lc_right.png) no-repeat right center;}
+		
+		.fenlei_m{float:left;margin-top:10px;margin-left:8px;font-size:12px;}
+		.fenlei_mb{width:234px;height:160px;border:1px solid gray;position:relative;float:left;}
+		
+		.fenlei_mb1 .fon{margin-left:60px;margin-top:18px;}
+		.fenlei_mb1 p{color:#909090;}
+		.fenlei_mb1 h6{color:#e33831;}
+		.fenlei_mb1 img{margin-top:24px;margin-left:100px;}
+		.fenlei_mb .zuo{position:absolute;top:70px;left:8px;}
+		.fenlei_mb_2 {width:196px;}
+		.fenlei_mb_2 img{margin-left:60px;margin-top:24px;}
+		.fenlei_mb_3{position:relative;}
+		.fenlei_mb_3 .you{position:absolute;top:70px;right:8px;}
+		
+		.fenlei_rt{width:308px;height:32px;line-height:32px;border-bottom:1px solid gray;margin-top:6px;}
+		.fenlei_rt i{float:left;font-size:12px;color:#999;}
+		.fenlei_rt em{float:right;font-size:12px;color:#005ea7;}
+		.fenlei_rm{border:1px solid gray;width:308px;height:106px;}
+		.fenlei_rm ul{float:left;width:142px;height:100px;border-right:1px solid gray;font-size:12px;color:#333;padding-left:10px;margin-top:2px;}
+		.fenlei_rm .u2{float:left;border-right:none;}
+		.fenlei_rm ul li{width:152px;height:25px;line-height:25px;}
+		
+		.fenlei_rb{width:310px;border-left:1px solid gray;border-bottom:1px solid gray;margin-top:10px;}
+		.fenlei_rb li{float:left;background:url(img/lc_huafei.png) no-repeat 26px 10px;width:52px;height:34px;border-top:1px solid gray;border-right:1px solid gray;padding-top:50px;padding-left:24px;}
+		.fenlei_rb li span{display:inline-block;width:24px;height:26px;background:url(img/lc_huafei2.png) no-repeat center 22px;}
+		.fenlei_r{float:left;margin-top:10px;margin-left:10px;}
+		/*life*/
+		.life_all{width:1210px;margin:0 auto;margin-top:10px;}
+		.life_lmain{float:left;width:912px;margin-top:10px;}
+		.life{background:url(img/lc_chuchuang.png) no-repeat left center;text-indent:-100em;margin-top:20px;height:25px;}/*块不能自适应高吗*/
+		.life_l {position:relative;float:left;margin-right:6px;margin-top:10px;}
+		.life_l .opa{width:120px;height:188px;background:#e6dbd5;position:absolute;top:0;left:0;opacity:0.5;filter:alpha(opacity:50);}
+		.life_l .wenzi{position:absolute;top:22px;left:34px;}
+		.life_l .wenzi p{font-size:18px;color:#333;margin-bottom:10px;}
+		.life_l .wenzi h2{font-size:12px;color:#666;margin-bottom:6px;}
+		.life_l .wenzi h3{font-size:12px;color:#e5b788;margin-bottom:26px;}
+		.life_l ul li{font-size:12px;color:#666;margin-bottom:6px;list-style:disc;}
+		
+		.life_rmain{float:left;margin-top:10px;}
+		.life_r{width:290px;height:188px;background:#fafafa;border:1px solid red;margin-bottom:8px;}
+		.life_r .MG,.life_r .picMG{float:left;}
+		.life_r .MG{margin-top:30px;margin-left:20px;}
+		.MG p{font-size:18px;color:#333;margin-bottom:10px;}
+		.MG h2{font-size:12px;clolr:gray;margin-bottom:26px;}
+		.MG h3{font-size:12px;clolr:gray;}
+		.MG h3 span{font-size:18px;color:#e4393c;}
+		.life_r .picMG{margin-left:30px;margin-top:18px;}
+		.life_b img{float:left;}
+		/*1F*/
+		.onef_tit{width:1210px;height:40px;border-bottom:1px solid gray;margin:0 auto;background:url(img/lc_1f.png) no-repeat left center;line-height:40px;margin-top:6px;}
+		.onef_tit li{float:left;font-size:12px;color:#999;margin-left:56px;}
+		.onef_tit .list1{margin-left:56px;font-size:24px;color:#666;}
+		.onef_tit .list2{width:158px;margin-left:56px;font-size:12px;color:#e4393c;border-bottom:1px solid red;background:url(img/lc_tejia.png) no-repeat center bottom;text-align:center;}/*m没做好*/
+		.onef_tit .last1{padding-right:10px;margin-left:184px;background:url(img/lc_peisong.png) no-repeat right center;color:#005ea7;}
+		.onef_tit .last{margin-right:10px;background:url(img/lc_peisong.png) no-repeat right center;color:#005ea7;padding-right:10px;}
+		.onef_main{width:1210px;margin:0 auto;}
+		.phone{float:left;width:200px;height:364px;border-right:1px solid gray;border-bottom:1px solid gray;padding:0 2px;}
+		.phone_pic{display:block;margin-left:72px;}
+		.phone ul{font-size:14px;color:#666;float:left;width:100px;}
+		.phone ul li{line-height:26px;}
+		
+		.onef_m{float:left;width:796px;border-left:1px solid gray;border-bottom:1px solid gray;}
+		.onef_m1{float:left;width:158px;height:182px;border-right:1px solid gray;border-top:1px solid gray;}
+		.kuangshuai{float:left;}
+		.onef_m1 img{margin-top:22px;margin-left:34px;}
+		.onef_m1 p{font-size:12px;color:#999;margin-left:12px;margin-top:12px;}
+		.onef_m1 h4{font-size:12px;color:#e4393c;margin-left:12px;margin-top:16px;}
+		
+		.onef_r{float:left;}
+		.onef_rt li{border-bottom:1px dotted gray;width:200px;}
+		.onef_rt li img{padding:6px 10px;display:inline-block;}
+		/*2F
+		.onef_tit{width:1210px;height:40px;border-bottom:1px solid gray;margin:0 auto;background:url(img/lc_1f.png) no-repeat left center;line-height:40px;margin-top:6px;}
+		.onef_tit li{float:left;font-size:12px;color:#999;margin-left:80px;}
+		.onef_tit .list1{margin-left:56px;font-size:24px;color:#666;}
+		.onef_tit .list2{width:158px;margin-left:56px;font-size:12px;color:#e4393c;border-bottom:1px solid red;background:url(img/lc_tejia.png) no-repeat center bottom;text-align:center;}/*m没做好
+		.onef_tit .last1{}
+		.onef_tit .last{float:right;margin-right:10px;background:url(img/lc_peisong.png) no-repeat right center;padding-right:10px;color:#005ea7;}
+		.onef_main{width:1210px;margin:0 auto;}
+		.phone{float:left;width:200px;height:364px;border-right:1px solid gray;border-bottom:1px solid gray;padding:0 2px;}
+		.phone_pic{display:block;margin-left:72px;}
+		.phone ul{font-size:14px;color:#666;float:left;width:100px;}
+		.phone ul li{line-height:26px;}
+		
+		.onef_m{float:left;width:796px;border-left:1px solid gray;border-bottom:1px solid gray;}
+		.onef_m1{float:left;width:158px;height:182px;border-right:1px solid gray;border-top:1px solid gray;}
+		.kuangshuai{float:left;}
+		.onef_m1 img{margin-top:22px;margin-left:34px;}
+		.onef_m1 p{font-size:12px;color:#999;margin-left:12px;margin-top:12px;}
+		.onef_m1 h4{font-size:12px;color:#e4393c;margin-left:12px;margin-top:16px;}
+		
+		.onef_r{float:left;}
+		.onef_rt li{border-bottom:1px dotted gray;width:200px;}
+		.onef_rt li img{padding:6px 10px;display:inline-block;}*/
+		/*3F*/
+		.thirdf_main{width:1210px;margin:0 auto;}
+		.thirdf_tit{width:1210px;height:40px;border-bottom:1px solid gray;margin:0 auto;background:url(img/lc_3f.png) no-repeat left center;line-height:40px;margin-top:6px;}
+		.thirdf_tit li{float:left;font-size:12px;color:#999;margin-left:80px;}
+		.thirdf_tit .list1{margin-left:56px;font-size:24px;color:#666;}
+		.thirdf_tit .list2{width:158px;margin-left:56px;font-size:12px;color:#e4393c;border-bottom:1px solid red;background:url(img/lc_tejia.png) no-repeat center bottom;text-align:center;}/*m没做好*/
+		.onef_tit .last1{}
+		.thirdf_tit .last{float:right;background:url(img/lc_haiwai.png) no-repeat right center;text-indent:-100em;padding-right:114px;}
+		
+		.thirdf_l{width:208px;float:left;}
+		.thirdf_l ul,.thirdf_l img{float:left;}
+		.thirdf_l li{font-size:12px;color:#666;line-height:26px;margin-left:4px;}/*块是根据内容撑开的吗*/
+		.thirdf_l img{margin-top:26px;margin-left:30px;}
+		
+		.thirdf_m{float:left;}
+		.thirdf_m img{float:left;}
+		/*.women{position:absolute;top:160px;left:120px;}
+		.main_sp{positon:relative;}*/
+		.thirdf_r{float:left;}
+		.thirdf_rt li{border-bottom:1px dotted gray;width:200px;}
+		.thirdf_rt li img{padding:6px 10px;display:inline-block;}
+		/*倒数第二*/
+		.lsecond_main{width:1210px;margin:28px auto;}
+		.lsecond{border:1px solid gray;width:446px;float:left;}
+		.lsecond_tit{font-size:14px;color:#333;margin-left:8px;width:446px;height:30px;line-height:30px;}
+		.sd_l .runhua{float:left;margin-top:12px;margin-left:22px;}
+		.sd_l .fon{float:left;margin-left:18px;margin-top:16px;font-size:14px;}
+		.sd_l .fon p{color:#005ea7;}
+		.sd_l .fon h1{color:#999;font-size:14px;}/*为啥这里还要写一遍*/
+		.sd_l .shai{position:absolute;top:8px;left:56px;}
+		.sd_l{width:424px;height:80px;border-bottom:1px dotted gray;position:relative;background:url(img/lc_douhao.png) no-repeat 394px 38px;margin-left:10px;}
+		
+		
+		.lsecond_r{float:left;width:290px;}
+		.lsecond_r_t{width:268px;height:130px;float:left;padding:0 10px;padding-top:10px;border:1px solid gray;border-top:2px solid gray;margin-left:10px;margin-bottom:4px;}
+		.lsecond_r .lsecond_r_tit i{font-size:12px;color:#333;float:left;}
+		.lsecond_r .lsecond_r_tit  a{font-size:12px;color:#005ea7;float:right;}/*有点小毛病一直没找出来，zhao出来了，a设置的问题*/
+		
+		.lsecond_r .yaowei{float:left;margin-right:10px;}
+		.lsecond_r .fon{float:left;font-size:12px;color:#005ea7;line-height:24px;list-style:disc;}
+		.lsecond_r_b{margin-left:10px;margin-bottom:30px;position:relative;}
+		.lsecond_r_b img{float:right;margin-top:10px;}
+		.lsecond_r_b input{float:left;width:170px;height:24px;border:1px solid gray;padding-left:30px;margin-top:10px;}
+		.lsecond_r_b i{background:url(img/lc_tubiao.png) no-repeat left center;width:20px;height:24px;position:absolute;bottom:0;left:6px;}
+			/*倒数第yi*/
+			/*倒数第yi*/
+			.lastone_main{width:1210px;margin:0 auto;}
+			.lastone{width:1168px;border-top:1px solid gray;margin:0 auto;}
+			.lastone img{margin-top:20px;}
+			.zhinan{float:left;width:132px;background:url(img/lc_zhinan.png) no-repeat 0 20px;padding-top:20px;padding-left:38px;}
+			.zhinan dt{font-size:18px;color:#333;line-height:24px;}
+			.zhinan dd{font-size:14px;color:#666;line-height:20px;}
+			
+			.bottom{width:1210px;margin:0 auto;font-size:12px;color:#333;border-top:1px solid gray;}
+			.bottom li{float:left;margin-bottom:16px;margin-top:20px;padding:0 10px;border-right:1px solid gray;line-height:100%;}
+			.bottom ul{margin-left:200px;}
+			.bottom img{width:466px;margin:0 auto;}
+			.bottom .last{border-right:none;}
+			.bottom p{line-height:18px;font-size:14px;text-align:center;}
+		
+		
+    </style>
+</head>
+
+<body>
+	<!--tit-->
+	 <div class="tit clearfix">
+    	<p>
+        	<span>收藏京东</span>
+        	<i>关注京东</i>
+            <em>北京[更换]</em>
+        </p>
+        <ul class="tit_r">
+        	<li>你好，<a href="#">请登录</a><a href=""#> 免费注册</a></li>
+            <li><a href="#">我的订单</a></li>
+            <li ><span class="vip">VIP</span><a href="#">会员俱乐部</a></li> 
+            <li><span class="bjd">BJD</span><a href="#">企业频道</a></li> 
+            <li class="shouji"><i></i><a href="#">手机京东</a><span class="jiantou"></span> </li> 
+            <li><a href="#">客户服务</a><a href="#"><span class="jiantou"></span></a></li> 
+            <li class="last"><a href="#">网站导航</a><a href="#"><span class="jiantou"></span></a></li> 
+          </ul>
+    </div>  
+    <!--search-->
+     <div class="search clearfix">
+    	<img src="img/lc_jingdong.png" class="pic1"/>
+        <div class="search_m clearfix">
+        	<div class="ipt clearfix">
+            	
+                <input type="text" placeholder="流量充值" class="text"/>
+                <input type="submit" value="搜索" class="submit"/>
+            </div>
+            <p class="clearfix">
+                <a href="#">热门搜索：</a>
+                <a href="#" class="se">上新满减</a>
+                <a href="#">潮流换新</a>
+                <a href="#">4k电视</a>
+                 <a href="#">母亲节</a>
+                <a href="#">美翻了</a>
+                <a href="#">手机特惠</a>
+                 <a href="#"> 程序猿</a>
+                <a href="#">领100</a>
+           </p>
+        </div> 
+        <div class="search_r1"><a href="#">我的京东</a><span></span></div> 
+        <div class="search_r2"><a href="#">去购物车结算</a><span></span></div> 
+        
+       <img src="img/kehuduan.png" />
+    </div>     
+    <!--nav-->
+    <!--classification-->
+      <div class="nav">
+      	<h1>全部商品分类</h1>
+        <ul class="clearfix">
+        	<li>首页</li>
+            <li class="fuzhuang">服装城<span class="women">女人节</span></li>
+            <li>食品</li>
+            <li>团购</li>
+            <li>夺宝岛</li>
+            <li>闪购</li>
+            <li>金融</li>
+        </ul>
+        <img src="img/lc_bige.png"/>
+      </div>
+    <!--fenlei-->
+    <div class="main clearfix">
+        <ul class="fenlei_l">
+            <li>图书、音像、数字商品</li>
+            <li>图书</li>
+            <li>图书、音像、数字商品</li>
+            <li>图书、音像</li>
+            <li>图书、音像、数字商品</li>
+            <li>图书</li>
+            <li>图书、音像、数字商品</li>
+            <li>图书、音像、数字商品</li>
+            <li>图书、数字商品</li>
+            <li>图书、音像、数字商品</li>
+            <li>图书、音像、数字商品</li>
+            <li>图书、音像、数字商品</li>
+            <li>图书</li>
+            <li>图书、音像、数字商品</li>
+        </ul>
+        <div class="fenlei_m">
+            <img src="img/lc_dianshi.png"/>
+            <div class="clearfix">
+                <div class="fenlei_mb">
+                    <div class="fenlei_mb1">
+                        <div class="fon">
+                            <p>闪购、臻爱女人盛宴</p>
+                            <h6>大牌钜惠1折起</h6>	
+                        </div>
+                        <img src="img/lc_nike.png"/>
+                     </div>  	
+                      <a href=""#><img src="img/lc_zuo.png" class="zuo" /></a>			
+                </div>
+                 <div class="fenlei_mb fenlei_mb_2">
+                    <div class="fenlei_mb1">
+                        <div class="fon">
+                            <p>闪购、臻爱女人盛宴</p>
+                            <h6>大牌钜惠1折起</h6>	
+                        </div>
+                        <img src="img/lc_nike.png"/>
+                     </div>  	
+                     		
+                </div>
+                 <div class="fenlei_mb fenlei_mb_3">
+                    <div class="fenlei_mb1">
+                        <div class="fon">
+                            <p>闪购、臻爱女人盛宴</p>
+                            <h6>大牌钜惠1折起</h6>	
+                        </div>
+                        <img src="img/lc_nike.png"/>
+                     </div>  	
+                      <a href=""#><img src="img/lc_you.png" class="you" /></a>			
+                </div>
+            </div>
+        </div>	
+        <div class="fenlei_r">
+            <img src="img/lc_navrg.png" />
+            <h1 class="fenlei_rt clearfix">
+                <i>京东快报</i>
+                <em>更多快报&gt</em>
+            </h1>
+            <div class="fenlei_rm">
+                <ul>
+                    <li>森海耳机大让利138元起</li>
+                    <li>森海耳机大让利138元起</li>
+                    <li>森海耳机大让利138元起</li>
+                    <li>森海耳机大让利138元起</li>
+                </ul>
+                <ul class="u2">
+                    <li>森海耳机大让利138元起</li>
+                    <li>森海耳机大让利138元起</li>
+                    <li>森海耳机大让利138元起</li>
+                    <li>森海耳机大让利138元起</li>
+                </ul>
+             </div> 
+            <ul class="fenlei_rb clearfix">
+               <li class="fenlei_rb1">
+                        <span>话费</span>
+                    </li>
+                    <li class="fenlei_rb1">
+                        <span>话费</span>
+                    </li>
+                    <li class="fenlei_rb1">
+                        <span>话费</span>
+                    </li>
+                    <li class="fenlei_rb1">
+                        <span>话费</span>
+                    </li>
+                    <li class="fenlei_rb1">
+                        <span>话费</span>
+                    </li>
+                    <li class="fenlei_rb1">
+                        <span>话费</span>
+                    </li>
+                    <li class="fenlei_rb1">
+                        <span>话费</span>
+                    </li>
+                    <li class="fenlei_rb1">
+                        <span>话费</span>
+                    </li>
+            </ul>  
+         </div>
+     </div>     
+       
+     <!--life-->
+    <div class="life_all">
+      <h2 class="life">生活的橱窗</h2>
+         <div class="life_main clearfix">
+             <ul class="life_lmain clearfix">
+                  <li class="life_l">
+                    <img src="img/lc_pinpai.png"/>
+                    <div class="opa"></div>
+                    <div class="wenzi">
+                        <p>品牌街</p>
+                        <h2>荣耀x2免费抽</h2>
+                        <h3>无人机送货</h3>
+                        <ul>
+                            <li><a href="#">更多品牌</a></li>
+                            <li><a href="#">进入品牌街</a></li>
+                        </ul>
+                    </div>
+                 </li>
+                 <li class="life_l">
+                    <img src="img/lc_pinpai.png"/>
+                    <div class="opa"></div>
+                    <div class="wenzi">
+                        <p>品牌街</p>
+                        <h2>荣耀x2免费抽</p>
+                        <h3>无人机送货</p>
+                        <ul>
+                            <li><a href="#">更多品牌</a></li>
+                            <li><a href="#">进入品牌街</a></li>
+                        </ul>
+                    </div>
+                 </li>
+                 <li class="life_l">
+                    <img src="img/lc_pinpai.png"/>
+                    <div class="opa"></div>
+                    <div class="wenzi">
+                        <p>品牌街</p>
+                        <h2>荣耀x2免费抽</p>
+                        <h3>无人机送货</p>
+                        <ul>
+                            <li><a href="#">更多品牌</a></li>
+                            <li><a href="#">进入品牌街</a></li>
+                        </ul>
+                    </div>
+                 </li>
+                 <li class="life_l">
+                    <img src="img/lc_pinpai.png"/>
+                    <div class="opa"></div>
+                    <div class="wenzi">
+                        <p>品牌街</p>
+                        <h2>荣耀x2免费抽</p>
+                        <h3>无人机送货</p>
+                        <ul>
+                            <li><a href="#">更多品牌</a></li>
+                            <li><a href="#">进入品牌街</a></li>
+                        </ul>
+                    </div>
+                 </li>
+                 <li class="life_l">
+                    <img src="img/lc_pinpai.png"/>
+                    <div class="opa"></div>
+                    <div class="wenzi">
+                        <p>品牌街</p>
+                        <h2>荣耀x2免费抽</p>
+                        <h3>无人机送货</p>
+                        <ul>
+                            <li><a href="#">更多品牌</a></li>
+                            <li><a href="#">进入品牌街</a></li>
+                        </ul>
+                    </div>
+                 </li>
+                 <li class="life_l">
+                    <img src="img/lc_pinpai.png"/>
+                    <div class="opa"></div>
+                    <div class="wenzi">
+                        <p>品牌街</p>
+                        <h2>荣耀x2免费抽</p>
+                        <h3>无人机送货</p>
+                        <ul>
+                            <li><a href="#">更多品牌</a></li>
+                            <li><a href="#">进入品牌街</a></li>
+                        </ul>
+                    </div>
+                 </li>
+             </ul>
+             <div class="life_rmain">
+                 <div class="life_r clearfix">
+                     <div class="MG">
+                        <p>今日团购</p>
+                        <h2>麦当劳午餐</p>
+                        <h3>团购价<span>¥62</span></p>
+                        <img src="img/lc_cantuan.png"/>
+                     </div>
+                     <div class="picMG">
+                        <img src="img/lc_MG.png"/>
+                        <img src="img/lc_MG2.png"/>
+                     </div>
+                 </div> 
+                 <img src="img/lc_jinrong.png"/>
+             </div>
+         </div>
+         <div class="life_b clearfix">
+                <a href="#"><img src="img/lc_haixin.png"/> </a>
+                <a href="#"><img src="img/lc_haixin.png"/> </a>
+                <a href="#"><img src="img/lc_haixin.png"/> </a>
+          </div>     
+    </div>          
+    <!--1F-->
+    <ul class="onef_tit clearfix">
+    	<li class="list1">家电通讯</li>
+        <li class="list2">家电通讯</li>
+        <li>家电通讯</li>
+        <li>家电通讯</li>
+        <li>家电通讯</li>
+        <li>家电通讯</li>
+       <li class="last1">家电通讯</li>
+        <li class="last">家电通讯</li>
+     </ul>
+     <div class="onef_main clearfix">
+         <div class="phone clearfix"> 
+             <ul>
+                <li>手机配件</li>
+                <li>手机配件</li>
+                <li>手机配件</li>
+                <li>手机配件</li>
+                <li>手机配件</li>
+                <li>手机配件</li>
+                <li>手机配件</li>
+                <li>手机配件</li>
+             </ul>
+             <ul>
+                <li>平板电视</li>
+                <li>平板电视</li>
+                <li>平板电视</li>
+                <li>平板电视</li>
+                <li>平板电视</li>
+                <li>平板电视</li>
+                <li>平板电视</li>
+                <li>平板电视</li>
+             </ul>
+             <img src="img/lc_phone.png" class="phone_pic"/>   
+         </div> 
+         <div class="onef_m">
+            <div class="onef_m1">
+                <img src="img/lc_xiaojiadian.png"/>
+                 <p>小家电.春季攻略</p>
+                 <h4>低值9.9元</h4>
+            </div>
+            <img src="img/lc_kuangshuai.png" class="kuangshuai"/>
+            <div class="onef_m1">
+                <img src="img/lc_xiaojiadian.png"/>
+                 <p>小家电.春季攻略</p>
+                 <h4>低值9.9元</h4>
+            </div>
+            <div class="onef_m1">
+                <img src="img/lc_xiaojiadian.png"/>
+                 <p>小家电.春季攻略</p>
+                 <h4>低值9.9元</h4>
+            </div>
+            <div class="onef_m1">
+                <img src="img/lc_xiaojiadian.png"/>
+                 <p>小家电.春季攻略</p>
+                 <h4>低值9.9元</h4>
+            </div>
+            <div class="onef_m1">
+                <img src="img/lc_xiaojiadian.png"/>
+                 <p>小家电.春季攻略</p>
+                 <h4>低值9.9元</h4>
+            </div>
+            <div class="onef_m1">
+                <img src="img/lc_xiaojiadian.png"/>
+                 <p>小家电.春季攻略</p>
+                 <h4>低值9.9元</h4>
+            </div>
+            <div class="onef_m1">
+                <img src="img/lc_xiaojiadian.png"/>
+                 <p>小家电.春季攻略</p>
+                 <h4>低值9.9元</h4>
+            </div>
+         </div> 
+         <div class="onef_r"> 
+             <ul class="onef_rt">
+                <li class="list">
+                    <img src="img/lc_feike.png"/>
+                    <img src="img/lc_tcl.png"/>
+                </li>
+                <li class="list">
+                    <img src="img/lc_feike.png"/>
+                    <img src="img/lc_tcl.png"/>
+                </li>
+                <li class="list">
+                    <img src="img/lc_feike.png"/>
+                    <img src="img/lc_tcl.png"/>
+                </li>
+                <li class="list">
+                    <img src="img/lc_feike.png"/>
+                    <img src="img/lc_tcl.png"/>
+                </li>
+                <li class="list">
+                    <img src="img/lc_feike.png"/>
+                    <img src="img/lc_tcl.png"/>
+                </li>
+             </ul> 
+             <img src="img/lc_chuchen.png"/>
+          </div>    
+      </div>
+    <!--2F
+     <ul class="onef_tit clearfix">
+    	<li class="list1">家电通讯</li>
+        <li class="list2">家电通讯</li>
+        <li>家电通讯</li>
+        <li>家电通讯</li>
+        <li>家电通讯</li>
+        <li>家电通讯</li>
+       <li class="last1">家电通讯</li>
+        <li class="last">家电通讯</li>
+     </ul>
+     <div class="onef_main clearfix">
+         <div class="phone clearfix"> 
+             <ul>
+                <li>手机配件</li>
+                <li>手机配件</li>
+                <li>手机配件</li>
+                <li>手机配件</li>
+                <li>手机配件</li>
+                <li>手机配件</li>
+                <li>手机配件</li>
+                <li>手机配件</li>
+             </ul>
+             <ul>
+                <li>平板电视</li>
+                <li>平板电视</li>
+                <li>平板电视</li>
+                <li>平板电视</li>
+                <li>平板电视</li>
+                <li>平板电视</li>
+                <li>平板电视</li>
+                <li>平板电视</li>
+             </ul>
+             <img src="img/lc_phone.png" class="phone_pic"/>   
+         </div> 
+         <div class="onef_m">
+            <div class="onef_m1">
+                <img src="img/lc_xiaojiadian.png"/>
+                 <p>小家电.春季攻略</p>
+                 <h4>低值9.9元</h4>
+            </div>
+            <img src="img/lc_kuangshuai.png" class="kuangshuai"/>
+            <div class="onef_m1">
+                <img src="img/lc_xiaojiadian.png"/>
+                 <p>小家电.春季攻略</p>
+                 <h4>低值9.9元</h4>
+            </div>
+            <div class="onef_m1">
+                <img src="img/lc_xiaojiadian.png"/>
+                 <p>小家电.春季攻略</p>
+                 <h4>低值9.9元</h4>
+            </div>
+            <div class="onef_m1">
+                <img src="img/lc_xiaojiadian.png"/>
+                 <p>小家电.春季攻略</p>
+                 <h4>低值9.9元</h4>
+            </div>
+            <div class="onef_m1">
+                <img src="img/lc_xiaojiadian.png"/>
+                 <p>小家电.春季攻略</p>
+                 <h4>低值9.9元</h4>
+            </div>
+            <div class="onef_m1">
+                <img src="img/lc_xiaojiadian.png"/>
+                 <p>小家电.春季攻略</p>
+                 <h4>低值9.9元</h4>
+            </div>
+            <div class="onef_m1">
+                <img src="img/lc_xiaojiadian.png"/>
+                 <p>小家电.春季攻略</p>
+                 <h4>低值9.9元</h4>
+            </div>
+         </div> 
+         <div class="onef_r"> 
+             <ul class="onef_rt">
+                <li class="list">
+                    <img src="img/lc_feike.png"/>
+                    <img src="img/lc_tcl.png"/>
+                </li>
+                <li class="list">
+                    <img src="img/lc_feike.png"/>
+                    <img src="img/lc_tcl.png"/>
+                </li>
+                <li class="list">
+                    <img src="img/lc_feike.png"/>
+                    <img src="img/lc_tcl.png"/>
+                </li>
+                <li class="list">
+                    <img src="img/lc_feike.png"/>
+                    <img src="img/lc_tcl.png"/>
+                </li>
+                <li class="list">
+                    <img src="img/lc_feike.png"/>
+                    <img src="img/lc_tcl.png"/>
+                </li>
+             </ul> 
+             <img src="img/lc_chuchen.png"/>
+          </div>    
+      </div>
+    <!--3F-->
+    <ul class="thirdf_tit clearfix">
+    	<li class="list1">服饰鞋包</li>
+        <li class="list2">特价商品</li>
+        <li>品牌男装</li>
+        <li>品牌女装</li>
+        <li>鞋靴箱包 </li>
+        <li>运动户外</li>
+        <li class="last">海外购</li>
+     </ul>
+     <div class="thirdf_main clearfix">
+         <div class="thirdf_l clearfix">
+             <ul>
+                <li>男装</li>
+                <li>男装</li>
+                <li>男装</li>
+                <li>男装</li>
+                <li>男装</li>
+                <li>男装</li>
+                <li>男装</li>
+                <li>男装</li>
+                <li>男装</li>
+                <li>男装</li>
+                <li>男装</li>
+                <li>男装</li>
+                 <li>男装</li>
+                <li>男装</li>
+             </ul>
+             <img src="img/lc_ball.png"/>
+          </div> 
+          <div class="thirdf_m clearfix">
+          	
+                 <img src="img/lc_shangpin.png" class="shangpin"/>
+                <!--<div class="main_sp"> <img src="img/lc_nvren.png" class="women"/>-->
+             
+              <img src="img/lc_shangpin.png"/>
+               <img src="img/lc_shangpin.png"/>
+                <img src="img/lc_shangpin.png"/>
+                 <img src="img/lc_shangpin.png"/>
+          </div>
+          <div class="thirdf_r"> 
+                 <ul class="onef_rt">
+                    <li class="list">
+                        <img src="img/lc_feike.png"/>
+                        <img src="img/lc_tcl.png"/>
+                    </li>
+                    <li class="list">
+                        <img src="img/lc_feike.png"/>
+                        <img src="img/lc_tcl.png"/>
+                    </li>
+                    <li class="list">
+                        <img src="img/lc_feike.png"/>
+                        <img src="img/lc_tcl.png"/>
+                    </li>
+                    <li class="list">
+                        <img src="img/lc_feike.png"/>
+                        <img src="img/lc_tcl.png"/>
+                    </li>
+                    <li class="list">
+                        <img src="img/lc_feike.png"/>
+                        <img src="img/lc_tcl.png"/>
+                    </li>
+                 </ul> 
+                 <img src="img/lc_chuchen.png"/>
+          </div>
+      </div>  -->
+    <!--倒说第二-->
+    <div class="lsecond_main clearfix">
+        <div class="lsecond">
+            <h1 class="lsecond_tit">热门晒单</h1>
+            <ul class="sd clearfix">
+                <li class="sd_l clearfix">
+                    <img src="img/lc_runhuayou.png" class="runhua" />
+                    <img src="img/lc_shai.png" class="shai"/>
+                    <div class="fon">
+                        <p>嘉实多磁护5w-30多效合一启停全合成机油润滑油 </p>
+                        <h1>京东购买正品放心不用再去4S店去花冤枉钱</h1>
+                    </div>
+                </li>
+                <li class="sd_l">
+                    <img src="img/lc_runhuayou.png" class="runhua" />
+                    <img src="img/lc_shai.png" class="shai"/>
+                    <div class="fon">
+                        <p>嘉实多磁护5w-30多效合一启停全合成机油润滑油 </p>
+                        <h1>京东购买正品放心不用再去4S店去花冤枉钱</h1>
+                    </div>
+                </li>
+            </ul>
+        </div>
+         <div class="lsecond clearfix">
+            <h1 class="lsecond_tit">热门晒单</h1>
+            <ul class="sd clearfix">
+                <li class="sd_l clearfix">
+                    <img src="img/lc_runhuayou.png" class="runhua" />
+                    <img src="img/lc_shai.png" class="shai"/>
+                    <div class="fon">
+                        <p>嘉实多磁护5w-30多效合一启停全合成机油润滑油 </p>
+                        <h1>京东购买正品放心不用再去4S店去花冤枉钱</h1>
+                    </div>
+                </li>
+                <li class="sd_l">
+                    <img src="img/lc_runhuayou.png" class="runhua" />
+                    <img src="img/lc_shai.png" class="shai"/>
+                    <div class="fon">
+                        <p>嘉实多磁护5w-30多效合一启停全合成机油润滑油 </p>
+                        <h1>京东购买正品放心不用再去4S店去花冤枉钱</h1>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="lsecond_r clearfix">
+           <div class="lsecond_r_t clearfix">
+                <h1 class="lsecond_r_tit clearfix">
+                    <i>在线读书</i>
+                    <a href="#">更多在线读书&gt</a>
+                </h1>
+               <div class="lsecond_r_m clearfix">
+                    <img src="img/lc_yaoweiba.png" class="yaowei"/>
+                    <ul class="fon">
+                        <li>从0到1开启商业与未来的咪咪</li>
+                        <li>从0到1开启商业与未来的咪咪</li>
+                        <li>从0到1开启商业与未来的咪咪</li>
+                        <li>从0到1开启商业与未来的咪咪</li>
+                    </ul>
+                </div>
+             </div>
+             <div class="lsecond_r_b ">
+                <p>订阅促销消息</p>
+                <div class="clearfix">
+                    <i></i>
+                    <input type="text" placeholder="请输入您的邮箱地址"/>
+                    <img src="img/lc_dingyue.png"/>
+                </div>
+            </div>
+         </div>   
+           
+        </div>
+    </div>
+     <!--倒说第一-->
+     <div class="last_main">
+        <div class="lastone clearfix">
+              <dl class="zhinan">
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>会员介绍</dd>
+                <dd>团购机票</dd>
+                <dd>常见问题</dd>
+                <dd>大家电</dd>
+                <dd>联系客服</dd>
+             </dl>
+              <dl class="zhinan">
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>会员介绍</dd>
+                <dd>团购机票</dd>
+                <dd>常见问题</dd>
+                <dd>大家电</dd>
+                <dd>联系客服</dd>
+             </dl>
+              <dl class="zhinan">
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>会员介绍</dd>
+                <dd>团购机票</dd>
+                <dd>常见问题</dd>
+                <dd>大家电</dd>
+                <dd>联系客服</dd>
+             </dl>
+              <dl class="zhinan">
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>会员介绍</dd>
+                <dd>团购机票</dd>
+                <dd>常见问题</dd>
+                <dd>大家电</dd>
+                <dd>联系客服</dd>
+             </dl>
+              <dl class="zhinan">
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>会员介绍</dd>
+                <dd>团购机票</dd>
+                <dd>常见问题</dd>
+                <dd>大家电</dd>
+                <dd>联系客服</dd>
+             </dl>
+             <img src="img/lc_ditu.png"/>
+         </div>
+         <div class="bottom">
+             <ul class="bottom_t clearfix">
+                <li>关于我们</li>
+                <li>关于我们</li>
+                <li>关于我们</li>
+                <li>关于我们</li>
+                <li>关于我们</li>
+                <li>关于我们</li>
+                <li>关于我们</li>
+                <li>关于我们</li>
+                <li>关于我们</li>
+                <li>关于我们</li>
+                <li class="last">关于我们</li>	
+              </ul>  
+              <p>北京市朝阳分局备案号北京市朝阳分局备案号北京市朝阳分局备案号北京市朝阳分局备案号</p>
+              <p>音像制品经营许可证市朝阳音像制品经营许可证市朝音像制品经营许可证市朝</p>
+              <p>网络经营文化许可证网络经营文化许可证网络经营文化许可证网络经营文化许可证</p>
+              <p>京东旗下网站嘿嘿呵呵嘻嘻</p>
+              <img src="img/lc_wangzhi.png"/>
+          </div>
+       </div>
+</body>
+</html>

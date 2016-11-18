@@ -1,0 +1,172 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>智能课堂 —— 微博ajax接口测试 - www.zhinengshe.com</title>
+<link href="style/weibo.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.7.2.js"></script>
+<script src="ajax.js"></script>
+<script>
+$(function (){
+	var oBtn=$('#btn1');
+	var oT=$('#t1');
+	var oBox=$('#reply_box');
+	
+	// time 文字 0 0 id
+	function createDiv(time, content, acc, ref, id)
+	{
+		// id ?
+		var oDate=new Date();
+		oDate.setTime(time*1000);
+		var sTime=oDate.getFullYear()+'-'+(oDate.getMonth()+1)+'-'+oDate.getDate()+' '+oDate.getHours()+':'+oDate.getMinutes()+':'+oDate.getSeconds();
+		var oDiv=$('<div class="reply"> \
+				<p class="replyContent">'+content+'</p> \
+				<p class="operation"> \
+					<span class="replyTime">'+sTime+'</span> \
+					<span class="handle"> \
+						<a href="javascript:;" class="top">'+acc+'</a> \
+						<a href="javascript:;" class="down_icon">'+ref+'</a> \
+						<a href="javascript:;" class="cut">删除</a> \
+					</span> \
+				</p> \
+			</div>');
+			
+		return oDiv;
+	}
+	// 添加数据
+	oBtn.click(function (){
+		var sText=oT.attr('value');
+		
+		ajax({
+			url:'weibo.php',
+			data: {
+				'act':'add',
+				'content':sText
+			},
+			success:function (str){
+				var json=getJson(str);
+				if (json.error)
+				{
+					alert('发送失败');
+				}
+				else
+				{
+					// time 文字 0 0 id
+					var oDiv=createDiv(json.time, sText, 0, 0, json.id);
+					oDiv.prependTo(oBox);
+					oT.attr('value', '').focus();
+				}
+			}
+		});
+	});
+	
+	// 获取总页数
+	ajax({
+		url:'weibo.php',
+		data:{
+			'act':'get_page_count'
+		},
+		success:function (str){
+			var json=getJson(str);
+			
+			// 点击
+			for (var i=0; i<json.count; i++)
+			{
+				(function (index){
+					var oBtn=$('<a href="javascript:;">'+(i+1)+'</a>');
+					oBtn.appendTo('.page');
+					oBtn.click(function (){
+						$('.page a').removeClass('active');
+						$(this).addClass('active');
+						
+						ajax({
+							url:'weibo.php',
+							data:{
+								'act':'get',
+								'page':index+1
+							},
+							success:function (str){
+								var arr=eval('('+str+')');
+								oBox.empty();
+			
+								$.each(arr, function (index, json){
+									
+									// time 文字 0 0 id
+									var oDiv=createDiv(json.time, json.content, json.acc, json.ref, json.id);
+									
+									oDiv.appendTo(oBox);
+								});
+							}
+						});
+					});
+				})(i);
+			}
+			
+			$('.page a:eq(0)').addClass('active');
+		}
+	});
+	
+	// 获取第一页的数据
+	ajax({
+		url:'weibo.php',
+		data:{
+			'act':'get',
+			'page':1
+		},
+		success:function (str){
+			var arr=eval('('+str+')');
+			oBox.empty();
+			$.each(arr, function (index, json){
+				
+				// time 文字 0 0 id
+				var oDiv=createDiv(json.time, json.content, json.acc, json.ref, json.id);
+				
+				oDiv.appendTo(oBox);
+			});
+		}
+	});
+});
+
+function getJson(str)
+{
+	return new Function('return '+str)();
+}
+</script>
+</head>
+
+<body>
+<div class="znsArea">
+<!--留言-->
+     <div class="takeComment">
+        <textarea name="textarea" class="takeTextField" id="t1"></textarea>
+        <div class="takeSbmComment">
+            <input id="btn1" type="button" class="inputs" value="" />
+            <span>(可按 Enter 回复)</span>
+        </div>
+    </div>
+<!--已留-->
+    <div class="commentOn">
+        <div class="messList" id="reply_box">
+        	<!--<div class="reply">
+                <p class="replyContent">卫士，新款卫士将推出总共14种车身式样。其中， XS旅行款车型售价为32295英镑(约33.6万元)。</p>
+                <p class="operation">
+                    <span class="replyTime">2011-09-08 16:37:60</span>
+                    <span class="handle">
+                    	<a href="javascript:;" class="top">0</a>
+                        <a href="javascript:;" class="down_icon">0</a>
+                        <a href="javascript:;" class="cut">删除</a>
+                    </span>
+                </p>
+            </div>-->
+        </div>
+        <div class="page">
+        	<!--
+			<a href="javascript:;" class="active">1</a>
+        	<a href="javascript:;">2</a>
+        	<a href="javascript:;">3</a>
+			-->
+        </div>
+    </div>
+</div>
+</body>
+</html>

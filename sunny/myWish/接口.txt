@@ -1,0 +1,10 @@
+
+许愿墙：
+1. 发表心愿
+	wish.php?act=add&username=xxx&content=xxx
+
+2. 获取心愿
+	wish.php?act=get
+
+3. 删除心愿
+	wish.php?act=delete&id=0
