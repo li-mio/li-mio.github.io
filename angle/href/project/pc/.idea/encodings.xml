@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/css/demo.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/css/jquery.flipster.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/font/fzy3jw.ttf" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/font/方正准圆简体.TTF" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/images/app_bg_02.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/jquery.flipster.js" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

@@ -199,19 +199,19 @@ img{display:block;width:100%;border-radius:50%;}
     font-size:100px;
     text-align:center;
     width:100%;
-    /*background:green;*/
     position:relative;
     background:url(bgpage3.jpg) no-repeat;
     background-size:100%;
+    overflow:hidden;
 }
 .subjects ul{
-    width:900px;
-    height:600px;
+    width:720px;
+    height:480px;
     position:absolute;
     top:50%;
     left:50%;
-    margin-left:-400px;
-    margin-top:-260px;
+    margin-left:-360px;
+    margin-top:-240px;
     overflow:hidden;
 
 }
@@ -219,8 +219,8 @@ img{display:block;width:100%;border-radius:50%;}
     cursor:pointer;
     float:left;
     font-size:30px;
-    width:250px;
-    height:250px;
+    width:220px;
+    height:220px;
     margin:10px;
     font-weight:bold;
     text-align:center;
@@ -230,19 +230,19 @@ img{display:block;width:100%;border-radius:50%;}
 }
 .subjects ul li:nth-child(1){
     border-radius:10px 50px 25px 50px;
-    background:aqua;;
+    background: rgba(137,9,112,0.5);
 }
 .subjects ul li:nth-child(2){
     border-radius:50px 50px 50px 50px;
-    background:#fdd283;
+    background:#f96;
 }
  .subjects ul li:nth-child(3){
     border-radius:50px 10px 50px 25px;
-    background:#4499ee;
+    background:#09f;
 }
 .subjects ul li:nth-child(4){
     border-radius:50px 25px 25px 10px;
-    background:pink;
+    background:#fad;
 }
 .subjects ul li:nth-child(5){
     border-radius:50px 50px 50px 50px;
@@ -250,33 +250,34 @@ img{display:block;width:100%;border-radius:50%;}
 }
 .subjects ul li:nth-child(6){
     border-radius:25px 50px 10px 50px;
-    background: #1291A9;
+    background: #ff6971;
 }
 .subjects ul li span{
     position:absolute;
     font-size:30px;
-    width:250px;
-    height:250px;
-    opacity:.3;
+    width:220px;
+    height:220px;
+    opacity:.5;
     left:-280px;
     top:0;
     background:#fff;
-    border-radius:30px;
+    border-radius:40px;
 }
 /*CONTACT*/ 
  .contact{ width:100%; margin:0 auto;position: relative; background: url(img/bg4.jpg); background-size: cover;padding:80px;}
  .info{ width:400px; margin:0 auto;}
- .info h5{ font-size:22px; line-height:40px; background:url(img/t_orange.png) no-repeat  -250px bottom;}
+ .info h5{ font-size:22px; line-height:40px; background:url(img/t_orange.png) no-repeat  -250px bottom;cursor:pointer;}
  .inrCon{ margin-top:40px;}
- p{ height:34px;}
+ p{ height:34px;cursor:pointer;}
+
  p img{width: 120px; height: 120px;}
  .resume{ padding:12px 0 0 120px; height:68px;}
- .resume a{ display:block; width: 178px; height:44px; line-height:44px; text-align:center; color:#f69; font-weight:bold;}
-
-
-
-
-
+ .resume a{ display:block; width: 250px; height:44px; background:pink;border-radius:10px;line-height:44px; text-align:center; color:#f90; font-size:20px;font-weight:bold; 
+     box-shadow:inset 0 0 10px #f66, 0 10px 10px #000;
+    text-shadow:3px 3px 3px #000;}
+.info h5:hover{color:#f09;}
+.inrCon p:hover{color:#f66;}
+.resume a:hover{box-shadow:inset 0 0 50px #fff, 0 10px 10px #000;}
 
 
 

@@ -1,0 +1,8 @@
+
+
+.nav{width:100%;}
+.nav .menu-btn{display:block;}
+.nav .right{display:none;float:none;margin-top:4.5rem;}
+
+.nav .right ul li{width:100%;text-align:left;float:none;}
+

@@ -1,0 +1,652 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Site Title -->
+    <title>励步云课堂APP | 让童年好好长大</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="励步云课堂" content="励步云课堂,APP" />
+    <meta name="励步云课堂" content="励步云课堂,APP" />
+    <meta name="励步" content="励步国际儿童教育" />
+
+    <!-- Mobile Specific Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- Theme Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="../css/alt_footer.css" rel="stylesheet">
+    <!-- Preloader (Pace.js) -->
+    <script src="js/plugins/pace.min.js"></script>
+
+    <!-- Modernizr -->
+		<script src="js/libs/modernizr.custom.js"></script>
+    <script src="js/libs/detectizr.min.js"></script>
+
+  </head>
+
+  <!-- Body -->
+  <!-- Remove '.fixed-footer' from body to disable fixed footer reveal on scroll -->
+  <body class="fixed-footer">
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="logo">
+        <img src="img/logo-big.png" alt="励步云课堂">
+        <span>励步云课堂</span>
+      </div>
+    </div>
+
+    <!-- Fake scrollbar (when open popups/modals) -->
+    <div class="fake-scrollbar"></div>
+
+    <!--Modal (Signin/Signup Page)-->
+    <div class="modal fade" id="signin-page">
+      <div class="modal-dialog">
+        <div class="container">
+          <div class="modal-form">
+            <div class="tab-content">
+              <!-- 登录 form -->
+              <form class="tab-pane transition scale fade in active" id="signin-form" autocomplete="off">
+                <h3 class="modal-title">注册</h3>
+                <div class="form-group space-top-2x">
+                  <label for="si_email" class="sr-only">邮箱</label>
+                  <input type="email" class="form-control" name="si_email" id="si_email" placeholder="Email" readonly onfocus="$(this).removeAttr('readonly');" required>
+                  <span class="error-label"></span>
+                  <span class="valid-label"></span>
+                </div>
+                <div class="form-group">
+                  <label for="si-password" class="sr-only">密码</label>
+                  <input type="password" class="form-control" name="si-password" id="si-password" placeholder="Password" readonly onfocus="$(this).removeAttr('readonly');" required>
+                  <a class="helper-link" href="#">忘记密码?</a>
+                  <span class="error-label"></span>
+                  <span class="valid-label"></span>
+                </div>
+                <label class="checkbox">
+                  <input type="checkbox"> 记住
+                </label>
+                <div class="space-top-2x clearfix">
+                  <button type="button" class="btn-round btn-ghost btn-danger pull-left" data-dismiss="modal"><i class="flaticon-cross37"></i></button>
+                  <button type="submit" class="btn-round btn-ghost btn-success pull-right"><i class="flaticon-correct7"></i></button>
+                </div>
+                <!-- Switching forms (Fake nav tab) -->
+                <div class="form-switch helper-text space-top-2x">还没有账号? <a href="#form-1">立即注册账号</a></div>
+              </form>
+              <!-- Sign up form -->
+              <form class="tab-pane transition scale fade" id="signup-form">
+                <h3 class="modal-title">注册账号</h3>
+                <div class="form-group space-top-2x">
+                  <label for="su-email" class="sr-only">邮箱</label>
+                  <input type="email" class="form-control" name="su-email" id="su-email" placeholder="Email" required>
+                  <span class="error-label"></span>
+                  <span class="valid-label"></span>
+                </div>
+                <div class="form-group">
+                  <label for="su-password" class="sr-only">密码</label>
+                  <input type="password" class="form-control" name="su-password" id="su-password" placeholder="Password" required>
+                  <span class="error-label"></span>
+                  <span class="valid-label"></span>
+                </div>
+                <div class="form-group">
+                  <label for="su-password-repeat" class="sr-only">再输一遍</label>
+                  <input type="password" class="form-control" name="su-password-repeat" id="su-password-repeat" placeholder="Repeat password" required>
+                  <span class="error-label"></span>
+                  <span class="valid-label"></span>
+                </div>
+                <label class="checkbox">
+                  <input type="checkbox"> 订阅新闻
+                </label>
+                <div class="space-top-2x clearfix">
+                  <button type="button" class="btn-round btn-ghost btn-danger pull-left" data-dismiss="modal"><i class="flaticon-cross37"></i></button>
+                  <button type="submit" class="btn-round btn-ghost btn-success pull-right"><i class="flaticon-correct7"></i></button>
+                </div>
+                <!-- Switching forms (Fake nav tab) -->
+                <div class="form-switch helper-text space-top-2x">已经拥有账号? <a href="#form-2">立即登录</a></div>
+              </form>
+            </div>
+            <!-- Hidden real nav tabs -->
+            <ul class="nav-tabs hidden">
+              <li id="form-1"><a href="#signup-form" data-toggle="tab">注册</a></li>
+              <li id="form-2"><a href="#signin-form" data-toggle="tab">登录</a></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- Intro Section -->
+    <section class="intro" style="background-image: url(img/intro/intro-bg.jpg);">
+      <div class="gradient"></div>
+      <div class="container">
+        <div class="column-wrap">
+
+          <!-- Left Column -->
+          <div class="column c-left">
+            <!-- Social Buttons -->
+            <div class="social-buttons">
+              <a href="http://weibo.com/firstleap " target="_blank" class="sb-twitter"><i class="bi-twitter"><img src="img/02.png" /></i></a>
+              <a data-toggle="modal" href="#myModal" class="sb-google-plus"><i class="bi-gplus"><img src="img/01.png" /></i></a>
+
+              <!-- <a href="#" class="sb-behance"><i class="bi-behance"></i></a> -->
+              <!-- <a href="#" class="sb-bitbucket"><i class="bi-bitbucket"></i></a> -->
+              <!-- <a href="#" class="sb-codepen"><i class="bi-codepen"></i></a> -->
+              <!-- <a href="#" class="sb-deviantart"><i class="bi-deviantart"></i></a> -->
+              <!-- <a href="#" class="sb-digg"><i class="bi-digg"></i></a> -->
+              <!-- <a href="#" class="sb-dribbble"><i class="bi-dribbble"></i></a> -->
+              <!-- <a href="#" class="sb-dropbox"><i class="bi-dropbox"></i></a> -->
+              <!-- <a href="#" class="sb-flickr"><i class="bi-flickr"></i></a> -->
+              <!-- <a href="#" class="sb-foursquare"><i class="bi-foursquare"></i></a> -->
+              <!-- <a href="#" class="sb-github"><i class="bi-github"></i></a> -->
+              <!-- <a href="#" class="sb-instagram"><i class="bi-instagram"></i></a> -->
+              <!-- <a href="#" class="sb-jsfiddle"><i class="bi-jsfiddle"></i></a> -->
+              <!-- <a href="#" class="sb-lastfm"><i class="bi-lastfm"></i></a> -->
+              <!-- <a href="#" class="sb-linkedin"><i class="bi-linkedin"></i></a> -->
+              <!-- <a href="#" class="sb-paypal"><i class="bi-paypal"></i></a> -->
+              <!-- <a href="#" class="sb-pinterest"><i class="bi-pinterest-circled"></i></a> -->
+              <!-- <a href="#" class="sb-reddit"><i class="bi-reddit"></i></a> -->
+              <!-- <a href="#" class="sb-skype"><i class="bi-skype"></i></a> -->
+              <!-- <a href="#" class="sb-soundcloud"><i class="bi-soundcloud"></i></a> -->
+              <!-- <a href="#" class="sb-stackoverflow"><i class="bi-stackoverflow"></i></a> -->
+              <!-- <a href="#" class="sb-steam"><i class="bi-steam"></i></a> -->
+              <!-- <a href="#" class="sb-stumbleupon"><i class="bi-stumbleupon"></i></a> -->
+              <!-- <a href="#" class="sb-trello"><i class="bi-trello"></i></a> -->
+              <!-- <a href="#" class="sb-tumblr"><i class="bi-tumblr"></i></a> -->
+              <!-- <a href="#" class="sb-twitch"><i class="bi-twitch"></i></a> -->
+              <!-- <a href="#" class="sb-vimeo"><i class="bi-vimeo-squared"></i></a> -->
+              <!-- <a href="#" class="sb-vine"><i class="bi-vine"></i></a> -->
+              <!-- <a href="#" class="sb-vk"><i class="bi-vkontakte"></i></a> -->
+              <!-- <a href="#" class="sb-wechat"><i class="bi-wechat"></i></a> -->
+              <!-- <a href="#" class="sb-wordpress"><i class="bi-wordpress"></i></a> -->
+              <!-- <a href="#" class="sb-xing"><i class="bi-xing"></i></a> -->
+              <!-- <a href="#" class="sb-yahoo"><i class="bi-yahoo"></i></a> -->
+              <!-- <a href="#" class="sb-yelp"><i class="bi-yelp"></i></a> -->
+              <!-- <a href="#" class="sb-youtube"><i class="bi-youtube"></i></a> -->
+            </div>
+
+            <!-- Scroll for More Button -->
+            <a href="#features" class="scroll-more scroll" data-offset-top="80">
+              <i class="icon"></i>
+              <span>了解详情</span>
+            </a>
+          </div>
+
+          <!-- Middle Column-->
+          <div class="column c-middle">
+            <h1 class="logo">
+              <img src="img/logo-big.png" alt="Appica 2">
+              励步云课堂
+              <span>让童年好好长大</span>
+            </h1>
+            <div class="phone">
+              <img src="img/416x757.jpg" alt="App Screen">
+            </div>
+          </div>
+
+          <!-- Right Column-->
+          <div class="column c-right">
+            <!-- Navi -->
+            <div class="navi">
+             <!-- <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in">登录</a>-->
+              <div class="nav-toggle" data-offcanvas="open"><a href="http://www.firstleap.cn/" target="_blank">励步官网</a></div>
+            </div>
+            <!-- Features -->
+            <div class="intro-features">
+              <div class="icon-block icon-block-horizontal light-color" data-transition-delay="100">
+                <div class="icon"><i class="flaticon-ruler9"></i></div>
+                <div class="text">
+                  <h3>成长档案、云端记录</h3>
+                  <p>发语音、传照片、录视频、写日记、聚合孩子的成长点滴！
+便捷分享，云端档案永久保存！</p>
+                </div>
+              </div>
+              <div class="icon-block icon-block-horizontal light-color" data-transition-delay="300">
+                <div class="icon"><i class="flaticon-cloud79"></i></div>
+                <div class="text">
+                  <h3>家校沟通、实时反馈</h3>
+                  <p>无缝对接励步课程，实时掌握孩子学习进度；
+孩子学习进度与进步曲线，清晰明了</p>
+                </div>
+              </div>
+              <div class="icon-block icon-block-horizontal light-color" data-transition-delay="500">
+                <div class="icon"><i class="flaticon-brain1"></i></div>
+                <div class="text">
+                  <h3>儿歌故事、绘本阅读</h3>
+                  <p>数千首中英文儿歌、故事畅听，趣味语音视频绘本，亲子互动再不枯燥</p>
+                </div>
+              </div>
+            </div>
+            <!-- Download Button -->
+            <div class="download">
+              <p>下载免费APP</p>
+              <a href="http:///itunes.apple.com/app/id938089997" target="_blank" class="btn btn-default btn-app-store">
+                <i class="bi-apple"></i>
+                <div>
+                  App Store
+                </div>
+              </a>
+              <a href="http://v2.firstleap.cn/p" target="_blank" class="btn btn-default btn-app-store" style="background: rgb(133,194,38);border:rgb(133,194,38)">
+                <i class="bi-android"></i>
+                <div>
+                 Android
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- Intro Section End -->
+
+    <!-- Content Wrap -->
+    <div class="content-wrap">
+
+      <!-- Navbar -->
+      <!-- Add '.navbar-sticky' to make navbar stuck to top on document scroll -->
+      <header class="navbar gray navbar-sticky">
+        <div class="container">
+          <!-- Logo -->
+          <a href="#" class="logo scrollup">
+            <img src="img/logo-big.png" alt="Appica 2">
+            励步云课堂
+          </a>
+          <!-- Social Buttons -->
+          <div class="social-buttons">
+            <a href="http://weibo.com/firstleap " target="_blank" class="sb-twitter"><i class="bi-twitter"><img src="img/t02.png" /></i></a>
+            <a data-toggle="modal" href="#myModal" class="sb-google-plus"><i class="bi-gplus"><img src="img/t01.png" /></i></a>
+
+          </div>
+          <!-- Toolbar -->
+          <div class="toolbar">
+            <span>下载免费APP<br/>(非励步学员敬请期待)</span>
+            <a href="http:///itunes.apple.com/app/id938089997" target="_blank" class="btn btn-ghost btn-primary icon-left"><i class="bi-apple"></i>下载</a><a href="http://v2.firstleap.cn/p" target="_blank" class="btn btn-ghost btn-primary icon-left"> <i class="bi-android"></i>下载</a>
+            <!--<a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="action-btn">登录</a>
+            <div class="nav-toggle" data-offcanvas="open"><i class="flaticon-list26"></i></div>-->
+          </div>
+        </div>
+      </header><!-- Navbar End -->
+
+      <!-- Feature Tabs -->
+      <section class="fw-bg bg-align-bottom feature-tabs" style="background-image: url(img/features/bg.jpg);" id="features">
+        <!-- Heading when columns stack -->
+        <div class="block-heading light-color visible-when-stack">
+          <h2>四大功能、成长无忧</h2>
+          <span>小头雁的贴身育儿帮手</span>
+        </div>
+        <div class="clearfix">
+          <!-- Devices -->
+          <div class="devices">
+            <div class="tablet">
+              <img src="img/features/ipad.png" alt="iPad">
+              <div class="mask">
+                <ul class="screens">
+                  <li class="active in" id="ts01"><img src="img/features/tablet/screen01.jpg" alt="Screen 01"></li>
+                  <li id="ts02"><img src="img/features/tablet/screen02.jpg" alt="Screen 02"></li>
+                  <li id="ts03"><img src="img/features/tablet/screen01.jpg" alt="Screen 03"></li>
+                  <li id="ts04"><img src="img/features/tablet/screen02.jpg" alt="Screen 04"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="phone">
+              <img src="img/features/iphone.png" alt="iPhone">
+              <div class="mask">
+                <ul class="screens">
+                  <li class="active in" id="ps01"><img src="img/features/phone/screen0.png" alt="Screen 01"></li>
+                  <li id="ps02"><img src="img/features/phone/screen1.png" alt="Screen 02"></li>
+                  <li id="ps03"><img src="img/features/phone/screen2.png" alt="Screen 03"></li>
+                  <li id="ps04"><img src="img/features/phone/screen3.png" alt="Screen 04"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Tabs -->
+          <div class="tabs light-color text-center">
+            <div class="block-heading hidden-when-stack">
+              <h2>四大功能、成长无忧</h2>
+              <span>小头雁的贴心育儿帮手</span>
+            </div>
+            <!-- Nav Tabs -->
+            <!-- Remove data-autoswitch="true" to disable automatic tabs change. -->
+            <ul class="nav-tabs" data-autoswitch="true" data-interval="3000">
+              <li class="active"><a href="#video-player" data-toggle="tab" data-tablet="#ts01" data-phone="#ps01"><i class="flaticon-film22"></i></a></li>
+              <li><a href="#settings" data-toggle="tab" data-tablet="#ts02" data-phone="#ps02"><i class="flaticon-settings20"></i></a></li>
+              <li><a href="#file-sharing" data-toggle="tab" data-tablet="#ts03" data-phone="#ps03"><i class="flaticon-layers4"></i></a></li>
+              <li><a href="#chat" data-toggle="tab" data-tablet="#ts04" data-phone="#ps04"><i class="flaticon-speech38"></i></a></li>
+            </ul>
+            <!-- Tab panes -->
+            <!-- Use different transitions: 'scale', 'scaleup', 'top', 'bottom', 'left', 'right' and 'flip' -->
+            <div class="tab-content">
+              <div class="tab-pane transition scale fade in active" id="video-player">
+                <h3>家长必备APP</h3>
+                <p>励步云课堂是励步的一次尝试，同时也是更好的提升线下教学中心提升家长满意度的一次探索，我们优先考虑了孩子的成长规律和家长需求。</p>
+              </div>
+              <div class="tab-pane transition scale fade" id="settings">
+                <h3>让成长出人意料</h3>
+                <p>孩子的教育是在学校和家庭里共同完成的，励步让更多家庭成员参与到孩子的教育成为了可能，繁忙的爸爸也能随时随地了解孩子在励步的一举一动。</p>
+              </div>
+              <div class="tab-pane transition scale fade" id="file-sharing">
+                <h3>海量资源，励步精选</h3>
+                <p>励步精选数千首中英文儿童歌曲和寓言故事，根据年龄段、语言以及不同的标签分门别类，无限畅听！</p>
+              </div>
+              <div class="tab-pane transition scale fade" id="chat">
+                <h3>趣味阅读，多听多练</h3>
+                <p>独特、有趣的有声绘本和视频绘本功能，所有绘本均由励步老师按照分级阅读规则进行分级，让孩子爱上阅读！</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- Feature Tabs End -->
+
+
+
+      <!-- App Gallery -->
+      <section class="gallery padding-top-3x padding-bottom-3x" id="gallery">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-4">
+              <div class="block-heading text-right">
+                <h2>App图集</h2>
+                <span>截图、视频</span>
+              </div>
+              <ul class="nav-tabs text-right nav-vertical space-top-2x">
+                <li class="active"><a href="#screens" data-toggle="tab">成长档案</a></li>
+                <li><a href="#video-prev" data-toggle="tab">学习周报</a></li>
+                <li><a href="#proto" data-toggle="tab">宝盒</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-8 col-lg-offset-1 col-md-9 col-sm-8">
+              <div class="tab-content">
+              
+                <div class="tab-pane fade in active" id="screens">
+                  <div class="scroller app-gallery">
+                    <div class="item">
+                      <a href="img/gallery/01.png">
+                        <img src="img/gallery/th01.png" alt="Thumbnail">
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="img/gallery/02.png">
+                        <img src="img/gallery/th02.png" alt="Thumbnail">
+                      </a>
+                      <a href="img/gallery/03.png">
+                        <img src="img/gallery/th03.png" alt="Thumbnail">
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="img/gallery/01.png">
+                        <img src="img/gallery/th01.png" alt="Thumbnail">
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="img/gallery/02.png">
+                        <img src="img/gallery/th02.png" alt="Thumbnail">
+                      </a>
+                      <a href="img/gallery/02.png">
+                        <img src="img/gallery/th02.png" alt="Thumbnail">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="video-prev">
+					<div class="scroller app-gallery">
+                    <div class="item">
+                    <a href="img/gallery/th05.png">
+                        <img src="img/gallery/th05.png" alt="Thumbnail">
+                      </a>
+                      <a href="img/gallery/th06.png">
+                        <img src="img/gallery/th06.png" alt="Thumbnail">
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="img/gallery/th04.png">
+                        <img src="img/gallery/th04.png" alt="Thumbnail">
+                      </a>
+                      
+                    </div>
+                  </div>
+                  </div>
+                <div class="tab-pane fade" id="proto">
+                  <img src="img/gallery/prototype.png" alt="Prototype">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- App Gallery End -->
+
+      <!-- Press Reviews -->
+      <section class="space-top" id="reviews">
+        <hr>
+        <div class="container padding-bottom">
+          <!-- Badge -->
+          <div class="badge alt-color">
+            <span class="icon"><i class="flaticon-star51"></i></span>
+            励步云课堂APP功能详解
+          </div>
+          <!-- Reviews -->
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="press-review">
+                <img src="img/press-reviews/times.png" alt="New Odessa Times">
+                <h3>成长档案</h3>
+                <p>发语音、传照片、录视频、写日记、聚合孩子的成长点滴！
+便捷分享，云端档案永久保存！</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="press-review">
+                <img src="img/press-reviews/navigator.png" alt="Navigator">
+                <h3>学习周报</h3>
+                <p>无缝对接励步课程，实时掌握孩子学习进度
+孩子学习进度与进步曲线，清晰明了</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="press-review">
+                <img src="img/press-reviews/appicavillage.png" alt="Appicavillage">
+                <h3>消息</h3>
+                <p>答疑解惑、咨询求助，打破家校沟通障碍，为小雁成长全时保驾护航！</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="press-review">
+                <img src="img/press-reviews/taptap.png" alt="Tap-Tap Time">
+                <h3>儿歌、故事</h3>
+                <p>数千首精选中英文儿歌故事，随时随地，无限畅听</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="press-review">
+                <img src="img/press-reviews/icaravely.png" alt="iCaravely">
+                <h3>语音/视频绘本</h3>
+                <p>趣味语音和视频绘本，科学分级阅读，亲子互动再不枯燥</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="press-review">
+                <img src="img/press-reviews/moodesign.png" alt="MooDesign">
+                <h3>视频云课堂</h3>
+                <p>精选儿童和育儿视频资源，帮您解决问题，每个互动视频都充满乐趣</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- Press Reviews End -->
+
+      <!-- Web Application -->
+      <section class="fw-bg bottom-shadow overlay gradient-blue-red padding-top-3x padding-bottom-2x" style="background-image: url(img/webapp/bg.jpg);" id="web-app">
+        <div class="container light-color">
+          <div class="block-heading">
+            <h2>励步云课堂</h2>
+            <span>简便、强大、易用</span>
+          </div>
+          <div class="row space-top-3x">
+            <div class="col-md-5">
+              <div class="icon-block icon-block-horizontal">
+                <div class="icon hidden-xs"><i class="flaticon-globe14"></i></div>
+                <div class="text">
+                  <h3>让童年好好长大</h3>
+                  <p>成长总是出人意料的，第一次和小伙伴分享、第一次勇敢的上台英文演讲、
+                    第一个亲手制作的感恩礼物，第一个毕业典礼...孩子的每一个成长瞬间，
+                    不再散落各处，我们会及时捕捉、悉心记录并推送给您，烦劳之余翻看一下，
+                    让人倍感喜悦与欣慰！</p>
+                  <p class="space-top">下载免费APP</p>
+                  <!-- Download Button -->
+                  <a href="http:///itunes.apple.com/app/id938089997" target="_blank" class="btn btn-default btn-app-store">
+                    <i class="bi-apple"></i>
+                    <div>
+                      App Store
+                    </div>
+                    </a><a href="http://v2.firstleap.cn/p" target="_blank" class="btn btn-default btn-app-store" style="background: rgb(133,194,38);border:rgb(133,194,38)">
+                    <i class="bi-android"></i>
+                    <div>
+                     Android
+                    </div>
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <img src="img/webapp/macbook.png" alt="Web App">
+            </div>
+          </div>
+        </div>
+      </section><!-- Web Application End -->
+
+    </div><!-- Content Wrap End -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div id="footer_alt">
+	<div class="container"><div class="row">
+		<!--column 1-->
+			<div class="span3">
+					<h3>关于励步</h3>
+					<ul>
+						<li>
+						<p>励步:美国纽交所上市公司好未来（NYSE：XRS）旗下儿童英语品牌,6年专注为国内2-15岁孩子提供全英文、全学科的国际化教学服务。
+							 并非只为教授英语，而是要抓住童年时光，鼓励深藏在他们心底的自信，重视他们身上别人看不到的闪光点，拓宽他们的未来选择之路。 </p>
+						<p>
+						地址：北京市朝阳区西坝河西里23号B座主楼1层<br/>
+						</p>
+
+						<p>FIRSTLEAP
+							&copy;
+							<script type="text/javascript">
+								var d = new Date()
+								document.write(d.getFullYear())
+								</script>
+							 - All Rights Reserved<br/>
+							京ICP备09036231号<br/>
+						</p>
+						</li>
+					</ul>
+				</div>
+				<!--column 2-->
+				<div class="span3">
+					<h3>励步课程</h3>
+					<ul class="media-list">
+							<li class="media">
+								<img class="img-rounded pull-left" src="../img/course/icon-04-small.png" alt="" height="42" width="42">
+								<div class="media-body">
+								<a target='_blank' href="/bs_course.html">双语主题早教课程</a>
+								<br/><i class="fa fa-clock-o hue"></i> 2-3岁</div>
+							</li>
+
+							<li class="media">
+								<img class="img-rounded pull-left" src="../img/course/icon-05-small.png" alt="" height="42" width="42">
+								<div class="media-body">
+								<a target='_blank' href="../kje_language.html">全科国际学校课程</a>
+								<br/><i class="fa fa-clock-o hue"></i> 3-10岁
+								</div>
+							</li>
+
+							<li class="media">
+								<img class="img-rounded pull-left" src="../img/course/icon-06-small.png" alt="" height="42" width="42">
+								<div class="media-body">
+								<a target='_blank' href="/ss_la.html">高阶课程
+							</a>
+								<br/><i class="fa fa-clock-o hue"></i> 10-15岁</div>
+							</li><h3>学习专区</h3>
+					<li class="media">
+						<img class="img-rounded pull-left" src="../img/course/icon-07-small.png" alt="" height="42" width="42">
+						<div class="media-body">
+							<a href="http://e.firstleap.cn/index2.html" target="_blank"><i class="fa fa-clock-o hue"></i>在线课堂监控<br/>学习互动平台入口</a>
+						</div>
+					</li>
+						</ul>
+	</div>
+					<!--column 3-->
+					<div class="span3">
+					<h3>授权合作</h3>
+					<a target='_blank' href="/fr.html"><img src="../img/large/1.jpg" alt="" /></a>
+					<h4><a target='_blank' href="/fr.html">实现您教育创业梦想！</a>
+					</h4>
+					<p>
+						<a target='_blank' href="/fr.html" class="more-link">了解详情 &rarr;</a>
+					</p>
+					</div>
+					<!--column 4-->
+					<div class="span3">
+					<!--flickr-->
+					<div class="flickrs">
+						<div class="FlickrImages">
+							<ul>
+							</ul>
+							<div class="clear">
+							</div>
+								</div>
+									</div>
+
+					<div class="follow_us2">
+<h3> 励步招聘 <a target='_blank' href="http://special.zhaopin.com/2016/bf/bjlb042992/"><span class="btn btn-turquoise hiring"> We're Hiring</span></a></h3>
+            <h5>关注我们 ...</h5>
+            <a class="twitter" href="http://weibo.com/firstleap " target="_blank" title="励步新浪微博"><img src="../img/share/sina.png"></a><a class="twitter" data-toggle="modal" href="#myModal" title="励步官方微信"><img src="../img/share/wechat.png"></a>	</div>
+            <a class="btn btn-primary btn-custom btn-rounded" href="javascript:{}" style="padding:8px 25px;" onclick="doyoo.util.openChat('g=52607');return false;"><b>在线咨询</b></a>
+             <h2><i class="fa fa-phone hue"></i>400-613-0088<br/>
+             <span class="call_time">周一至周日9：00-19：00</span></h2>
+
+						</div>
+					</div>
+				</div>
+			</div>
+    </footer><!-- Footer End -->
+                <!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog" style="">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close"
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title wechat" id="myModalLabel">
+               励步国际儿童教育官方微信
+            </h4>
+            打开微信，点击右上角的“+”，选择“扫一扫”功能，用摄像头对准下方二维码即可。
+         </div>
+         <div class="modal-body">
+           <img src="../img/share/qcode.jpg">
+         </div>
+      </div><!-- /.modal-content -->
+</div>
+</div><!-- /.modal -->
+    <!-- Javascript (jQuery) Libraries and Plugins -->
+    <script src="js/libs/jquery-2.1.3.min.js"></script>
+    <script src="js/libs/jquery.easing.1.3.js"></script>
+    <script src="js/plugins/velocity.min.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <script src="js/plugins/smoothscroll.js"></script>
+    <script src="js/plugins/jquery.waypoints.min.js"></script>
+    <script src="js/plugins/form-plugins.js"></script>
+    <script src="js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins/jquery.mCustomScrollbar.min.js"></script>
+    <script src="js/scripts.js"></script>
+<script type="text/javascript" charset="utf-8" src="http://gate.looyu.com/46677/126320.js"></script>
+  </body><!-- Body End-->
+</html>

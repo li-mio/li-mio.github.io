@@ -334,7 +334,7 @@ window.onload=function(){
         window.open('href/ajax/webQQ/login.html','_blank');
     };
     aLin[5].onclick=function(){
-        window.open('href/more/fishgame/index.html','_blank');
+        window.open('href/project/index.html','_blank');
     };
      //透明层
     var Ndiv=document.getElementById('n-div');
