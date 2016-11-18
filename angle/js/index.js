@@ -248,6 +248,7 @@ window.onload=function(){
     //随机切换效果
     var oUl=document.getElementById('list');
     var aLi1=oUl.children;
+    var timer=null;
     // 创建span 与效果无关
     for (var i=0; i<aLi1.length; i++)
     {
@@ -273,16 +274,20 @@ window.onload=function(){
         aLi1[i].index=i;
     }
     // 随机换
-    oUl.onclick=function (){
+    function change(){
         aPos.sort(function (){
             return Math.random()-0.5;
         });
-        
-        
-        for (var i=0; i<aLi1.length; i++)
-        {
+        for (var i=0; i<aLi1.length; i++){
             move(aLi1[i], aPos[i]);
         }
+    }
+    timer=setInterval(change,2000);
+    oUl.onmouseover=function(){
+        clearInterval(timer);
+    };
+    oUl.onmouseout=function(){
+        timer=setInterval(change,2000);
     };
      //登录页面，放大消失，缩小出现
     var oLogin=document.getElementById('login');
