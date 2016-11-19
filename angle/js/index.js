@@ -3,8 +3,8 @@ window.onload=function(){
     var oSpan1=document.getElementById('loginnum');
     var oFirst=document.getElementById('loadDiv');
     var oBg=document.getElementById('bg');
-    var total=20;
-    var n=0;
+    var total=10;
+    var n = 1;
     for(var i=0;i<total;i++){
         var oImg=new Image();
         oImg.src='http://www.zhinengshe.com/works/3525/img/'+i+'.jpg';
@@ -19,10 +19,10 @@ window.onload=function(){
                 setTimeout(function(){
                     move(oFirst,{opacity:0});
                     
-                },400);
+                },300);
                 move(oBg,{opacity:1});
             }
-        }
+        };
     }
 
     // 动态创建页面高度
