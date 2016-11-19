@@ -216,13 +216,16 @@ window.onload=function(){
     var aB1 = document.getElementById('block-1');
     var aB2 = document.getElementById('block-2');
     var aB3 = document.getElementById('block-3');
+    var aB4 = document.getElementById('block-4');
+    var aBox2 = document.getElementById('box2');
     ball(aB1);
     ball(aB2);
+    ball(aB4);
+    ball(aBox2);
 
     //for(var i = 2; i < aBlock.length; i++){
      //   ball(aBlock[i]);
     //}
-   
     setInterval(function(){
         //oShine.style.color='rgb(255,0,0)';
         aB1.style.background='rgb('+rnd(0,256)+','+rnd(0,256)+','+rnd(0,256)+')';
@@ -230,10 +233,10 @@ window.onload=function(){
     },1000);
     //无限运动效果
     var aPos=[
-        {left:500, top:200},
-        {left:500, top:500},
-        {left:200, top:500},
-        {left:200, top:200}
+        {left:300, top:100},
+        {left:300, top:400},
+        {left:100, top:400},
+        {left:100, top:100}
     ];
     var n=0;
     next();

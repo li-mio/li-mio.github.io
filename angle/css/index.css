@@ -177,16 +177,19 @@ body{overflow: hidden;}
 .about .bj1{ background:url(img/pap3.png) no-repeat; }
 .about .bj2{ background:url(img/pap1.png) no-repeat;}
 
-.about .block-1{position: absolute; left:1000px; top: 470px; width: 150px; height: 150px; border-radius:50%;background: rgba(18,210,233,0.2); border: 1px solid #6799; cursor: pointer;text-align:center;line-height:150px;color:#fff;}
-.about .block-2{position: absolute; left:800px; top: 470px; width: 150px; height: 150px;border-radius:50%; background: rgba(190,34,90,0.2); border: 1px solid #f99; cursor: pointer;}
-.about .block-3{position: absolute; left:300px; top: 200px; width: 150px; height: 150px;border-radius:50%; background: rgba(190,34,90,0.2); border: 1px solid #f99; cursor: pointer;}
-.box2{width:440px;height:440px;border-radius:50%;background:rgba(129,135,129,0.1);position:absolute;left:300px;top:140px;}
+.about .block-1{position: absolute; left:300px; top: 80px; width: 100px; height: 100px; border-radius:50%;background: rgba(18,210,233,0.2); border: 1px solid #6799; cursor: pointer;text-align:center;line-height:100px;color:pink;}
+.about .block-2{position: absolute; left:400px; top: 80px; width: 100px; height: 100px;border-radius:50%; background: rgba(190,34,90,0.2); border: 1px solid #f99; cursor: pointer;pointer;text-align:center;line-height:100px;color:pink;}
+.about .block-3{position: absolute; left:100px; top: 80px; width: 100px; height: 100px;border-radius:50%; background: rgba(190,34,90,0.2); border: 1px solid #f99; cursor: pointer;text-align:center;line-height:100px;color:pink;}
+.about .block-4{position: absolute; left:500px; top: 80px; width: 100px; height: 100px;border-radius:50%; background: rgba(190,34,90,0.2); border: 1px solid #f99; cursor: pointer;pointer;text-align:center;line-height:100px;color:pink;}
+.box2{width:440px;height:440px;border-radius:50%;background:rgba(129,135,129,0.2);position:absolute;left:280px;top:170px;}
 
 .box2 .font{width:340px;height:100%;color:#fff;font-size:14px;line-height:30px;position:absolute;top:30px;left:50%;margin-left:-170px;}
 .box2 .sex{margin-bottom:40px;}
-.box2 .more{font-size:16px;color:#fff;position:absolute;top:370px;left:50%;margin-left:-20px;}
+.box2 .more{font-size:16px;position:absolute;top:370px;left:50%;margin-left:-20px;color:#fff;font-weight:bold;}
 .box2 .font p{width:100%;text-align:center;}
 .box2 .con2{width:100%;text-align:center;}
+
+
 
 .list{width:360px;height:360px;position:absolute;left:800px;top:100px; }
 .list li{position:relative;width:100px;height:100px;float:left;margin:10px;}
