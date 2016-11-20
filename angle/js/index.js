@@ -3,17 +3,17 @@ window.onload=function(){
     var oSpan1=document.getElementById('loginnum');
     var oFirst=document.getElementById('loadDiv');
     var oBg=document.getElementById('bg');
-    var total=10;
+    var total=20;
     var n = 1;
-    for(var i=0;i<total;i++){
+    for(var i=1;i<total;i++){
         var oImg=new Image();
-        oImg.src='http://www.zhinengshe.com/works/3525/img/'+i+'.jpg';
+        oImg.src='js/img/'+i+'.png';
         oImg.onload=function(){
             n++;
             var scale=Math.floor(n/total*100);
             oDiv.style.width=scale+'%';
             oSpan1.innerHTML=scale+'%'; 
-            if(scale==100){
+            if(scale==95){
                 scale='加载完毕';
                 oSpan1.innerHTML=scale;
                 setTimeout(function(){
@@ -218,10 +218,10 @@ window.onload=function(){
     var aB3 = document.getElementById('block-3');
     var aB4 = document.getElementById('block-4');
     var aBox2 = document.getElementById('box2');
-    ball(aB1);
     ball(aB2);
+    ball(aB3);
     ball(aB4);
-    ball(aBox2);
+   
 
     //for(var i = 2; i < aBlock.length; i++){
      //   ball(aBlock[i]);
@@ -235,13 +235,13 @@ window.onload=function(){
     var aPos=[
         {left:300, top:100},
         {left:300, top:400},
-        {left:100, top:400},
-        {left:100, top:100}
+        //{left:100, top:400},
+        //{left:100, top:100}
     ];
     var n=0;
     next();
     function next(){
-        move(aB3, aPos[n%aPos.length], {duration:1000,
+        move(aB1, aPos[n%aPos.length], {duration:1000,
             complete:function (){
                 n++;
                 next();
