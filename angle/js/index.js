@@ -83,8 +83,6 @@ window.onload=function(){
     // 滚轮切屏
     addWheel(oBg, wheel);
 
-
-   
     // 导航栏鼠标移入动态效果
     aLi[0].onclick = function(){    //按钮
         if(parseFloat(oNav.style.height) < 110){
@@ -169,48 +167,7 @@ window.onload=function(){
     oBox.onmouseout=function(){
         cube();
     };
-    oBox.onmousedown = function(ev){
-        return;
-        clearInterval(timer1);
-        clearInterval(oBox.timer);
-        var disX = ev.pageX - y;
-        var disY = ev.pageY - x;
-        document.onmousemove = function(ev){
-            x = ev.pageY-disY;
-            y = ev.pageX-disX;
-            oBox.style.msTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
-            oBox.style.WebkitTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
-            oBox.style.OTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
-            oBox.style.MozTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
-            iSpeedX = ev.pageX-lastX;
-            iSpeedY = ev.pageY-lastY;
-            lastX = ev.pageX;
-            lastY = ev.pageY;
-        };
-        document.onmouseup = function(){
-            document.onmousemove = null;
-            document.onmouseup = null;
-            oBox.timer = setInterval(function(){
-                iSpeedX*=0.95;
-                iSpeedY*=0.95;
-                x+=iSpeedY;
-                y+=iSpeedX;
-                oBox.style.msTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
-                oBox.style.WebkitTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
-                oBox.style.OTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
-                oBox.style.MozTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
-                if(Math.abs(iSpeedX)<1)iSpeedX=0;
-                if(Math.abs(iSpeedY)<1)iSpeedY=0;
-                if(iSpeedX==0&&iSpeedY==0){
-                    clearInterval(oBox.timer);
-                    clearInterval(timer1);
-                }
-
-            },30);
-            cube();
-        };
-        return false;
-    };
+   
 // ABOUT
     var oAbout = document.getElementById('about');
     var aB1 = document.getElementById('block-1');
@@ -221,7 +178,6 @@ window.onload=function(){
     ball(aB2);
     ball(aB3);
     ball(aB4);
-   
 
     //for(var i = 2; i < aBlock.length; i++){
      //   ball(aBlock[i]);
@@ -248,6 +204,19 @@ window.onload=function(){
             }   
         });
     }
+    //横线运动效果
+    var oBox3=document.getElementById('box-3');
+    var aL1=oBox3.children[0];
+    var aL2=oBox3.children[1];
+    var aR1=oBox3.children[2];
+    var aR2=oBox3.children[3];
+
+    setTimeout(function(){
+        move(aL1,{width:300});
+        move(aL2,{height:300});
+        move(aR1,{left:300});
+        move(aR2,{height:250});
+    },1000);
     //随机切换效果
     var oUl=document.getElementById('list');
     var aLi1=oUl.children;
@@ -322,8 +291,9 @@ window.onload=function(){
     }
      //链接跳转
     aLin[0].onclick=function(){
-        window.open('href/html/index.html','_blank');
+        window.open('href/project/index.html','_blank');
     };
+    
     aLin[1].onclick=function(){
         window.open('href/js/index.html','_blank');
     };
@@ -337,24 +307,22 @@ window.onload=function(){
         window.open('href/ajax/webQQ/login.html','_blank');
     };
     aLin[5].onclick=function(){
-        window.open('href/project/index.html','_blank');
+        window.open('href/html/index.html','_blank');
     };
      //透明层
     var Ndiv=document.getElementById('n-div');
     var Show=document.getElementById('show');
     var Ndiv1=document.getElementById('n-div1');
     var Na2=document.getElementById('a2');
-    Show.onclick=function(){
-        move(Ndiv,{right:-115},{
-            complete:function(){
-                move(Ndiv1,{right:115});
-            }
-        });
-    };
+    move(Ndiv,{right:-115},{
+        complete:function(){
+            move(Ndiv1,{right:115});
+        }
+    });
     Na2.onclick=function(){
         move(Ndiv1,{right:-1500},{
             complete:function(){
-                move(Ndiv,{right:0});
+                move(Ndiv,{right:-115});
             }
         });
     };

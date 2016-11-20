@@ -1,5 +1,4 @@
 
-/*HOME*/
 body{overflow: hidden;}
 .loadDiv{ width: 100%; height:100%;background: url(../images/bg-welcome.jpg) ; background-size: cover; position: fixed;left: 0; top: 0; }
 .load{ width: 200px; height: 100px; position: absolute; left: 50%; margin-left: -100px; top: 50%;margin-top:-50px; text-align: center;}
@@ -8,19 +7,17 @@ body{overflow: hidden;}
     margin-bottom: 20px; -overflow: hidden;}
 .load_line p{ width: 0; height: 20px; border-radius: 10px; background: #ed6a00;}
 
-
-
 .bg{position: relative; left: 0; top: 0; width: 100%;overflow:hidden;opacity:0;}
 /*透明层*/
-.n-div{position:fixed;z-index:3;bottom:0;right:0;width:115px;height:115px;overflow:-hidden;}
-.n-div span{position:absolute;top:0;right:0;width:100px;height:100px;border-radius:50%;background:aqua;text-align:center;line-height:100px;opacity:0.4;filter:alpha(opacity=40);}
+.n-div{position:fixed;z-index:3;bottom:0;right:0;width:115px;height:115px;}
+.n-div span{position:absolute;top:0;right:0;width:100px;height:100px;border-radius:50%;background:aqua;color:#fff;text-align:center;line-height:100px;opacity:0.4;filter:alpha(opacity=40);}
 
-.n-div1{width:1500px;height:200px;position:absolute;top:0;right:-1500px;background:#464749;opacity:0.8; text-align:center;
-    line-height:200px;}
+.n-div1{width:1500px;height:200px;position:absolute;top:0;right:-1500px;background:#464749;opacity:0.8; }
 .n-div1 p{
     width:800px; height:100px; margin:0 auto;
     font-weight: bold;
     font-size:40px;
+    text-align:center;
     line-height:100px;
     font-family:微软雅黑;  
     background: -webkit-linear-gradient(45deg ,orange,aqua,pink,yellow); -webkit-
@@ -189,8 +186,50 @@ body{overflow: hidden;}
 .box2 .font p{width:100%;text-align:center;}
 .box2 .con2{width:100%;text-align:center;}
 
-
-
+.box-3{width:200px;height:200px;position:absolute;left:50%;top:0;margin-left:-40px;}
+.box-3 div{
+    transition:2s all ease;
+    -ms-transition:2s all ease;
+    -webkit-transition:2s all ease;
+    -o-transition:2s all ease;
+    -moz-transition:2s all ease;
+}
+.box-3 div:nth-child(1){
+    width:0;
+    height:7px;
+    position:absolute;
+    font-size:30px;
+    top:60px;
+    left:0;
+    background:pink;
+}
+.box-3 div:nth-child(2){
+    width:7px;
+    height:0;
+    position:absolute;
+    font-size:30px;
+    top:20px;
+    left:100px;
+    background:pink;
+}
+.box-3 div:nth-child(3){
+    width:300px;
+    height:7px;
+    position:absolute;
+    font-size:30px;
+    top:490px;
+    left:500px;
+    background:pink;
+}
+.box-3 div:nth-child(4){
+    width:7px;
+    height:0;
+    position:absolute;
+    font-size:30px;
+    top:300px;
+    left:550px;
+    background:pink;
+}
 .list{width:360px;height:360px;position:absolute;left:800px;top:100px; }
 .list li{position:relative;width:100px;height:100px;float:left;margin:10px;}
 
@@ -204,17 +243,17 @@ img{display:block;width:100%;border-radius:40%;}
     width:100%;
     position:relative;
     background:url(img/bgpage3.jpg) no-repeat;
-    background-size:100%;
+    background-size: cover;
     overflow:hidden;
 }
 .subjects ul{
-    width:720px;
+    width:660px;
     height:480px;
     position:absolute;
     top:50%;
     left:50%;
-    margin-left:-360px;
-    margin-top:-240px;
+    margin-left:-320px;
+    margin-top:-220px;
     overflow:hidden;
 
 }
@@ -222,12 +261,12 @@ img{display:block;width:100%;border-radius:40%;}
     cursor:pointer;
     float:left;
     font-size:30px;
-    width:220px;
-    height:220px;
+    width:200px;
+    height:200px;
     margin:10px;
     font-weight:bold;
     text-align:center;
-    line-height:280px;
+    line-height:260px;
     position:relative;
     overflow:hidden;
 }
@@ -269,17 +308,17 @@ img{display:block;width:100%;border-radius:40%;}
 /*CONTACT*/ 
  .contact{ width:100%; margin:0 auto;position: relative; background: url(img/bg4.jpg); background-size: cover;padding:80px;}
  .info{ width:400px; margin:0 auto;}
- .info h5{ font-size:22px; line-height:40px; background:url(img/t_orange.png) no-repeat  -250px bottom;cursor:pointer;}
+ .info h5{ font-size:22px; line-height:40px; background:url(img/t_orange.png) no-repeat  -250px bottom;cursor:pointer;font-weight:bold;}
  .inrCon{ margin-top:40px;}
- p{ height:34px;cursor:pointer;}
+ p{ height:34px;cursor:pointer;font-weight:bold;}
 
  p img{width: 120px; height: 120px;}
  .resume{ padding:12px 0 0 120px; height:68px;}
  .resume a{ display:block; width: 250px; height:44px; background:pink;border-radius:10px;line-height:44px; text-align:center; color:#f90; font-size:20px;font-weight:bold; 
      box-shadow:inset 0 0 10px #f66, 0 10px 10px #000;
     text-shadow:3px 3px 3px #000;}
-.info h5:hover{color:#f09;}
-.inrCon p:hover{color:#f66;}
+.info h5:hover{color:#f09;font-weight:bold;}
+.inrCon p:hover{color:#f66;font-weight:bold;}
 .resume a:hover{box-shadow:inset 0 0 50px #fff, 0 10px 10px #000;}
 
 
