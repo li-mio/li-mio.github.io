@@ -1,19 +1,21 @@
 window.onload=function(){
+    debugger
     var oDiv=document.getElementById('line');   
     var oSpan1=document.getElementById('loginnum');
     var oFirst=document.getElementById('loadDiv');
     var oBg=document.getElementById('bg');
     var total=20;
     var n = 1;
-    for(var i=1;i<total;i++){
+    for(var i=1;i<=total;i++){
         var oImg=new Image();
         oImg.src='js/img/'+i+'.png';
         oImg.onload=function(){
             n++;
             var scale=Math.floor(n/total*100);
             oDiv.style.width=scale+'%';
-            oSpan1.innerHTML=scale+'%'; 
-            if(scale==95){
+            oSpan1.innerHTML=scale+'%';
+            console.log(scale) 
+            if(n==total){
                 scale='加载完毕';
                 oSpan1.innerHTML=scale;
                 setTimeout(function(){
