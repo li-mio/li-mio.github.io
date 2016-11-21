@@ -6,7 +6,7 @@ window.onload=function(){
     var oBg=document.getElementById('bg');
     var total=20;
     var n = 1;
-    for(var i=1;i<=total;i++){
+    for(var i=1;i<total;i++){
         var oImg=new Image();
         oImg.src='js/img/'+i+'.png';
         oImg.onload=function(){
