@@ -15,7 +15,7 @@ window.onload=function(){
             oDiv.style.width=scale+'%';
             oSpan1.innerHTML=scale+'%';
             console.log(scale) 
-            if(n==total){
+            if(scale==95){
                 scale='加载完毕';
                 oSpan1.innerHTML=scale;
                 setTimeout(function(){
