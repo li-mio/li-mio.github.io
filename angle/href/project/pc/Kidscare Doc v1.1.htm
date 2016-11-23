@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<title>Kidscare Doc v1.1</title>
+	<link rel="stylesheet" href="Kidscare%20Doc%20v1.1_files/bootstrap.css">
+	<link rel="stylesheet" href="Kidscare%20Doc%20v1.1_files/progressive.css">
+	<link rel="stylesheet" href="Kidscare%20Doc%20v1.1_files/_Spoiler.css">
+	<link rel="stylesheet" href="Kidscare%20Doc%20v1.1_files/icons.css" type="text/css" media="all">		
+	<link rel="stylesheet" href="Kidscare%20Doc%20v1.1_files/prettyPhoto.css" type="text/css" media="all">		
+    <link rel="icon" type="images/x-icon" href="http://firstleap.cn/mlk/doc/images/favicon.ico">
+    <link rel="stylesheet" href="Kidscare%20Doc%20v1.1_files/head_foot.css">	
+    <!--<link rel="stylesheet" href="../css/style.css">-->
+
+	</head>
+<body onload="prettyPrint()"><div id="findwindow" style="position: absolute; visibility: hidden; background-color: rgb(230, 230, 230); color: black; width: 280px; height: 116px; top: 150px; left: 82%; padding: 0px; z-index: 2000; font-size: 14px; overflow-x: hidden;" class="findwindow dragme"><div style="text-align: center;width: 260px;cursor: move;color: white;background-color: #2d3e50;float: left;padding-top: 3px;height: 27px;" onmouseover="over=1;" onmouseout="over=0;">Find Window</div><div onclick="hide();" class="close" style="text-align: center;width: 20px;height: 27px;cursor: default;font-weight: normal;background-color: #2d3e50;color: #fff;padding-top: 4px;padding-right: 9px;font-size: 16px;line-height: 19px;float: right;">X</div><br>
+<div id="window_body" style="padding: 5px;"><form onsubmit="return false;"><input size="33" maxlength="33" id="fwtext" onchange="resettext();" placeholder="Enter text to find" type="search"><input value="Find Prev" onclick="findprev();" type="button"><input id="btn" value="Find Next" onclick="this.blur(); findit();" type="button"> <span id="find_msg"><br></span></form></div>
+</div>
+	<div id="header_wrapper" style="height: 65px;"><div id="header" class="navbar navbar-inverse affix-top" role="navigation">
+		<div class="container topWrap">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="http://kidscare-html.axiomthemes.com/"></a><div class="logo logo_left"><a class="navbar-brand" href="http://kidscare-html.axiomthemes.com/">
+								</a><a href="http://firstleap.cn/mlk/doc/index.html">
+									<img src="Kidscare%20Doc%20v1.1_files/352-50.png" class="logo_main" alt="">
+									<img src="Kidscare%20Doc%20v1.1_files/352-50.png" class="logo_fixed" alt="">
+									<span class="logo_slogan"></span>
+								</a>
+							</div>
+
+			</div>
+						    
+			
+			<nav role="navigation" class="menuTopWrap topMenuStyleLine">
+				<ul id="mainmenu" class="inited sf-js-enabled sf-arrows" style="display: block;">
+					<li class="menu-item  menu-item-has-children">
+						<a href="http://firstleap.cn/mlk/index.html">主页</a>
+						<!--<ul class="sub-menu">
+                        </ul>-->
+					</li>
+					<li class="menu-item current-menu-ancestor menu-item-has-children">
+						<a href="http://firstleap.cn/mlk/doc/doc/index.html">帮助文档</a>
+						<!--	<ul class="sub-menu">
+                            </ul>-->
+					</li>
+					
+					<div class="custom-search-button">
+					       <label for="search" class="icon-search"></label>			
+					       <input id="search" value="Search" onclick="show();" type="button">				
+				    </div>
+					
+				</ul>
+			</nav>
+			<!---->
+			
+		</div>	
+	</div></div>
+	
+	
+	<div class="container clearfix" style="overflow:hidden;">
+		<div class="doc-container row clearfix">
+
+			<!-- Doc Navigation Sidebar 
+				================================================== -->
+			<div class="doc-sidebar col-md-3 pull-right">
+				<ul class="doc-nav nav nav-list changshi affix-top">
+					<li>
+						<span class="docs-progress-bar"></span><a href="#gt_strt">下载安装</a>	
+						<!--<ul class="top_child">
+							<li><a href="#"><span>IOS下载安装</span></a></li>
+                            <li><a href="#"><span>Android下载安装</span></a></li>
+						</ul>-->
+					</li>
+
+					<li>
+						<span class="docs-progress-bar"></span><a href="#customizer">注册登录</a>
+						<!--<ul class="top_child">
+							<li><a href="#"><span>IOS注册</span></a></li>
+                            <li><a href="#"><span>IOS登录</span></a></li>
+                            <li><a href="#"><span>Android注册</span></a></li>
+                            <li><a href="#"><span>Android登录</span></a></li>
+                            <li><a href="#"><span>游客模式</span></a></li>
+						</ul>-->
+					</li>
+
+					<li>
+						<span class="docs-progress-bar"></span><a href="#wdgt_sdbr">界面功能介绍</a>
+					</li>
+
+					<li>
+						<span class="docs-progress-bar"></span><a href="#stndr_pst">Magic Words功能详解</a>
+						<!--<ul class="top_child">
+							<li><a href="#"><span>进入Magic Words</span></a></li>
+                            <li><a href="#"><span>learn to read学习模式</span></a></li>
+                            <li><a href="#"><span>practice模式</span></a></li>
+						</ul>-->
+					</li>
+
+					<li>
+						<span class="docs-progress-bar"></span><a href="#prtfl">Movie House功能详解</a>
+						<!--<ul class="top_child">
+							<li><a href="#"><span>进入Movie House</span></a></li>
+                            <li><a href="#"><span>影片播放</span></a></li>
+						</ul>-->
+					</li>
+
+					<li>
+						<span class="docs-progress-bar"></span><a href="#soc_ic">Happy Spelling功能详解</a>
+					</li>
+
+					<li>
+						<span class="docs-progress-bar"></span><a href="#tpgr">Book Reading功能详解</a>
+						<!--<ul class="top_child">
+							<li><a href="#"><span>进入Book Reading</span></a></li>
+                            <li><a href="#"><span>learn to read学习模式</span></a></li>
+                            <li><a href="#"><span>practice模式</span></a></li>
+						</ul>-->
+					</li>
+					
+					<li>
+						<span class="docs-progress-bar"></span><a href="#shrtc">麦克风权限</a>
+						<!--<ul class="top_child">
+							<li><a href="#"><span>iOS麦克风权限</span></a></li>
+                            <li><a href="#"><span>Android麦克风权限</span></a></li>
+						</ul>-->
+					</li>
+
+					<li>
+						<span class="docs-progress-bar"></span><a href="#addtnl_plgns">绑定微信与解绑微信</a>
+						<!--<ul class="top_child">
+							<li><a href="#"><span>设备中安装魔力童英语和微信</span></a></li>
+                            <li><a href="#"><span>设备中只安装了魔力童英语</span></a></li>
+                            <li><a href="#"><span>解绑微信</span></a></li>
+						</ul>-->
+					</li>
+
+					<li>
+						<span class="docs-progress-bar"></span><a href="#src_crdts">修改密码，修改信息和清理缓存</a>
+						<!--<ul class="top_child">
+							<li><a href="#"><span>修改密码</span></a></li>
+                            <li><a href="#"><span>修改个人信息</span></a></li>
+                            <li><a href="#"><span>清理缓存</span></a></li>
+						</ul>-->
+					</li>
+
+					<li>
+						<span class="docs-progress-bar"></span><a href="#trblsht">评分</a>
+						<!--<ul class="top_child">
+							<li><a href="#"><span>iOS评分</span></a></li>
+                            <li><a href="#"><span>Android评分</span></a></li>
+						</ul>-->
+					</li>
+				</ul>
+			</div>
+
+			<!-- Main Content Area 
+				================================================== -->
+			<div class="doc-content col-md-9">
+
+				<!-- iOS下载安装 
+				================================================== -->
+				<div class="docs-section" id="gt_strt">
+					<h1 class="page-header">下载安装</h1>
+					<h3>IOS下载安装</h3>
+					<p>1.找到iPhone或iPad的App Store</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458267565.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+					<p>2.在App Store中搜索魔力童英语</p>	
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458267620.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+					
+					<!-- How To Use This Document
+					============================ -->
+					 <p>3.开始下载魔力童英语</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458267782.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					
+					<!-- License
+					============================ -->
+					<p>4.下载完成开启魔力童英语</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458268069.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					
+					<!-- Help & Support
+					============================ -->
+					<p>5.进入魔力童英语</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458268103.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    
+                    <h3>Android下载安装</h3>
+					<p>1.Android用户可以到安卓市场，应用宝，百度手机助手，360手机助手，豌豆荚，安智市场下载安装魔力童英语</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458614457.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+					<p>2.以百度手机助手为例，进入百度手机助手点击搜索</p>	
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458614492.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+					 <p>3.在搜索框中输入魔力童英语</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458614518.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					
+					<!-- License
+					============================ -->
+					<p>4.点击魔力童英语查看详细介绍</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458614577.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					
+					<!-- Help & Support
+					============================ -->
+					<p>5.点击下载</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458614596.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>6.下载完成弹出安装界面，点击下一步</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458614628.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>7.点击安装</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458614643.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>8.安装完成点击打开</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458614669.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>9.进入魔力童英语</p> 
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458614685.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+				</div>    
+				<div class="docs-section" id="customizer" style="display: none;">
+					<h1 class="page-header">注册登录</h1>
+				   <!--   一.注册          -->
+					<h3>IOS注册</h3>  
+					<p>
+						1.进入魔力童英语，点击去登录 
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458270322.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						2.进入登录界面，点击去注册账号 
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458270322.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                   <p>
+						3.进入注册界面，输入您的手机号码
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458270356.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						4.点击获取验证码
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458270364.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>
+						5.收到魔力童英语验证码短信，输入验证码
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458270369.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						6.设置您的登录密码
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458270374.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						7.点击创建用户，成为魔力童用户
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458270381.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						8.设置孩子的魔力童用户名
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458390920.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>
+						9.设置孩子的出生日期，方便我们为孩子推荐学习内容
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458390936.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                              
+                    <p>
+						10.根据孩子的喜欢设置孩子的魔力童头像
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458391062.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>
+						11.点击Enter进入魔力童英语
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458273153.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>
+						12.魔力童英语主界面
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458279391.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                
+
+                     <!--   二.登录         -->
+					<h3>IOS登录</h3>  
+					<p>
+						1.点击去登录
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458279462.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						2.输入您已经注册好的帐号和密码 
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458279802.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                   <p>
+						3.点击登录
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458280034.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						4.进入魔力童英语
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458280064.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <h3>游客模式</h3>  
+					<p>
+						1.进入魔力童英语点击游客模式 
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458280428.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						2.设置孩子的魔力童用户名 
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458391218.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                   <p>
+						3.设置孩子的出生日期，方便我们为孩子推荐合适的学习内容
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458391296.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						4.根据孩子的喜欢选择孩子的魔力童头像
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458391354.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>
+						5.点击Enter进入魔力童英语主界面
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458280737.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						6.进入魔力童英语
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458280762.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						7.游客模式下申请正式帐号
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458270381.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						(1):点击Parents进入家长区
+					</p>
+                    <div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458281067.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>
+						(2):点击创建正式用户
+					</p>
+                    <div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458282595.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                     <p>
+						(3):输入您的手机号码
+					</p>
+                    <div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458283014.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div> 
+                     <p>
+						(4):点击获取验证码
+					</p>
+                    <div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458283162.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div> 
+                    <p>
+						(5):输入您收到的验证码，点击绑定
+					</p>
+                    <div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458283203.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div> 
+                     <p>
+						(6):绑定成功，弹出如下提示
+					</p>
+                    <div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458283264.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div> 
+
+                    
+                    <h3>Android注册</h3>  
+					<p>
+						1.进入魔力童英语
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458615295.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						2.点击去注册
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458615312.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                   <p>
+						3.输入您的手机号码
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458615328.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						4.点击获取验证码
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458615343.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>
+						5.收到魔力童英语给您发送的验证码短信，输入验证码
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458615385.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						6.设置您的登录密码
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458615402.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						7.点击创建用户
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458615420.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						8.设置孩子的魔力童用户名
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458615441.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>
+						9.设置孩子的生日，方便我们为孩子推荐学习内容
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458615477.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                              
+                    <p>
+						10.根据喜欢设置孩子的魔力童头像
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458615514.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>
+						11.点击enter进入魔力童主界面
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458615531.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>
+						12.进入魔力童英语主界面
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458615547.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+
+                     <!--   二.登录         -->
+					<h3>Android登录</h3>  
+					<p>
+						1.输入已注册的手机号码和密码
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458615630.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						2.点击登录
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458615647.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                   <p>
+						3.进入魔力童英语主界面
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458615665.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+               
+                   
+				</div>
+					
+		
+				
+		
+
+
+				<!-- 界面功能介绍
+				================================================== -->
+                
+                
+                
+                
+				<div class="docs-section" id="wdgt_sdbr" style="display: none;">
+					<h1 class="page-header"> 界面功能介绍</h1>
+					<p>
+						1.用户名和头像：用户名和头像是将孩子的名字和魔力童头像显示在主界面
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458285217.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						2.魔力星：魔力星是孩子在使用魔力童闯关学习，获得的虚拟奖励。  
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458287163.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                   <p>
+						3.魔力赞：魔力赞是孩子在魔力童排行榜以及家长把孩子的创作分享到微信后，收到的点赞。
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458287463.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						4.家长区：家长区是家长之间相互交流，查看孩子学习报告，绑定微信和对魔力童英语app进行设置的平台
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458287795.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                     <p>
+						5.我的创作：我的创作保留孩子在Magic Words和Book Reading的Practice模式下的所有创作内容.
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458287989.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						6.复习：复习将所学的高频词汇收录进去供孩子学习后复习. 
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458288160.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                   <p>
+						7.推荐：推荐是根据孩子的年龄将合适的学习内容推荐给孩子.
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458288318.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						8.背景音乐：可以打开关闭背景音乐
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458288411.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                      <p>
+						9.Magic Words ： Magic Words提供孩子常见的基础词汇，让孩子通过边听边看和跟读练习的方式认知与学习.
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458386222.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						10.Movie House：Movie House是精品儿童英文MV的聚集地，为孩子精挑细选了国内外制作精良与经典的视频，歌曲MV以及动画等.
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458388959.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                   <p>
+						11.Happy Spelling：Phonics自然拼读是孩子英语学习的基础，Happy Spelling提供了非常有趣的自然拼读的学习方式和学习路径，适度的激动体系让孩子学习更加有动力.
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458389221.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						12.Book Reading为孩子精心打造了一个专业的英语启蒙绘本馆，这些绘本从A～Z由易到难进行排序，每一本绘本都是由专业外教提供地道标准配音，让孩子从小培养对阅读的热爱，跟读练习的功能，系统会根据孩子的发音进行科学的语音评测，评价学习效果
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458389473.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                 </div>   
+                    
+                    
+					
+				
+
+
+				<!-- Magic Words功能详解
+				================================================== -->
+				<div class="docs-section" id="stndr_pst" style="display: none;">
+					<h1 class="page-header">Magic Words功能详解</h1>
+                    
+                    <h3>一.进入Magic Words</h3>  
+					<p>
+						1.在魔力童英语主界面点击Magic Words
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458475771.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						2.选择一个课程分类
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458475973.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                   <p>
+						3.点击要学习的课程开始解锁
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458476559.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						4.在弹出的解锁界面，点击OK解锁
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458476615.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>
+						5.解锁成功，点击下载课程
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458477016.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						6.下载成功，点击选择学习模式
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458477572.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                   <p>
+						7.进入选择学习模式界面
+					</p>
+                    <div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458477666.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <h3>二.learn to read学习模式</h3>  
+					<p>
+						1.点击learn to read
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458477944.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						2.进入learn to read学习界面
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458477995.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                   <p>
+						(1)返回按钮
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458478387.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						(2)学习进度
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458478417.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>
+						(3)点击图片播放外教录音
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458478441.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						(4)点击单词播放外教录音
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458478462.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                   <p>
+						(5)切换到practice模式
+					</p>  
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458478490.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>
+						3.在屏幕上从右向左滑动切换到下一个学习内容
+					</p>  
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458478809.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>
+						3.The End界面
+					</p>
+                     <p>
+						(1)点击Again，再学习一遍
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458479176.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                    <p>
+						(2)点击Go Back返回课程列表界面
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458479217.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>
+						(3)切换到practice模式
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458479240.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                      <h3>三.practice模式</h3>  
+					<p>
+						1.进入pactice模式的方法：
+					</p>
+                    <p>
+						方法一：选择学习模式界面点击Parctice进入闯关模式
+					</p>
+
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458480548.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						方法二：从learn to read学习模式切换到practice模式
+					</p>
+
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458480684.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>
+						2.进入practice闯关界面
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458481264.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						(1)返回按钮
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458481279.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>
+						(2)录音按钮，录音状态下点击录音按钮结束录音，非录音状态下点击录音按钮开始录音
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458481297.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+				    <p>
+						(3)录音话筒，录音状态下出现在屏幕中，录音结束后自动收起
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458481363.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						(4)闯关进度
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458481423.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						3.录音状态下，准确朗读单词
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458482100.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						4.跟读结束后，点击录音按钮结束录音
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458482263.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						5.科大讯飞开始评分
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458544921.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						6.评分结束，界面出现给分动画
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458483204.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						7.记录分数
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458483229.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						8.成绩不满意，点击录音按钮重新录制
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458483754.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+				    <p>
+						9.再次录制
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458483787.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						10.评测出新成绩
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458483804.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						11.分数记录中高分取代低分
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458483829.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						12.点击播放自己的录音
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458483854.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						13.录音播放中
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458483955.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						14.在屏幕上从右向左滑动切换到下一个内容
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458484075.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						15.录制到最后一个内容
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458485310.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						16.点击上传按钮，上传创作内容
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458485395.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+				    <p>
+						17.内容上传中
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458544942.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						18.上传成功，进入成绩界面
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458485466.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						(1)查看获得的魔力星
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458544968.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						(2)查看本次创作的排名
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458485492.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						(3)查看本次创作的成绩
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458485524.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						(4)点击rankings
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458485648.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+				    <p>
+						(5)点击Go Back
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458485673.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						19.点击Rankings进入排行榜
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458485709.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						(1)查看自己的最佳排名及最高分数
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458486169.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						(2)点击返回按钮返回成绩界面
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458486196.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						(3)点击下载他人的创作内容
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458486222.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						(4)下载完成进入播放他人创作界面
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458486277.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						a.查看播放的内容的排名及分数
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458486614.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						b.点击图片或单词重复播放别人的创作内容
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458486669.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+				    <p>
+						c.切换到practice模式
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458486702.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						(5)为喜欢的内容点赞
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458486746.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						a.点赞成功界面
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458486829.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					
+					
+				</div>
+
+				<!--  Movie House功能详解
+				================================================== -->
+			   <div class="docs-section" id="prtfl" style="display: none;">
+				  <h1 class="page-header"> Movie House功能详解</h1>
+				   <h3>一.进入Movie House</h3>  
+					<p>
+						1.在魔力童主界面点击Movie House
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458528882.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						2.选择一个课程分类
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458528903.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                   <p>
+						3.影片下载
+					</p>
+					 <p>
+						(1)无需解锁直接下载影片
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458529012.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						a.下载成功，点击开始播放
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458529196.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>
+						(2)解锁后下载影片
+					</p>
+					 <p>
+						a.点击要观看的内容
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458529082.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						b.点击OK解锁课程
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458529113.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                   <p>
+						c.解锁成功点击下载按钮开始下载
+					</p>
+                    <div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458529135.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                      <p>
+						d.下载成功，点击播放
+					</p>
+                    <div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458529219.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <h3>二.影片播放</h3>  
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458529301.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						1.在屏幕上点击一下
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458532406.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                   <p>
+						(1)播放进度条，拖动白色按钮调节播放进度
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458530001.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						(2)调节音量大小
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458530069.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>
+						(3)显示影片标题
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458530080.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						(4)返回上一级菜单
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458530438.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                   <p>
+						2.在屏幕中连续点击两下
+					</p>  
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458532419.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>
+						(1)影片停止播放
+					</p>  
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458532019.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>
+						(2)点击暂停按钮继续播放影片
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458532068.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                     <p>
+						3.界面出现播放进度时，在屏幕中点击一下
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458532475.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                    <p>
+						(1)影片暂停播放
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458532518.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>
+						(2)点击暂停按钮继续播放
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458532529.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+				</div>
+
+
+				<!-- Happy Spelling功能详解
+				================================================== -->
+				<div class="docs-section" id="soc_ic" style="display: none;">
+					<h1 class="page-header">Happy Spelling功能详解</h1>
+					<p>
+						1.在魔力童英语主界面点击Happy Spelling
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458546801.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						2.选择一个课程分类
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458546807.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                   <p>
+						3.点击要学习的课程开始下载
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458546814.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						4.下载成功，点击开始学习
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458546825.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>
+						5.进入拼词游戏界面，显示完整的单词，播放单词的外教录音
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458546862.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						6.字母乱序落下
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458546920.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						7.拖动字母到相应位置，拖动字母过程中播放phonics发音
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458546950.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						8.拼词完成 ，拼读单词
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458546981.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>
+						9.自动切换到下一个内容
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458547136.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                              
+                    <p>
+						10.完成后进入成绩界面
+					</p>
+					<p>
+						（1）全部通过，奖励五颗星星
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458547495.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>
+						(2)只要存在未按规定时间完成的内容就只奖励一颗星星
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458547565.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>
+						11.再来一遍
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458547591.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                     <p>
+						12.返回上一级菜单
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458547608.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+        
+				</div>
+
+
+				<!-- Book Reading功能详解
+				================================================== -->
+				<div class="docs-section" id="tpgr" style="display: none;">
+					<h1 class="page-header">Book Reading功能详解</h1>
+					<h3>一.进入Book Reading</h3>
+                   <p>
+						1.在魔力童英语主界面点击Book Reading
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458536315.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						2.选择一个课程分类
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458536331.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                   <p>
+						3.点击要学习的课程开始解锁
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458542048.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						4.在弹出的解锁界面，点击OK解锁
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458542097.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>
+						5.解锁成功，点击下载课程
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458542110.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						6.下载成功，点击选择学习模式
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458542122.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                   <p>
+						7.进入选择学习模式界面
+					</p>
+                    <div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458542138.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <h3>二.learn to read学习模式</h3>  
+					<p>
+						1.点击learn to read
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458542174.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						2.进入learn to read学习界面
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458542198.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                   <p>
+						(1)返回按钮
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458542225.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <p>
+						(2)学习进度
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458542240.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>
+						(3)点击图片播放外教录音
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458542269.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						(4)点击单词播放外教录音
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458542293.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                   <p>
+						(5)切换到practice模式
+					</p>  
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458542332.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>
+						3.在屏幕上从右向左滑动切换到下一个学习内容
+					</p>  
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458542353.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>
+						3.The End界面
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458542394.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                     <p>
+						(1)点击Again，再学习一遍
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543152.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+             
+                    <p>
+						(2)点击Go Back返回课程列表界面
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543168.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>
+						(3)切换到practice模式
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543201.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                      <h3>三.practice模式</h3>  
+					<p>
+						1.进入pactice模式的方法：
+					</p>
+                    <p>
+						方法一：选择学习模式界面点击Parctice进入闯关模式
+					</p>
+
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543246.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						方法二：从learn to read学习模式切换到practice模式
+					</p>
+
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543269.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>
+						2.进入practice闯关界面
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543300.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+
+					<p>
+						(1)返回按钮
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543316.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>
+						(2)录音按钮，录音状态下点击录音按钮结束录音，非录音状态下点击录音按钮开始录音
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543338.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+				    <p>
+						(3)录音话筒，录音状态下出现在屏幕中，录音结束后自动收起
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543392.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						(4)闯关进度
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543409.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						3.录音状态下，准确朗读单词
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543429.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						4.跟读结束后，点击录音按钮结束录音
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543444.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						5.科大讯飞开始评分
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458545267.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						6.评分结束，界面出现给分动画
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543514.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						7.记录分数
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543536.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						8.成绩不满意，点击录音按钮重新录制
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543551.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+				    <p>
+						9.再次录制
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543565.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						10.评测出新成绩
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543588.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						11.分数记录中高分取代低分
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543599.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						12.点击播放自己的录音
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543612.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						13.录音播放中
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543621.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						14.在屏幕上从右向左滑动切换到下一个内容
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543633.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						15.录制到最后一个内容
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543664.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						16.点击上传按钮，上传创作内容
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543676.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+				    <p>
+						17.内容上传中
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458545288.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						18.上传成功，进入成绩界面
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543709.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						(1)查看获得的魔力星
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543813.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						(2)查看本次创作的排名
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543733.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						(3)查看本次创作的成绩
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543743.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						(4)点击rankings
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543753.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+				    <p>
+						(5)点击Go Back
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543766.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						19.点击Rankings进入排行榜
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543841.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						(1)查看自己的最佳排名及最高分数
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543911.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						(2)点击返回按钮返回成绩界面
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543923.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						(3)点击下载他人的创作内容
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543931.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						(4)下载完成进入播放他人创作界面
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543938.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						a.查看播放的内容的排名及分数
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543947.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						b.点击图片或单词重复播放别人的创作内容
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543955.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+				    <p>
+						c.切换到practice模式
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543964.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						(5)为喜欢的内容点赞
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458543988.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					<p>
+						a.点赞成功界面
+					</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458544005.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+			
+				</div>
+
+
+
+				<!-- 麦克风权限
+				================================================== -->
+				<div class="docs-section" id="shrtc" style="display: none;">
+					<h1 class="page-header">麦克风权限</h1>			
+					<!-- Introduction
+					============================ -->
+					<h3>一.iOS</h3>  
+					<p>1.进入手机的设置</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458558475.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+			
+					<p>2.在设置找到魔力童英语</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458558547.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+					<p>3.点击魔力童英语</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458558561.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+		
+					<p>4.确认麦克风权限打开</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458558587.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+				    
+				    <h3>二.Android</h3>  
+					<p>1.界面弹出提示时点击允许</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458617994.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>2.查看魔力童英语的权限</p>
+                    <p>(1).点击设置</p>
+                    <div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458626935.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+			
+					<p>(2).在设置中找到应用管理</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458626965.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+					<p>(3).在应用管理中找到魔力童英语</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458626987.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+		
+					<p>(4).进入魔力童英语</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458627004.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+				   
+				    <p>(5).查看魔力童英语必须要打开的权限</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458627045.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+		
+				</div>
+
+
+				<!-- 绑定微信与解绑微信
+				================================================== -->
+				<div class="docs-section" id="addtnl_plgns" style="display: none;">
+					<h1 class="page-header">绑定微信与解绑微信</h1>
+					<h3>一.绑定微信---设备中安装魔力童英语和微信</h3>
+					<p> 方法一：</p>
+				    <p> 1.在主界面弹出的提示中点击“去绑定”将魔力童帐号与微信绑定</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458549435.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					
+					<p>2.点击确认登录</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458550019.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+					<p>3.确认登录后返回魔力童英语，在弹出的提示内容上点击好的</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458550067.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					
+					<p>4.进入微信，点击添加</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458550092.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					
+					<p>5.点击添加朋友</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458550109.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>6.选择添加公众号</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458550130.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+			
+					<p>7.输入魔力童英语点击搜索</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458550158.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+					<p>8.点击魔力童英语进入服务号</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458550182.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>9.点击关注</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458550211.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>10.点击进入公众号</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458550801.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>11.点击学习报告查看孩子的学习情况</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458550811.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>12.学习报告界面</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458550844.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>13.收到创作通知，点击可以播放</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458552476.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p> 方法二：</p>
+				    <p> 1.点击进入parents</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458551345.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px;padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+			
+					<p>2.跟据提示输入数字</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458551372.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px;padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+					<p>3.点击绑定微信</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458551388.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+			
+					<p>4.点击确认登录</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458551412.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+			
+					<p>5.返回魔力童英语，弹出提示点击好的</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458551458.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>6.进入微信，点击添加</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458551517.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+				
+					<p>7.点击添加朋友</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458551549.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+					<p>8.选择添加公众号</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458551572.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>9.在搜索框中输入魔力童英语，点击搜索</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458551606.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>10.点击进入魔力童英语</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458551718.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>11.点击关注魔力童英语服务号</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458551746.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>12.点击进入公众号</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458551773.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>13.点击学习报告，查看孩子的学习情况</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458551813.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                   
+                    <p>14.学习报告详情</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458551929.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>15.收到创作通知点击可以播放</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458552411.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+                    <h3>二.绑定微信----设备中只安装了魔力童英语</h3>
+					<p> 方法一：</p>
+				    <p> 1.在主界面弹出的提示中点击“去绑定”将魔力童帐号与微信绑定</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458552365.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					
+					<p>2.出现绑定微信的二维码</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458555850.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+					<p>3.打开微信扫一扫</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458555902.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					
+					<p>4.扫描第一个二维码，进入魔力童英语服务号</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458555933.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					
+					<p>5.点击关注，关注魔力童英语服务号</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458555976.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>6.关注成功进入魔力童英语</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458555989.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+			
+					<p>7.扫描绑定微信的二维码</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458556015.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+					<p>8.确认登录</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458556332.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>9.提示绑定成功</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458556043.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>10.微信中收到创作内容通知</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458556130.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                  
+                    <p> 方法二：</p>
+				    <p> 1.在主界面中点击parents</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458556176.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px;  padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+			
+					<p>2.根据提示输入数字</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458556193.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+					<p>3.点击绑定微信</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458556262.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+			
+					<p>4.出现绑定微信的二维码</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458556373.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+			
+					<p>5.打开微信扫一扫</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458556402.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>6.扫描关注魔力童英语的二维码</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458556437.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+				
+					<p>7.点击关注，关注魔力童英语服务号</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458556454.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+					<p>8.关注服务号成功</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458556497.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>9.扫描绑定微信的二维码</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458556525.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>10.点击确认登录</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458556552.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>11.绑定微信成功</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458556583.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>12.收到创作通知，点击可以播放</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458556614.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                  
+                    <h3> 三.解绑微信</h3>
+				    <p> 1.进入parents</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458552030.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px;  padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+			
+					<p>2.根据提示输入数字</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458552068.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+					<p>3.点击解绑微信</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458552142.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+			
+					<p>4.点击解绑</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458552274.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+			
+					<p>5.解绑成功</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458552294.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                   
+				</div>
+
+
+
+				<!-- 修改密码，修改信息和清理缓存
+				================================================== -->
+				<div class="docs-section" id="src_crdts" style="display: none;">
+					<h1 class="page-header">修改密码，修改信息和清理缓存</h1>
+                    <h3>一.修改密码</h3>
+				    <p> 1.进入parents</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458557140.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					
+					<p>2.根据提示输入数字</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458557159.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+					<p>3.点击设置</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458557221.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px;  padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					
+					<p>4.点击修改密码</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458557463.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+					
+					<p>5.输入原密码和新密码</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458557475.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>6.点击修改密码</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458557498.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+			
+					<p>7.修改成功</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458557515.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <h3>二.修改个人信息</h3>
+					<p>1.进入parents</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458627130.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>2.点击进入设置</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458627172.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>3.点击修改宝贝信息</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458627765.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>4.根据需求修改宝贝信息，修改完成后点击OK</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458627778.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    <p>5.弹出修改成功的提示</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458627821.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                     <h3>三.清理缓存：只清理手机的本地下载内容</h3>
+                    <p>1.进入parents</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458557605.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+				    <p> 2.根据提示输入数字</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458557629.jpg" alt="" draggable="false" style=" display:block;width: 515.756px; height: 290px;padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+			
+					<p>3.点击设置</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458557642.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px;padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+					<p>4.点击清理缓存</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458557883.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+			
+					<p>5.点击删除</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458557892.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+			
+					<p>6.清理缓存成功</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458557912.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+              
+				</div>
+
+
+
+				<!-- 评分
+				================================================== -->
+				<div class="docs-section" id="trblsht" style="display: none;">
+					<h1 class="page-header">评分</h1>
+					<h3>IOS评分</h3>
+                    <p> 1.进入app store</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458606019.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+			
+					<p>2.搜索魔力童英语</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458607501.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+					<p>3.点击评论</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458607851.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+		
+					<p>4.进入评论界面，点击撰写评论</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458607885.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+				
+					<p>5.输入您的Apple ID密码，点击好</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458607927.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>6.给我一个五星好评</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458609099.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+				
+					<p>7.输入您的评论</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458609119.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+					<p>8.点击发送，发布您的评论吧</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458609176.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+		
+				    <h3>Android评分</h3>
+                    <p> 1.可以到安卓市场，应用宝，百度手机助手，360手机助手，豌豆荚，安智市场中给魔力童英语评分</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458615907.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+			
+					<p>2.已应用宝为例，进入应用宝搜索到魔力童英语</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458616674.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+					<p>3.点击评论</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458616682.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+		
+					<p>4.点击我要评论</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458616712.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+				
+					<p>5.给我们五星好评，加上您的使用感受</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458616747.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+                    
+                    <p>6.点击提交，发布评论</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458616820.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+				
+					<p>7.评论成功</p>
+					<div class="images-wrap" contenteditable="false"><img class="images" src="Kidscare%20Doc%20v1.1_files/Notes_1458616833.jpg" alt="" draggable="false" style=" display:block;width: 528.519px; height: 940px; padding-top: 0px; padding-bottom: 0px;" contenteditable="false"></div>
+
+				
+				</div>
+			</div> 
+		</div>
+	</div>
+	<!--<div class="footer-wrapper">
+		<footer class="container clearfix">
+			<p><a href="http://themeforest.net/user/Axiomthemes/portfolio">Axiomthemes © 2015</a> All Rights Reserved
+				<a href="#">Terms of Use</a> and
+				<a href="#">Privacy Policy</a>
+			</p>
+		</footer>
+	</div>-->
+	<div class="footerContentWrap">
+				<footer class="footerWrap footerStyleLight contactFooterWrap">
+					<div class="main contactFooter">
+						<section>
+							<div class="logo">
+								<a href="http://firstleap.cn/mlk/doc/index.html" style=" display:block;min-height:201px !important; min-width:201px !important">
+									<img src="Kidscare%20Doc%20v1.1_files/qrcode.jpg" alt="" style=" display:block;max-height:201px !important; max-width:201px !important; border:1px solid #CCC;margin:15px auto;">
+								</a>
+							</div>
+					
+							<div class="contactTtextLine">扫描二维码关注魔力童官方微信</div>
+							
+						</section>
+					</div>
+				</footer>
+				<div class="upToScrollWrapper">
+					<div class="upToScroll buttonShow">
+						<a href="#" class="scrollToTop" title="Back to top">
+						</a>
+					</div>
+				</div>
+				<div class="copyWrap" style="padding-top: 10px;">
+					<div class="copy main">
+						<div class="copyright" style="    float: right; margin-right: 15%">
+							<a href="http://themeforest.net/user/axiomthemes/portfolio">励步-魔力童</a> © 2016 All Rights Reserved
+				
+						</div>
+						
+					</div>
+				</div>
+	<div class="upToScroll">
+        <a title="Back to top" class="scrollToTop icon-up-open-big" href="#"></a>
+		<a title="Contact Us" class="contactUs icon-edit" href="https://axiom.ticksy.com/"></a>
+    </div>
+    
+	<script src="Kidscare%20Doc%20v1.1_files/jquery_002.js"></script>
+	<script src="Kidscare%20Doc%20v1.1_files/change.js"></script>
+	<script src="Kidscare%20Doc%20v1.1_files/bootstrap.js"></script>
+	<script src="Kidscare%20Doc%20v1.1_files/progressive.js"></script>
+	<script src="Kidscare%20Doc%20v1.1_files/_Spoiler.js"></script>
+	<script src="Kidscare%20Doc%20v1.1_files/flymenu.js"></script>
+	<script src="Kidscare%20Doc%20v1.1_files/find5.js"></script>
+	<script src="Kidscare%20Doc%20v1.1_files/scrollTop.js"></script>
+	<script src="Kidscare%20Doc%20v1.1_files/prettify.js"></script>
+	<script src="Kidscare%20Doc%20v1.1_files/jquery.js" type="text/javascript"></script>
+
+
+
+
+</div></body></html>
