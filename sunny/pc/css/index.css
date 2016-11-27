@@ -1,0 +1,296 @@
+/*样式重置*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+a{color:#000;outline:none;text-decoration:none;}
+a:hover{text-decoration:none;}
+ol, ul {
+    list-style: none;
+}
+@font-face {
+    /*定义字体*/
+    font-family: fzy3jw;
+    src: url('../font/fzy3jw.ttf');
+}
+body{font-size:20px;font-family: fzy3jw;}
+.fl{float:left;}
+.fr{float:right;}
+.float_right{margin-top: 123px !important;}
+/*主体样式*/
+.wrap{
+    width:100%;height:auto;margin:0 auto;overflow: hidden;
+}
+/*header区域的样式*/
+@media screen and (min-width: 1921px) {
+    .header{
+        background: url("../images/big_bj.png") no-repeat !important;
+    }
+}
+.header{
+    width:100%;
+    height:536px;background: url("../images/bj.png") no-repeat;
+   
+    /*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/index_banner.png',sizingMethod='scale');*/
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+            src='../images/index_banner.png',
+            sizingMethod='scale');
+    -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+            src='../images/index_banner.png',
+            sizingMethod='scale');
+    position:relative;
+}
+.header .kids{
+    width:616px;margin:0 auto;padding-top:150px;
+}
+.header .server{width:161px;height:183px;position:absolute;top:0;right:228px;}
+.header .server span{position:absolute;left: 34px; bottom: 20px;z-index:2;font-size: 19px;font-family: fzy3jw;}
+/*header区域的样式*/
+.banner{
+    background: #ffce00 url("../images/banner_y_w_02.png") repeat-x left bottom;
+    padding-left:17.3%;padding-top:85px;padding-right:15.8%;padding-bottom:200px ;
+    position: relative;
+    overflow: hidden;
+}
+.banner .banLunbo{
+     width:500px;height:351px;background: url("../images/pad-24.png") no-repeat;position: relative;  padding-left:30px;padding-top:25px;float:left;
+}
+.banner .banLunbo ul{width:429px;height:322px;}
+.banner .banLunbo ul li{display: none}
+.banner .banLunbo ul li img{width:100%;border:1px solid #0d6be4;}
+.banner .banLunbo ul li.on{display: block}
+.banner .banLunbo ol{position: absolute;left:50%;width:62px;margin-left:-28px;bottom:-38px;}
+.banner .banLunbo ol li{float:left;width:12px;height:12px;text-align: center;background:url("../images/wihte_03.png");margin-right:3px;}
+.banner .banLunbo ol li.tt{background:url("../images/blue_03.png");}
+.banner .loading{width:335px;height:404px;float:right;}
+.wrap .code2{width:206px;height:263px;background: #ffffff;padding:10px;margin-top:60px;margin-left:78px;text-align:center;border:#cfcfcf 1px solid;}
+.wrap .code2 img{display: block;margin-bottom:6px;}
+.wrap .code2 span{line-height: 28px; font-size: 24px;font-family: fzy3jw;}
+.banner .banner_iphone{width:397px;height:186px;position: absolute;bottom:-133px;right:-160px;}
+/*app区域的样式*/
+.app{height:700px;background: #f7f7f7 url("../images/app_bg_02.png") repeat-x left bottom;padding-top: 44px;text-align:center;}
+.app h2{font-family: fzy3jw;font-size: 40px;height:87px;line-height:1;}
+.app p{line-height: 36px;font-family: fzy3jw;font-size: 19px}
+.app .appLunbo{width:962px;margin:0 auto;height:500px;}
+.app span{color:#333;font-family: fzy3jw;font-size: 19px;line-height: 62px}
+/*interseting区域的样式*/
+.interseting{height:auto;background: #adde1b url("../images/inter_bg_02.jpg") repeat-x left bottom;padding-top: 55px;text-align: center;padding-bottom: 140px;overflow: hidden;}
+.interseting .inter_inner{width:67%;margin:0px auto;clear: both;}
+.interseting .inter_inner .inter_words{width:477px;text-align:center;}
+.kong_box{width: 100%;height: 50px;clear: both;}
+.interseting .inter_inner .inter_words h3{padding-top:43px;font-family: fzy3jw;font-size: 40px;padding-bottom: 20px;}
+.interseting .inter_inner .inter_words p{line-height:38px;color:#ffffff;font-family: fzy3jw;font-size: 19px}
+/*method区域的样式*/
+.method{ background: #fda129 url("../images/method_bg_02.png") repeat-x left bottom;overflow: hidden;padding-top:103px;padding-bottom: 114px;}
+.method ul{width:62%;margin:0 auto;}
+.method ul li{width:23%;float:left;color:#ffffff;text-align: center}
+.method ul li img{margin-bottom:53px;}
+.method ul li.method_second{margin-bottom:30px;line-height:36px;padding: 0 15.5%;}
+.listP{font-size: 19px;font-family: fzy3jw;line-height: 36px;}
+.listP span{color: #000;font-size: 30px;line-height: 50px;}
+/*leaveWord区域的样式*/
+.leaveWord{height:auto;background: #0da8e9;padding-top: 40px;}
+.leaveWord ul{width:826px;height:695px;margin:0 auto;background: url("../images/leaveWord.png") no-repeat;padding:96px 99px 0px 75px;text-align: center;color:#ffffff;}
+.leaveWord h3{font-family: fzy3jw;font-size: 40px;color:white;margin-bottom:36px;height:40px;}
+.leaveWord ul li{width:335px;height:auto;font-size:16px;line-height:26px;font-family: fzy3jw;padding-bottom: 5px;}
+.leaveWord ul li.leave_third{width:100%;}
+.leaveWord ul li.leave_third p{width:335px;margin:0 auto;}
+.footer{height:516px;background: #ffffff;font-family: fzy3jw;}
+.footer .foot_inner{width:600px;margin:0 auto;_width:700px;}
+
+/*动画样式代码*/
+/*#server{
+    animation:myfirst 2s;
+    -webkit-animation:myfirst 2s infinite ease-in-out;
+    -moz-animation:myfirst 2s infinite ease-in-out; /!* Firefox *!/
+    -o-animation:myfirst 2s infinite ease-in-out; /!* Opera *!/
+}
+@-webkit-keyframes myfirst /!* Safari and Chrome *!/
+{
+    0%{right:228px; top:0px;}
+    50% {right:210px; top:0px;}
+    100% {right:228px; top:0px;}
+}*/
+.jiao{
+    animation:myjiao 1s;
+    -webkit-animation:myjiao 1s infinite ease-in-out;
+    -moz-animation:myjiao 1s infinite ease-in-out; /* Firefox */
+    -o-animation:myjiao 1s infinite ease-in-out; /* Opera */
+}
+@-webkit-keyframes myjiao /* Safari and Chrome */
+{
+    0%{
+        -moz-transform:scale(1,1);
+        -webkit-transform:scale(1,1);
+        -o-transform:scale(1,1);
+    }
+    50% {-moz-transform:scale(1.2,1.2);
+        -webkit-transform:scale(1.2,1.2);
+        -o-transform:scale(1.2,1.2);  }
+    100% {-moz-transform:scale(1,1);
+        -webkit-transform:scale(1,1);
+        -o-transform:scale(1,1);  }
+}
+/*适配的代码*/
+@media screen and (max-width: 1500px) {
+    .header .server{right:5%;top:-12px;}
+    .banner {padding-left:8%;padding-right:8%;}
+    .listP span{color: #000;font-size: 22px;line-height: 35px;}
+   /* .banner .banLunbo{float: none;margin:0 auto;}
+    .banner .loading{float: none;margin:0 auto;}*/
+    @-webkit-keyframes myfirst /* Safari and Chrome */
+    {
+        0%{right:7%; top:-12px;}
+        50% {right:5%; top:-12px;}
+        100% {right:7%; top:-12px;}
+    }
+}
+@media screen and (max-width: 1200px) {
+    .banner {padding-left:4%;padding-right:4%;}
+    .method ul{width:90%;}
+    .method ul li{width:28%}
+    .method ul li.method_second{padding:0 8%;}
+    .listP span{color: #000;font-size: 22px;line-height: 35px;}
+}
+@media screen and (max-width: 1060px) {
+    .banner .banLunbo{float: none;margin:0 auto 50px;}
+    .banner .loading{float: none;margin:0 auto;}
+    .banner .banner_iphone{display: none;}
+    .leaveWord{padding-bottom:40px;}
+    .leaveWord ul{width:86%;padding:60px 4% 80px 4%;background-size:100% 100%;height:auto;overflow: hidden;}
+    .leaveWord h3{margin-bottom:26px;}
+    .leaveWord ul li.leave_third{}
+    .listP span{color: #000;font-size: 22px;line-height: 35px;}
+}
+@media screen and (max-width: 1015px) {
+    .interseting .inter_inner .inter_words,.interseting .inter_inner .inter_img{float: none;margin:0 auto;}
+    .listP span{color: #000;font-size: 22px;line-height: 35px;}
+
+}
+@media screen and (max-width: 800px){
+    body{font-size:12px;}
+    .leaveWord ul{width:86%;padding:80px 4% 80px 4%;}
+    .leaveWord ul li{float:none;margin:0 auto;}
+    .listP span{color: #000;font-size: 22px;line-height: 35px;}
+}
+/*返回顶部动画*/
+/*helicopter*/
+.upToScroll {bottom: 30px; right: -150px; background-color: transparent; height: auto; border: none;}
+.upToScroll.buttonShow {bottom: 30px; right: 30px;}
+.upToScroll a.scrollToTop:before {content: ''; display: none;}
+.upToScroll a.scrollToTop {
+    background: transparent url("../images/object_3_main.png") no-repeat 50% 100%;
+    background-size: cover;
+    width: 146px;
+    height: 70px;
+    animation-name: floating;
+    -webkit-animation-name: floating;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+@keyframes floating {
+    0% {transform: translateY(0%) rotate3d(0,0,-1,0deg);}
+    50% {transform: translateY(8%) rotate3d(0,0,-1,3deg);}
+    100% {transform: translateY(0%) rotate3d(0,0,-1,0deg);}
+}
+@-webkit-keyframes floating {
+    0% {-webkit-transform: translateY(0%) rotate3d(0,0,-1,0deg);}
+    50% {-webkit-transform: translateY(8%) rotate3d(0,0,-1,3deg);}
+    100% {-webkit-transform: translateY(0%) rotate3d(0,0,-1,0deg);}
+}
+.upToScroll a.scrollToTop:before {
+    content: '';
+    display: block;
+    background: transparent url("../images/object_3_addon.png") no-repeat 50% 100%; background-size: cover;
+    width: 52px; height: 14px;
+    animation-name: spining;
+    -webkit-animation-name: spining;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    -webkit-animation-timing-function:linear;
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+@keyframes spining {
+    from {transform:rotateY(0deg);}
+    to {transform:rotateY(-360deg);}
+}
+@-webkit-keyframes spining {
+    from {-webkit-transform:rotateY(0deg);}
+    to {-webkit-transform:rotateY(-360deg);}
+}
+.upToScroll a.scrollToTop:after {
+    content: '';
+    display: block;
+    margin-top: 8px;
+    margin-left: 59px;
+    background: transparent url("../images/object_3_small.png") no-repeat 50% 100%; background-size: cover;
+    width: 8px; height: 30px;
+    animation-name: rotating;
+    -webkit-animation-name: rotating;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    -webkit-animation-timing-function:linear;
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+@keyframes rotating {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+}
+@-webkit-keyframes rotating {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(-360deg);}
+}
+/*/helicopter*/
+/*upToScroll*/
+.upToScroll { position: fixed; display: inline-block; height: 48px; bottom: -50px; right: 30px;cursor: pointer; z-index: 1001; }
+.upToScroll.buttonShow{ bottom: 30px;}
+.upToScroll a { display: inline-block; width: 48px; height: 48px; font-size: 20px; line-height: 48px; text-align: center; color:#888888; }
+.upToScroll a:before { font-size:inherit; line-height:inherit; padding:0; margin:0; }
+.upToScroll a.addBookmark { border-right: 1px solid #dddddd;}
+.upToScroll a.addBookmark {display: none;}
+/*transition*/
+.upToScroll.buttonShow,
+.upToScroll{
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+/*app_lun*/
+* { margin:0; padding:0; list-style:none; }
+.app_lun { overflow:hidden; position:relative; width:620px; height:258px; margin:43px auto; display: none}
+.app_lun ul { position:absolute; left:0; top:0; }
+.app_lun ul li { float:left; width:185px; height:258px; padding:10px; }
+.app_lun ul li img { display:block; width:100%; }
+.app_lun a { position:absolute; top:0; width:50%; height:100%; }
+#prev { left:0; }
+#next { right:0; }
+
+.t1{ position:absolute; left:50%; top:50px; width:300px; height:40px; margin-left:-150px; font-size:40px; text-align:center; }
+

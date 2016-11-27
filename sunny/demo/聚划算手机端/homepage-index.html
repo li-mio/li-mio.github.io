@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/base.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+<style>
+    *{padding:0;margin:0;list-style:none;}
+    html{font-size:20px;}
+    section{width:16rem;}
+    header{width:16rem;
+        height:2.45rem;
+        background:-webkit-linear-gradient(#fefefe,#efefef);
+        text-align:center;
+        position:relative;
+    }
+    header a{
+        text-align:center;
+        display:block;
+        text-indent:-9999px;
+        width:3.25rem;
+        height:1.5rem;
+        background:url(images/1.png) no-repeat;
+        background-size:100%;
+        position:absolute;
+        top:0.5rem;
+        left:0.5rem;
+
+    }
+    header img{width:9.4rem;
+        height:2.175rem;
+        position:absolute;
+        top:0.175rem;
+        left:3.125rem;
+    }
+    .banner{width:16rem;
+            height:7.45rem;
+            position:relative;
+            left:0;
+            top:0;
+            overflow:hidden;
+    }
+    .banner ul{width:80rem;
+            height:6.675rem;
+            position:absolute; top:0; left:0;
+    }
+    .banner ul li{
+                width:16rem;
+                height:6.675rem;
+                float:left;
+    }
+    .banner ul li img{
+            width:100%;       
+    }
+   
+    .banner ol{ 
+                width:3rem;
+               position:absolute; left:50%; bottom:0;
+               margin-left:-1.25rem;
+    }
+    .banner ol li{
+            float:left;
+            width:0.25rem;
+            height:0.25rem;
+            border-radius:50%;
+            background:#a9a9a9;
+            margin:0 0.155rem;
+            text-indent:-9999px;
+            
+    }
+    .banner ol .active{
+        background:#ff4300;
+    }
+    .list{
+         margin-top:1rem;
+        width:16rem;height:7.5rem; overflow:hidden;}
+    .list ul{width:100%;
+        height:7.5rem;
+        margin:0 auto;
+        overflow:hidden;
+    }
+    .list ul li{
+            width:3.5rem;
+            height:4rem;
+            float:left;
+            
+    }
+    .list ul img{width:1.95rem;
+            height:1.95rem;
+            padding-left:1.25rem;
+    }
+    .list ul p{font-size:0.7rem;
+            margin-top:0.5rem;
+            color:#999999;
+            padding-left:1.25rem;
+    }
+    .col{width:16rem;
+        height:2rem;
+        overflow:hidden;
+        margin-top:1.5rem;
+        color:#333333;
+        border-bottom:3px solid #ccc;
+
+    }
+    .col .l{width:0.2rem;
+            height:1rem;
+            display:block;
+            background:#d51938;
+            margin-left:0.5rem;
+            float:left;
+    }
+    .col .m{font-size:20px;
+            font-family:"微软雅黑";
+            margin-left:0.5rem;
+            float:left;
+    }
+    .col .r{
+            float:right;
+           display:block;
+           margin-right:0.5rem;
+           font-family:"微软雅黑";
+    }
+    .con1{width:16rem;
+        overflow:hidden; 
+        margin:0.75rem 0;
+    }
+    .con1 .left{width:6rem;
+            height:3rem;
+            float:left;
+            background:url(images/5.png) no-repeat;
+            background-size:100%;
+            margin-left:0.5rem;
+          
+    }
+    .con1 img{width:6rem;
+            height:3rem;
+    }
+   
+    .con1 .right{   
+                width:9rem;
+                height:3rem;
+                float:right;
+                background:#f4f4f4;
+                margin-right:0.5rem;
+                color:#a6a6a6;
+                 font-weight:bold;
+    }
+    .con1 .right .l{
+                margin-left:0.575rem;
+                float:left;
+                margin-top:0.7rem;
+                font-size:0.7rem;
+
+    }
+    .con1 .right .l p{margin-bottom:0.25rem;}
+    .con1 .right .l i{
+         font-style:normal;
+        text-decoration:line-through;
+    }
+    .con1 .right .r{
+                width:2.25rem;
+                color:#d51938;
+                float:right;
+                margin-top:1.2rem;
+                margin-right:1rem;
+                 font-size:0.7rem;
+                 background:url(images/6.png) no-repeat 1rem ;
+                 font-weight:bold;
+    }
+/*msg*/
+    .msg{width:15rem;
+        height:1.95rem;
+        margin:0 0.5rem;
+        background:#f5f5f5;
+        text-align:center;
+        line-height:1.95rem;
+    }
+    .msg p{
+        color:#666;
+        font-size:0.9rem;
+        font-weight:bold;
+    }
+    .box{height:8.875rem;
+        width:15rem;
+        margin: 0.5rem;
+
+    }
+    .box img{width:3.75rem;
+            height:8.75rem;
+
+    }
+    .box .right{width:11.25rem;
+            height:8.75rem;
+            border-top:1px solid #ccc;
+
+
+    }
+    .box .right li{width:3.75rem;
+                height:2.1875rem;
+                border-right:1px solid #ccc;
+                border-bottom:1px solid #ccc;
+                box-sizing:border-box;
+                text-align:center;
+                line-height:2.1875rem;
+                font-size:0.6rem;
+    }
+    .box2{width:15rem;
+        height:4rem;
+        margin:0.5rem;
+        border:1px solid #ccc;
+    }
+    .box2 .l1{width:5rem;
+            height:4rem;
+            text-align:center;
+            border-right:1px solid #ccc;
+            box-sizing:border-box;
+    }
+    .box2 .l1 i{
+        display:block;
+        width:1.2rem;
+        height:1.3rem;
+        margin:0.75rem auto;
+    }
+    .box2 img{width:1.2rem;
+            height:1.3rem;
+    }
+    .box2 p{color:#999;
+            margin-bottom:0.65rem;
+    }
+    .col2{width:16rem;
+        height:2.125rem;
+      background:#f8f8f8;
+      
+      line-height:2.125rem;
+
+    }
+    .col2 .a1{margin-left:0.6rem;font-size:0.8rem;color:#666;}
+    .col2 .a2{margin-right:0.75rem;font-size:0.8rem;color:#666;
+    }
+    .last{width:16rem;
+        height:8.6rem;
+        background:#eee;
+        text-align:center;
+
+    }
+    .last .p1{padding-top:0.875rem;font-size:0.6rem;}
+    .last .p2{color:#666;font-size:0.6rem;}
+    .last p{line-height:1.3rem;}
+    .last img{width:100%;width:13rem;height:4.45rem;}
+
+</style>
+<script>
+;(function(win,doc){
+  doc.documentElement.style.fontSize = 20/320*doc.documentElement.clientWidth+'px';
+  win.addEventListener('resize',function(){
+    doc.documentElement.style.fontSize = 20/320*doc.documentElement.clientWidth+'px';
+  },false);
+})(window,document);
+</script>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="1.index-commodity.html">返回</a>
+            <img src="images/2.png" height="88" width="376" alt="">
+        </header>
+        <div class="banner">
+            <ul>
+                <li><img src="banner.png" ></li>
+                <li><img src="banner.png" ></li> <li><img src="banner.png" ></li> 
+                <li><img src="banner.png" ></li> 
+                <li><img src="banner.png" ></li>    
+            </ul>
+            <ol>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li class="active">5</li>
+            </ol>
+      </div>
+    </section>
+    <div class="list">
+        <ul>
+            <li>
+                <img src="images/3.png" alt="">
+                <p>生活</p>
+            </li>
+            <li>
+               <img src="images/3.png" alt="">
+                <p>品牌</p>
+            </li>
+            <li>
+                <img src="images/3.png" alt="">
+                <p>聚宝盆</p>
+            </li>
+            <li>
+                <img src="images/3.png" alt="">
+                <p>聚名品</p>
+            </li>
+
+            <li>
+                <img src="images/3.png" alt="">
+                <p>商品</p>
+            </li>
+            <li>
+                <img src="images/3.png" alt="">
+                <p>聚家装</p>
+            </li>
+            <li>
+                <img src="images/3.png" alt="">
+                <p>聚透</p>
+            </li>
+            <li>
+                <img src="images/3.png" alt="">
+                <p>客户端</p>
+            </li>
+        </ul>
+    </div>
+<!--聚划算热卖排行 -->
+    <div class="col">
+        <span class="l"></span>
+        <span class="m">聚划算热卖排行</span>
+        <span class="r">TOP10</span>
+    </div>
+
+   <div class="con1">
+       <div class="left">
+           <img src="images/5.png" alt="">
+       </div>
+       <div class="right">
+           <span class="l">
+                <p>已售  78556</p>
+                <p>2.3折 <i>￥299</i></p>
+            </span>
+           <span class="r">￥51</span>
+       </div>
+   </div>
+   <div class="con1">
+       <div class="left">
+           <img src="images/5.1.png" alt="">
+       </div>
+       <div class="right">
+           <span class="l">
+                <p>已售  78556</p>
+                <p>2.3折 <i>￥299</i></p>
+            </span>
+           <span class="r">￥51</span>
+       </div>
+   </div>
+   <div class="con1">
+       <div class="left">
+           <img src="images/5.2.png" alt="">
+       </div>
+       <div class="right">
+           <span class="l">
+                <p>已售  78556</p>
+                <p>2.3折 <i>￥299</i></p>
+            </span>
+           <span class="r">￥51</span>
+       </div>
+   </div>
+   <div class="con1">
+       <div class="left">
+           <img src="images/5.3.png" alt="">
+       </div>
+       <div class="right">
+           <span class="l">
+                <p>已售  78556</p>
+                <p>2.3折 <i>￥299</i></p>
+            </span>
+           <span class="r">￥51</span>
+       </div>
+   </div>
+   <div class="con1">
+       <div class="left">
+           <img src="images/5.4.png" alt="">
+       </div>
+       <div class="right">
+           <span class="l">
+                <p>已售  78556</p>
+                <p>2.3折 <i>￥299</i></p>
+            </span>
+           <span class="r">￥51</span>
+       </div>
+   </div>
+   <div class="con1">
+       <div class="left">
+           <img src="images/5.5.png" alt="">
+       </div>
+       <div class="right">
+           <span class="l">
+                <p>已售  78556</p>
+                <p>2.3折 <i>￥299</i></p>
+            </span>
+           <span class="r">￥51</span>
+       </div>
+   </div>
+   <div class="con1">
+       <div class="left">
+           <img src="images/5.6.png" alt="">
+       </div>
+       <div class="right">
+           <span class="l">
+                <p>已售  78556</p>
+                <p>2.3折 <i>￥299</i></p>
+            </span>
+           <span class="r">￥51</span>
+       </div>
+   </div>
+   <div class="con1">
+       <div class="left">
+           <img src="images/5.7.png" alt="">
+       </div>
+       <div class="right">
+           <span class="l">
+                <p>已售  78556</p>
+                <p>2.3折 <i>￥299</i></p>
+            </span>
+           <span class="r">￥51</span>
+       </div>
+   </div>
+   <div class="con1">
+       <div class="left">
+           <img src="images/5.8.png" alt="">
+       </div>
+       <div class="right">
+           <span class="l">
+                <p>已售  78556</p>
+                <p>2.3折 <i>￥299</i></p>
+            </span>
+           <span class="r">￥51</span>
+       </div>
+   </div>
+   <div class="con1">
+       <div class="left">
+           <img src="images/5.9.png" alt="">
+       </div>
+       <div class="right">
+           <span class="l">
+                <p>已售  78556</p>
+                <p>2.3折 <i>￥299</i></p>
+            </span>
+           <span class="r">￥51</span>
+       </div>
+   </div>
+  <!--更多划算 -->
+  <div class="msg">
+      <p>更多划算&nbsp逛起来!
+            <span>&nbsp&nbsp&nbsp&gt</span>
+      </p>
+  </div>
+  <div class="box clr">
+        <div class="left fl">
+            <img src="images/7.png" alt="">
+        </div>
+        <ul class="right fr">
+            <li class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+        </ul>
+  </div>
+  <!--精品商品 逛起来 -->
+  <div class="msg">
+      <p>精品商品&nbsp逛起来!
+        <span>&nbsp&nbsp&nbsp&gt</span>
+      </p>
+  </div>
+  <div class="box clr">
+        <div class="left fl">
+            <img src="images/8.png" alt="">
+        </div>
+        <ul class="right fr">
+            <li class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl"></li>
+            <li  class="fl"></li>
+        </ul>
+  </div>
+   <!--品质生活逛起来 -->
+  <div class="msg">
+      <p>品质生活&nbsp逛起来!
+        <span>&nbsp&nbsp&nbsp&gt</span>
+      </p>
+  </div>
+  <div class="box clr">
+        <div class="left fl">
+            <img src="images/9.png" alt="">
+        </div>
+        <ul class="right fr">
+            <li class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl">服饰</li>
+            <li  class="fl"></li>
+            <li  class="fl"></li>
+        </ul>
+  </div>
+   <!--品牌折扣 逛起来 -->
+  <div class="msg">
+      <p>品牌折扣&nbsp逛起来!
+        <span>&nbsp&nbsp&nbsp&gt</span>
+      </p>
+  </div>
+  <div class="box2 clr">
+        <ul class="clr">
+            <li class="l1 fl">
+                <i>
+                    <img src="images/10.png" alt="">
+                </i>
+                <p>IOS客户端</p>     
+            </li>
+             <li class="l1 fl">
+                <i>
+                    <img src="images/10.png" alt="">
+                </i>
+                <p>IOS客户端</p>     
+            </li>
+            <li class="l1 fl">
+                <i>
+                    <img src="images/10.png" alt="">
+                </i>
+                <p>IOS客户端</p>     
+            </li>
+        </ul>
+  </div>
+  <!--登录-->
+    <div class="col2 clr">
+        <a  class="a1 fl" href="javascript:;">登录&nbsp注册</a>
+       
+        <a class="a2 fr" href="javascript:;">TOP</a>
+    </div>  
+    <div class="last">
+        <p class="p1">标准版&nbsp电脑版</p>
+        <p class="p2">2013 浙B2-20080224服务中心</p>
+        <img src="images/11.png" alt="">
+    </div>
+</body>
+</html>
