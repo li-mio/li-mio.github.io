@@ -52,6 +52,10 @@ window.onload=function(){
             if(bFlag){
                 bFlag = false;
                 iNow++;
+               
+                if(iNow==1){
+                    slid();
+                }
                 if(iNow > 3){
                     iNow = 3;
                 }
@@ -71,6 +75,9 @@ window.onload=function(){
                     iNow = 0;
                 }
 
+                if(iNow==1){
+                    slid();
+                }
                 for(var i=1;i<aLi.length;i++){
                     aLi[i].className='';
                 }
@@ -207,18 +214,17 @@ window.onload=function(){
         });
     }
     //横线运动效果
-    var oBox3=document.getElementById('box-3');
-    var aL1=oBox3.children[0];
-    var aL2=oBox3.children[1];
-    var aR1=oBox3.children[2];
-    var aR2=oBox3.children[3];
-
-    setTimeout(function(){
+   function slid(){
+        var oBox3=document.getElementById('box-3');
+        var aL1=oBox3.children[0];
+        var aL2=oBox3.children[1];
+        var aR1=oBox3.children[2];
+        var aR2=oBox3.children[3];
         move(aL1,{width:300});
         move(aL2,{height:300});
         move(aR1,{left:300});
         move(aR2,{height:250});
-    },1000);
+    }
     //随机切换效果
     var oUl=document.getElementById('list');
     var aLi1=oUl.children;
