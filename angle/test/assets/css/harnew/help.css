@@ -1,0 +1,65 @@
+body{
+    max-width: 720px;
+    font-size:62.5%!important;
+    background:#f8f8f8;
+}
+.main{
+     background:#f8f8f8;
+    overflow: hidden;
+}
+.main div{
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #ededed;
+}
+.main div h5{
+    width: 100%;
+    height:3.5em;
+    font-size:1.6em;
+    color: #333;
+    line-height:3.5em;
+    background: url(../../img/help_right.png) no-repeat right center;
+    background-size:18px 20px;
+    background-position:97%;
+}
+.main div h5 b{
+    padding-left: 12px;
+}
+.main div ul{
+    display: none;
+}
+.main div ul li{
+    font-size:1.4em;
+    line-height: 1.8em;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333;
+}
+.main div ul li:last-child {
+    margin-bottom: 15px;
+}
+.main div ul li span{
+    font-weight: bolder;
+}
+@media screen and (min-width:720px){
+    body{font-size:23px;-webkit-text-size-adjust: none;}
+    input{font-size:23px;}
+}
+
+@media screen and (min-width:640px) and (max-width:719px){
+    body{font-size:20px;-webkit-text-size-adjust: none;}
+    input{font-size:20px;}
+}
+
+@media screen and (min-width:480px) and (max-width:639px){
+    body{font-size:15px;-webkit-text-size-adjust: none;}
+    input{font-size:15px;}
+}
+@media screen and (min-width:320px) and (max-width:479px){
+    body{font-size:12px;-webkit-text-size-adjust: none;}
+    input{font-size:12px;}
+}
+@media screen and (max-width: 319){
+    body{font-size:10px;-webkit-text-size-adjust: none;}
+    input{font-size: 10px;}
+}
