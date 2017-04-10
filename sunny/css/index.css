@@ -136,7 +136,7 @@ body{overflow: hidden;}
 .home .inside .box .back{
     background:rgba(255,0,0,0.3);
     -ms-transform:translateZ(-150px);
-    -webkit-transform:translateZ(-150px);
+    -webkit-tranform:translateZ(-150px);
     -moz-transform:translateZ(-150px);
 }
 .home .inside .box .left{
