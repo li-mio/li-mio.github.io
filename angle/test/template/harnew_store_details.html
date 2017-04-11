@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link href="../assets/css/harnew/me.css" rel="stylesheet">
+<style>
+    *{padding:0;margin:0;list-style:none;}
+    h3{
+        font-size:16px;
+        color:#000;
+        text-align:center;
+        line-height:1.6rem;
+        width:100%;
+        height:1.6rem;
+        font-weight:normal;
+    }
+    .select{
+        width:100%;
+        color:#000;
+        text-align:center;
+        box-sizing:border-box;
+    }
+     .active{
+        color:#32ceff!important;
+        border-bottom:3px solid #33ccff;
+    }
+    .tab{
+        width:15%;
+        height:1.6rem;
+        font-size:0.75rem;
+        display:inline-block;
+        line-height:1.6rem;
+       margin:0 1.8rem;     
+    }
+    .blank{
+        height:20px;
+        width: 100%;
+        background: #f8f8f8;
+        border-top: 0.5px solid #d1cece;
+        border-bottom: 0.5px solid #d1cece;
+        margin-top:-1px;
+    }
+    .content{
+        width:90%;
+        margin:1rem auto;
+        font-size:14px;
+        color:#000;
+        text-align:left;
+    }
+    .content h4{
+        text-align:center;
+        color:#1686ac;
+        font-weight:bold;
+        margin-top:1rem;
+    }
+
+     .tal{
+        text-align:center;
+        color:#1686ac;
+        margin:20px 0;
+    }
+     .tal p{
+        height:30px;
+        line-height:30px;
+       
+    }
+
+    h5{
+        width:50%;
+        height:1.6rem;
+        line-height:1.6rem;
+        border-radius:4px;
+        background:#7facce;
+        color:#fff;
+        font-weight:bold; 
+        margin:1.5rem auto;
+        font-size:14px;
+    }
+
+    h5 span{
+         display:inline-block;
+        width:1.6rem;
+        height:1.6rem;
+        text-align:center;
+        line-height:1.6rem;
+        background:#265799;
+        border-radius:4px 0 0 4px;
+        font-size:14px;
+        color:#fff;
+        margin-right:10px;
+    }
+    .intr{font-size:14px;}
+    .intr p{
+        line-height:24px;
+        margin:6px 0;
+    }
+    .intr p i{
+        height:18px;
+        line-height:18px!important;
+        background:#f2f8ab;
+    }
+    .less{margin:10px 0;}
+    .less p{
+        line-height:18px;
+        height:18px;
+        margin:10px 0;
+    }
+    .content .second .cn{
+        margin:10px 0;
+    }
+    .content .second .cn p{
+        line-height:22px;
+        
+    }
+    .content .second .cn i{
+        background:#f2f8ab;
+    }
+
+    .content .hd em{
+       font-weight:bold;
+    }
+    .sug{
+        padding:0 0.8rem;
+    }
+   
+    
+    .notes{
+        font-size:0.5rem;
+        color:#a6a6a6;
+    }
+    
+    .third-cn{
+        margin:10px 0;
+    }
+    .third-cn p{
+        margin:10px 0;
+        line-height:22px;
+    }
+    .third-cn p em{
+        color:#413f3f;
+        font-weight:bold;
+        
+    }
+    .third-cn p i{
+        background:#f2f8ab;
+        height:16px;
+        line-height:16px;
+    }
+   
+    .footer-t{
+        width: 90%;
+        margin:0 auto;
+        font-size: 0.7rem;
+        color: #000;
+        text-align: left;
+    }
+    .footer-t .foot-t1{
+        line-height:1.2rem;
+        font-size:14px;
+        margin:10px 0;
+    }
+    .footer-t p{
+        font-size:14px;
+    }
+    
+    /*第二页*/
+    .detail{
+        display:none;
+    }
+    .pro-img{
+        padding:0.7rem 0.5rem 0.3rem 0.5rem;
+    }
+    .con1{
+        position:relative;
+        width:100%;
+        height:2rem;
+        border-bottom:0.5px solid #dfdfdf;
+        font-size:0.7rem;
+        line-height:2rem;
+    }
+    .b-l{
+        position:absolute;
+        left:0.5rem;
+        color:#d9d9d9;;
+    }
+    .b-r{
+         position:absolute;
+         right:1rem;
+        color: #5f5f5f;
+    }
+   
+    .confirm{
+        width:90%;
+        margin:1rem auto;
+        height:2.5rem;
+        background-color: #33ccff!important;
+        font-size:0.9rem;
+        border-radius:10px;
+        text-align:center;
+        line-height:2.5rem;
+        margin-bottom:0.6rem!important;
+    }
+    .confirm a{
+        display:block;
+        width:100%;
+        height:100%;
+        color:#fff;
+    }
+    .guld{
+        text-align:left;
+        padding:0 1.5rem;
+
+    }
+    .guld-con{
+        height:1.8rem;
+        line-height:1.8rem;
+
+    }
+    .guld-con input{
+        border:1px solid #bcb7b7;
+        text-indent:10px;
+        width:12rem;
+        height:1rem;
+        font-size:0.5rem;
+        color:#a6a6a6;
+        border-radius:6px;
+        -webkit-appearance:none;
+        
+    }
+    .guld-con img{
+        vertical-align: middle;
+        margin-right:10px;
+    }
+    ::-webkit-input-placeholder { /* WebKit browsers */ 
+    color:#d9d9d9; 
+    } 
+    :-moz-place#d9d9d9holder { /* Mozilla Firefox 4 to 18 */ 
+    color:#d9d9d9; 
+    } 
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+    color: #d9d9d9; 
+    } 
+    :-ms-input-placeholder { /* Internet Explorer 10+ */ 
+    color:#d9d9d9; 
+    } 
+    .guld span{
+        display:inline-block;
+        margin-top:-5px;
+    }
+     .guld span a{
+        display:inline-block;
+        font-size:0.6rem;
+        color:#666;
+        text-decoration:underline!important;
+    }
+    .seek{
+        height:1.4rem;
+        line-height:1.4rem;
+        font-size:0.6rem;
+        color:#666;
+        margin-left:1.4rem;
+    }
+    .footer{
+         text-align:left;
+         padding:0 2rem;
+         margin-top:0.1rem;
+    }
+    .contact{
+        float:left;
+        font-size:0.6rem;
+        color:#666;
+
+    }
+    .contact span{
+        display:block;
+        height:1rem;
+        line-height:1rem; 
+        font-size:0.6rem;  
+    }
+    .staff{
+        background:url('../assets/img/weixin2.png') no-repeat left center;
+          background-size:1.2rem;
+          text-indent:2.5em;
+          height:1rem;
+          line-height:1rem;
+    }
+    .qr-code{
+        float:left;
+        margin-left:0.4rem;
+    }
+
+   
+</style>
+ <script src="../assets/js/jquery.min.1.7.2.js"></script>
+<script src="../assets/js/base.js"></script>
+<script>
+     $(function(){
+        $('.select .tab').click(function(){
+    
+            $(this).addClass('active').siblings('.tab').removeClass('active');
+        
+            $('.select .detail').eq($(this).index()).show().siblings('.detail').hide();
+            
+        });
+    });
+</script>
+</head>
+<body>
+    <div class="main">
+        <h3>【专家助力+学长互动版】申请套餐</h3>
+        <div class="select">
+            <span class="active tab ">详情</span>
+            <span class="tab">购买</span>
+             <div class="blank"></div>
+            <div class="detail" style="display:block">
+                
+                <div class="content">
+                    <h4>【专家助力+学长互动版】申请套餐</h4>
+                    <div class="tal">
+                        <p>超过200位在荷兰各个院校读书的中国学长学姐；</p>
+                        <p>多位荷兰院校驻中国办公室的校方老师；</p>
+                        <p>为你提供温暖、真实、权威的1对1服务！</p>
+                    </div>
+                    <div class="intr">
+                        <p>与理想院校的学长学姐和校方老师1对1交流，让你<i>通过温暖的方式，获得最真实的院校和信息以及最权威的留学建议！</i></p>
+                        <p><i>经验丰富的中外专家确保你的文书优质，申请过程及时、准确，</i>让DIY申请不再是难题！</p>
+                        <p><i>只有找中介一半的价格，却有更为温暖、真诚、专业的服务！</i>站在你的角度出发，让你遵从内心，和你一起为申请到你的理想院校共同努力！</p>
+                    </div>
+                   <h5 style="width:62%!important;"><span>1</span>学长学姐讲解院校和专业</h5>
+
+                    <div class="intr">
+                        <p>当你初步有了意向院校后，哈牛会<i>为你精准匹配三位你意向院校和专业的学长学姐，</i>为你讲解最真实的院校和生活信息。</p>
+                        <p style="margin-top:10px;">学姐或学长均为你意向院校的在读生或毕业生，有绝对的权威和知识讲解关于这个院校的一切，帮助你做出最好的选择！</p>
+                    </div>
+                    <div class="less">
+                        <p><i style="background:#f2f8ab;">讲解内容包含：</i></p>
+                        <p>学校环境，教学方法，教学氛围</p>
+                        <p>你所选专业的优劣势</p>
+                        <p>城市生活，娱乐，成本，安全</p>
+                        <p>未来工作方向，收入，就业前景</p>
+                        <p>同时学长学姐也可以解答任何你关心的其他问题</p>
+                    </div>
+
+                    <h5 style="width:52%!important;"><span>2</span>院校选择专家把关</h5>
+
+                    <div class="intr">
+                            <p>跟三位学长交流后，相信你心中已经有一个大致选择，这时哈牛的专家老师将跟你1对1交流，为你的留学计划进行专家把关。<i>院校和专业的选择带有一定程度的个人偏好，专家的责任是帮你梳理真实、完整、客观的信息后，使你有能力做出理性和最优的选择！</i></p>
+                            <p>专家老师都来自于荷兰各个院校驻中国的代表老师，荷兰官方机构DUC Meeting成员，<i>这种常年在荷兰高等教育领域工作并真正了解荷兰院校的专家老师在中国一共只有15人，</i>他们能帮你：</p>
+                            <p>科学测评你的留学规划，指导你如何正确看待各种排名，以及如何利用排名衡量院校！
+深挖数据，通过各院校毕业率、就业率、中国学生数量等信息进行院校综合比对！</p>
+                            <p>最后专家会以专业角度，给出专家建议供你参考！</p>
+                    </div>
+
+                   <h5 style="width:54%!important;"><span>3</span>文书和申请“零失误”</h5>
+
+                    <div class="third-cn">
+                         <p><em>申请文书：</em>精修简历、精修动机信（外籍专家负责）</p>
+                         <p>先由外籍专家精修你的简历和申请动机信，然后再由中国专家老师为你讲解为何要做出这样修改，帮你规避由于申请文书不规范所带来的风险！</p>
+                         <p><em>院校申请系统讲解（或由专家代申）：</em>三所院校</p>
+                         <p>可以让专家老师为你讲解大学的申请系统如何使用，<i>规避因为不熟悉各大学申请系统和流程所带来的误操作风险，同时帮你避免其他申请者常犯的错误；</i></p>
+                         <p>也可选更简单的方式，由专家老师进入申请系统，帮你填写信息并上传材料后，<i>你进入系统最后一步，点击“确认提交”即可！</i></p>
+                         
+                     </div>
+
+                    <h5 style="width:50%;"><span>4</span>出国前赢在起跑线</h5>
+                      <div class="intr">
+                          <p>申请完成、收到录取通知书之后，哈牛还将继续为你在出国前“赢在起跑线”，提供<i>格外服务：</i></p>
+                          <p>学术准备： 由同专业学长学姐，为你讲解第一年的授课内容和难点，指导你预习方法和资料，让你能够<i>利用出国前的时间做好预习，真正赢在起跑线！</i></p>
+                          <p>签证指导： 为你详解NUFFIC证书、签证材料和院校缴费等</p>
+                          <p>语言准备（另自选）：荷兰语短期快速培训，让你掌握生活常用荷兰语！</p>
+                          <p>最后，我们还赠送：</p>
+                          <p>如果讲解后还有疑问，可以跟学长微信答疑300条</p>
+                          <p>向哈牛平台任意学长学姐提问卷10张</p>
+                          <p>临行分享会：参加学长学姐举办的临行分享会，解答实用信息</p>
+                      </div>
+
+                     <h5 style="width:44%!important;"><span>5</span>服务流程图解</h5>
+         
+                </div>
+                <div class="intr">
+                    <img src="../assets/img/buying-2.jpg" style="width:100%;" />
+                </div> 
+                <div class="footer-t" style="width:90%;margin:0 auto;">
+                        <div class="foot-t1">不被中介坑，也不用自己高风险DIY！哈牛携手200位中国学长学姐和真正的专家老师，成为你在申请路上并肩作战的战友，为你的所思所行考虑周全，为你的留学之路保驾护航！</div>
+                        <div style="text-align:center;margin:15px 0;">
+                            <p style="height:18px;line-height:18px;"><i style="background: #f2f8ab;">由于院校老师资源稀缺，名额有限，报满即止！</i></p>
+                        </div>
+                        <p style="margin:10px 0;">如有任何问题请咨询哈牛客服：</p>
+                        <p style="margin:2px 0;">微信号：harnewinternational</p>
+                        <p style="margin:2px 0;">二维码名片：</p>
+                        <p><img src="../assets/img/qr.png" alt="" style="width:140px;height:140px;"></p>
+                        <p style="margin:4px 0;">地址：北京市朝阳区望京中环南路1号，中国社会科学院E座二层，哈牛国际学生汇</p>
+                        <p style="margin:4px 0;">电话：（010） 84177408 转 206（工作日 9.00 - 17.30）</p>
+                        <p style="margin:4px 0;">手机：152 0108 6892</p>
+                </div>
+            </div>
+            <div class="detail">
+                <div class="pro-img">
+                     <img src="../assets/img/shopping-4.png" alt="" style="width:100px;height:100px;text-align:center;">
+                </div>
+               
+                <div class="con1">
+                    <span class="b-l">购买产品</span>
+                    <span class="b-r">【专家助力+学长互动版】申请套餐</span>
+                </div>
+                <div class="con1">
+                    <span class="b-l">支付方式</span>
+                    <span class="b-r">微信支付（信用卡，储蓄卡）</span>
+                </div>
+                <div class="con1">
+                    <span class="b-l">金额</span>
+                    <span class="b-r" style="font-size:0.8rem;right:1.3rem;">5880元</span>
+                </div>
+                <div class="blank" style="margin-top:20px;"></div>
+                <form id="serviceForm" method="POST" action="{{ url_for('harnew.harnew_store_details') }}">
+                    <div class="confirm">
+                        <a>确认购买</a>
+                    </div>
+                    <div class="guld">
+                        <div class="guld-con">
+                            <img src="../../assets/img/tick.png" style="width:1.2rem;height:1.2rem;">
+                            <input type="text" placeholder="购买前请填写你的手机号" name="phoneNum" id="phoneNum"/>
+                        </div>
+                        <div class="guld-con">
+                            <img src="../assets/img/tick.png" style="width:1.2rem;height:1.2rem;">
+                            <span><a href="{{ url_for('harnew.service_agreement') }}">哈牛申请套餐服务协议（点击阅读）</a></span>
+                        </div>
+                    </div>
+                </form>
+                <div class="footer clearfix">
+                    <div class="contact">
+                         <p class="seek">
+                  更多详情请咨询哈牛客服：</p>
+                        <span class="staff">微信号：</span>
+                        <span style="margin-left:1.4rem;font-size:0.7rem;">harnewinternational</span>
+                        <span style="margin-left:1.4rem">或扫描右侧二维码</sapn>
+                    </div>
+                    <div class="qr-code">
+                        <img src="../../assets/img/qr.png" style="width:4.8rem;height:4.8rem;">
+                    </div>
+                </div>
+            </div>
+        </div>
+<script>
+    $(".confirm").on('click', function () {
+        var phoneNumber = $("#phoneNum").val();
+        if(!phoneNumber) {
+            alert("请输入您的手机号！");
+            return false;
+        }
+        $("#serviceForm").submit();
+    });
+</script>       
+
+    </div>
+</body>
+</html>
