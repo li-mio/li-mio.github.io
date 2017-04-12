@@ -53,14 +53,37 @@
         text-align:left;
     }
     .tal{
-        text-align:center;
         color:#1686ac;
         margin:20px 0;
     }
     .tal p{
-        line-height:30px; 
+        line-height:26px; 
     }
-    
+    .intr{font-size:14px;}
+    .intr p{
+        line-height:26px;
+        margin:18px 0;
+    }
+    .intr p i{
+        height:18px;
+        line-height:18px!important;
+        background:#f0f4c1;
+    }
+    .less{margin:10px 0;}
+    .less p{
+        line-height:18px;
+        height:18px;
+        margin:10px 0;
+    }
+    .less s{
+         width:3px;
+        height:3px;
+        border-radius:50%;
+        border:1px solid #000;
+        display:inline-block;
+        margin-bottom: 3px;
+        margin-right: 7px;
+    }
     h5{
         width:50%;
         height:32px;
@@ -85,73 +108,33 @@
         color:#fff;
         margin-right:10px;
     }
-    .intr{font-size:15px;}
-    .intr p{
-        line-height:30px;
-        margin:18px 0;
-    }
-    .intr p i{
-        height:18px;
-        line-height:18px!important;
-        background:#f0f4c1;
-    }
-    .less{margin:10px 0;}
-    .less p{
-        line-height:18px;
-        height:18px;
-        margin:10px 0;
-    }
-     .less s{
-         width:3px;
-        height:3px;
-        border-radius:50%;
-        border:1px solid #000;
-        display:inline-block;
-        margin-bottom: 3px;
-        margin-right: 7px;
-    }
-   .second .cn{
-        margin:10px 0;
-    }
-    .second-cn s{
-         width:3px;
-        height:3px;
-        border-radius:50%;
-        border:1px solid #000;
-        display:inline-block;
-        margin-bottom: 3px;
-        margin-right: 7px;
-    }
-   .second .cn p{
-        line-height:30px;
-        
-    }
-    .content .second .cn i{
-        background:#f2f8ab;
-    }
-
-    .content .hd em{
-       font-weight:bold;
-    }
-    
     .third-cn{
         margin:14px 0;
     }
     .third-cn p{
         margin:14px 0;
-        line-height:30px;
-    }
-    .third-cn p em{
-        color:#413f3f;
-        font-weight:bold;
-        
+        line-height:26px;
     }
     .third-cn p i{
         background:#f2f8ab;
         height:16px;
         line-height:16px;
     }
-   
+   .fourth-cn p{margin:14px 0;line-height:26px;}
+   .fourth-cn p s{
+        width:3px;
+        height:3px;
+        border-radius:50%;
+        border:1px solid #000;
+        display:inline-block;
+        margin-bottom: 3px;
+        margin-right: 7px;
+   }
+   .fourth-cn p i{
+        background:#f2f8ab;
+        height:16px;
+        line-height:16px;
+   }
     .footer-t{
         width: 90%;
         margin:0 auto;
@@ -160,12 +143,13 @@
         text-align: left;
     }
     .footer-t .foot-t1{
-        line-height:1.2rem;
+        line-height:26px;;
         font-size:14px;
         margin:10px 0;
     }
     .footer-t p{
         font-size:14px;
+        line-height:26px;
         margin: 0.4rem 0;
     }
     
@@ -293,20 +277,16 @@
     .qr-code{
         float:left;
         margin-left:0.4rem;
-    }
-
-   
+    }   
 </style>
  <script src="../assets/js/jquery.min.1.7.2.js"></script>
 <script src="../assets/js/base.js"></script>
 <script>
      $(function(){
         $('.select .tab').click(function(){
-    
             $(this).addClass('active').siblings('.tab').removeClass('active');
         
-            $('.select .detail').eq($(this).index()).show().siblings('.detail').hide();
-            
+            $('.select .detail').eq($(this).index()).show().siblings('.detail').hide(); 
         });
     });
 </script>
@@ -317,7 +297,7 @@
         <div class="select">
             <span class="active tab ">详情</span>
             <span class="tab">购买</span>
-             <div class="blank"></div>
+            <div class="blank"></div>
             <div class="detail" style="display:block">
                 
                 <div class="content">
@@ -357,21 +337,21 @@
                    <h5 style="width:54%!important;"><span>3</span>文书和申请“零失误”</h5>
 
                     <div class="third-cn">
-                         <p><em>申请文书：</em>精修简历、精修动机信（外籍专家负责）</p>
-                         <p>先由外籍专家精修你的简历和申请动机信，然后再由中国专家老师为你讲解为何要做出这样修改，帮你规避由于申请文书不规范所带来的风险！</p>
-                         <p><em>院校申请系统讲解（或由专家代申）：</em>三所院校</p>
-                         <p>可以让专家老师为你讲解大学的申请系统如何使用，<i>规避因为不熟悉各大学申请系统和流程所带来的误操作风险，同时帮你避免其他申请者常犯的错误；</i></p>
-                         <p>也可选更简单的方式，由专家老师进入申请系统，帮你填写信息并上传材料后，<i>你进入系统最后一步，点击“确认提交”即可！</i></p>
+                         <p style="margin:18px 0;color: #1686ac;">申请文书：精修简历、精修动机信（外籍专家负责）</p>
+                         <p style="margin:18px 0">先由<i>外籍专家精修你的简历和申请动机信，</i>然后再由中国专家老师为你讲解为何要做出这样修改，帮你规避由于申请文书不规范所带来的风险！</p>
+                         <p style="margin:18px 0;color: #1686ac;">院校申请系统讲解（或由专家代申）：三所院校</p>
+                         <p style="margin:18px 0">可以让专家老师为你讲解大学的申请系统如何使用，<i>规避因为不熟悉各大学申请系统和流程所带来的误操作风险，同时帮你避免其他申请者常犯的错误；</i></p>
+                         <p style="margin:18px 0">也可选更简单的方式，由专家老师进入申请系统，帮你填写信息并上传材料后，<i>你进入系统最后一步，点击“确认提交”即可！</i></p>
                          
                      </div>
 
                     <h5 style="width:50%;"><span>4</span>出国前赢在起跑线</h5>
-                      <div class="intr">
+                      <div class="fourth-cn">
                           <p><s></s>申请完成、收到录取通知书之后，哈牛还将继续为你在出国前“赢在起跑线”，提供<i>格外服务：</i></p>
                           <p><s></s>学术准备： 由同专业学长学姐，为你讲解第一年的授课内容和难点，指导你预习方法和资料，让你能够<i>利用出国前的时间做好预习，真正赢在起跑线！</i></p>
                           <p><s></s>签证指导： 为你详解NUFFIC证书、签证材料和院校缴费等</p>
                           <p><s></s>语言准备（另自选）：荷兰语短期快速培训，让你掌握生活常用荷兰语！</p>
-                          <p class="hd-p" style="color: #1686ac;">最后，我们还赠送：</p>
+                          <p style="color: #1686ac;">最后，我们还赠送：</p>
                           <p><s></s>如果讲解后还有疑问，可以跟学长微信答疑300条</p>
                           <p><s></s>向哈牛平台任意学长学姐提问卷10张</p>
                           <p><s></s>临行分享会：参加学长学姐举办的临行分享会，解答实用信息</p>
@@ -384,7 +364,7 @@
                     <img src="../assets/img/buying-2.jpg" style="width:100%;" />
                 </div> 
                 <div class="footer-t" style="width:90%;margin:0 auto;">
-                        <div class="foot-t1">不被中介坑，也不用自己高风险DIY！<i style="background: #f0f4c1;">哈牛携手200位中国学长学姐和真正的专家老师，</i>成为你在申请路上并肩作战的战友，为你的所思所行考虑周全，为你的留学之路保驾护航！</div>
+                        <div class="foot-t1">不被中介坑，也不用自己高风险DIY！<i style="background: #f2f8ab;">哈牛携手200位中国学长学姐和真正的专家老师，</i>成为你在申请路上并肩作战的战友，为你的所思所行考虑周全，为你的留学之路保驾护航！</div>
 
                         <div style="text-align:center;margin:20px 0;">
                             <p><i style="background: #f0f4c1;">本产品特价活动：5880元</i></p>
